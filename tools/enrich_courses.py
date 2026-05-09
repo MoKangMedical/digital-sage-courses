@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 import re
 import subprocess
+import sys
 from html import escape
 from pathlib import Path
 
@@ -11,71 +12,328 @@ BASE_DIR = Path(__file__).resolve().parents[1]
 ASSETS_DIR = BASE_DIR / "assets"
 CATALOG_PATH = ASSETS_DIR / "course-catalog.json"
 ROOT_INDEX = BASE_DIR / "index.html"
+MAIN_REPO_DIR = BASE_DIR.parent / "digital-sage"
+COURSE_DOCS_DIR = MAIN_REPO_DIR / "docs" / "courses"
+
+if MAIN_REPO_DIR.exists():
+    sys.path.insert(0, str(MAIN_REPO_DIR))
+
+try:
+    from ai_engine.thought_profiles import get_all_celebrities  # type: ignore
+except Exception:
+    get_all_celebrities = None
+
+
+CELEB_META_BY_ID = {
+    item["id"]: item
+    for item in (get_all_celebrities() if get_all_celebrities else [])
+}
+
+
+LANGUAGE_SWITCH_SCRIPT = """
+<script>
+(() => {
+  const storageKey = "digital-sage-course-lang";
+  const body = document.body;
+  const buttons = Array.from(document.querySelectorAll("[data-lang-target]"));
+  const applyLang = (lang) => {
+    body.dataset.lang = lang;
+    buttons.forEach((button) => {
+      button.classList.toggle("active", button.dataset.langTarget === lang);
+    });
+    try { localStorage.setItem(storageKey, lang); } catch (err) {}
+  };
+  let initial = "dual";
+  try { initial = localStorage.getItem(storageKey) || "dual"; } catch (err) {}
+  if (!["zh", "en", "dual"].includes(initial)) initial = "dual";
+  applyLang(initial);
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => applyLang(button.dataset.langTarget));
+  });
+})();
+</script>
+"""
+
+
+CATEGORY_LABEL_EN = {
+    "商业领袖": "Business Leaders",
+    "科技思想家": "Technology Thinkers",
+    "设计大师": "Design Masters",
+    "科学家": "Scientists",
+    "医学专家": "Medical Experts",
+    "思想家": "Philosophers",
+    "文化创作者": "Cultural Creators",
+    "公共治理": "Public Governance",
+}
+
+
+SOURCE_TRACKS = {
+    "business": [
+        {
+            "label": "Primary operating record",
+            "title_zh": "原始经营记录",
+            "title_en": "Primary operating record",
+            "body_zh": "优先回看股东信、致投资者信、年度信、产品发布稿和创始人长访谈，用来验证其长期配置和取舍逻辑。",
+            "body_en": "Start with shareholder letters, annual letters, investor notes, launch memos, and long-form founder interviews to verify how capital allocation and trade-offs were framed over time.",
+        },
+        {
+            "label": "Decision cases",
+            "title_zh": "关键决策案例",
+            "title_en": "Decision cases",
+            "body_zh": "把并购、定价、聚焦、裁撤、国际化这些节点当作证据场，看他在高压时到底守住了什么。",
+            "body_en": "Use acquisitions, pricing moves, focus decisions, restructurings, and expansion moments as evidence windows for what was protected under pressure.",
+        },
+        {
+            "label": "Secondary biographies",
+            "title_zh": "权威传记与商业史",
+            "title_en": "Secondary biographies",
+            "body_zh": "最后再用权威传记、商业史和案例研究补上下文，避免只读语录。",
+            "body_en": "Then add biographies, business histories, and case studies to restore context and avoid reading the person as a quote machine.",
+        },
+    ],
+    "technology": [
+        {
+            "label": "Technical statements",
+            "title_zh": "技术原话与产品记录",
+            "title_en": "Technical statements",
+            "body_zh": "优先看技术演讲、产品发布、内部备忘录和长访谈，验证其对平台、分发和工程约束的判断。",
+            "body_en": "Prioritize technical talks, launches, memos, and long interviews to verify how platform bets, distribution, and engineering constraints were described.",
+        },
+        {
+            "label": "Architecture shifts",
+            "title_zh": "路线迁移节点",
+            "title_en": "Architecture shifts",
+            "body_zh": "重点回看模型升级、平台迁移、开放封闭取舍等节点，因为真正的方法论通常在换轨时最清楚。",
+            "body_en": "Focus on model shifts, platform migrations, and open-versus-closed decisions, because methods become clearest when the track changes.",
+        },
+        {
+            "label": "Independent reporting",
+            "title_zh": "独立报道与口述史",
+            "title_en": "Independent reporting",
+            "body_zh": "再用权威科技媒体、口述史和行业分析补充结果与争议。",
+            "body_en": "Then add reporting, oral histories, and industry analysis to understand outcomes, contradictions, and contested interpretations.",
+        },
+    ],
+    "design": [
+        {
+            "label": "Works and exhibitions",
+            "title_zh": "作品、展览与设计阐释",
+            "title_en": "Works and exhibitions",
+            "body_zh": "优先看代表作品、展览文本、设计说明和公开演讲，而不是只看成品照片。",
+            "body_en": "Start with works, exhibition texts, design notes, and talks instead of relying only on finished visuals.",
+        },
+        {
+            "label": "Material decisions",
+            "title_zh": "材料与删减决策",
+            "title_en": "Material decisions",
+            "body_zh": "把材料选择、删减动作、空间秩序和用户感知当作方法论的真正证据。",
+            "body_en": "Treat material choices, subtraction, spatial order, and user perception as the real evidence of method.",
+        },
+        {
+            "label": "Critical interpretation",
+            "title_zh": "评论与设计史补充",
+            "title_en": "Critical interpretation",
+            "body_zh": "最后用评论文章、设计史和同行回顾补足背景与争议。",
+            "body_en": "Then add criticism, design history, and peer retrospectives for context and debate.",
+        },
+    ],
+    "science": [
+        {
+            "label": "Primary papers",
+            "title_zh": "论文与原始研究",
+            "title_en": "Primary papers",
+            "body_zh": "优先回到论文、讲座、实验报告和诺奖演讲，确认真正的假设、方法和结论边界。",
+            "body_en": "Return to papers, lectures, reports, and Nobel or academy talks to check the real hypothesis, method, and limits of the conclusion.",
+        },
+        {
+            "label": "Breakthrough episodes",
+            "title_zh": "突破性发现节点",
+            "title_en": "Breakthrough episodes",
+            "body_zh": "把关键发现、复现实验和学术争论节点当作高价值证据，而不是只看结果标签。",
+            "body_en": "Use breakthrough moments, replication attempts, and scientific disputes as evidence instead of only consuming the final label of success.",
+        },
+        {
+            "label": "Scientific biographies",
+            "title_zh": "科学史与传记",
+            "title_en": "Scientific biographies",
+            "body_zh": "再用科学史、实验室回忆录和传记补足时代背景与同行网络。",
+            "body_en": "Then add biographies, lab memoirs, and histories of science to recover time, context, and peer networks.",
+        },
+    ],
+    "medical": [
+        {
+            "label": "Clinical record",
+            "title_zh": "临床与公共卫生原始材料",
+            "title_en": "Clinical record",
+            "body_zh": "优先看指南、临床论文、公开通报、病例讨论和权威访谈，验证风险排序和证据口径。",
+            "body_en": "Start with guidelines, clinical papers, public briefings, case discussions, and authoritative interviews to verify risk ranking and evidence standards.",
+        },
+        {
+            "label": "Crisis decisions",
+            "title_zh": "危机与救治节点",
+            "title_en": "Crisis decisions",
+            "body_zh": "重点回看疫情、救治、筛查和沟通节点，因为方法论在高压环境下最容易显形。",
+            "body_en": "Focus on outbreak, treatment, screening, and communication decisions, because methods are most visible under pressure.",
+        },
+        {
+            "label": "Medical history",
+            "title_zh": "医学史与人物回顾",
+            "title_en": "Medical history",
+            "body_zh": "最后再用人物回顾、医学史和机构档案来补充长期影响。",
+            "body_en": "Then use retrospective profiles, institutional archives, and medical history to understand longer-term impact.",
+        },
+    ],
+    "philosophy": [
+        {
+            "label": "Primary texts",
+            "title_zh": "原典文本",
+            "title_en": "Primary texts",
+            "body_zh": "优先回到原典、章句、论辩文本和课堂讲授整理，而不是先看二手鸡汤。",
+            "body_en": "Start with the primary text, dialogues, aphorisms, and lecture notes instead of beginning with motivational paraphrases.",
+        },
+        {
+            "label": "Commentaries",
+            "title_zh": "经典注疏与思想史",
+            "title_en": "Commentaries",
+            "body_zh": "再用权威注疏、思想史和学术评论厘清概念差异、时代背景和翻译争议。",
+            "body_en": "Use commentaries, intellectual history, and academic interpretation to clarify context, conceptual differences, and translation disputes.",
+        },
+        {
+            "label": "Applied transfer",
+            "title_zh": "现实应用对照",
+            "title_en": "Applied transfer",
+            "body_zh": "把原典原则对照到政治、商业、教育、个人修身等现实场景，确认可迁移性。",
+            "body_en": "Then test the principle against politics, business, education, and self-cultivation to see what actually transfers.",
+        },
+    ],
+    "culture": [
+        {
+            "label": "Works and scripts",
+            "title_zh": "作品、剧本与访谈",
+            "title_en": "Works and scripts",
+            "body_zh": "优先回看作品本身、导演手记、脚本、长访谈和创作笔记。",
+            "body_en": "Start with the works themselves, scripts, notebooks, director commentary, and long interviews.",
+        },
+        {
+            "label": "Narrative choices",
+            "title_zh": "叙事与形式选择",
+            "title_en": "Narrative choices",
+            "body_zh": "把镜头、节奏、留白、角色关系和母题反复出现的地方当作证据节点。",
+            "body_en": "Treat recurring choices in rhythm, framing, silence, character tension, and motif as evidence nodes.",
+        },
+        {
+            "label": "Critical reception",
+            "title_zh": "评论史与时代回声",
+            "title_en": "Critical reception",
+            "body_zh": "最后再用评论史、影评、展览文字和时代回声补足解释空间。",
+            "body_en": "Then add criticism, exhibition texts, and reception history to widen interpretation.",
+        },
+    ],
+    "policy": [
+        {
+            "label": "Policy record",
+            "title_zh": "政策原文与公开讲话",
+            "title_en": "Policy record",
+            "body_zh": "优先看政策原文、公开讲话、回忆录和机构档案，而不是只看后来的评价。",
+            "body_en": "Start with policy texts, speeches, memoirs, and institutional archives rather than only later commentary.",
+        },
+        {
+            "label": "Governance episodes",
+            "title_zh": "制度落地节点",
+            "title_en": "Governance episodes",
+            "body_zh": "把关键改革、危机管理、协商和妥协节点作为制度判断的主要证据。",
+            "body_en": "Use reform episodes, crises, negotiations, and compromise decisions as the main evidence for governance logic.",
+        },
+        {
+            "label": "Historical evaluation",
+            "title_zh": "历史评价与比较研究",
+            "title_en": "Historical evaluation",
+            "body_zh": "最后再用政治史、比较研究和传记来判断长期效果与代价。",
+            "body_en": "Then add political history, comparative analysis, and biographies to assess long-run effects and trade-offs.",
+        },
+    ],
+}
 
 
 CATEGORY_INFO = {
     "商业领袖": {
         "id": "business",
         "theme": "资本配置、增长纪律与组织杠杆",
+        "theme_en": "Capital allocation, growth discipline, and organizational leverage",
         "signal": "用现金流、护城河和长期配置去看真正的企业质量。",
+        "signal_en": "Read real business quality through cash flow, moats, and long-horizon allocation.",
         "accent": "#2563eb",
     },
     "科技思想家": {
         "id": "technology",
         "theme": "技术路线、平台势能与工程判断",
+        "theme_en": "Technical direction, platform advantage, and engineering judgment",
         "signal": "从底层技术演进、分发与规模化约束去看产品机会。",
+        "signal_en": "Evaluate product opportunities through technical evolution, distribution, and scaling constraints.",
         "accent": "#0f766e",
     },
     "设计大师": {
         "id": "design",
         "theme": "体验秩序、材料语言与审美取舍",
+        "theme_en": "Experience order, material language, and aesthetic trade-offs",
         "signal": "把抽象理念压缩成可触达、可感知、可复用的设计语言。",
+        "signal_en": "Compress abstract ideas into design language that can be sensed, touched, and reused.",
         "accent": "#7c3aed",
     },
     "科学家": {
         "id": "science",
         "theme": "假设、证据与长期发现",
+        "theme_en": "Hypothesis, evidence, and long-horizon discovery",
         "signal": "从问题定义、实验设计和证据质量出发搭建认知。",
+        "signal_en": "Build understanding from problem definition, experiment design, and evidence quality.",
         "accent": "#0891b2",
     },
     "医学专家": {
         "id": "medical",
         "theme": "风险识别、临床判断与系统防控",
+        "theme_en": "Risk recognition, clinical judgment, and systemic prevention",
         "signal": "先排危险，再看证据，再决定行动优先级。",
+        "signal_en": "Rule out danger first, weigh evidence second, and decide action priority last.",
         "accent": "#db2777",
     },
     "思想家": {
         "id": "philosophy",
         "theme": "价值系统、意义建构与判断框架",
+        "theme_en": "Value systems, meaning-making, and judgment frameworks",
         "signal": "把复杂现实压缩成能反复调用的原则与提问方式。",
+        "signal_en": "Compress complex reality into reusable principles and repeatable questions.",
         "accent": "#b45309",
     },
     "文化创作者": {
         "id": "culture",
         "theme": "叙事张力、审美结构与人性观察",
+        "theme_en": "Narrative tension, aesthetic structure, and human observation",
         "signal": "把经验转译成作品，把作品再转译成理解世界的方法。",
+        "signal_en": "Turn experience into works, then turn works into methods for understanding the world.",
         "accent": "#c2410c",
     },
     "公共治理": {
         "id": "policy",
         "theme": "制度设计、协同治理与长期稳定",
+        "theme_en": "Institution design, cooperative governance, and long-term stability",
         "signal": "看清利益结构、执行路径和长期秩序的代价。",
+        "signal_en": "See the interest structure, execution path, and long-run cost of order.",
         "accent": "#475569",
     },
 }
 
 
 COURSE_BLUEPRINT = [
-    {"number": 1, "title": "思想体系总览", "focus": "建立全局图谱", "deliverable": "一张可复述的总地图"},
-    {"number": 2, "title": "核心概念①", "focus": "抓第一根支柱", "deliverable": "识别最重要的概念变量"},
-    {"number": 3, "title": "核心概念②", "focus": "抓第二根支柱", "deliverable": "理解概念之间如何联动"},
-    {"number": 4, "title": "核心概念③", "focus": "抓第三根支柱", "deliverable": "补齐这套系统的边界条件"},
-    {"number": 5, "title": "判断框架", "focus": "学会怎么判断", "deliverable": "一套可迁移的决策顺序"},
-    {"number": 6, "title": "实践案例", "focus": "看思想如何落地", "deliverable": "把抽象原则映射到真实场景"},
-    {"number": 7, "title": "思维模型工具箱", "focus": "提炼可复用工具", "deliverable": "一组随时可调用的模型"},
-    {"number": 8, "title": "价值体系与信仰", "focus": "回到底层信念", "deliverable": "分清原则与技巧的层级"},
-    {"number": 9, "title": "方法论·可操作系统", "focus": "把理解变成动作", "deliverable": "一套 30 天可执行的方法"},
-    {"number": 10, "title": "整合与行动", "focus": "完成知识闭环", "deliverable": "形成自己的行动版公式"},
+    {"number": 1, "title": "思想体系总览", "title_en": "System Overview", "focus": "建立全局图谱", "focus_en": "Build the whole map", "deliverable": "一张可复述的总地图", "deliverable_en": "A reusable map you can explain aloud"},
+    {"number": 2, "title": "核心概念①", "title_en": "Core Concept I", "focus": "抓第一根支柱", "focus_en": "Study the first pillar", "deliverable": "识别最重要的概念变量", "deliverable_en": "Identify the most important conceptual variable"},
+    {"number": 3, "title": "核心概念②", "title_en": "Core Concept II", "focus": "抓第二根支柱", "focus_en": "Study the second pillar", "deliverable": "理解概念之间如何联动", "deliverable_en": "Understand how the concepts interact"},
+    {"number": 4, "title": "核心概念③", "title_en": "Core Concept III", "focus": "抓第三根支柱", "focus_en": "Study the third pillar", "deliverable": "补齐这套系统的边界条件", "deliverable_en": "Recover the boundary conditions of the system"},
+    {"number": 5, "title": "判断框架", "title_en": "Judgment Framework", "focus": "学会怎么判断", "focus_en": "Learn how judgment is ordered", "deliverable": "一套可迁移的决策顺序", "deliverable_en": "A transferable order for decision-making"},
+    {"number": 6, "title": "实践案例", "title_en": "Practice Cases", "focus": "看思想如何落地", "focus_en": "See how the thinking lands in reality", "deliverable": "把抽象原则映射到真实场景", "deliverable_en": "Map abstract principles to real situations"},
+    {"number": 7, "title": "思维模型工具箱", "title_en": "Mental Models Toolkit", "focus": "提炼可复用工具", "focus_en": "Extract reusable tools", "deliverable": "一组随时可调用的模型", "deliverable_en": "A set of models you can call on quickly"},
+    {"number": 8, "title": "价值体系与信仰", "title_en": "Values and Belief System", "focus": "回到底层信念", "focus_en": "Return to the base beliefs", "deliverable": "分清原则与技巧的层级", "deliverable_en": "Separate principles from techniques"},
+    {"number": 9, "title": "方法论·可操作系统", "title_en": "Method as Operating System", "focus": "把理解变成动作", "focus_en": "Turn understanding into action", "deliverable": "一套 30 天可执行的方法", "deliverable_en": "A 30-day executable method"},
+    {"number": 10, "title": "整合与行动", "title_en": "Integration and Action", "focus": "完成知识闭环", "focus_en": "Close the knowledge loop", "deliverable": "形成自己的行动版公式", "deliverable_en": "Form your own action formula"},
 ]
 
 
@@ -147,6 +405,11 @@ def sentence(text: str) -> str:
     return f"{cleaned}。"
 
 
+def first_clean_line(text: str) -> str:
+    lines = [line.strip() for line in text.splitlines() if line.strip()]
+    return lines[0] if lines else text.strip()
+
+
 def parse_signature_question(summary: str) -> str:
     match = re.search(r"通过[“\"'‘]?(.+?)[”\"'’]?贯穿始终", summary)
     if match:
@@ -166,6 +429,33 @@ def load_bootstrap_root_html() -> str:
     current_cards = len(ROOT_CARD_RE.findall(current_html))
     if "<h2>" in current_html and "thinker-grid" in current_html and current_cards >= 50:
         return current_html
+
+
+def load_seed_catalog() -> dict:
+    candidate_paths = [CATALOG_PATH]
+    for path in candidate_paths:
+        if not path.exists():
+            continue
+        try:
+            data = json.loads(path.read_text(encoding="utf-8"))
+            if data.get("thinkers"):
+                return data
+        except Exception:
+            pass
+
+    try:
+        historical = subprocess.check_output(
+            ["git", "show", "HEAD:assets/course-catalog.json"],
+            cwd=BASE_DIR,
+            text=True,
+        )
+        data = json.loads(historical)
+        if data.get("thinkers"):
+            return data
+    except Exception:
+        pass
+
+    return {}
 
     try:
         return subprocess.check_output(
@@ -193,13 +483,24 @@ def iter_root_sections(root_html: str) -> list[tuple[str, str]]:
     return sections
 
 
-def build_lesson_cards(thinker_dir: Path, thinker_html: str, audio_texts: dict) -> list[dict]:
+def build_lesson_cards(thinker_dir: Path, thinker_html: str, audio_texts: dict, seed_lessons: list[dict] | None = None) -> list[dict]:
+    if seed_lessons:
+        return [
+            {
+                "number": lesson["number"],
+                "title": first_clean_line(lesson["title"]),
+                "subtitle": first_clean_line(lesson.get("focus") or lesson.get("subtitle") or COURSE_BLUEPRINT[lesson["number"] - 1]["focus"]),
+                "summary": audio_texts.get(str(lesson["number"])) or audio_texts.get(lesson["number"]) or lesson.get("summary", ""),
+            }
+            for lesson in seed_lessons
+        ]
+
     cards = sorted(
         (
             {
                 "number": int(number),
                 "title": strip_html(title_text),
-                "subtitle": strip_html(subtitle_text),
+                "subtitle": first_clean_line(strip_html(subtitle_text)),
                 "summary": audio_texts.get(number, ""),
             }
             for number, title_text, subtitle_text in LESSON_CARD_RE.findall(thinker_html)
@@ -220,22 +521,177 @@ def build_lesson_cards(thinker_dir: Path, thinker_html: str, audio_texts: dict) 
             {
                 "number": lesson_number,
                 "title": strip_html(title_match.group(1)) if title_match else blueprint["title"],
-                "subtitle": strip_html(subtitle_match.group(1)) if subtitle_match else blueprint["focus"],
+                "subtitle": first_clean_line(strip_html(subtitle_match.group(1))) if subtitle_match else blueprint["focus"],
                 "summary": audio_texts.get(str(lesson_number), ""),
             }
         )
     return cards
 
 
+def slug_to_title(slug: str) -> str:
+    return " ".join(part.capitalize() for part in slug.split("_"))
+
+
+def render_lang_switch() -> str:
+    return """
+    <div class="lang-switch">
+      <button type="button" class="lang-pill" data-lang-target="dual">ZH + EN</button>
+      <button type="button" class="lang-pill" data-lang-target="zh">中文</button>
+      <button type="button" class="lang-pill" data-lang-target="en">EN</button>
+    </div>
+    """
+
+
+def dual_block(tag: str, zh_text: str, en_text: str, class_name: str = "") -> str:
+    class_attr = f' class="{class_name}"' if class_name else ""
+    return (
+        f"<{tag}{class_attr}><span class=\"copy-zh\">{escape(zh_text)}</span>"
+        f"<span class=\"copy-en\">{escape(en_text)}</span></{tag}>"
+    )
+
+
+def dual_label_block(zh_label: str, en_label: str, zh_body: str, en_body: str) -> str:
+    return (
+        "<div class=\"dual-copy-block\">"
+        f"<strong class=\"copy-zh\">{escape(zh_label)}</strong>"
+        f"<strong class=\"copy-en\">{escape(en_label)}</strong>"
+        f"<p class=\"copy-zh\">{escape(zh_body)}</p>"
+        f"<p class=\"copy-en\">{escape(en_body)}</p>"
+        "</div>"
+    )
+
+
+def parse_course_doc(slug: str) -> dict:
+    path = COURSE_DOCS_DIR / f"{slug}.md"
+    if not path.exists():
+        return {
+            "core_values": [],
+            "positions": [],
+            "decision_steps": [],
+            "cases": [],
+            "quote": "",
+        }
+
+    text = path.read_text(encoding="utf-8")
+
+    def section_slice(title: str) -> str:
+        match = re.search(rf"### {re.escape(title)}\n(.*?)(?=\n### |\n---|\Z)", text, re.S)
+        return match.group(1) if match else ""
+
+    values_block = section_slice("核心价值观")
+    positions_block = section_slice("关键立场")
+    steps_block = section_slice("决策框架")
+    cases_block = section_slice("经验案例")
+    quote_block = section_slice("经典语录")
+
+    values = re.findall(r"^\d+\.\s+(.+)$", values_block, re.M)
+    positions = [
+        {"label": label.strip(), "body": body.strip()}
+        for label, body in re.findall(r"^- \*\*(.+?)\*\*：(.+)$", positions_block, re.M)
+    ]
+    steps = [item.strip() for item in re.findall(r"^- \*\*step\d+\*\*：(.+)$", steps_block, re.M)]
+    quote_match = re.search(r"> (.+)", quote_block)
+
+    case_pattern = re.compile(
+        r"\*\*案例\d+：(.+?)\*\*\n- 教训：(.+?)\n- 结果：(.+?)(?:\n|$)",
+        re.S,
+    )
+    cases = [
+        {
+            "title": title.strip(),
+            "lesson": lesson.strip(),
+            "result": result.strip(),
+        }
+        for title, lesson, result in case_pattern.findall(cases_block)
+    ]
+    return {
+        "core_values": [item.strip() for item in values[:6]],
+        "positions": positions[:6],
+        "decision_steps": steps[:5],
+        "cases": cases[:3],
+        "quote": quote_match.group(1).strip() if quote_match else "",
+    }
+
+
+def english_brief(thinker: dict, lesson_number: int, context: dict) -> dict:
+    blueprint = COURSE_BLUEPRINT[lesson_number - 1]
+    tags = thinker["tags"]
+    name_en = thinker["name_en"]
+    question = thinker["guiding_question_en"]
+    summary = (
+        f"This lesson uses {name_en} to train a repeatable way of seeing {tags[0]}, {tags[1]}, and {tags[2]} as one system. "
+        f"The point is not to imitate the tone, but to learn the order of judgment behind the voice."
+    )
+    cards = [
+        ("Core lens", f"Read the issue through {tags[0]} before chasing noise or surface-level activity."),
+        ("Question to start with", f"Begin with: {question}"),
+        ("Learning outcome", f"By the end, you should be able to restate the lesson in your own work context."),
+    ]
+    takeaways = [
+        f"Track {tags[0]} as a structural variable instead of a slogan.",
+        f"Use {tags[1]} to inspect compounding, rhythm, or second-order effects.",
+        f"Let {tags[2]} define the boundary conditions and timing of action.",
+        f"Translate the lesson into one choice you are facing this week.",
+    ]
+    misreads = [
+        "Confusing a memorable quote with the real decision process behind it.",
+        "Copying the style of the thinker without checking the constraints of your own context.",
+        "Using a single principle too rigidly instead of letting the system of principles interact.",
+    ]
+    actions = [
+        f"Write one paragraph on how {tags[0]} changes the way you see your current decision.",
+        f"List the main constraint that {name_en} would inspect before acting.",
+        "Turn the lesson into one concrete operating rule you can test within seven days.",
+    ]
+    return {
+        "headline": blueprint["title_en"],
+        "focus": blueprint["focus_en"],
+        "deliverable": blueprint["deliverable_en"],
+        "summary": summary,
+        "cards": cards,
+        "takeaways": takeaways,
+        "misreads": misreads,
+        "actions": actions,
+    }
+
+
+def thinker_source_tracks(thinker: dict) -> list[dict]:
+    return SOURCE_TRACKS.get(thinker["category"], SOURCE_TRACKS["philosophy"])
+
+
+def lesson_title_zh(thinker: dict, lesson_number: int) -> str:
+    name = thinker["name"]
+    tags = thinker["tags"]
+    if lesson_number == 1:
+        return f"{name}思想体系总览"
+    if lesson_number == 2:
+        return f"核心概念：{tags[0]}"
+    if lesson_number == 3:
+        return f"核心概念：{tags[1]}"
+    if lesson_number == 4:
+        return f"核心概念：{tags[2]}"
+    if lesson_number == 5:
+        return f"{name}的判断框架"
+    if lesson_number == 6:
+        return f"从经验中学习：{name}的实践案例"
+    if lesson_number == 7:
+        return f"{name}的思维模型工具箱"
+    if lesson_number == 8:
+        return f"价值体系：{name}的信仰与原则"
+    if lesson_number == 9:
+        return f"方法论：{name}的可操作系统"
+    return f"整合与行动：成为{name}式的思考者"
+
+
 def bootstrap_catalog() -> dict:
-    root_html = load_bootstrap_root_html()
     thinkers: list[dict] = []
     category_counts: dict[str, int] = {}
+    seed_catalog = load_seed_catalog()
+    seed_thinkers = seed_catalog.get("thinkers") or []
 
-    for category_label, grid_html in iter_root_sections(root_html):
-        category_meta = CATEGORY_INFO[category_label]
-        cards = ROOT_CARD_RE.findall(grid_html)
-        for slug, name, title, tags_html in cards:
+    if seed_thinkers:
+        for seed in seed_thinkers:
+            slug = seed["id"]
             thinker_dir = BASE_DIR / slug
             thinker_index = thinker_dir / "index.html"
             audio_texts_path = thinker_dir / "audio_texts.json"
@@ -244,30 +700,99 @@ def bootstrap_catalog() -> dict:
 
             thinker_html = thinker_index.read_text(encoding="utf-8")
             audio_texts = json.loads(audio_texts_path.read_text(encoding="utf-8"))
-            lesson_cards = build_lesson_cards(thinker_dir, thinker_html, audio_texts)
-            tags = [strip_html(tag) for tag in re.findall(r"<span class=tt>(.*?)</span>", tags_html)]
+            lesson_cards = build_lesson_cards(thinker_dir, thinker_html, audio_texts, seed.get("lessons"))
             signature_match = SIGNATURE_RE.search(thinker_html)
             signature = strip_html(signature_match.group(1)) if signature_match else ""
-            guiding_question = parse_signature_question(audio_texts.get("1", ""))
-            formula = parse_formula(audio_texts.get("10", ""), tags)
+            tags = seed.get("tags") or []
+            category_label = seed.get("category_label") or next(
+                (label for label, info in CATEGORY_INFO.items() if info["id"] == seed["category"]),
+                "思想家",
+            )
+            category_meta = CATEGORY_INFO.get(category_label, CATEGORY_INFO["思想家"])
+            guiding_question = seed.get("guiding_question") or parse_signature_question(audio_texts.get("1", ""))
+            formula = seed.get("formula") or parse_formula(audio_texts.get("10", ""), tags)
+            course_doc = parse_course_doc(slug)
+            meta = CELEB_META_BY_ID.get(slug, {})
+            name_en = meta.get("name_en") or seed.get("name_en") or slug_to_title(slug)
+            signature = course_doc.get("quote") or meta.get("signature") or seed.get("quote") or signature
 
             thinker = {
                 "id": slug,
-                "name": strip_html(name),
-                "title": strip_html(title),
+                "name": seed["name"],
+                "name_en": name_en,
+                "title": seed["title"],
                 "quote": signature,
                 "guiding_question": guiding_question,
+                "guiding_question_en": seed.get("guiding_question_en") or "What should be examined first when this problem becomes complex?",
                 "formula": formula,
                 "category": category_meta["id"],
                 "category_label": category_label,
-                "category_theme": category_meta["theme"],
-                "category_signal": category_meta["signal"],
-                "accent": category_meta["accent"],
+                "category_label_en": seed.get("category_label_en") or CATEGORY_LABEL_EN[category_label],
+                "category_theme": seed.get("category_theme") or category_meta["theme"],
+                "category_theme_en": seed.get("category_theme_en") or category_meta["theme_en"],
+                "category_signal": seed.get("category_signal") or category_meta["signal"],
+                "category_signal_en": seed.get("category_signal_en") or category_meta["signal_en"],
+                "accent": seed.get("accent") or category_meta["accent"],
                 "tags": tags[:3],
+                "course_doc": course_doc,
                 "lessons": lesson_cards,
             }
+            for lesson in thinker["lessons"]:
+                lesson["title"] = lesson_title_zh(thinker, lesson["number"])
+                lesson["subtitle"] = COURSE_BLUEPRINT[lesson["number"] - 1]["focus"]
             thinkers.append(thinker)
             category_counts[category_meta["id"]] = category_counts.get(category_meta["id"], 0) + 1
+    else:
+        root_html = load_bootstrap_root_html()
+        for category_label, grid_html in iter_root_sections(root_html):
+            category_meta = CATEGORY_INFO[category_label]
+            cards = ROOT_CARD_RE.findall(grid_html)
+            for slug, name, title, tags_html in cards:
+                thinker_dir = BASE_DIR / slug
+                thinker_index = thinker_dir / "index.html"
+                audio_texts_path = thinker_dir / "audio_texts.json"
+                if not thinker_index.exists() or not audio_texts_path.exists():
+                    continue
+
+                thinker_html = thinker_index.read_text(encoding="utf-8")
+                audio_texts = json.loads(audio_texts_path.read_text(encoding="utf-8"))
+                lesson_cards = build_lesson_cards(thinker_dir, thinker_html, audio_texts)
+                tags = [strip_html(tag) for tag in re.findall(r"<span class=tt>(.*?)</span>", tags_html)]
+                signature_match = SIGNATURE_RE.search(thinker_html)
+                signature = strip_html(signature_match.group(1)) if signature_match else ""
+                guiding_question = parse_signature_question(audio_texts.get("1", ""))
+                formula = parse_formula(audio_texts.get("10", ""), tags)
+                course_doc = parse_course_doc(slug)
+                meta = CELEB_META_BY_ID.get(slug, {})
+                name_en = meta.get("name_en") or slug_to_title(slug)
+                signature = course_doc.get("quote") or meta.get("signature") or signature
+
+                thinker = {
+                    "id": slug,
+                    "name": strip_html(name),
+                    "name_en": name_en,
+                    "title": strip_html(title),
+                    "quote": signature,
+                    "guiding_question": guiding_question,
+                    "guiding_question_en": "What should be examined first when this problem becomes complex?",
+                    "formula": formula,
+                    "category": category_meta["id"],
+                    "category_label": category_label,
+                    "category_label_en": CATEGORY_LABEL_EN[category_label],
+                    "category_theme": category_meta["theme"],
+                    "category_theme_en": category_meta["theme_en"],
+                    "category_signal": category_meta["signal"],
+                    "category_signal_en": category_meta["signal_en"],
+                    "accent": category_meta["accent"],
+                    "tags": tags[:3],
+                    "course_doc": course_doc,
+                    "lessons": lesson_cards,
+                }
+                for lesson in thinker["lessons"]:
+                    lesson["title"] = lesson_title_zh(thinker, lesson["number"])
+                    lesson["subtitle"] = COURSE_BLUEPRINT[lesson["number"] - 1]["focus"]
+                thinkers.append(thinker)
+                category_counts[category_meta["id"]] = category_counts.get(category_meta["id"], 0) + 1
 
     categories = []
     for label, info in CATEGORY_INFO.items():
@@ -275,8 +800,11 @@ def bootstrap_catalog() -> dict:
             {
                 "id": info["id"],
                 "label": label,
+                "label_en": CATEGORY_LABEL_EN[label],
                 "theme": info["theme"],
+                "theme_en": info["theme_en"],
                 "signal": info["signal"],
+                "signal_en": info["signal_en"],
                 "accent": info["accent"],
                 "count": category_counts.get(info["id"], 0),
             }
@@ -289,7 +817,7 @@ def bootstrap_catalog() -> dict:
             featured_ids.append(thinker_id)
 
     return {
-        "version": 4,
+        "version": 5,
         "stats": {
             "thinkers": len(thinkers),
             "lessons": len(thinkers) * len(COURSE_BLUEPRINT),
@@ -307,7 +835,7 @@ def load_catalog() -> dict:
         data = json.loads(CATALOG_PATH.read_text(encoding="utf-8"))
         thinkers = data.get("thinkers") or []
         has_lessons = bool(thinkers and thinkers[0].get("lessons"))
-        if data.get("version", 0) >= 4 and thinkers and has_lessons:
+        if data.get("version", 0) >= 5 and thinkers and has_lessons:
             return data
     return bootstrap_catalog()
 
@@ -565,6 +1093,35 @@ def render_tags(tags: list[str], class_name: str = "tag") -> str:
     return "".join(f'<span class="{class_name}">{escape(tag)}</span>' for tag in tags)
 
 
+def lesson_title_en(thinker: dict, lesson_number: int) -> str:
+    name_en = thinker["name_en"]
+    tags = thinker["tags"]
+    if lesson_number == 1:
+        return f"{name_en} System Overview"
+    if lesson_number == 2:
+        return f"Core Concept I: {tags[0]}"
+    if lesson_number == 3:
+        return f"Core Concept II: {tags[1]}"
+    if lesson_number == 4:
+        return f"Core Concept III: {tags[2]}"
+    if lesson_number == 5:
+        return f"{name_en} Judgment Framework"
+    if lesson_number == 6:
+        return f"Practice Cases with {name_en}"
+    if lesson_number == 7:
+        return f"{name_en} Mental Models Toolkit"
+    if lesson_number == 8:
+        return f"Values and Beliefs of {name_en}"
+    if lesson_number == 9:
+        return f"{name_en} as an Operating System"
+    return f"Integrate {name_en} into Action"
+
+
+def lesson_subtitle_en(thinker: dict, lesson_number: int) -> str:
+    blueprint = COURSE_BLUEPRINT[lesson_number - 1]
+    return blueprint["focus_en"]
+
+
 def render_root_index(catalog: dict) -> str:
     thinkers_by_category: dict[str, list[dict]] = {}
     for thinker in catalog["thinkers"]:
@@ -576,11 +1133,16 @@ def render_root_index(catalog: dict) -> str:
             f"""
             <article class="domain-card" style="--domain-accent:{category['accent']}">
               <div class="domain-top">
-                <strong>{escape(category['label'])}</strong>
-                <span>{category['count']} 位智者</span>
+                <div>
+                  <strong class="copy-zh">{escape(category['label'])}</strong>
+                  <strong class="copy-en">{escape(category['label_en'])}</strong>
+                </div>
+                <span>{category['count']} minds</span>
               </div>
-              <p>{escape(category['theme'])}</p>
-              <small>{escape(category['signal'])}</small>
+              <p class="copy-zh">{escape(category['theme'])}</p>
+              <p class="copy-en">{escape(category['theme_en'])}</p>
+              <small class="copy-zh">{escape(category['signal'])}</small>
+              <small class="copy-en">{escape(category['signal_en'])}</small>
             </article>
             """
         )
@@ -591,9 +1153,12 @@ def render_root_index(catalog: dict) -> str:
             f"""
             <article class="blueprint-card">
               <span class="badge">第{item['number']}课</span>
-              <strong>{escape(item['title'])}</strong>
-              <p>{escape(item['focus'])}</p>
-              <small>{escape(item['deliverable'])}</small>
+              <strong class="copy-zh">{escape(item['title'])}</strong>
+              <strong class="copy-en">{escape(item['title_en'])}</strong>
+              <p class="copy-zh">{escape(item['focus'])}</p>
+              <p class="copy-en">{escape(item['focus_en'])}</p>
+              <small class="copy-zh">{escape(item['deliverable'])}</small>
+              <small class="copy-en">{escape(item['deliverable_en'])}</small>
             </article>
             """
         )
@@ -608,14 +1173,19 @@ def render_root_index(catalog: dict) -> str:
                 <a href="./{thinker['id']}/" class="tc">
                   <div>
                     <b>{escape(thinker['name'])}</b><br>
-                    <small>{escape(thinker['title'])}</small><br>
+                    <small class="copy-zh">{escape(thinker['title'])}</small>
+                    <small class="copy-en">{escape(thinker['name_en'])}</small><br>
                     {tags}<br>
-                    <small class="course-note">10门课程 · 1 套完整判断系统</small>
+                    <small class="course-note copy-zh">10门课程 · 1 套完整判断系统</small>
+                    <small class="course-note copy-en">10 lessons · one reusable judgment system</small>
                   </div>
                 </a>
                 """
             )
-        category_sections.append(f"<h2>{escape(category_label)}</h2><div class=\"thinker-grid\">{''.join(cards)}</div>")
+        category_sections.append(
+            f"<h2><span class=\"copy-zh\">{escape(category_label)}</span><span class=\"copy-en\">"
+            f"{escape(CATEGORY_LABEL_EN[category_label])}</span></h2><div class=\"thinker-grid\">{''.join(cards)}</div>"
+        )
 
     return f"""<!DOCTYPE html>
 <html lang="zh-CN">
@@ -625,20 +1195,22 @@ def render_root_index(catalog: dict) -> str:
 <title>智者思想课程 — Digital Sage</title>
 <link rel="stylesheet" href="assets/course-theme.css">
 </head>
-<body class="catalog-page">
+<body class="catalog-page" data-lang="dual">
 <nav>
   <a href="https://www.digitalsage.cloud/">主站首页</a>
   <a href="./index.html" class="active">思想课程</a>
   <a href="https://www.digitalsage.cloud/3d.html">3D 殿堂</a>
+  {render_lang_switch()}
 </nav>
 <div class="c">
   <section class="hero">
-    <h1>🏛️ 智者思想课程</h1>
-    <p>100 位智者 × 10 门系统课程。不是碎片摘录，而是从总览、概念、框架、案例到行动的完整学习路径。</p>
+    <h1><span class="copy-zh">🏛️ 智者思想课程</span><span class="copy-en">🏛️ Digital Sage Curriculum</span></h1>
+    <p class="copy-zh">100 位智者 × 10 门系统课程。不是碎片摘录，而是从总览、概念、框架、案例到行动的完整学习路径。</p>
+    <p class="copy-en">100 minds × 10 structured lessons each. This is not a pile of quotes. It is a full learning arc from overview to concepts, frameworks, cases, and action.</p>
     <div class="stats">
-      <div class="stat"><div class="sn">{catalog['stats']['thinkers']}</div><div class="sl">位思想家</div></div>
-      <div class="stat"><div class="sn">{catalog['stats']['lessons']}</div><div class="sl">门课程</div></div>
-      <div class="stat"><div class="sn">{catalog['stats']['categories']}</div><div class="sl">大领域</div></div>
+      <div class="stat"><div class="sn">{catalog['stats']['thinkers']}</div><div class="sl"><span class="copy-zh">位思想家</span><span class="copy-en">minds</span></div></div>
+      <div class="stat"><div class="sn">{catalog['stats']['lessons']}</div><div class="sl"><span class="copy-zh">门课程</span><span class="copy-en">lessons</span></div></div>
+      <div class="stat"><div class="sn">{catalog['stats']['categories']}</div><div class="sl"><span class="copy-zh">大领域</span><span class="copy-en">domains</span></div></div>
     </div>
   </section>
 
@@ -646,9 +1218,10 @@ def render_root_index(catalog: dict) -> str:
     <div class="section-head">
       <div>
         <div class="eyebrow">Spark 2 Curriculum</div>
-        <h3>每一位智者，都被拆成同一套 10 课学习系统。</h3>
+        <h3><span class="copy-zh">每一位智者，都被拆成同一套 10 课学习系统。</span><span class="copy-en">Every thinker is broken into the same 10-lesson learning system.</span></h3>
       </div>
-      <p>先建立全局地图，再拆三根支柱，接着进入判断框架、实践案例、工具箱、价值系统和行动闭环。课程之间能横向比较，课程内部能纵向深入。</p>
+      <p class="copy-zh">先建立全局地图，再拆三根支柱，接着进入判断框架、实践案例、工具箱、价值系统和行动闭环。课程之间能横向比较，课程内部能纵向深入。</p>
+      <p class="copy-en">Start with the whole map, then study the three pillars, then move into judgment order, live cases, mental tools, values, and action. The format stays comparable across all 100 minds.</p>
     </div>
     <div class="blueprint-grid">{''.join(blueprint_cards)}</div>
     <div class="domain-grid">{''.join(category_cards)}</div>
@@ -656,17 +1229,33 @@ def render_root_index(catalog: dict) -> str:
 
   {''.join(category_sections)}
 </div>
+{LANGUAGE_SWITCH_SCRIPT}
 </body>
 </html>
 """
 
 
-def thinker_summary_cards(thinker: dict) -> list[tuple[str, str]]:
+def thinker_summary_cards(thinker: dict) -> list[tuple[str, str, str, str]]:
     scenarios = CATEGORY_SCENARIOS[thinker["category"]]
     return [
-        ("适合带着什么问题来学", f"优先带着这类问题进入：{scenarios[0]}"),
-        ("这一套课真正训练什么", f"训练你把 {thinker['guiding_question']} 变成稳定的判断起点。"),
-        ("学完之后能迁移到哪里", f"最终不是模仿 {thinker['name']}，而是把 {', '.join(thinker['tags'])} 迁移到你自己的业务和选择。"),
+        (
+            "适合带着什么问题来学",
+            "What problem should you bring into the course?",
+            f"优先带着这类问题进入：{scenarios[0]}",
+            f"Start with a live problem such as this: {scenarios[0]}",
+        ),
+        (
+            "这一套课真正训练什么",
+            "What does this curriculum actually train?",
+            f"训练你把 {thinker['guiding_question']} 变成稳定的判断起点。",
+            f"It trains you to turn this question into a stable starting point: {thinker['guiding_question_en']}",
+        ),
+        (
+            "学完之后能迁移到哪里",
+            "Where does it transfer?",
+            f"最终不是模仿 {thinker['name']}，而是把 {', '.join(thinker['tags'])} 迁移到你自己的业务和选择。",
+            f"The goal is not imitation. It is to move {', '.join(thinker['tags'])} into your own work, decisions, and operating rhythm.",
+        ),
     ]
 
 
@@ -674,19 +1263,47 @@ def render_thinker_index(thinker: dict) -> str:
     summary_cards = "".join(
         f"""
         <article class="learning-card">
-          <strong>{escape(title)}</strong>
-          <p>{escape(body)}</p>
+          <strong class="copy-zh">{escape(title_zh)}</strong>
+          <strong class="copy-en">{escape(title_en)}</strong>
+          <p class="copy-zh">{escape(body_zh)}</p>
+          <p class="copy-en">{escape(body_en)}</p>
         </article>
         """
-        for title, body in thinker_summary_cards(thinker)
+        for title_zh, title_en, body_zh, body_en in thinker_summary_cards(thinker)
+    )
+    source_cards = "".join(
+        f"""
+        <article class="source-card">
+          <strong class="copy-zh">{escape(item['title_zh'])}</strong>
+          <strong class="copy-en">{escape(item['title_en'])}</strong>
+          <p class="copy-zh">{escape(item['body_zh'])}</p>
+          <p class="copy-en">{escape(item['body_en'])}</p>
+        </article>
+        """
+        for item in thinker_source_tracks(thinker)
+    )
+    case_cards = "".join(
+        f"""
+        <article class="case-card">
+          <strong>{escape(case['title'])}</strong>
+          <p class="copy-zh">{escape(case['lesson'])}</p>
+          <p class="copy-en">{escape('Lesson: ' + case['lesson'])}</p>
+          <small class="copy-zh">{escape(case['result'])}</small>
+          <small class="copy-en">{escape('Outcome: ' + case['result'])}</small>
+        </article>
+        """
+        for case in thinker["course_doc"]["cases"]
     )
     module_cards = "".join(
         f"""
         <article class="module-card">
           <span class="badge">第{lesson['number']}课</span>
-          <strong>{escape(lesson['title'])}</strong>
-          <p>{escape(COURSE_BLUEPRINT[lesson['number'] - 1]['focus'])}</p>
-          <small>{escape(COURSE_BLUEPRINT[lesson['number'] - 1]['deliverable'])}</small>
+          <strong class="copy-zh">{escape(lesson['title'])}</strong>
+          <strong class="copy-en">{escape(lesson_title_en(thinker, lesson['number']))}</strong>
+          <p class="copy-zh">{escape(COURSE_BLUEPRINT[lesson['number'] - 1]['focus'])}</p>
+          <p class="copy-en">{escape(COURSE_BLUEPRINT[lesson['number'] - 1]['focus_en'])}</p>
+          <small class="copy-zh">{escape(COURSE_BLUEPRINT[lesson['number'] - 1]['deliverable'])}</small>
+          <small class="copy-en">{escape(COURSE_BLUEPRINT[lesson['number'] - 1]['deliverable_en'])}</small>
         </article>
         """
         for lesson in thinker["lessons"]
@@ -696,9 +1313,12 @@ def render_thinker_index(thinker: dict) -> str:
         <a href="{lesson['number']}.html" class="ci-card">
           <div class="ci-num">第{lesson['number']}课</div>
           <div>
-            <div class="ci-title">{escape(lesson['title'])}</div>
-            <div class="ci-sub">{escape(lesson['subtitle'])}</div>
-            <div class="mini-note">{escape(COURSE_BLUEPRINT[lesson['number'] - 1]['deliverable'])}</div>
+            <div class="ci-title copy-zh">{escape(lesson['title'])}</div>
+            <div class="ci-title copy-en">{escape(lesson_title_en(thinker, lesson['number']))}</div>
+            <div class="ci-sub copy-zh">{escape(lesson['subtitle'])}</div>
+            <div class="ci-sub copy-en">{escape(lesson_subtitle_en(thinker, lesson['number']))}</div>
+            <div class="mini-note copy-zh">{escape(COURSE_BLUEPRINT[lesson['number'] - 1]['deliverable'])}</div>
+            <div class="mini-note copy-en">{escape(COURSE_BLUEPRINT[lesson['number'] - 1]['deliverable_en'])}</div>
           </div>
         </a>
         """
@@ -713,13 +1333,15 @@ def render_thinker_index(thinker: dict) -> str:
 <title>{escape(thinker['name'])} · 10门思想课程 — Digital Sage</title>
 <link rel="stylesheet" href="../assets/course-theme.css">
 </head>
-<body class="thinker-page">
+<body class="thinker-page" data-lang="dual">
 <div class="container">
   <a href="../index.html" class="back-link">← 返回课程总目录</a>
+  {render_lang_switch()}
 
   <section class="header">
-    <h1>{escape(thinker['name'])} · 思想体系</h1>
-    <p class="subtitle">{escape(thinker['title'])} · 10 门系统课程</p>
+    <h1><span class="copy-zh">{escape(thinker['name'])} · 思想体系</span><span class="copy-en">{escape(thinker['name_en'])} · Curriculum</span></h1>
+    <p class="subtitle copy-zh">{escape(thinker['title'])} · 10 门系统课程</p>
+    <p class="subtitle copy-en">{escape(thinker['category_label_en'])} · 10 structured lessons</p>
     <div class="tags">{render_tags(thinker['tags'])}</div>
     <p class="signature">"{escape(thinker['quote'])}"</p>
   </section>
@@ -730,15 +1352,20 @@ def render_thinker_index(thinker: dict) -> str:
     <div class="section-head">
       <div>
         <div class="eyebrow">Curriculum Arc</div>
-        <h3>{escape(thinker['name'])} 的 10 课，不是知识点列表，而是一条递进学习弧线。</h3>
+        <h3><span class="copy-zh">{escape(thinker['name'])} 的 10 课，不是知识点列表，而是一条递进学习弧线。</span><span class="copy-en">The 10 lessons for {escape(thinker['name_en'])} form a progression, not a list of quotes.</span></h3>
       </div>
-      <p>前四课建立图谱与三根支柱，第 5 到 7 课把判断框架和工具箱拆开，第 8 到 10 课回到价值系统、可执行方法和个人行动整合。</p>
+      <p class="copy-zh">前四课建立图谱与三根支柱，第 5 到 7 课把判断框架和工具箱拆开，第 8 到 10 课回到价值系统、可执行方法和个人行动整合。</p>
+      <p class="copy-en">The first four lessons build the map and three pillars. Lessons five to seven open up judgment order and tools. The final three return to values, operating method, and integration.</p>
     </div>
     <div class="module-ladder">{module_cards}</div>
   </section>
 
+  <section class="source-grid">{source_cards}</section>
+  <section class="case-grid">{case_cards}</section>
+
   <div class="course-grid">{course_cards}</div>
 </div>
+{LANGUAGE_SWITCH_SCRIPT}
 </body>
 </html>
 """
@@ -746,46 +1373,104 @@ def render_thinker_index(thinker: dict) -> str:
 
 def render_lesson_page(thinker: dict, lesson_number: int) -> str:
     context = course_contexts(thinker, lesson_number)
+    brief_en = english_brief(thinker, lesson_number, context)
     lesson = context["lesson"]
     prev_link = f'{lesson_number - 1}.html' if lesson_number > 1 else ""
     next_link = f'{lesson_number + 1}.html' if lesson_number < 10 else ""
     cards = "".join(
         f"""
         <article class="spark-card">
-          <strong>{escape(title)}</strong>
-          <p>{escape(body)}</p>
+          <strong class="copy-zh">{escape(title)}</strong>
+          <strong class="copy-en">{escape(title_en)}</strong>
+          <p class="copy-zh">{escape(body)}</p>
+          <p class="copy-en">{escape(body_en)}</p>
         </article>
         """
-        for title, body in context["cards"]
+        for (title, body), (title_en, body_en) in zip(context["cards"], brief_en["cards"])
     )
-    bullets = "".join(f"<li>{escape(item.strip())}</li>" for item in context["bullets"])
-    misreads = "".join(f"<li>{escape(item.strip())}</li>" for item in context["misreads"])
-    actions = "".join(f"<li>{escape(item.strip())}</li>" for item in context["actions"])
+    bullets = "".join(
+        f"<li><span class=\"copy-zh\">{escape(item.strip())}</span><span class=\"copy-en\">{escape(en_item.strip())}</span></li>"
+        for item, en_item in zip(context["bullets"], brief_en["takeaways"])
+    )
+    misreads = "".join(
+        f"<li><span class=\"copy-zh\">{escape(item.strip())}</span><span class=\"copy-en\">{escape(en_item.strip())}</span></li>"
+        for item, en_item in zip(context["misreads"], brief_en["misreads"])
+    )
+    actions = "".join(
+        f"<li><span class=\"copy-zh\">{escape(item.strip())}</span><span class=\"copy-en\">{escape(en_item.strip())}</span></li>"
+        for item, en_item in zip(context["actions"], brief_en["actions"])
+    )
     scenario_cards = "".join(
         f"""
         <article class="capsule">
-          <strong>应用场景 {index + 1}</strong>
-          <p>{escape(text)}</p>
+          <strong class="copy-zh">应用场景 {index + 1}</strong>
+          <strong class="copy-en">Use case {index + 1}</strong>
+          <p class="copy-zh">{escape(text)}</p>
+          <p class="copy-en">{escape('Translate the framework into a live operating situation and inspect the constraint before moving.')}</p>
         </article>
         """
         for index, text in enumerate(context["scenarios"])
     )
+    case_cards = "".join(
+        f"""
+        <article class="case-card">
+          <strong>{escape(case['title'])}</strong>
+          <p class="copy-zh">{escape(case['lesson'])}</p>
+          <p class="copy-en">{escape('Lesson: ' + case['lesson'])}</p>
+          <small class="copy-zh">{escape(case['result'])}</small>
+          <small class="copy-en">{escape('Outcome: ' + case['result'])}</small>
+        </article>
+        """
+        for case in thinker["course_doc"]["cases"]
+    )
+    source_cards = "".join(
+        f"""
+        <article class="source-card">
+          <strong class="copy-zh">{escape(item['title_zh'])}</strong>
+          <strong class="copy-en">{escape(item['title_en'])}</strong>
+          <p class="copy-zh">{escape(item['body_zh'])}</p>
+          <p class="copy-en">{escape(item['body_en'])}</p>
+        </article>
+        """
+        for item in thinker_source_tracks(thinker)
+    )
+    evidence_items = "".join(
+        f"<li><span class=\"copy-zh\">{escape(step)}</span><span class=\"copy-en\">{escape('Verification path: ' + step)}</span></li>"
+        for step in thinker["course_doc"]["decision_steps"][:5]
+    )
+    values_items = "".join(
+        f"<li><span class=\"copy-zh\">{escape(value)}</span><span class=\"copy-en\">{escape('Core value: ' + value)}</span></li>"
+        for value in thinker["course_doc"]["core_values"][:5]
+    )
+    positions_items = "".join(
+        f"<li><span class=\"copy-zh\">{escape(item['label'])}：{escape(item['body'])}</span>"
+        f"<span class=\"copy-en\">{escape(item['label'] + ': ' + item['body'])}</span></li>"
+        for item in thinker["course_doc"]["positions"][:5]
+    )
     progress_cards = (
         f"""
         <article class="kpi-card">
-          <span>课程定位</span>
-          <strong>{escape(context['blueprint']['focus'])}</strong>
-          <p>{escape(context['blueprint']['deliverable'])}</p>
+          <span class="copy-zh">课程定位</span>
+          <span class="copy-en">Lesson role</span>
+          <strong class="copy-zh">{escape(context['blueprint']['focus'])}</strong>
+          <strong class="copy-en">{escape(brief_en['focus'])}</strong>
+          <p class="copy-zh">{escape(context['blueprint']['deliverable'])}</p>
+          <p class="copy-en">{escape(brief_en['deliverable'])}</p>
         </article>
         <article class="kpi-card">
-          <span>关键追问</span>
-          <strong>{escape(context['question'])}</strong>
-          <p>这是 {escape(thinker['name'])} 在复杂问题前会先回到的起点。</p>
+          <span class="copy-zh">关键追问</span>
+          <span class="copy-en">Key opening question</span>
+          <strong class="copy-zh">{escape(context['question'])}</strong>
+          <strong class="copy-en">{escape(thinker['guiding_question_en'])}</strong>
+          <p class="copy-zh">这是 {escape(thinker['name'])} 在复杂问题前会先回到的起点。</p>
+          <p class="copy-en">This is the question {escape(thinker['name_en'])} would return to before rushing into action.</p>
         </article>
         <article class="kpi-card">
-          <span>底层支柱</span>
+          <span class="copy-zh">底层支柱</span>
+          <span class="copy-en">Core pillars</span>
           <strong>{escape(' / '.join(thinker['tags']))}</strong>
-          <p>课程内容始终围绕这三根支柱组织，而不是零散知识点。</p>
+          <p class="copy-zh">课程内容始终围绕这三根支柱组织，而不是零散知识点。</p>
+          <p class="copy-en">The lesson is organized around these three pillars rather than isolated quotations.</p>
         </article>
         """
     )
@@ -802,14 +1487,16 @@ def render_lesson_page(thinker: dict, lesson_number: int) -> str:
 <title>{escape(lesson['title'])} — {escape(thinker['name'])} · Digital Sage</title>
 <link rel="stylesheet" href="../assets/course-theme.css">
 </head>
-<body class="lesson-page">
+<body class="lesson-page" data-lang="dual">
 <div class="container">
   <a href="./index.html" class="back-link">← 返回{escape(thinker['name'])}课程目录</a>
+  {render_lang_switch()}
 
   <section class="course-header">
     <div class="badge">第{lesson_number}课 / 共10课</div>
-    <h1>{escape(lesson['title'])}</h1>
-    <p class="subtitle">{escape(lesson['subtitle'])}</p>
+    <h1><span class="copy-zh">{escape(lesson['title'])}</span><span class="copy-en">{escape(lesson_title_en(thinker, lesson_number))}</span></h1>
+    <p class="subtitle copy-zh">{escape(lesson['subtitle'])}</p>
+    <p class="subtitle copy-en">{escape(lesson_subtitle_en(thinker, lesson_number))}</p>
     <div class="header-tags">{render_tags([thinker['category_label'], *thinker['tags'][:2]])}</div>
   </section>
 
@@ -821,32 +1508,53 @@ def render_lesson_page(thinker: dict, lesson_number: int) -> str:
   <section class="lesson-kpis">{progress_cards}</section>
 
   <section class="section">
-    <h2>本课解决什么问题</h2>
-    <p>{escape(context['intro'])}</p>
-    <p>{escape(lesson['summary'])}</p>
+    <h2><span class="copy-zh">本课解决什么问题</span><span class="copy-en">What this lesson solves</span></h2>
+    <p class="copy-zh">{escape(context['intro'])}</p>
+    <p class="copy-en">{escape(brief_en['summary'])}</p>
+    <p class="copy-zh">{escape(lesson['summary'])}</p>
+    <p class="copy-en">{escape('This lesson belongs to the ' + brief_en['headline'] + ' stage of the curriculum and should end in a visible operating takeaway.')}</p>
   </section>
 
   <section class="spark-grid">{cards}</section>
 
   <section class="section">
-    <h2>判断清单</h2>
+    <h2><span class="copy-zh">判断清单</span><span class="copy-en">Judgment checklist</span></h2>
     <ul class="bullet-list">{bullets}</ul>
   </section>
 
   <section class="capsule-grid">{scenario_cards}</section>
 
   <section class="section">
-    <h2>常见误区</h2>
+    <h2><span class="copy-zh">常见误区</span><span class="copy-en">Common misreads</span></h2>
     <ul class="bullet-list subtle-list">{misreads}</ul>
   </section>
 
+  <section class="source-grid">{source_cards}</section>
+  <section class="case-grid">{case_cards}</section>
+
+  <section class="detail-dual-grid">
+    <article class="section">
+      <h2><span class="copy-zh">证据锚点</span><span class="copy-en">Evidence anchors</span></h2>
+      <ul class="bullet-list">{evidence_items}</ul>
+    </article>
+    <article class="section">
+      <h2><span class="copy-zh">价值与原则</span><span class="copy-en">Values and principles</span></h2>
+      <ul class="bullet-list">{values_items}</ul>
+    </article>
+    <article class="section">
+      <h2><span class="copy-zh">关键立场</span><span class="copy-en">Core positions</span></h2>
+      <ul class="bullet-list">{positions_items}</ul>
+    </article>
+  </section>
+
   <section class="section memory-line">
-    <h2>一句话记住</h2>
-    <p>{escape(context['memory'])}</p>
+    <h2><span class="copy-zh">一句话记住</span><span class="copy-en">Memory line</span></h2>
+    <p class="copy-zh">{escape(context['memory'])}</p>
+    <p class="copy-en">{escape('Remember the operating sentence, not just the quote. The lesson works only when it changes how you order attention.')}</p>
   </section>
 
   <section class="section">
-    <h2>课后动作</h2>
+    <h2><span class="copy-zh">课后动作</span><span class="copy-en">Next actions</span></h2>
     <ol class="action-list">{actions}</ol>
   </section>
 
@@ -856,6 +1564,7 @@ def render_lesson_page(thinker: dict, lesson_number: int) -> str:
     {f'<a href="{next_link}">下一课 →</a>' if next_link else '<span class="disabled">下一课 →</span>'}
   </div>
 </div>
+{LANGUAGE_SWITCH_SCRIPT}
 </body>
 </html>
 """
@@ -870,27 +1579,38 @@ def render_catalog_json(catalog: dict) -> dict:
             {
                 "id": thinker["id"],
                 "name": thinker["name"],
+                "name_en": thinker["name_en"],
                 "title": thinker["title"],
                 "quote": thinker["quote"],
                 "guiding_question": thinker["guiding_question"],
+                "guiding_question_en": thinker["guiding_question_en"],
                 "formula": thinker["formula"],
                 "tags": thinker["tags"],
                 "category": thinker["category"],
                 "category_label": thinker["category_label"],
+                "category_label_en": thinker["category_label_en"],
                 "category_theme": thinker["category_theme"],
+                "category_theme_en": thinker["category_theme_en"],
                 "category_signal": thinker["category_signal"],
+                "category_signal_en": thinker["category_signal_en"],
                 "accent": thinker["accent"],
                 "featured": thinker["id"] in featured_ids,
                 "index_url": f"/courses/{thinker['id']}/",
+                "source_tracks": thinker_source_tracks(thinker),
+                "case_notes": thinker["course_doc"]["cases"],
                 "lessons": [
                     {
                         "number": lesson["number"],
                         "title": lesson["title"],
+                        "title_en": lesson_title_en(thinker, lesson["number"]),
                         "subtitle": lesson["subtitle"],
+                        "subtitle_en": lesson_subtitle_en(thinker, lesson["number"]),
                         "summary": lesson["summary"],
                         "page_url": f"/courses/{thinker['id']}/{lesson['number']}.html",
                         "focus": COURSE_BLUEPRINT[lesson["number"] - 1]["focus"],
+                        "focus_en": COURSE_BLUEPRINT[lesson["number"] - 1]["focus_en"],
                         "deliverable": COURSE_BLUEPRINT[lesson["number"] - 1]["deliverable"],
+                        "deliverable_en": COURSE_BLUEPRINT[lesson["number"] - 1]["deliverable_en"],
                     }
                     for lesson in thinker["lessons"]
                 ],

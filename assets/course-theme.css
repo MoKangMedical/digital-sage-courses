@@ -35,6 +35,21 @@ body {
     linear-gradient(180deg, #f7f9fc 0%, #eef2f7 48%, #f6f8fb 100%);
 }
 
+body[data-lang="zh"] .copy-en,
+body[data-lang="en"] .copy-zh {
+  display: none !important;
+}
+
+body[data-lang="dual"] .copy-zh,
+body[data-lang="dual"] .copy-en {
+  display: block;
+}
+
+body[data-lang="zh"] .copy-zh,
+body[data-lang="en"] .copy-en {
+  display: block;
+}
+
 body::before {
   content: "";
   position: fixed;
@@ -65,6 +80,37 @@ nav {
   border: 1px solid rgba(255, 255, 255, 0.72);
   backdrop-filter: blur(18px);
   box-shadow: var(--shadow);
+}
+
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.05);
+}
+
+.lang-pill {
+  border: none;
+  min-height: 34px;
+  padding: 0 12px;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 0.82rem;
+  cursor: pointer;
+  transition: background 180ms ease, color 180ms ease, transform 180ms ease;
+}
+
+.lang-pill.active {
+  background: linear-gradient(135deg, var(--accent-ink), var(--accent));
+  color: #fff;
+}
+
+.lang-pill:hover {
+  transform: translateY(-1px);
 }
 
 nav a {
@@ -588,6 +634,14 @@ h2 {
   font-size: 0.92rem;
 }
 
+.copy-en {
+  color: #5f6b7a;
+}
+
+.copy-en:not(strong):not(b):not(h1):not(h2):not(h3) {
+  font-size: 0.92rem;
+}
+
 .blueprint-card small,
 .domain-card small,
 .module-card small,
@@ -649,6 +703,26 @@ h2 {
   gap: 14px;
 }
 
+.source-grid,
+.case-grid,
+.detail-dual-grid {
+  display: grid;
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.source-grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.case-grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.detail-dual-grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
 .module-card {
   padding: 18px;
   position: relative;
@@ -667,6 +741,39 @@ h2 {
 .module-card > * {
   position: relative;
   z-index: 1;
+}
+
+.source-card,
+.case-card {
+  padding: 18px;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(17, 24, 39, 0.08);
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 18px 42px rgba(17, 24, 39, 0.06);
+}
+
+.source-card strong,
+.case-card strong {
+  display: block;
+  color: var(--accent-ink);
+  line-height: 1.35;
+}
+
+.source-card p,
+.case-card p {
+  margin-top: 8px;
+  color: #465467;
+  line-height: 1.7;
+  font-size: 0.92rem;
+}
+
+.source-card small,
+.case-card small {
+  display: block;
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.6;
 }
 
 .header-tags,
