@@ -7,6 +7,21 @@ import sys
 from html import escape
 from pathlib import Path
 
+try:
+    from course_reference_library import (
+        CURATED_ENGLISH_PROFILES,
+        CURATED_PILLAR_GLOSSES,
+        PRIORITY_THINKER_IDS,
+        REFERENCE_LIBRARY,
+    )
+except ModuleNotFoundError:
+    from tools.course_reference_library import (  # type: ignore
+        CURATED_ENGLISH_PROFILES,
+        CURATED_PILLAR_GLOSSES,
+        PRIORITY_THINKER_IDS,
+        REFERENCE_LIBRARY,
+    )
+
 
 BASE_DIR = Path(__file__).resolve().parents[1]
 ASSETS_DIR = BASE_DIR / "assets"
@@ -429,6 +444,14 @@ def load_bootstrap_root_html() -> str:
     current_cards = len(ROOT_CARD_RE.findall(current_html))
     if "<h2>" in current_html and "thinker-grid" in current_html and current_cards >= 50:
         return current_html
+    try:
+        return subprocess.check_output(
+            ["git", "show", "HEAD:index.html"],
+            cwd=BASE_DIR,
+            text=True,
+        )
+    except Exception:
+        return current_html
 
 
 def load_seed_catalog() -> dict:
@@ -456,15 +479,6 @@ def load_seed_catalog() -> dict:
         pass
 
     return {}
-
-    try:
-        return subprocess.check_output(
-            ["git", "show", "HEAD:index.html"],
-            cwd=BASE_DIR,
-            text=True,
-        )
-    except Exception:
-        return current_html
 
 
 def iter_root_sections(root_html: str) -> list[tuple[str, str]]:
@@ -613,7 +627,317 @@ def parse_course_doc(slug: str) -> dict:
     }
 
 
+def thinker_reference_bundle(thinker: dict) -> dict | None:
+    return REFERENCE_LIBRARY.get(thinker["id"])
+
+
+def thinker_is_priority_curated(thinker: dict) -> bool:
+    return thinker["id"] in PRIORITY_THINKER_IDS
+
+
+def english_pillars(thinker: dict) -> list[str]:
+    return CURATED_PILLAR_GLOSSES.get(thinker["id"], thinker["tags"])
+
+
+def render_reference_cards(items: list[dict], kind_zh: str, kind_en: str) -> str:
+    return "".join(
+        f"""
+        <article class="reference-card">
+          <span class="reference-kind copy-zh">{escape(kind_zh)}</span>
+          <span class="reference-kind copy-en">{escape(kind_en)}</span>
+          <strong>{escape(item['title'])}</strong>
+          <small class="reference-meta">{escape(item['creator'])} · {escape(item['meta'])}</small>
+          <p class="copy-zh">{escape(item['note_zh'])}</p>
+          <p class="copy-en">{escape(item['note_en'])}</p>
+        </article>
+        """
+        for item in items
+    )
+
+
+def render_reference_shelf(thinker: dict, context: str = "index") -> str:
+    bundle = thinker_reference_bundle(thinker)
+    if not bundle:
+        return ""
+
+    if context == "lesson":
+        intro_zh = f"这节课建议优先以 {thinker['name']} 的原典、公开记录和权威书单为准，再回来看本课的判断结构。"
+        intro_en = (
+            f"Treat these texts as the trusted shelf for {thinker['name_en']}. "
+            "Start with the primary record, then return to the lesson structure."
+        )
+        heading_zh = f"{thinker['name']} 的原典与书单"
+        heading_en = f"Primary texts and reading shelf for {thinker['name_en']}"
+    else:
+        intro_zh = bundle["intro_zh"]
+        intro_en = bundle["intro_en"]
+        heading_zh = f"{thinker['name']} 的原典与书单"
+        heading_en = f"Trusted texts for {thinker['name_en']}"
+
+    primary_cards = render_reference_cards(bundle["primary_sources"], "原典 / 一手记录", "Primary text / public record")
+    reading_cards = render_reference_cards(bundle["core_reading"], "核心书单 / 研究入口", "Core reading / study entry")
+
+    return f"""
+    <section class="reference-shelf">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Reference Shelf</div>
+          <h3><span class="copy-zh">{escape(heading_zh)}</span><span class="copy-en">{escape(heading_en)}</span></h3>
+        </div>
+        <div>
+          <p class="copy-zh">{escape(intro_zh)}</p>
+          <p class="copy-en">{escape(intro_en)}</p>
+        </div>
+      </div>
+      <div class="reference-group">
+        <h4><span class="copy-zh">原典与公开记录</span><span class="copy-en">Primary texts and public record</span></h4>
+        <div class="reference-grid">{primary_cards}</div>
+      </div>
+      <div class="reference-group">
+        <h4><span class="copy-zh">核心书单与研究入口</span><span class="copy-en">Core reading shelf</span></h4>
+        <div class="reference-grid">{reading_cards}</div>
+      </div>
+    </section>
+    """
+
+
+def curated_english_brief(thinker: dict, lesson_number: int, context: dict, profile: dict) -> dict:
+    blueprint = COURSE_BLUEPRINT[lesson_number - 1]
+    name_en = thinker["name_en"]
+    tags = english_pillars(thinker)
+    question_en = profile["question_en"]
+    concept = tags[min(max(lesson_number - 2, 0), 2)]
+    supporting = [tag for tag in tags if tag != concept]
+
+    if lesson_number == 1:
+        summary = (
+            f"This opening lesson maps {name_en} as a complete decision system. "
+            f"{profile['throughline']} The task is to see how {tags[0]}, {tags[1]}, and {tags[2]} reinforce one another before you start borrowing isolated moves."
+        )
+        cards = [
+            ("System spine", profile["throughline"]),
+            ("Question underneath the work", f"Keep returning to this question: {question_en}"),
+            ("What you should leave with", f"A working map of how {tags[0]}, {tags[1]}, and {tags[2]} interact in {name_en}'s best decisions."),
+        ]
+        takeaways = [
+            f"Name the three pillars before you quote {name_en}.",
+            f"Notice which pillar carries the most weight when {name_en} makes a difficult trade-off.",
+            "Do not confuse public mythology with the deeper order of judgment underneath it.",
+            "Leave this lesson with a system map, not a scrapbook of memorable lines.",
+        ]
+        misreads = [
+            f"Reducing {name_en} to temperament or style instead of structure.",
+            f"Treating {tags[0]}, {tags[1]}, and {tags[2]} as separate tricks rather than a coordinated system.",
+            "Borrowing conclusions without learning what gets examined first.",
+        ]
+        actions = [
+            f"Write a four-sentence map of {name_en}'s system in your own words.",
+            f"Take one current problem and ask how each pillar changes your reading of it.",
+            "Mark the single pillar you personally underuse most and why.",
+        ]
+        lesson_note = "Lesson one is a map-building lesson. If you cannot explain the structure back clearly, move more slowly before proceeding."
+    elif lesson_number in (2, 3, 4):
+        summary = (
+            f"{profile['concept_frame'].format(concept=concept, support_one=supporting[0], support_two=supporting[1])} "
+            f"This lesson is about learning when {concept} deserves to lead and when it has to be balanced by {supporting[0]} and {supporting[1]}."
+        )
+        cards = [
+            ("What this concept really does", profile["concept_frame"].format(concept=concept, support_one=supporting[0], support_two=supporting[1])),
+            ("What it must be paired with", f"Read {concept} together with {supporting[0]} and {supporting[1]}, or it turns into a slogan."),
+            ("Where readers usually slip", f"The mistake is treating {concept} as a universal virtue instead of a contextual judgment tool."),
+        ]
+        takeaways = [
+            f"Ask what breaks first if {concept} is ignored in a live decision.",
+            f"Test whether your current use of {concept} is structural or merely rhetorical.",
+            f"Check what {supporting[0]} or {supporting[1]} would add before you become one-dimensional.",
+            f"Translate {concept} into one observable indicator in your own context.",
+        ]
+        misreads = [
+            f"Treating {concept} as a permanent answer rather than a conditional lens.",
+            f"Using {concept} in easy situations but abandoning it under pressure.",
+            f"Talking about {concept} elegantly without changing decision order or measurement.",
+        ]
+        actions = [
+            f"Revisit one recent decision and ask whether {concept} was explicitly examined or only implied.",
+            f"Write one argument for leaning harder into {concept} and one argument for restraint.",
+            f"Use {concept} to re-read a choice you were about to settle by intuition alone.",
+        ]
+        lesson_note = f"This stage is about one pillar at a time. The goal is not definition-memorization but better diagnostic use of {concept}."
+    elif lesson_number == 5:
+        summary = (
+            f"{profile['judgment_frame']} This lesson is where the course shifts from 'what matters' to 'in what order should it be examined.'"
+        )
+        cards = [
+            ("Order before opinion", profile["judgment_frame"]),
+            ("First question", f"The opening question is still the anchor: {question_en}"),
+            ("What changes after this lesson", "You should become better at sequencing judgment before debating solutions."),
+        ]
+        takeaways = [
+            "The best framework reduces noise before it produces answers.",
+            "When teams disagree loudly, they are often tracking different primary variables.",
+            "A strong judgment order survives low information and high pressure.",
+            "Do not let action outrun problem definition.",
+        ]
+        misreads = [
+            "Treating a framework as presentation theater rather than a real filter on attention.",
+            "Jumping to solutions before naming the governing constraint.",
+            "Using the framework in meetings but not in private decision-making.",
+        ]
+        actions = [
+            "Rewrite one current problem as sequence: definition, constraint, action.",
+            f"Name which of {tags[0]}, {tags[1]}, or {tags[2]} is carrying most of the weight in your current debate.",
+            "Set a rule for yourself: write the judgment order before you allow solution discussion.",
+        ]
+        lesson_note = "This is the lesson where the thinker becomes operational. If the order is wrong, the later action layer will also be wrong."
+    elif lesson_number == 6:
+        summary = (
+            f"{profile['case_frame']} Use the cases to inspect what stays stable when pressure, ambiguity, or limited resources force prioritization."
+        )
+        cards = [
+            ("Why the cases matter", profile["case_frame"]),
+            ("What to watch for", "Track what the thinker protects first when the environment becomes noisy or constrained."),
+            ("What you are extracting", "You are not collecting stories. You are extracting reusable judgment moves."),
+        ]
+        takeaways = [
+            "A case is valuable only if you can recover the structure underneath the outcome.",
+            "Pay attention to what was protected, delayed, or refused under pressure.",
+            "Good case-reading turns biography into decision pattern.",
+            "Always finish by asking what changes in your own work after the case.",
+        ]
+        misreads = [
+            "Copying the visible move without checking whether your constraints match.",
+            "Reading a success story as luck instead of structure and sequence.",
+            "Remembering the anecdote but not the governing principle.",
+        ]
+        actions = [
+            "Pick the case closest to your current pressure pattern and rewrite it in your own operating language.",
+            "State what the thinker would likely protect first in your current situation and why.",
+            "Write one decision rule that survives even if the surface details differ.",
+        ]
+        lesson_note = "Cases are the reality test for the curriculum. If the principles disappear under pressure, they were never really learned."
+    elif lesson_number == 7:
+        summary = (
+            f"{profile['toolkit_frame']} This lesson compresses experience into tools you can call on quickly when the situation changes."
+        )
+        cards = [
+            ("What belongs in the toolkit", profile["toolkit_frame"]),
+            ("What a real tool does", "A real tool changes where you look, what you ignore, and how fast you detect the key variable."),
+            ("How to know it is working", "The best tools make hard decisions cleaner before they make them easier."),
+        ]
+        takeaways = [
+            "Collect fewer tools, but make sure they survive contact with pressure.",
+            "Keep at least one tool for amplification and one for restraint.",
+            "A tool is learned only when it changes an actual decision this week.",
+            "If the tool never reaches the operating layer, it is still trivia.",
+        ]
+        misreads = [
+            "Collecting labels instead of building fast retrieval under stress.",
+            "Keeping only tools that flatter your instincts while ignoring the braking tools.",
+            "Mistaking conceptual familiarity for operating ability.",
+        ]
+        actions = [
+            "Reduce the toolkit to three moves you can actually remember in the room.",
+            "Run those three moves across one live project and compare what each one reveals.",
+            "Name the cognitive mistake you make most often and attach a counter-tool to it.",
+        ]
+        lesson_note = "This lesson is about portability. The point is not more theory; it is faster access to the right lens in live work."
+    elif lesson_number == 8:
+        summary = (
+            f"{profile['values_frame']} This lesson returns beneath technique to the moral and strategic commitments the thinker refuses to trade away casually."
+        )
+        cards = [
+            ("Why values matter here", profile["values_frame"]),
+            ("What values actually do", "Values are not decorative statements. They are what determine what will not be sacrificed first."),
+            ("What this lesson changes", "You should start seeing which trade-offs the thinker would refuse even under short-term pressure."),
+        ]
+        takeaways = [
+            "A real principle becomes visible in what it is willing to cost you.",
+            "Values matter most when incentives tempt you to reorder them quietly.",
+            "Technique becomes unstable when it is detached from a value hierarchy.",
+            "The deeper question is not what the thinker admires, but what the thinker protects.",
+        ]
+        misreads = [
+            "Treating values as branding language rather than decision infrastructure.",
+            "Talking about principles in calm periods and abandoning them in hard ones.",
+            "Naming a principle without naming the sacrifice it requires.",
+        ]
+        actions = [
+            "Write the three principles from this thinker that you would be most reluctant to violate in your own work.",
+            "Review one recent compromise and ask whether it was strategic necessity or quiet value drift.",
+            "Compress the value system into language you could actually remember under stress.",
+        ]
+        lesson_note = "This lesson explains why the thinker's choices still hang together over time instead of dissolving into clever opportunism."
+    elif lesson_number == 9:
+        summary = (
+            f"{profile['system_frame']} This is the operating-systems lesson: inputs, review loops, and decision rhythms that keep the philosophy alive after the page is closed."
+        )
+        cards = [
+            ("What an operating system changes", profile["system_frame"]),
+            ("Where it lives", "A real operating system appears in calendars, information diets, review loops, and decision thresholds."),
+            ("What it prevents", "Without the operating layer, insight evaporates and the course collapses back into admiration."),
+        ]
+        takeaways = [
+            "A method becomes real only when it has a repeatable cadence.",
+            "Inputs, decisions, and review must reinforce one another rather than live in separate files.",
+            "Good systems reduce dependence on mood and increase dependence on order.",
+            "The goal is not complexity. It is repeatability under real load.",
+        ]
+        misreads = [
+            "Turning method into a task list with no rhythm.",
+            "Building action steps without a review loop.",
+            "Redesigning the system so often that nothing compounds.",
+        ]
+        actions = [
+            "Design a seven-day operating version of this thinker's system.",
+            "Choose one recurring decision and attach a fixed review question to it.",
+            "Identify the point where your current workflow most often breaks the philosophy you claim to admire.",
+        ]
+        lesson_note = "If the course is ever going to survive real life, it happens here: in rhythm, not in inspiration."
+    else:
+        summary = (
+            f"{profile['integration_frame']} The final lesson is about transfer: moving from understanding the thinker to running a version of the system yourself."
+        )
+        cards = [
+            ("What integration really means", profile["integration_frame"]),
+            ("The test of transfer", f"You can explain when to lead with {tags[0]}, when {tags[1]} should pull you back, and when {tags[2]} sets the boundary."),
+            ("The real end point", f"The goal is not imitation of {name_en}, but a version of the system that has become your own."),
+        ]
+        takeaways = [
+            "Integration means compression: ten lessons turned into one reusable workflow.",
+            "If you cannot restate the system in your own work language, it is not integrated yet.",
+            "The strongest learning result is continued self-upgrading after the formal course ends.",
+            "By now the thinker should feel less like a hero and more like an internal order of attention.",
+        ]
+        misreads = [
+            "Ending the course with admiration but no personal operating formula.",
+            "Repeating the thinker's language without rewriting it for your own environment.",
+            "Failing to turn the first nine lessons into one review template.",
+        ]
+        actions = [
+            "Write your own three-sentence version of the full system.",
+            "Choose one 30-day project and assign lessons to moments in the project life cycle.",
+            "Run a weekly review asking whether you are becoming more derivative or more distinct in your own use of the framework.",
+        ]
+        lesson_note = "The course ends only when the framework starts changing your own decisions without needing the page in front of you."
+
+    return {
+        "headline": blueprint["title_en"],
+        "focus": blueprint["focus_en"],
+        "deliverable": blueprint["deliverable_en"],
+        "summary": summary,
+        "cards": cards,
+        "takeaways": takeaways,
+        "misreads": misreads,
+        "actions": actions,
+        "lesson_note": lesson_note,
+    }
+
+
 def english_brief(thinker: dict, lesson_number: int, context: dict) -> dict:
+    profile = CURATED_ENGLISH_PROFILES.get(thinker["id"])
+    if profile:
+        return curated_english_brief(thinker, lesson_number, context, profile)
+
     blueprint = COURSE_BLUEPRINT[lesson_number - 1]
     tags = thinker["tags"]
     name_en = thinker["name_en"]
@@ -652,6 +976,7 @@ def english_brief(thinker: dict, lesson_number: int, context: dict) -> dict:
         "takeaways": takeaways,
         "misreads": misreads,
         "actions": actions,
+        "lesson_note": f"This lesson belongs to the {blueprint['title_en']} stage of the curriculum and should end in a visible operating takeaway.",
     }
 
 
@@ -716,6 +1041,7 @@ def bootstrap_catalog() -> dict:
             name_en = meta.get("name_en") or seed.get("name_en") or slug_to_title(slug)
             signature = course_doc.get("quote") or meta.get("signature") or seed.get("quote") or signature
 
+            profile = CURATED_ENGLISH_PROFILES.get(slug, {})
             thinker = {
                 "id": slug,
                 "name": seed["name"],
@@ -723,7 +1049,9 @@ def bootstrap_catalog() -> dict:
                 "title": seed["title"],
                 "quote": signature,
                 "guiding_question": guiding_question,
-                "guiding_question_en": seed.get("guiding_question_en") or "What should be examined first when this problem becomes complex?",
+                "guiding_question_en": profile.get("question_en")
+                or seed.get("guiding_question_en")
+                or "What should be examined first when this problem becomes complex?",
                 "formula": formula,
                 "category": category_meta["id"],
                 "category_label": category_label,
@@ -735,6 +1063,7 @@ def bootstrap_catalog() -> dict:
                 "accent": seed.get("accent") or category_meta["accent"],
                 "tags": tags[:3],
                 "course_doc": course_doc,
+                "priority_curated": slug in PRIORITY_THINKER_IDS,
                 "lessons": lesson_cards,
             }
             for lesson in thinker["lessons"]:
@@ -767,6 +1096,7 @@ def bootstrap_catalog() -> dict:
                 name_en = meta.get("name_en") or slug_to_title(slug)
                 signature = course_doc.get("quote") or meta.get("signature") or signature
 
+                profile = CURATED_ENGLISH_PROFILES.get(slug, {})
                 thinker = {
                     "id": slug,
                     "name": strip_html(name),
@@ -774,7 +1104,8 @@ def bootstrap_catalog() -> dict:
                     "title": strip_html(title),
                     "quote": signature,
                     "guiding_question": guiding_question,
-                    "guiding_question_en": "What should be examined first when this problem becomes complex?",
+                    "guiding_question_en": profile.get("question_en")
+                    or "What should be examined first when this problem becomes complex?",
                     "formula": formula,
                     "category": category_meta["id"],
                     "category_label": category_label,
@@ -786,6 +1117,7 @@ def bootstrap_catalog() -> dict:
                     "accent": category_meta["accent"],
                     "tags": tags[:3],
                     "course_doc": course_doc,
+                    "priority_curated": slug in PRIORITY_THINKER_IDS,
                     "lessons": lesson_cards,
                 }
                 for lesson in thinker["lessons"]:
@@ -817,7 +1149,7 @@ def bootstrap_catalog() -> dict:
             featured_ids.append(thinker_id)
 
     return {
-        "version": 5,
+        "version": 6,
         "stats": {
             "thinkers": len(thinkers),
             "lessons": len(thinkers) * len(COURSE_BLUEPRINT),
@@ -835,7 +1167,7 @@ def load_catalog() -> dict:
         data = json.loads(CATALOG_PATH.read_text(encoding="utf-8"))
         thinkers = data.get("thinkers") or []
         has_lessons = bool(thinkers and thinkers[0].get("lessons"))
-        if data.get("version", 0) >= 5 and thinkers and has_lessons:
+        if data.get("version", 0) >= 6 and thinkers and has_lessons:
             return data
     return bootstrap_catalog()
 
@@ -1095,7 +1427,7 @@ def render_tags(tags: list[str], class_name: str = "tag") -> str:
 
 def lesson_title_en(thinker: dict, lesson_number: int) -> str:
     name_en = thinker["name_en"]
-    tags = thinker["tags"]
+    tags = english_pillars(thinker)
     if lesson_number == 1:
         return f"{name_en} System Overview"
     if lesson_number == 2:
@@ -1237,6 +1569,8 @@ def render_root_index(catalog: dict) -> str:
 
 def thinker_summary_cards(thinker: dict) -> list[tuple[str, str, str, str]]:
     scenarios = CATEGORY_SCENARIOS[thinker["category"]]
+    profile = CURATED_ENGLISH_PROFILES.get(thinker["id"])
+    tags_en = english_pillars(thinker)
     return [
         (
             "适合带着什么问题来学",
@@ -1248,13 +1582,13 @@ def thinker_summary_cards(thinker: dict) -> list[tuple[str, str, str, str]]:
             "这一套课真正训练什么",
             "What does this curriculum actually train?",
             f"训练你把 {thinker['guiding_question']} 变成稳定的判断起点。",
-            f"It trains you to turn this question into a stable starting point: {thinker['guiding_question_en']}",
+            profile["throughline"] if profile else f"It trains you to turn this question into a stable starting point: {thinker['guiding_question_en']}",
         ),
         (
             "学完之后能迁移到哪里",
             "Where does it transfer?",
             f"最终不是模仿 {thinker['name']}，而是把 {', '.join(thinker['tags'])} 迁移到你自己的业务和选择。",
-            f"The goal is not imitation. It is to move {', '.join(thinker['tags'])} into your own work, decisions, and operating rhythm.",
+            profile["integration_frame"] if profile else f"The goal is not imitation. It is to move {', '.join(tags_en)} into your own work, decisions, and operating rhythm.",
         ),
     ]
 
@@ -1282,6 +1616,7 @@ def render_thinker_index(thinker: dict) -> str:
         """
         for item in thinker_source_tracks(thinker)
     )
+    reference_shelf = render_reference_shelf(thinker, "index")
     case_cards = "".join(
         f"""
         <article class="case-card">
@@ -1360,7 +1695,7 @@ def render_thinker_index(thinker: dict) -> str:
     <div class="module-ladder">{module_cards}</div>
   </section>
 
-  <section class="source-grid">{source_cards}</section>
+  {reference_shelf if reference_shelf else f'<section class="source-grid">{source_cards}</section>'}
   <section class="case-grid">{case_cards}</section>
 
   <div class="course-grid">{course_cards}</div>
@@ -1374,6 +1709,7 @@ def render_thinker_index(thinker: dict) -> str:
 def render_lesson_page(thinker: dict, lesson_number: int) -> str:
     context = course_contexts(thinker, lesson_number)
     brief_en = english_brief(thinker, lesson_number, context)
+    tags_en = english_pillars(thinker)
     lesson = context["lesson"]
     prev_link = f'{lesson_number - 1}.html' if lesson_number > 1 else ""
     next_link = f'{lesson_number + 1}.html' if lesson_number < 10 else ""
@@ -1434,6 +1770,7 @@ def render_lesson_page(thinker: dict, lesson_number: int) -> str:
         """
         for item in thinker_source_tracks(thinker)
     )
+    reference_shelf = render_reference_shelf(thinker, "lesson")
     evidence_items = "".join(
         f"<li><span class=\"copy-zh\">{escape(step)}</span><span class=\"copy-en\">{escape('Verification path: ' + step)}</span></li>"
         for step in thinker["course_doc"]["decision_steps"][:5]
@@ -1468,7 +1805,8 @@ def render_lesson_page(thinker: dict, lesson_number: int) -> str:
         <article class="kpi-card">
           <span class="copy-zh">底层支柱</span>
           <span class="copy-en">Core pillars</span>
-          <strong>{escape(' / '.join(thinker['tags']))}</strong>
+          <strong class="copy-zh">{escape(' / '.join(thinker['tags']))}</strong>
+          <strong class="copy-en">{escape(' / '.join(tags_en))}</strong>
           <p class="copy-zh">课程内容始终围绕这三根支柱组织，而不是零散知识点。</p>
           <p class="copy-en">The lesson is organized around these three pillars rather than isolated quotations.</p>
         </article>
@@ -1512,7 +1850,7 @@ def render_lesson_page(thinker: dict, lesson_number: int) -> str:
     <p class="copy-zh">{escape(context['intro'])}</p>
     <p class="copy-en">{escape(brief_en['summary'])}</p>
     <p class="copy-zh">{escape(lesson['summary'])}</p>
-    <p class="copy-en">{escape('This lesson belongs to the ' + brief_en['headline'] + ' stage of the curriculum and should end in a visible operating takeaway.')}</p>
+    <p class="copy-en">{escape(brief_en['lesson_note'])}</p>
   </section>
 
   <section class="spark-grid">{cards}</section>
@@ -1529,7 +1867,7 @@ def render_lesson_page(thinker: dict, lesson_number: int) -> str:
     <ul class="bullet-list subtle-list">{misreads}</ul>
   </section>
 
-  <section class="source-grid">{source_cards}</section>
+  {reference_shelf if reference_shelf else f'<section class="source-grid">{source_cards}</section>'}
   <section class="case-grid">{case_cards}</section>
 
   <section class="detail-dual-grid">
@@ -1595,8 +1933,10 @@ def render_catalog_json(catalog: dict) -> dict:
                 "category_signal_en": thinker["category_signal_en"],
                 "accent": thinker["accent"],
                 "featured": thinker["id"] in featured_ids,
+                "priority_curated": thinker_is_priority_curated(thinker),
                 "index_url": f"/courses/{thinker['id']}/",
                 "source_tracks": thinker_source_tracks(thinker),
+                "reference_shelf": thinker_reference_bundle(thinker),
                 "case_notes": thinker["course_doc"]["cases"],
                 "lessons": [
                     {

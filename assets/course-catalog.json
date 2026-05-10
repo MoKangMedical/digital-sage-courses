@@ -1,5 +1,5 @@
 {
-  "version": 5,
+  "version": 6,
   "stats": {
     "thinkers": 100,
     "lessons": 1000,
@@ -221,6 +221,7 @@
       "category_signal_en": "See the interest structure, execution path, and long-run cost of order.",
       "accent": "#475569",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/abraham_lincoln/",
       "source_tracks": [
         {
@@ -245,6 +246,7 @@
           "body_en": "Then add political history, comparative analysis, and biographies to assess long-run effects and trade-offs."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "亚伯拉罕·林肯 围绕 团结 的代表性实践",
@@ -418,6 +420,7 @@
       "category_signal_en": "See the interest structure, execution path, and long-run cost of order.",
       "accent": "#475569",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/elinor_ostrom/",
       "source_tracks": [
         {
@@ -442,6 +445,7 @@
           "body_en": "Then add political history, comparative analysis, and biographies to assess long-run effects and trade-offs."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "埃莉诺·奥斯特罗姆 围绕 共同治理 的代表性实践",
@@ -615,6 +619,7 @@
       "category_signal_en": "See the interest structure, execution path, and long-run cost of order.",
       "accent": "#475569",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/peter_senge/",
       "source_tracks": [
         {
@@ -639,6 +644,7 @@
           "body_en": "Then add political history, comparative analysis, and biographies to assess long-run effects and trade-offs."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "彼得·圣吉 围绕 学习型组织 的代表性实践",
@@ -812,6 +818,7 @@
       "category_signal_en": "See the interest structure, execution path, and long-run cost of order.",
       "accent": "#475569",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/benjamin_franklin/",
       "source_tracks": [
         {
@@ -836,6 +843,7 @@
           "body_en": "Then add political history, comparative analysis, and biographies to assess long-run effects and trade-offs."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "本杰明·富兰克林 围绕 自律 的代表性实践",
@@ -993,7 +1001,7 @@
       "title": "新加坡建国者",
       "quote": "好的制度比热闹的口号更重要",
       "guiding_question": "目标函数到底是什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What institutional choice increases state capacity over the next generation rather than only solving today's headline?",
       "formula": "李光耀式决策 = 治理乘人才乘长期主义",
       "tags": [
         "治理",
@@ -1009,6 +1017,7 @@
       "category_signal_en": "See the interest structure, execution path, and long-run cost of order.",
       "accent": "#475569",
       "featured": true,
+      "priority_curated": true,
       "index_url": "/courses/lee_kuan_yew/",
       "source_tracks": [
         {
@@ -1033,6 +1042,56 @@
           "body_en": "Then add political history, comparative analysis, and biographies to assess long-run effects and trade-offs."
         }
       ],
+      "reference_shelf": {
+        "intro_zh": "李光耀要先读回忆录和政策表达，再看外部评论。治理人物最怕只看评价，不看制度是怎么一步步落下来的。",
+        "intro_en": "With Lee Kuan Yew, start with memoir and policy expression before outside interpretation. Governance figures are easiest to misread if you consume verdicts before institutions.",
+        "primary_sources": [
+          {
+            "title": "The Singapore Story",
+            "creator": "Lee Kuan Yew",
+            "meta": "memoir",
+            "note_zh": "理解其成长背景与早期政治形成。",
+            "note_en": "Useful for Lee's formative years and political development."
+          },
+          {
+            "title": "From Third World to First",
+            "creator": "Lee Kuan Yew",
+            "meta": "memoir",
+            "note_zh": "治理、制度和国家建设的核心一手材料。",
+            "note_en": "A core first-person record of governance, institution-building, and statecraft."
+          },
+          {
+            "title": "Hard Truths to Keep Singapore Going",
+            "creator": "Lee Kuan Yew",
+            "meta": "interview volume",
+            "note_zh": "看他如何在公开问答里阐明制度判断。",
+            "note_en": "Useful for Lee's institutional reasoning in direct interview form."
+          }
+        ],
+        "core_reading": [
+          {
+            "title": "One Man's View of the World",
+            "creator": "Lee Kuan Yew",
+            "meta": "interviews and reflections",
+            "note_zh": "适合看他对国际格局和国家竞争的判断。",
+            "note_en": "A good entry into Lee's view of geopolitics and state competition."
+          },
+          {
+            "title": "Lee Kuan Yew: The Grand Master's Insights on China, the United States, and the World",
+            "creator": "Graham Allison, Robert D. Blackwill, and Ali Wyne",
+            "meta": "curated interviews",
+            "note_zh": "帮助快速聚焦他对大国与秩序的判断。",
+            "note_en": "Useful for a focused read on Lee's geopolitical judgment."
+          },
+          {
+            "title": "From Third World to First",
+            "creator": "Lee Kuan Yew",
+            "meta": "policy memoir",
+            "note_zh": "若只读一本，优先这一本。",
+            "note_en": "If you read only one, start here."
+          }
+        ]
+      },
       "case_notes": [
         {
           "title": "李光耀 围绕 治理 的代表性实践",
@@ -1067,7 +1126,7 @@
         {
           "number": 2,
           "title": "核心概念：治理",
-          "title_en": "Core Concept I: 治理",
+          "title_en": "Core Concept I: governance",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "李光耀思想的核心概念：治理。治理是李光耀思想体系的基石。先抓住 治理 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入李光耀世界的第一步。本课将深入剖析治理的深层逻辑与实践含义。",
@@ -1080,7 +1139,7 @@
         {
           "number": 3,
           "title": "核心概念：人才",
-          "title_en": "Core Concept II: 人才",
+          "title_en": "Core Concept II: talent",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "李光耀思想的第二个核心概念：人才。人才与治理形成互补关系。如果说治理解决看什么的问题，人才解决怎么做的问题。本课深入分析人才的深层含义。",
@@ -1093,7 +1152,7 @@
         {
           "number": 4,
           "title": "核心概念：长期主义",
-          "title_en": "Core Concept III: 长期主义",
+          "title_en": "Core Concept III: long-term statecraft",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入李光耀思想的第三根支柱：长期主义。长期主义与治理、人才构成三角支撑。李光耀说：代际视角：决策要考虑下一代而不是下一个标题。本课通过案例展示长期主义的实践力量。",
@@ -1206,6 +1265,7 @@
       "category_signal_en": "See the interest structure, execution path, and long-run cost of order.",
       "accent": "#475569",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/winston_churchill/",
       "source_tracks": [
         {
@@ -1230,6 +1290,7 @@
           "body_en": "Then add political history, comparative analysis, and biographies to assess long-run effects and trade-offs."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "温斯顿·丘吉尔 围绕 韧性 的代表性实践",
@@ -1403,6 +1464,7 @@
       "category_signal_en": "See the interest structure, execution path, and long-run cost of order.",
       "accent": "#475569",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/muhammad_yunus/",
       "source_tracks": [
         {
@@ -1427,6 +1489,7 @@
           "body_en": "Then add political history, comparative analysis, and biographies to assess long-run effects and trade-offs."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "穆罕默德·尤努斯 围绕 普惠金融 的代表性实践",
@@ -1600,6 +1663,7 @@
       "category_signal_en": "See the interest structure, execution path, and long-run cost of order.",
       "accent": "#475569",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/nelson_mandela/",
       "source_tracks": [
         {
@@ -1624,6 +1688,7 @@
           "body_en": "Then add political history, comparative analysis, and biographies to assess long-run effects and trade-offs."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "纳尔逊·曼德拉 围绕 和解 的代表性实践",
@@ -1797,6 +1862,7 @@
       "category_signal_en": "See the interest structure, execution path, and long-run cost of order.",
       "accent": "#475569",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/deng_xiaoping/",
       "source_tracks": [
         {
@@ -1821,6 +1887,7 @@
           "body_en": "Then add political history, comparative analysis, and biographies to assess long-run effects and trade-offs."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "邓小平 围绕 实事求是 的代表性实践",
@@ -1994,6 +2061,7 @@
       "category_signal_en": "Rule out danger first, weigh evidence second, and decide action priority last.",
       "accent": "#db2777",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/elizabeth_blackburn/",
       "source_tracks": [
         {
@@ -2018,6 +2086,7 @@
           "body_en": "Then use retrospective profiles, institutional archives, and medical history to understand longer-term impact."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "伊丽莎白·布莱克本 围绕 端粒 的代表性实践",
@@ -2191,6 +2260,7 @@
       "category_signal_en": "Rule out danger first, weigh evidence second, and decide action priority last.",
       "accent": "#db2777",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/paul_farmer/",
       "source_tracks": [
         {
@@ -2215,6 +2285,7 @@
           "body_en": "Then use retrospective profiles, institutional archives, and medical history to understand longer-term impact."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "保罗·法默 围绕 公平 的代表性实践",
@@ -2388,6 +2459,7 @@
       "category_signal_en": "Rule out danger first, weigh evidence second, and decide action priority last.",
       "accent": "#db2777",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/david_sinclair/",
       "source_tracks": [
         {
@@ -2412,6 +2484,7 @@
           "body_en": "Then use retrospective profiles, institutional archives, and medical history to understand longer-term impact."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "大卫·辛克莱 围绕 长寿 的代表性实践",
@@ -2585,6 +2658,7 @@
       "category_signal_en": "Rule out danger first, weigh evidence second, and decide action priority last.",
       "accent": "#db2777",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/william_osler/",
       "source_tracks": [
         {
@@ -2609,6 +2683,7 @@
           "body_en": "Then use retrospective profiles, institutional archives, and medical history to understand longer-term impact."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "威廉·奥斯勒 围绕 临床观察 的代表性实践",
@@ -2782,6 +2857,7 @@
       "category_signal_en": "Rule out danger first, weigh evidence second, and decide action priority last.",
       "accent": "#db2777",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/anthony_fauci/",
       "source_tracks": [
         {
@@ -2806,6 +2882,7 @@
           "body_en": "Then use retrospective profiles, institutional archives, and medical history to understand longer-term impact."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "安东尼·福奇 围绕 证据 的代表性实践",
@@ -2979,6 +3056,7 @@
       "category_signal_en": "Rule out danger first, weigh evidence second, and decide action priority last.",
       "accent": "#db2777",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/barry_marshall/",
       "source_tracks": [
         {
@@ -3003,6 +3081,7 @@
           "body_en": "Then use retrospective profiles, institutional archives, and medical history to understand longer-term impact."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "巴里·马歇尔 围绕 证据 的代表性实践",
@@ -3176,6 +3255,7 @@
       "category_signal_en": "Rule out danger first, weigh evidence second, and decide action priority last.",
       "accent": "#db2777",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/zhang_wenhong/",
       "source_tracks": [
         {
@@ -3200,6 +3280,7 @@
           "body_en": "Then use retrospective profiles, institutional archives, and medical history to understand longer-term impact."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "张文宏 围绕 风险沟通 的代表性实践",
@@ -3373,6 +3454,7 @@
       "category_signal_en": "Rule out danger first, weigh evidence second, and decide action priority last.",
       "accent": "#db2777",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/li_lanjuan/",
       "source_tracks": [
         {
@@ -3397,6 +3479,7 @@
           "body_en": "Then use retrospective profiles, institutional archives, and medical history to understand longer-term impact."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "李兰娟 围绕 系统防控 的代表性实践",
@@ -3554,7 +3637,7 @@
       "title": "呼吸病学专家",
       "quote": "医院治病，社会更要防病",
       "guiding_question": "最需要优先排除的危险是什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What does the evidence actually support right now, and what must be said clearly before the situation worsens?",
       "formula": "钟南山式决策 = 循证乘公共卫生乘实话实说",
       "tags": [
         "循证",
@@ -3570,6 +3653,7 @@
       "category_signal_en": "Rule out danger first, weigh evidence second, and decide action priority last.",
       "accent": "#db2777",
       "featured": true,
+      "priority_curated": true,
       "index_url": "/courses/zhongnanshan/",
       "source_tracks": [
         {
@@ -3594,6 +3678,56 @@
           "body_en": "Then use retrospective profiles, institutional archives, and medical history to understand longer-term impact."
         }
       ],
+      "reference_shelf": {
+        "intro_zh": "钟南山更适合通过论文、指南、公开通报和长访谈来读，而不是找一本包打天下的“人物书”。他的价值主要在于证据、临床和公共沟通三者如何连成一体。",
+        "intro_en": "Zhong Nanshan is best read through papers, guidelines, public briefings, and long interviews rather than a single definitive book. His importance lies in how evidence, clinic, and public communication get tied together.",
+        "primary_sources": [
+          {
+            "title": "Clinical Characteristics of Coronavirus Disease 2019 in China",
+            "creator": "Wei-jie Guan et al. with Zhong Nanshan",
+            "meta": "NEJM, 2020",
+            "note_zh": "COVID-19 早期中国临床特征的关键论文。",
+            "note_en": "A key early paper on the clinical profile of COVID-19 in China."
+          },
+          {
+            "title": "Comorbidity and its Impact on 1590 Patients with COVID-19 in China",
+            "creator": "Wei-jie Guan et al. with Zhong Nanshan",
+            "meta": "European Respiratory Journal, 2020",
+            "note_zh": "看他如何把临床风险分层拉进公共讨论。",
+            "note_en": "Useful for seeing risk stratification pulled into public understanding."
+          },
+          {
+            "title": "State Council and NHC Briefings Featuring Zhong Nanshan",
+            "creator": "public briefings",
+            "meta": "2020–2023 public record",
+            "note_zh": "看他如何在不确定时公开讲话与风险沟通。",
+            "note_en": "Shows how he communicated evidence and risk under uncertainty."
+          }
+        ],
+        "core_reading": [
+          {
+            "title": "Selected Respiratory and Public Health Interviews",
+            "creator": "Zhong Nanshan",
+            "meta": "long-form interviews",
+            "note_zh": "适合补足论文之外的判断顺序与沟通方式。",
+            "note_en": "Good for his judgment sequence and communication style beyond the papers."
+          },
+          {
+            "title": "Guidelines and Consensus Statements in Respiratory Medicine",
+            "creator": "Zhong Nanshan and collaborating teams",
+            "meta": "clinical guidelines",
+            "note_zh": "适合看“证据如何变成行动”。",
+            "note_en": "Useful for seeing how evidence becomes practical action."
+          },
+          {
+            "title": "COVID-19 and SARS Public Record in China",
+            "creator": "public archive",
+            "meta": "institutional record",
+            "note_zh": "把他放回真实危机场景里去看。",
+            "note_en": "Helps place his work back inside the actual crisis setting."
+          }
+        ]
+      },
       "case_notes": [
         {
           "title": "钟南山 围绕 循证 的代表性实践",
@@ -3628,7 +3762,7 @@
         {
           "number": 2,
           "title": "核心概念：循证",
-          "title_en": "Core Concept I: 循证",
+          "title_en": "Core Concept I: evidence",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "钟南山思想的核心概念：循证。循证是钟南山思想体系的基石。先抓住 循证 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入钟南山世界的第一步。本课将深入剖析循证的深层逻辑与实践含义。",
@@ -3641,7 +3775,7 @@
         {
           "number": 3,
           "title": "核心概念：公共卫生",
-          "title_en": "Core Concept II: 公共卫生",
+          "title_en": "Core Concept II: public health",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "钟南山思想的第二个核心概念：公共卫生。公共卫生与循证形成互补关系。如果说循证解决看什么的问题，公共卫生解决怎么做的问题。本课深入分析公共卫生的深层含义。",
@@ -3654,7 +3788,7 @@
         {
           "number": 4,
           "title": "核心概念：实话实说",
-          "title_en": "Core Concept III: 实话实说",
+          "title_en": "Core Concept III: plain speaking",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入钟南山思想的第三根支柱：实话实说。实话实说与循证、公共卫生构成三角支撑。钟南山说：以人为本：医学不仅是指标，更是病人的生活质量和选择。本课通过案例展示实话实说的实践力量。",
@@ -3767,6 +3901,7 @@
       "category_signal_en": "Rule out danger first, weigh evidence second, and decide action priority last.",
       "accent": "#db2777",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/atu_gawande/",
       "source_tracks": [
         {
@@ -3791,6 +3926,7 @@
           "body_en": "Then use retrospective profiles, institutional archives, and medical history to understand longer-term impact."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "阿图·葛文德 围绕 清单 的代表性实践",
@@ -3964,6 +4100,7 @@
       "category_signal_en": "Read real business quality through cash flow, moats, and long-horizon allocation.",
       "accent": "#2563eb",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/ren_zhengfei/",
       "source_tracks": [
         {
@@ -3988,6 +4125,7 @@
           "body_en": "Then add biographies, business histories, and case studies to restore context and avoid reading the person as a quote machine."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "任正非 围绕 灰度 的代表性实践",
@@ -4161,6 +4299,7 @@
       "category_signal_en": "Read real business quality through cash flow, moats, and long-horizon allocation.",
       "accent": "#2563eb",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/clay_christensen/",
       "source_tracks": [
         {
@@ -4185,6 +4324,7 @@
           "body_en": "Then add biographies, business histories, and case studies to restore context and avoid reading the person as a quote machine."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "克莱顿·克里斯坦森 围绕 颠覆式创新 的代表性实践",
@@ -4358,6 +4498,7 @@
       "category_signal_en": "Read real business quality through cash flow, moats, and long-horizon allocation.",
       "accent": "#2563eb",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/masayoshi_son/",
       "source_tracks": [
         {
@@ -4382,6 +4523,7 @@
           "body_en": "Then add biographies, business histories, and case studies to restore context and avoid reading the person as a quote machine."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "孙正义 围绕 愿景投资 的代表性实践",
@@ -4555,6 +4697,7 @@
       "category_signal_en": "Read real business quality through cash flow, moats, and long-horizon allocation.",
       "accent": "#2563eb",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/zhangyiming/",
       "source_tracks": [
         {
@@ -4579,6 +4722,7 @@
           "body_en": "Then add biographies, business histories, and case studies to restore context and avoid reading the person as a quote machine."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "张一鸣 围绕 延迟满足 的代表性实践",
@@ -4736,7 +4880,7 @@
       "title": "投资人与创业者",
       "quote": "重要的真相通常一开始不受欢迎",
       "guiding_question": "这件事真正创造价值的环节是什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What important truth is still undervalued here, and what monopoly-quality advantage could be built from it?",
       "formula": "彼得·蒂尔式决策 = 垄断乘反共识乘零到一",
       "tags": [
         "垄断",
@@ -4752,6 +4896,7 @@
       "category_signal_en": "Read real business quality through cash flow, moats, and long-horizon allocation.",
       "accent": "#2563eb",
       "featured": false,
+      "priority_curated": true,
       "index_url": "/courses/peter_thiel/",
       "source_tracks": [
         {
@@ -4776,6 +4921,56 @@
           "body_en": "Then add biographies, business histories, and case studies to restore context and avoid reading the person as a quote machine."
         }
       ],
+      "reference_shelf": {
+        "intro_zh": "蒂尔要先读《从 0 到 1》和课堂笔记，再回头看演讲与访谈。不要把他读成单纯“反共识表演者”。",
+        "intro_en": "Start with Zero to One and the class notes, then use speeches and interviews. Do not reduce Thiel to a performer of contrarianism.",
+        "primary_sources": [
+          {
+            "title": "Zero to One",
+            "creator": "Peter Thiel with Blake Masters",
+            "meta": "book",
+            "note_zh": "理解蒂尔商业思想最核心的入口。",
+            "note_en": "The central entry point into Thiel's company-building worldview."
+          },
+          {
+            "title": "CS183: Startup Notes",
+            "creator": "Peter Thiel and Blake Masters",
+            "meta": "lecture notes",
+            "note_zh": "适合看他更展开、更课堂化的论证。",
+            "note_en": "Useful for the fuller classroom version of his arguments."
+          },
+          {
+            "title": "Competition Is for Losers",
+            "creator": "Peter Thiel",
+            "meta": "essay/interview line",
+            "note_zh": "“竞争不是目标”的一个高度浓缩版本。",
+            "note_en": "A concentrated statement of Thiel's critique of competition."
+          }
+        ],
+        "core_reading": [
+          {
+            "title": "The Diversity Myth",
+            "creator": "Peter Thiel and David Sacks",
+            "meta": "book",
+            "note_zh": "适合看其早期争议与思维风格源头。",
+            "note_en": "Useful for early intellectual style and controversy."
+          },
+          {
+            "title": "Founders Fund Essays and Interviews",
+            "creator": "Peter Thiel",
+            "meta": "public archive",
+            "note_zh": "补足《从 0 到 1》之外的投资与技术判断。",
+            "note_en": "Extends beyond Zero to One into investment and technology judgment."
+          },
+          {
+            "title": "Zero to One",
+            "creator": "Peter Thiel with Blake Masters",
+            "meta": "book",
+            "note_zh": "若只读一本到位，优先这一部。",
+            "note_en": "If you read only one, start here."
+          }
+        ]
+      },
       "case_notes": [
         {
           "title": "彼得·蒂尔 围绕 垄断 的代表性实践",
@@ -4810,7 +5005,7 @@
         {
           "number": 2,
           "title": "核心概念：垄断",
-          "title_en": "Core Concept I: 垄断",
+          "title_en": "Core Concept I: monopoly",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "彼得·蒂尔思想的核心概念：垄断。垄断是彼得·蒂尔思想体系的基石。先抓住 垄断 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入彼得·蒂尔世界的第一步。本课将深入剖析垄断的深层逻辑与实践含义。",
@@ -4823,7 +5018,7 @@
         {
           "number": 3,
           "title": "核心概念：反共识",
-          "title_en": "Core Concept II: 反共识",
+          "title_en": "Core Concept II: contrarian truth",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "彼得·蒂尔思想的第二个核心概念：反共识。反共识与垄断形成互补关系。如果说垄断解决看什么的问题，反共识解决怎么做的问题。本课深入分析反共识的深层含义。",
@@ -4836,7 +5031,7 @@
         {
           "number": 4,
           "title": "核心概念：零到一",
-          "title_en": "Core Concept III: 零到一",
+          "title_en": "Core Concept III: zero-to-one thinking",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入彼得·蒂尔思想的第三根支柱：零到一。零到一与垄断、反共识构成三角支撑。彼得·蒂尔说：执行纪律：把复杂战略压缩成可重复的关键动作。本课通过案例展示零到一的实践力量。",
@@ -4933,7 +5128,7 @@
       "title": "福耀玻璃创始人",
       "quote": "企业家要先把产品做好",
       "guiding_question": "这件事真正创造价值的环节是什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "Where is the real product truth, and what must be built well before we talk about image, scale, or narrative?",
       "formula": "曹德旺式决策 = 制造乘务实乘工匠精神",
       "tags": [
         "制造",
@@ -4949,6 +5144,7 @@
       "category_signal_en": "Read real business quality through cash flow, moats, and long-horizon allocation.",
       "accent": "#2563eb",
       "featured": false,
+      "priority_curated": true,
       "index_url": "/courses/caodewang/",
       "source_tracks": [
         {
@@ -4973,6 +5169,56 @@
           "body_en": "Then add biographies, business histories, and case studies to restore context and avoid reading the person as a quote machine."
         }
       ],
+      "reference_shelf": {
+        "intro_zh": "曹德旺应先读《心若菩提》和公开演讲，再看工厂与产业案例。重点是制造业判断、产品纪律和企业责任，而不是鸡汤式创业故事。",
+        "intro_en": "Start with Mind Like a Bodhi Tree and his public talks, then pair them with factory and industry cases. The real value is manufacturing judgment, product discipline, and founder responsibility.",
+        "primary_sources": [
+          {
+            "title": "心若菩提",
+            "creator": "曹德旺",
+            "meta": "自述",
+            "note_zh": "理解曹德旺人生观和制造观的主入口。",
+            "note_en": "The main entrance to Cao Dewang's worldview and manufacturing philosophy."
+          },
+          {
+            "title": "曹德旺公开演讲与长访谈",
+            "creator": "曹德旺",
+            "meta": "public archive",
+            "note_zh": "最适合看他真实表达中的判断顺序。",
+            "note_en": "The best place to hear his unsmoothed judgment sequence."
+          },
+          {
+            "title": "American Factory",
+            "creator": "documentary record",
+            "meta": "film / factory case",
+            "note_zh": "把福耀美国工厂放进真实组织冲突里观察。",
+            "note_en": "Useful for seeing Fuyao in a live cross-cultural factory setting."
+          }
+        ],
+        "core_reading": [
+          {
+            "title": "制造业与企业经营访谈汇编",
+            "creator": "Cao Dewang interview collections",
+            "meta": "public materials",
+            "note_zh": "补足其对成本、组织和全球制造的看法。",
+            "note_en": "Adds his thinking on cost, organization, and global manufacturing."
+          },
+          {
+            "title": "American Factory",
+            "creator": "film and related reporting",
+            "meta": "case material",
+            "note_zh": "如果要看制造业现实冲突，这个案例很直观。",
+            "note_en": "A vivid case if you want to see manufacturing friction in practice."
+          },
+          {
+            "title": "心若菩提",
+            "creator": "曹德旺",
+            "meta": "memoir",
+            "note_zh": "若只读一本，仍然从这本开始。",
+            "note_en": "If you read only one, still start here."
+          }
+        ]
+      },
       "case_notes": [
         {
           "title": "曹德旺 围绕 制造 的代表性实践",
@@ -5007,7 +5253,7 @@
         {
           "number": 2,
           "title": "核心概念：制造",
-          "title_en": "Core Concept I: 制造",
+          "title_en": "Core Concept I: manufacturing",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "曹德旺思想的核心概念：制造。制造是曹德旺思想体系的基石。先抓住 制造 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入曹德旺世界的第一步。本课将深入剖析制造的深层逻辑与实践含义。",
@@ -5020,7 +5266,7 @@
         {
           "number": 3,
           "title": "核心概念：务实",
-          "title_en": "Core Concept II: 务实",
+          "title_en": "Core Concept II: pragmatism",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "曹德旺思想的第二个核心概念：务实。务实与制造形成互补关系。如果说制造解决看什么的问题，务实解决怎么做的问题。本课深入分析务实的深层含义。",
@@ -5033,7 +5279,7 @@
         {
           "number": 4,
           "title": "核心概念：工匠精神",
-          "title_en": "Core Concept III: 工匠精神",
+          "title_en": "Core Concept III: craft discipline",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入曹德旺思想的第三根支柱：工匠精神。工匠精神与制造、务实构成三角支撑。曹德旺说：执行纪律：把复杂战略压缩成可重复的关键动作。本课通过案例展示工匠精神的实践力量。",
@@ -5130,7 +5376,7 @@
       "title": "亚马逊创始人",
       "quote": "永远保持 Day 1",
       "guiding_question": "这件事真正创造价值的环节是什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What creates durable customer value here, and what would a genuine Day 1 decision look like?",
       "formula": "杰夫·贝索斯式决策 = 客户至上乘Day 1乘飞轮",
       "tags": [
         "客户至上",
@@ -5146,6 +5392,7 @@
       "category_signal_en": "Read real business quality through cash flow, moats, and long-horizon allocation.",
       "accent": "#2563eb",
       "featured": false,
+      "priority_curated": true,
       "index_url": "/courses/bezos/",
       "source_tracks": [
         {
@@ -5170,6 +5417,56 @@
           "body_en": "Then add biographies, business histories, and case studies to restore context and avoid reading the person as a quote machine."
         }
       ],
+      "reference_shelf": {
+        "intro_zh": "贝索斯最该先读股东信，再读《Invent and Wander》和公司史。因为真正的 Day 1 不是口号，而是机制。",
+        "intro_en": "Read the shareholder letters first, then Invent and Wander and the best company histories. Day 1 is not a slogan; it is a system of mechanisms.",
+        "primary_sources": [
+          {
+            "title": "Amazon Shareholder Letters",
+            "creator": "Jeff Bezos",
+            "meta": "1997–2020 archive",
+            "note_zh": "理解客户至上、飞轮和长期主义的一手材料。",
+            "note_en": "The first-person record for customer obsession, flywheels, and long-term thinking."
+          },
+          {
+            "title": "2016 Shareholder Letter",
+            "creator": "Jeff Bezos",
+            "meta": "letter",
+            "note_zh": "Day 1 思想最常被引用的核心文本。",
+            "note_en": "The most-cited concentrated statement of Day 1 thinking."
+          },
+          {
+            "title": "Invent and Wander",
+            "creator": "Jeff Bezos",
+            "meta": "writings and interviews",
+            "note_zh": "适合直接读到贝索斯的公开表达和内部逻辑。",
+            "note_en": "Useful for Bezos in his own public voice across writings and interviews."
+          }
+        ],
+        "core_reading": [
+          {
+            "title": "The Everything Store",
+            "creator": "Brad Stone",
+            "meta": "company history",
+            "note_zh": "亚马逊早期与中期发展的经典外部叙事。",
+            "note_en": "The classic external account of Amazon's early and middle years."
+          },
+          {
+            "title": "Amazon Unbound",
+            "creator": "Brad Stone",
+            "meta": "company history",
+            "note_zh": "补足后期云、设备和帝国扩张阶段。",
+            "note_en": "Useful for the later cloud, devices, and empire-building period."
+          },
+          {
+            "title": "Working Backwards",
+            "creator": "Colin Bryar and Bill Carr",
+            "meta": "inside account",
+            "note_zh": "看亚马逊机制如何被制度化。",
+            "note_en": "Shows how Amazon's mechanisms were institutionalized."
+          }
+        ]
+      },
       "case_notes": [
         {
           "title": "杰夫·贝索斯 围绕 客户至上 的代表性实践",
@@ -5204,7 +5501,7 @@
         {
           "number": 2,
           "title": "核心概念：客户至上",
-          "title_en": "Core Concept I: 客户至上",
+          "title_en": "Core Concept I: customer obsession",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "杰夫·贝索斯思想的核心概念：客户至上。客户至上是杰夫·贝索斯思想体系的基石。先抓住 客户至上 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入杰夫·贝索斯世界的第一步。本课将深入剖析客户至上的深层逻辑与实践含义。",
@@ -5230,7 +5527,7 @@
         {
           "number": 4,
           "title": "核心概念：飞轮",
-          "title_en": "Core Concept III: 飞轮",
+          "title_en": "Core Concept III: flywheel systems",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入杰夫·贝索斯思想的第三根支柱：飞轮。飞轮与客户至上、Day 1构成三角支撑。杰夫·贝索斯说：执行纪律：把复杂战略压缩成可重复的关键动作。本课通过案例展示飞轮的实践力量。",
@@ -5343,6 +5640,7 @@
       "category_signal_en": "Read real business quality through cash flow, moats, and long-horizon allocation.",
       "accent": "#2563eb",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/duan_yongping/",
       "source_tracks": [
         {
@@ -5367,6 +5665,7 @@
           "body_en": "Then add biographies, business histories, and case studies to restore context and avoid reading the person as a quote machine."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "段永平 围绕 本分 的代表性实践",
@@ -5524,7 +5823,7 @@
       "title": "价值投资之父",
       "quote": "价格是你付出的，价值是你得到的",
       "guiding_question": "这件事真正创造价值的环节是什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "Where is the durable economic reality, and what would have to stay true for it to keep compounding?",
       "formula": "沃伦·巴菲特式决策 = 价值投资乘复利乘护城河",
       "tags": [
         "价值投资",
@@ -5540,6 +5839,7 @@
       "category_signal_en": "Read real business quality through cash flow, moats, and long-horizon allocation.",
       "accent": "#2563eb",
       "featured": true,
+      "priority_curated": true,
       "index_url": "/courses/buffett/",
       "source_tracks": [
         {
@@ -5564,6 +5864,56 @@
           "body_en": "Then add biographies, business histories, and case studies to restore context and avoid reading the person as a quote machine."
         }
       ],
+      "reference_shelf": {
+        "intro_zh": "这一组先读一手经营记录，再读权威整理和传记。巴菲特最值得信的材料，不是金句，而是几十年持续公开的资本配置记录。",
+        "intro_en": "Start with the operating record, then move to the best curated collections and biographies. Buffett makes the most sense through decades of capital-allocation evidence, not isolated quotes.",
+        "primary_sources": [
+          {
+            "title": "Berkshire Hathaway Shareholder Letters",
+            "creator": "Warren Buffett",
+            "meta": "1977–present · Berkshire Hathaway",
+            "note_zh": "理解巴菲特长期资本配置逻辑的一手材料。",
+            "note_en": "The clearest first-person record of Buffett's capital allocation logic over time."
+          },
+          {
+            "title": "Berkshire Hathaway Owner's Manual",
+            "creator": "Warren Buffett",
+            "meta": "1996 and later updates",
+            "note_zh": "把巴菲特最稳定的治理原则和股东关系原则讲得最直接。",
+            "note_en": "A compact statement of Buffett's governance principles and owner mindset."
+          },
+          {
+            "title": "Berkshire Hathaway Annual Meeting Q&A",
+            "creator": "Warren Buffett and Charlie Munger",
+            "meta": "annual public archive",
+            "note_zh": "适合看他如何在开放问答里暴露真实判断顺序。",
+            "note_en": "Useful for seeing how Buffett reasons in unscripted public dialogue."
+          }
+        ],
+        "core_reading": [
+          {
+            "title": "The Essays of Warren Buffett: Lessons for Corporate America",
+            "creator": "Warren Buffett and Lawrence A. Cunningham",
+            "meta": "book",
+            "note_zh": "把股东信按主题重组，是最好的系统入口之一。",
+            "note_en": "One of the best structured entrances because it reorganizes the letters by theme."
+          },
+          {
+            "title": "The Snowball: Warren Buffett and the Business of Life",
+            "creator": "Alice Schroeder",
+            "meta": "biography",
+            "note_zh": "用传记视角补足巴菲特的性格、关系和时代背景。",
+            "note_en": "Adds personality, relationships, and historical context to the public record."
+          },
+          {
+            "title": "Tap Dancing to Work: Warren Buffett on Practically Everything, 1966–2013",
+            "creator": "Carol J. Loomis",
+            "meta": "collection",
+            "note_zh": "适合补足不同年份采访与公开表达中的连续性。",
+            "note_en": "Good for tracing continuity across interviews, remarks, and public commentary."
+          }
+        ]
+      },
       "case_notes": [
         {
           "title": "沃伦·巴菲特 围绕 价值投资 的代表性实践",
@@ -5598,7 +5948,7 @@
         {
           "number": 2,
           "title": "核心概念：价值投资",
-          "title_en": "Core Concept I: 价值投资",
+          "title_en": "Core Concept I: value investing",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "沃伦·巴菲特思想的核心概念：价值投资。价值投资是沃伦·巴菲特思想体系的基石。先抓住 价值投资 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入沃伦·巴菲特世界的第一步。本课将深入剖析价值投资的深层逻辑与实践含义。",
@@ -5611,7 +5961,7 @@
         {
           "number": 3,
           "title": "核心概念：复利",
-          "title_en": "Core Concept II: 复利",
+          "title_en": "Core Concept II: compounding",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "沃伦·巴菲特思想的第二个核心概念：复利。复利与价值投资形成互补关系。如果说价值投资解决看什么的问题，复利解决怎么做的问题。本课深入分析复利的深层含义。",
@@ -5624,7 +5974,7 @@
         {
           "number": 4,
           "title": "核心概念：护城河",
-          "title_en": "Core Concept III: 护城河",
+          "title_en": "Core Concept III: moats",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入沃伦·巴菲特思想的第三根支柱：护城河。护城河与价值投资、复利构成三角支撑。沃伦·巴菲特说：执行纪律：把复杂战略压缩成可重复的关键动作。本课通过案例展示护城河的实践力量。",
@@ -5737,6 +6087,7 @@
       "category_signal_en": "Read real business quality through cash flow, moats, and long-horizon allocation.",
       "accent": "#2563eb",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/wang_xing/",
       "source_tracks": [
         {
@@ -5761,6 +6112,7 @@
           "body_en": "Then add biographies, business histories, and case studies to restore context and avoid reading the person as a quote machine."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "王兴 围绕 供给 的代表性实践",
@@ -5918,7 +6270,7 @@
       "title": "桥水创始人",
       "quote": "痛苦加反思等于进步",
       "guiding_question": "这件事真正创造价值的环节是什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What machine is running here, and which cause-and-effect relationships matter more than my current emotion?",
       "formula": "瑞·达利欧式决策 = 原则乘透明乘系统化决策",
       "tags": [
         "原则",
@@ -5934,6 +6286,7 @@
       "category_signal_en": "Read real business quality through cash flow, moats, and long-horizon allocation.",
       "accent": "#2563eb",
       "featured": false,
+      "priority_curated": true,
       "index_url": "/courses/ray_dalio/",
       "source_tracks": [
         {
@@ -5958,6 +6311,56 @@
           "body_en": "Then add biographies, business histories, and case studies to restore context and avoid reading the person as a quote machine."
         }
       ],
+      "reference_shelf": {
+        "intro_zh": "达利欧要先读《原则》和经济机器解释，再回头看债务周期研究。这样不会被术语淹没。",
+        "intro_en": "Start with Principles and the economic-machine explanation, then move to debt-cycle research. That keeps the framework legible before the macro detail arrives.",
+        "primary_sources": [
+          {
+            "title": "Principles: Life and Work",
+            "creator": "Ray Dalio",
+            "meta": "book",
+            "note_zh": "达利欧世界观和组织方法的主入口。",
+            "note_en": "The main entry to Dalio's worldview and organizational method."
+          },
+          {
+            "title": "How the Economic Machine Works",
+            "creator": "Ray Dalio",
+            "meta": "essay/video",
+            "note_zh": "宏观判断的最简结构图。",
+            "note_en": "The simplest structural map of his macro thinking."
+          },
+          {
+            "title": "Big Debt Crises",
+            "creator": "Ray Dalio",
+            "meta": "book",
+            "note_zh": "债务周期与历史案例的原始教材。",
+            "note_en": "The major source for his debt-cycle framework and case studies."
+          }
+        ],
+        "core_reading": [
+          {
+            "title": "Principles for Dealing with the Changing World Order",
+            "creator": "Ray Dalio",
+            "meta": "book",
+            "note_zh": "更偏历史与国家竞争。",
+            "note_en": "More historical and geopolitical in scope."
+          },
+          {
+            "title": "Bridgewater Daily Observations and Research Essays",
+            "creator": "Bridgewater Associates",
+            "meta": "research archive",
+            "note_zh": "适合看原则如何落进日常分析。",
+            "note_en": "Shows how the principles get applied in day-to-day analysis."
+          },
+          {
+            "title": "Big Debt Crises",
+            "creator": "Ray Dalio",
+            "meta": "book",
+            "note_zh": "想真正理解其宏观框架，这本绕不开。",
+            "note_en": "Hard to avoid if you want the real macro framework."
+          }
+        ]
+      },
       "case_notes": [
         {
           "title": "瑞·达利欧 围绕 原则 的代表性实践",
@@ -5992,7 +6395,7 @@
         {
           "number": 2,
           "title": "核心概念：原则",
-          "title_en": "Core Concept I: 原则",
+          "title_en": "Core Concept I: principles",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "瑞·达利欧思想的核心概念：原则。原则是瑞·达利欧思想体系的基石。先抓住 原则 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入瑞·达利欧世界的第一步。本课将深入剖析原则的深层逻辑与实践含义。",
@@ -6005,7 +6408,7 @@
         {
           "number": 3,
           "title": "核心概念：透明",
-          "title_en": "Core Concept II: 透明",
+          "title_en": "Core Concept II: transparency",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "瑞·达利欧思想的第二个核心概念：透明。透明与原则形成互补关系。如果说原则解决看什么的问题，透明解决怎么做的问题。本课深入分析透明的深层含义。",
@@ -6018,7 +6421,7 @@
         {
           "number": 4,
           "title": "核心概念：系统化决策",
-          "title_en": "Core Concept III: 系统化决策",
+          "title_en": "Core Concept III: systems decision-making",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入瑞·达利欧思想的第三根支柱：系统化决策。系统化决策与原则、透明构成三角支撑。瑞·达利欧说：执行纪律：把复杂战略压缩成可重复的关键动作。本课通过案例展示系统化决策的实践力量。",
@@ -6131,6 +6534,7 @@
       "category_signal_en": "Read real business quality through cash flow, moats, and long-horizon allocation.",
       "accent": "#2563eb",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/indra_nooyi/",
       "source_tracks": [
         {
@@ -6155,6 +6559,7 @@
           "body_en": "Then add biographies, business histories, and case studies to restore context and avoid reading the person as a quote machine."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "英德拉·努伊 围绕 战略 的代表性实践",
@@ -6328,6 +6733,7 @@
       "category_signal_en": "Read real business quality through cash flow, moats, and long-horizon allocation.",
       "accent": "#2563eb",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/tim_cook/",
       "source_tracks": [
         {
@@ -6352,6 +6758,7 @@
           "body_en": "Then add biographies, business histories, and case studies to restore context and avoid reading the person as a quote machine."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "蒂姆·库克 围绕 供应链 的代表性实践",
@@ -6525,6 +6932,7 @@
       "category_signal_en": "Read real business quality through cash flow, moats, and long-horizon allocation.",
       "accent": "#2563eb",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/sheryl_sandberg/",
       "source_tracks": [
         {
@@ -6549,6 +6957,7 @@
           "body_en": "Then add biographies, business histories, and case studies to restore context and avoid reading the person as a quote machine."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "谢丽尔·桑德伯格 围绕 领导力 的代表性实践",
@@ -6722,6 +7131,7 @@
       "category_signal_en": "Read real business quality through cash flow, moats, and long-horizon allocation.",
       "accent": "#2563eb",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/reed_hastings/",
       "source_tracks": [
         {
@@ -6746,6 +7156,7 @@
           "body_en": "Then add biographies, business histories, and case studies to restore context and avoid reading the person as a quote machine."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "里德·哈斯廷斯 围绕 自由与责任 的代表性实践",
@@ -6919,6 +7330,7 @@
       "category_signal_en": "Read real business quality through cash flow, moats, and long-horizon allocation.",
       "accent": "#2563eb",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/lei_jun/",
       "source_tracks": [
         {
@@ -6943,6 +7355,7 @@
           "body_en": "Then add biographies, business histories, and case studies to restore context and avoid reading the person as a quote machine."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "雷军 围绕 效率 的代表性实践",
@@ -7116,6 +7529,7 @@
       "category_signal_en": "Read real business quality through cash flow, moats, and long-horizon allocation.",
       "accent": "#2563eb",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/howard_schultz/",
       "source_tracks": [
         {
@@ -7140,6 +7554,7 @@
           "body_en": "Then add biographies, business histories, and case studies to restore context and avoid reading the person as a quote machine."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "霍华德·舒尔茨 围绕 品牌体验 的代表性实践",
@@ -7313,6 +7728,7 @@
       "category_signal_en": "Read real business quality through cash flow, moats, and long-horizon allocation.",
       "accent": "#2563eb",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/jack_ma/",
       "source_tracks": [
         {
@@ -7337,6 +7753,7 @@
           "body_en": "Then add biographies, business histories, and case studies to restore context and avoid reading the person as a quote machine."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "马云 围绕 愿景 的代表性实践",
@@ -7494,7 +7911,7 @@
       "title": "行为经济学家",
       "quote": "别急着相信第一反应",
       "guiding_question": "我们在讨论的概念到底指什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "Which part of this judgment is fast intuition, which part is slower analysis, and where is the bias most likely to enter?",
       "formula": "丹尼尔·卡尼曼式决策 = 系统一系统二乘偏误乘判断",
       "tags": [
         "系统一系统二",
@@ -7510,6 +7927,7 @@
       "category_signal_en": "Compress complex reality into reusable principles and repeatable questions.",
       "accent": "#b45309",
       "featured": false,
+      "priority_curated": true,
       "index_url": "/courses/daniel_kahneman/",
       "source_tracks": [
         {
@@ -7534,6 +7952,56 @@
           "body_en": "Then test the principle against politics, business, education, and self-cultivation to see what actually transfers."
         }
       ],
+      "reference_shelf": {
+        "intro_zh": "卡尼曼要先读原始论文，再读《思考，快与慢》和《噪声》。如果只读畅销书，很容易变成偏误词典，而不是判断训练。",
+        "intro_en": "Read the classic papers before Thinking, Fast and Slow and Noise. Otherwise Kahneman gets flattened into a bias glossary instead of a discipline of judgment.",
+        "primary_sources": [
+          {
+            "title": "Judgment under Uncertainty: Heuristics and Biases",
+            "creator": "Amos Tversky and Daniel Kahneman",
+            "meta": "Science, 1974",
+            "note_zh": "启发式与偏误研究的起点论文。",
+            "note_en": "A foundational paper for the heuristics-and-biases program."
+          },
+          {
+            "title": "Prospect Theory: An Analysis of Decision under Risk",
+            "creator": "Daniel Kahneman and Amos Tversky",
+            "meta": "Econometrica, 1979",
+            "note_zh": "前景理论的原始文本。",
+            "note_en": "The original text of prospect theory."
+          },
+          {
+            "title": "Thinking, Fast and Slow",
+            "creator": "Daniel Kahneman",
+            "meta": "book",
+            "note_zh": "把几十年研究压成公共语言的一本书。",
+            "note_en": "The public-facing synthesis of decades of work."
+          }
+        ],
+        "core_reading": [
+          {
+            "title": "Noise",
+            "creator": "Daniel Kahneman, Olivier Sibony, and Cass R. Sunstein",
+            "meta": "book",
+            "note_zh": "适合补足“偏误之外”的判断波动问题。",
+            "note_en": "Useful for judgment variability beyond classic bias language."
+          },
+          {
+            "title": "Maps of Bounded Rationality",
+            "creator": "Daniel Kahneman",
+            "meta": "Nobel lecture",
+            "note_zh": "回到更学术、更浓缩的自我总结。",
+            "note_en": "A tighter academic self-summary of his program."
+          },
+          {
+            "title": "Attention and Effort",
+            "creator": "Daniel Kahneman",
+            "meta": "book",
+            "note_zh": "适合补足他更早期的认知研究背景。",
+            "note_en": "Useful for early cognitive background to later judgment work."
+          }
+        ]
+      },
       "case_notes": [
         {
           "title": "丹尼尔·卡尼曼 围绕 系统一系统二 的代表性实践",
@@ -7568,7 +8036,7 @@
         {
           "number": 2,
           "title": "核心概念：系统一系统二",
-          "title_en": "Core Concept I: 系统一系统二",
+          "title_en": "Core Concept I: System 1 / System 2",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "丹尼尔·卡尼曼思想的核心概念：系统一系统二。系统一系统二是丹尼尔·卡尼曼思想体系的基石。先抓住 系统一系统二 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入丹尼尔·卡尼曼世界的第一步。本课将深入剖析系统一系统二的深层逻辑与实践含义。",
@@ -7581,7 +8049,7 @@
         {
           "number": 3,
           "title": "核心概念：偏误",
-          "title_en": "Core Concept II: 偏误",
+          "title_en": "Core Concept II: bias",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "丹尼尔·卡尼曼思想的第二个核心概念：偏误。偏误与系统一系统二形成互补关系。如果说系统一系统二解决看什么的问题，偏误解决怎么做的问题。本课深入分析偏误的深层含义。",
@@ -7594,7 +8062,7 @@
         {
           "number": 4,
           "title": "核心概念：判断",
-          "title_en": "Core Concept III: 判断",
+          "title_en": "Core Concept III: judgment under uncertainty",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入丹尼尔·卡尼曼思想的第三根支柱：判断。判断与系统一系统二、偏误构成三角支撑。丹尼尔·卡尼曼说：知行合一：思考最终要回到实践和人格修炼。本课通过案例展示判断的实践力量。",
@@ -7707,6 +8175,7 @@
       "category_signal_en": "Compress complex reality into reusable principles and repeatable questions.",
       "accent": "#b45309",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/daniel_pink/",
       "source_tracks": [
         {
@@ -7731,6 +8200,7 @@
           "body_en": "Then test the principle against politics, business, education, and self-cultivation to see what actually transfers."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "丹尼尔·平克 围绕 动机 的代表性实践",
@@ -7904,6 +8374,7 @@
       "category_signal_en": "Compress complex reality into reusable principles and repeatable questions.",
       "accent": "#b45309",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/jordan_peterson/",
       "source_tracks": [
         {
@@ -7928,6 +8399,7 @@
           "body_en": "Then test the principle against politics, business, education, and self-cultivation to see what actually transfers."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "乔丹·彼得森 围绕 责任 的代表性实践",
@@ -8101,6 +8573,7 @@
       "category_signal_en": "Compress complex reality into reusable principles and repeatable questions.",
       "accent": "#b45309",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/jonathan_haidt/",
       "source_tracks": [
         {
@@ -8125,6 +8598,7 @@
           "body_en": "Then test the principle against politics, business, education, and self-cultivation to see what actually transfers."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "乔纳森·海特 围绕 道德直觉 的代表性实践",
@@ -8298,6 +8772,7 @@
       "category_signal_en": "Compress complex reality into reusable principles and repeatable questions.",
       "accent": "#b45309",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/adam_grant/",
       "source_tracks": [
         {
@@ -8322,6 +8797,7 @@
           "body_en": "Then test the principle against politics, business, education, and self-cultivation to see what actually transfers."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "亚当·格兰特 围绕 给予者 的代表性实践",
@@ -8479,7 +8955,7 @@
       "title": "古希腊哲学家",
       "quote": "卓越不是行为，而是习惯",
       "guiding_question": "我们在讨论的概念到底指什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What kind of excellence is this practice training, and what would wise action look like in this specific situation?",
       "formula": "亚里士多德式决策 = 中道乘分类乘实践智慧",
       "tags": [
         "中道",
@@ -8495,6 +8971,7 @@
       "category_signal_en": "Compress complex reality into reusable principles and repeatable questions.",
       "accent": "#b45309",
       "featured": false,
+      "priority_curated": true,
       "index_url": "/courses/aristotle/",
       "source_tracks": [
         {
@@ -8519,6 +8996,56 @@
           "body_en": "Then test the principle against politics, business, education, and self-cultivation to see what actually transfers."
         }
       ],
+      "reference_shelf": {
+        "intro_zh": "亚里士多德不能只读摘句，要读伦理学、政治学和修辞学的组合。这样才能看到他如何把“目的、德性、实践智慧”连成一体。",
+        "intro_en": "Do not read Aristotle as a book of isolated sayings. Read ethics, politics, and rhetoric together to see how purpose, virtue, and practical wisdom form one system.",
+        "primary_sources": [
+          {
+            "title": "Nicomachean Ethics",
+            "creator": "Aristotle",
+            "meta": "primary text",
+            "note_zh": "德性、幸福与实践智慧的主文本。",
+            "note_en": "The central text for virtue, flourishing, and practical wisdom."
+          },
+          {
+            "title": "Politics",
+            "creator": "Aristotle",
+            "meta": "primary text",
+            "note_zh": "把伦理人与城邦秩序放到一起读。",
+            "note_en": "Useful for placing ethical life inside political order."
+          },
+          {
+            "title": "Rhetoric",
+            "creator": "Aristotle",
+            "meta": "primary text",
+            "note_zh": "看判断、情感与说服如何成为实践的一部分。",
+            "note_en": "Shows how judgment, emotion, and persuasion enter practical life."
+          }
+        ],
+        "core_reading": [
+          {
+            "title": "Metaphysics",
+            "creator": "Aristotle",
+            "meta": "primary-adjacent text",
+            "note_zh": "适合补足其分类与存在论背景。",
+            "note_en": "Useful for the broader background of classification and being."
+          },
+          {
+            "title": "Aristotle: A Very Short Introduction",
+            "creator": "Jonathan Barnes",
+            "meta": "guide",
+            "note_zh": "适合做结构化入门。",
+            "note_en": "A strong compact orientation."
+          },
+          {
+            "title": "Nicomachean Ethics",
+            "creator": "scholarly annotated edition",
+            "meta": "study edition",
+            "note_zh": "要真正读亚里士多德，译注版本很重要。",
+            "note_en": "Annotated editions matter a great deal for a serious read."
+          }
+        ]
+      },
       "case_notes": [
         {
           "title": "亚里士多德 围绕 中道 的代表性实践",
@@ -8553,7 +9080,7 @@
         {
           "number": 2,
           "title": "核心概念：中道",
-          "title_en": "Core Concept I: 中道",
+          "title_en": "Core Concept I: virtue",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "亚里士多德思想的核心概念：中道。中道是亚里士多德思想体系的基石。先抓住 中道 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入亚里士多德世界的第一步。本课将深入剖析中道的深层逻辑与实践含义。",
@@ -8566,7 +9093,7 @@
         {
           "number": 3,
           "title": "核心概念：分类",
-          "title_en": "Core Concept II: 分类",
+          "title_en": "Core Concept II: the mean",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "亚里士多德思想的第二个核心概念：分类。分类与中道形成互补关系。如果说中道解决看什么的问题，分类解决怎么做的问题。本课深入分析分类的深层含义。",
@@ -8579,7 +9106,7 @@
         {
           "number": 4,
           "title": "核心概念：实践智慧",
-          "title_en": "Core Concept III: 实践智慧",
+          "title_en": "Core Concept III: practical wisdom",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入亚里士多德思想的第三根支柱：实践智慧。实践智慧与中道、分类构成三角支撑。亚里士多德说：知行合一：思考最终要回到实践和人格修炼。本课通过案例展示实践智慧的实践力量。",
@@ -8692,6 +9219,7 @@
       "category_signal_en": "Compress complex reality into reusable principles and repeatable questions.",
       "accent": "#b45309",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/carol_dweck/",
       "source_tracks": [
         {
@@ -8716,6 +9244,7 @@
           "body_en": "Then test the principle against politics, business, education, and self-cultivation to see what actually transfers."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "卡罗尔·德韦克 围绕 成长型思维 的代表性实践",
@@ -8873,7 +9402,7 @@
       "title": "儒家思想家",
       "quote": "己所不欲，勿施于人",
       "guiding_question": "我们在讨论的概念到底指什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What kind of person, relationship, and order does this decision create if repeated over time?",
       "formula": "孔子式决策 = 仁乘礼乘修身",
       "tags": [
         "仁",
@@ -8889,6 +9418,7 @@
       "category_signal_en": "Compress complex reality into reusable principles and repeatable questions.",
       "accent": "#b45309",
       "featured": true,
+      "priority_curated": true,
       "index_url": "/courses/confucius/",
       "source_tracks": [
         {
@@ -8913,6 +9443,56 @@
           "body_en": "Then test the principle against politics, business, education, and self-cultivation to see what actually transfers."
         }
       ],
+      "reference_shelf": {
+        "intro_zh": "孔子必须先读《论语》，再读注疏和现代阐释。不要先从成功学式摘句入手。",
+        "intro_en": "Start with the Analects, then read commentary and modern interpretation. Do not begin with decontextualized inspirational fragments.",
+        "primary_sources": [
+          {
+            "title": "The Analects",
+            "creator": "Confucian tradition",
+            "meta": "primary text",
+            "note_zh": "孔子最核心的一手材料。",
+            "note_en": "The central primary text for Confucius."
+          },
+          {
+            "title": "The Great Learning",
+            "creator": "Confucian canon",
+            "meta": "classical text",
+            "note_zh": "适合补足修身到治事的递进结构。",
+            "note_en": "Useful for the ladder from self-cultivation to public order."
+          },
+          {
+            "title": "The Doctrine of the Mean",
+            "creator": "Confucian canon",
+            "meta": "classical text",
+            "note_zh": "适合理解“中”的动态平衡而不是折中。",
+            "note_en": "Helpful for understanding the dynamic balance behind the idea of the mean."
+          }
+        ],
+        "core_reading": [
+          {
+            "title": "The Analects",
+            "creator": "translation by Edward Slingerland or another scholarly edition",
+            "meta": "scholarly translation",
+            "note_zh": "读孔子最好直接配学术译注版本。",
+            "note_en": "A scholarly translation is the best practical way to read Confucius closely."
+          },
+          {
+            "title": "Thinking Through Confucius",
+            "creator": "David L. Hall and Roger T. Ames",
+            "meta": "interpretive book",
+            "note_zh": "适合把孔子放回关系性世界观里理解。",
+            "note_en": "Strong on reading Confucius through a relational worldview."
+          },
+          {
+            "title": "Confucius: And the World He Created",
+            "creator": "Michael Schuman",
+            "meta": "contextual biography",
+            "note_zh": "适合快速补历史和后世影响。",
+            "note_en": "A readable entry for historical context and later influence."
+          }
+        ]
+      },
       "case_notes": [
         {
           "title": "孔子 围绕 仁 的代表性实践",
@@ -8947,7 +9527,7 @@
         {
           "number": 2,
           "title": "核心概念：仁",
-          "title_en": "Core Concept I: 仁",
+          "title_en": "Core Concept I: ren (humaneness)",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "孔子思想的核心概念：仁。仁是孔子思想体系的基石。先抓住 仁 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入孔子世界的第一步。本课将深入剖析仁的深层逻辑与实践含义。",
@@ -8960,7 +9540,7 @@
         {
           "number": 3,
           "title": "核心概念：礼",
-          "title_en": "Core Concept II: 礼",
+          "title_en": "Core Concept II: li (ritual order)",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "孔子思想的第二个核心概念：礼。礼与仁形成互补关系。如果说仁解决看什么的问题，礼解决怎么做的问题。本课深入分析礼的深层含义。",
@@ -8973,7 +9553,7 @@
         {
           "number": 4,
           "title": "核心概念：修身",
-          "title_en": "Core Concept III: 修身",
+          "title_en": "Core Concept III: self-cultivation",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入孔子思想的第三根支柱：修身。修身与仁、礼构成三角支撑。孔子说：知行合一：思考最终要回到实践和人格修炼。本课通过案例展示修身的实践力量。",
@@ -9086,6 +9666,7 @@
       "category_signal_en": "Compress complex reality into reusable principles and repeatable questions.",
       "accent": "#b45309",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/annie_duke/",
       "source_tracks": [
         {
@@ -9110,6 +9691,7 @@
           "body_en": "Then test the principle against politics, business, education, and self-cultivation to see what actually transfers."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "安妮·杜克 围绕 概率思维 的代表性实践",
@@ -9283,6 +9865,7 @@
       "category_signal_en": "Compress complex reality into reusable principles and repeatable questions.",
       "accent": "#b45309",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/angela_duckworth/",
       "source_tracks": [
         {
@@ -9307,6 +9890,7 @@
           "body_en": "Then test the principle against politics, business, education, and self-cultivation to see what actually transfers."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "安杰拉·达克沃斯 围绕 毅力 的代表性实践",
@@ -9480,6 +10064,7 @@
       "category_signal_en": "Compress complex reality into reusable principles and repeatable questions.",
       "accent": "#b45309",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/yuval_harari/",
       "source_tracks": [
         {
@@ -9504,6 +10089,7 @@
           "body_en": "Then test the principle against politics, business, education, and self-cultivation to see what actually transfers."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "尤瓦尔·赫拉利 围绕 叙事 的代表性实践",
@@ -9661,7 +10247,7 @@
       "title": "现代管理学之父",
       "quote": "管理的本质是让普通人做出不普通的成果",
       "guiding_question": "我们在讨论的概念到底指什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What is the mission here, who is the customer, and what result actually counts as performance?",
       "formula": "彼得·德鲁克式决策 = 管理乘知识工作者乘使命",
       "tags": [
         "管理",
@@ -9677,6 +10263,7 @@
       "category_signal_en": "Compress complex reality into reusable principles and repeatable questions.",
       "accent": "#b45309",
       "featured": false,
+      "priority_curated": true,
       "index_url": "/courses/peter_drucker/",
       "source_tracks": [
         {
@@ -9701,6 +10288,56 @@
           "body_en": "Then test the principle against politics, business, education, and self-cultivation to see what actually transfers."
         }
       ],
+      "reference_shelf": {
+        "intro_zh": "德鲁克要先读原著，再读选编和管理学二手书。很多后来的管理术语都引用他，但真正的德鲁克远比“效率技巧”厚得多。",
+        "intro_en": "Read Drucker's own books before the secondary management literature. Later management culture quotes him constantly, but the real Drucker is much deeper than productivity slogans.",
+        "primary_sources": [
+          {
+            "title": "The Practice of Management",
+            "creator": "Peter F. Drucker",
+            "meta": "book",
+            "note_zh": "管理学原典之一。",
+            "note_en": "One of the foundational management texts."
+          },
+          {
+            "title": "The Effective Executive",
+            "creator": "Peter F. Drucker",
+            "meta": "book",
+            "note_zh": "理解“贡献、重点和时间管理”的核心入口。",
+            "note_en": "The cleanest entry into contribution, focus, and executive effectiveness."
+          },
+          {
+            "title": "Managing Oneself",
+            "creator": "Peter F. Drucker",
+            "meta": "essay",
+            "note_zh": "最适合今天知识工作者的短文本之一。",
+            "note_en": "One of the best short texts for modern knowledge work."
+          }
+        ],
+        "core_reading": [
+          {
+            "title": "Management: Tasks, Responsibilities, Practices",
+            "creator": "Peter F. Drucker",
+            "meta": "book",
+            "note_zh": "更完整的体系性扩展。",
+            "note_en": "A fuller and more systematic expansion of his management worldview."
+          },
+          {
+            "title": "Innovation and Entrepreneurship",
+            "creator": "Peter F. Drucker",
+            "meta": "book",
+            "note_zh": "适合补足创新与组织增长的部分。",
+            "note_en": "Useful for innovation and organizational growth."
+          },
+          {
+            "title": "Peter Drucker on Management",
+            "creator": "Peter F. Drucker",
+            "meta": "selected writings",
+            "note_zh": "适合做快速主题复习。",
+            "note_en": "Good for faster thematic review."
+          }
+        ]
+      },
       "case_notes": [
         {
           "title": "彼得·德鲁克 围绕 管理 的代表性实践",
@@ -9735,7 +10372,7 @@
         {
           "number": 2,
           "title": "核心概念：管理",
-          "title_en": "Core Concept I: 管理",
+          "title_en": "Core Concept I: management",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "彼得·德鲁克思想的核心概念：管理。管理是彼得·德鲁克思想体系的基石。先抓住 管理 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入彼得·德鲁克世界的第一步。本课将深入剖析管理的深层逻辑与实践含义。",
@@ -9748,7 +10385,7 @@
         {
           "number": 3,
           "title": "核心概念：知识工作者",
-          "title_en": "Core Concept II: 知识工作者",
+          "title_en": "Core Concept II: knowledge work",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "彼得·德鲁克思想的第二个核心概念：知识工作者。知识工作者与管理形成互补关系。如果说管理解决看什么的问题，知识工作者解决怎么做的问题。本课深入分析知识工作者的深层含义。",
@@ -9761,7 +10398,7 @@
         {
           "number": 4,
           "title": "核心概念：使命",
-          "title_en": "Core Concept III: 使命",
+          "title_en": "Core Concept III: mission",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入彼得·德鲁克思想的第三根支柱：使命。使命与管理、知识工作者构成三角支撑。彼得·德鲁克说：知行合一：思考最终要回到实践和人格修炼。本课通过案例展示使命的实践力量。",
@@ -9858,7 +10495,7 @@
       "title": "多元思维模型大师",
       "quote": "反过来想，总是反过来想",
       "guiding_question": "我们在讨论的概念到底指什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What would this look like if I inverted the problem and checked it from multiple mental models first?",
       "formula": "查理·芒格式决策 = 逆向思维乘多元模型乘认知偏误",
       "tags": [
         "逆向思维",
@@ -9874,6 +10511,7 @@
       "category_signal_en": "Compress complex reality into reusable principles and repeatable questions.",
       "accent": "#b45309",
       "featured": false,
+      "priority_curated": true,
       "index_url": "/courses/charlie_munger/",
       "source_tracks": [
         {
@@ -9898,6 +10536,56 @@
           "body_en": "Then test the principle against politics, business, education, and self-cultivation to see what actually transfers."
         }
       ],
+      "reference_shelf": {
+        "intro_zh": "芒格要先读演讲和讲话原文，再读整理书和二手阐释。不要先从“思维模型”标签开始，要先看他如何反复讲“少犯错”。",
+        "intro_en": "Read the talks first, then the edited collections and biographies. Do not start with the label 'mental models' before seeing how often Munger is really teaching error-avoidance.",
+        "primary_sources": [
+          {
+            "title": "Poor Charlie's Almanack",
+            "creator": "Charles T. Munger, edited by Peter D. Kaufman",
+            "meta": "talks and collected materials",
+            "note_zh": "最接近芒格本人表达节奏和结构的一本书。",
+            "note_en": "The closest single-volume entrance to Munger's own cadence and reasoning."
+          },
+          {
+            "title": "A Lesson on Elementary, Worldly Wisdom as It Relates to Investment Management & Business",
+            "creator": "Charlie Munger",
+            "meta": "speech",
+            "note_zh": "多元模型框架的核心演讲。",
+            "note_en": "The essential speech on the latticework of mental models."
+          },
+          {
+            "title": "The Psychology of Human Misjudgment",
+            "creator": "Charlie Munger",
+            "meta": "speech",
+            "note_zh": "读芒格一定要回到这篇，认知偏误部分最集中。",
+            "note_en": "A foundational text if you want the clearest statement of Munger on cognitive error."
+          }
+        ],
+        "core_reading": [
+          {
+            "title": "Damn Right! Behind the Scenes with Berkshire Hathaway Billionaire Charlie Munger",
+            "creator": "Janet Lowe",
+            "meta": "biography",
+            "note_zh": "补足芒格的生平、职业脉络与投资实践。",
+            "note_en": "Useful for life history, career context, and investment practice."
+          },
+          {
+            "title": "Seeking Wisdom: From Darwin to Munger",
+            "creator": "Peter Bevelin",
+            "meta": "interpretive book",
+            "note_zh": "不是芒格原著，但很适合把他的跨学科框架转成可用清单。",
+            "note_en": "Not authored by Munger, but strong at turning his framework into usable judgment tools."
+          },
+          {
+            "title": "Charlie Munger: The Complete Investor",
+            "creator": "Tren Griffin",
+            "meta": "interpretive book",
+            "note_zh": "适合快速梳理芒格的投资原则与心理学框架。",
+            "note_en": "A concise map of Munger's investment principles and psychology-heavy worldview."
+          }
+        ]
+      },
       "case_notes": [
         {
           "title": "查理·芒格 围绕 逆向思维 的代表性实践",
@@ -9932,7 +10620,7 @@
         {
           "number": 2,
           "title": "核心概念：逆向思维",
-          "title_en": "Core Concept I: 逆向思维",
+          "title_en": "Core Concept I: inversion",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "查理·芒格思想的核心概念：逆向思维。逆向思维是查理·芒格思想体系的基石。先抓住 逆向思维 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入查理·芒格世界的第一步。本课将深入剖析逆向思维的深层逻辑与实践含义。",
@@ -9945,7 +10633,7 @@
         {
           "number": 3,
           "title": "核心概念：多元模型",
-          "title_en": "Core Concept II: 多元模型",
+          "title_en": "Core Concept II: mental models",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "查理·芒格思想的第二个核心概念：多元模型。多元模型与逆向思维形成互补关系。如果说逆向思维解决看什么的问题，多元模型解决怎么做的问题。本课深入分析多元模型的深层含义。",
@@ -9958,7 +10646,7 @@
         {
           "number": 4,
           "title": "核心概念：认知偏误",
-          "title_en": "Core Concept III: 认知偏误",
+          "title_en": "Core Concept III: cognitive bias",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入查理·芒格思想的第三根支柱：认知偏误。认知偏误与逆向思维、多元模型构成三角支撑。查理·芒格说：知行合一：思考最终要回到实践和人格修炼。本课通过案例展示认知偏误的实践力量。",
@@ -10055,7 +10743,7 @@
       "title": "心学思想家",
       "quote": "知是行之始，行是知之成",
       "guiding_question": "我们在讨论的概念到底指什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What do I already know is right, and where exactly is action failing to keep up with that knowledge?",
       "formula": "王阳明式决策 = 知行合一乘致良知乘内省",
       "tags": [
         "知行合一",
@@ -10071,6 +10759,7 @@
       "category_signal_en": "Compress complex reality into reusable principles and repeatable questions.",
       "accent": "#b45309",
       "featured": false,
+      "priority_curated": true,
       "index_url": "/courses/wang_yangming/",
       "source_tracks": [
         {
@@ -10095,6 +10784,56 @@
           "body_en": "Then test the principle against politics, business, education, and self-cultivation to see what actually transfers."
         }
       ],
+      "reference_shelf": {
+        "intro_zh": "王阳明要先读《传习录》和《大学问》，再读现代研究。核心不是口号式“知行合一”，而是他如何处理良知、自欺与实践。",
+        "intro_en": "Start with Instructions for Practical Living and Inquiry on the Great Learning, then add modern studies. The core is not the slogan of unity of knowledge and action but how Wang treats conscience, self-deception, and practice.",
+        "primary_sources": [
+          {
+            "title": "Instructions for Practical Living (传习录)",
+            "creator": "Wang Yangming",
+            "meta": "primary text",
+            "note_zh": "理解王阳明的首要文本。",
+            "note_en": "The indispensable primary text for Wang Yangming."
+          },
+          {
+            "title": "Inquiry on the Great Learning (大学问)",
+            "creator": "Wang Yangming",
+            "meta": "essay",
+            "note_zh": "适合看其修身与秩序的连通方式。",
+            "note_en": "Useful for the connection between self-cultivation and order."
+          },
+          {
+            "title": "Collected Writings of Wang Yangming",
+            "creator": "Wang Yangming",
+            "meta": "collected works",
+            "note_zh": "补足更完整的文献面。",
+            "note_en": "Useful for a wider documentary picture of the corpus."
+          }
+        ],
+        "core_reading": [
+          {
+            "title": "Instructions for Practical Living and Other Neo-Confucian Writings",
+            "creator": "translated selections",
+            "meta": "study edition",
+            "note_zh": "英文世界读王阳明的重要入口。",
+            "note_en": "A major English-language entrance to Wang's thought."
+          },
+          {
+            "title": "The Philosophy of Wang Yangming",
+            "creator": "modern study",
+            "meta": "interpretive book",
+            "note_zh": "适合快速搭建概念图。",
+            "note_en": "Useful for building a conceptual map quickly."
+          },
+          {
+            "title": "Wang Yang-Ming: Idealist Philosopher of Sixteenth-Century China",
+            "creator": "Frederick Goodrich Henke",
+            "meta": "study",
+            "note_zh": "较早但仍值得参考的研究。",
+            "note_en": "An older but still useful study."
+          }
+        ]
+      },
       "case_notes": [
         {
           "title": "王阳明 围绕 知行合一 的代表性实践",
@@ -10129,7 +10868,7 @@
         {
           "number": 2,
           "title": "核心概念：知行合一",
-          "title_en": "Core Concept I: 知行合一",
+          "title_en": "Core Concept I: unity of knowing and doing",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "王阳明思想的核心概念：知行合一。知行合一是王阳明思想体系的基石。先抓住 知行合一 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入王阳明世界的第一步。本课将深入剖析知行合一的深层逻辑与实践含义。",
@@ -10142,7 +10881,7 @@
         {
           "number": 3,
           "title": "核心概念：致良知",
-          "title_en": "Core Concept II: 致良知",
+          "title_en": "Core Concept II: innate knowing",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "王阳明思想的第二个核心概念：致良知。致良知与知行合一形成互补关系。如果说知行合一解决看什么的问题，致良知解决怎么做的问题。本课深入分析致良知的深层含义。",
@@ -10155,7 +10894,7 @@
         {
           "number": 4,
           "title": "核心概念：内省",
-          "title_en": "Core Concept III: 内省",
+          "title_en": "Core Concept III: self-examination",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入王阳明思想的第三根支柱：内省。内省与知行合一、致良知构成三角支撑。王阳明说：知行合一：思考最终要回到实践和人格修炼。本课通过案例展示内省的实践力量。",
@@ -10268,6 +11007,7 @@
       "category_signal_en": "Compress complex reality into reusable principles and repeatable questions.",
       "accent": "#b45309",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/naval_ravikant/",
       "source_tracks": [
         {
@@ -10292,6 +11032,7 @@
           "body_en": "Then test the principle against politics, business, education, and self-cultivation to see what actually transfers."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "纳瓦尔 围绕 幸福 的代表性实践",
@@ -10465,6 +11206,7 @@
       "category_signal_en": "Compress complex reality into reusable principles and repeatable questions.",
       "accent": "#b45309",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/nassim_taleb/",
       "source_tracks": [
         {
@@ -10489,6 +11231,7 @@
           "body_en": "Then test the principle against politics, business, education, and self-cultivation to see what actually transfers."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "纳西姆·塔勒布 围绕 反脆弱 的代表性实践",
@@ -10646,7 +11389,7 @@
       "title": "道家思想家",
       "quote": "治大国若烹小鲜",
       "guiding_question": "我们在讨论的概念到底指什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "Where is force creating fragility, and what changes if we work with the grain of the situation instead?",
       "formula": "老子式决策 = 无为乘柔弱胜刚强乘顺势",
       "tags": [
         "无为",
@@ -10662,6 +11405,7 @@
       "category_signal_en": "Compress complex reality into reusable principles and repeatable questions.",
       "accent": "#b45309",
       "featured": true,
+      "priority_curated": true,
       "index_url": "/courses/laozi/",
       "source_tracks": [
         {
@@ -10686,6 +11430,56 @@
           "body_en": "Then test the principle against politics, business, education, and self-cultivation to see what actually transfers."
         }
       ],
+      "reference_shelf": {
+        "intro_zh": "老子先读《道德经》本身，再看不同译本和出土文本差异。核心不是神秘，而是“顺势、减法、反转”这套结构。",
+        "intro_en": "Read the Daodejing itself first, then compare translations and manuscript traditions. The core is not mysticism; it is the structure of alignment, subtraction, and reversal.",
+        "primary_sources": [
+          {
+            "title": "Daodejing / Tao Te Ching",
+            "creator": "Laozi tradition",
+            "meta": "primary text",
+            "note_zh": "老子的核心原典。",
+            "note_en": "The central primary text associated with Laozi."
+          },
+          {
+            "title": "Mawangdui Laozi Manuscripts",
+            "creator": "excavated text tradition",
+            "meta": "manuscript tradition",
+            "note_zh": "适合看到文本次序与版本差异。",
+            "note_en": "Useful for seeing early textual ordering and variation."
+          },
+          {
+            "title": "Guodian Laozi Bamboo Slips",
+            "creator": "excavated text tradition",
+            "meta": "manuscript tradition",
+            "note_zh": "帮助理解早期《老子》的形成与结构。",
+            "note_en": "Helps illuminate early formation and structure of the Laozi text."
+          }
+        ],
+        "core_reading": [
+          {
+            "title": "Tao Te Ching",
+            "creator": "translation by D. C. Lau",
+            "meta": "scholarly translation",
+            "note_zh": "稳健的英文入门版本之一。",
+            "note_en": "One of the more stable English entry points."
+          },
+          {
+            "title": "Dao De Jing: A Philosophical Translation",
+            "creator": "Roger T. Ames and David L. Hall",
+            "meta": "interpretive translation",
+            "note_zh": "适合把老子放进哲学语境而非鸡汤语境。",
+            "note_en": "Good for reading Laozi philosophically rather than proverbially."
+          },
+          {
+            "title": "Daoism Explained",
+            "creator": "Hans-Georg Moeller",
+            "meta": "context book",
+            "note_zh": "适合补足道家思想的大图景。",
+            "note_en": "Useful for broader Daoist context around the text."
+          }
+        ]
+      },
       "case_notes": [
         {
           "title": "老子 围绕 无为 的代表性实践",
@@ -10720,7 +11514,7 @@
         {
           "number": 2,
           "title": "核心概念：无为",
-          "title_en": "Core Concept I: 无为",
+          "title_en": "Core Concept I: non-coercive action",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "老子思想的核心概念：无为。无为是老子思想体系的基石。先抓住 无为 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入老子世界的第一步。本课将深入剖析无为的深层逻辑与实践含义。",
@@ -10733,7 +11527,7 @@
         {
           "number": 3,
           "title": "核心概念：柔弱胜刚强",
-          "title_en": "Core Concept II: 柔弱胜刚强",
+          "title_en": "Core Concept II: softness over force",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "老子思想的第二个核心概念：柔弱胜刚强。柔弱胜刚强与无为形成互补关系。如果说无为解决看什么的问题，柔弱胜刚强解决怎么做的问题。本课深入分析柔弱胜刚强的深层含义。",
@@ -10746,7 +11540,7 @@
         {
           "number": 4,
           "title": "核心概念：顺势",
-          "title_en": "Core Concept III: 顺势",
+          "title_en": "Core Concept III: alignment with the dao",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入老子思想的第三根支柱：顺势。顺势与无为、柔弱胜刚强构成三角支撑。老子说：知行合一：思考最终要回到实践和人格修炼。本课通过案例展示顺势的实践力量。",
@@ -10843,7 +11637,7 @@
       "title": "古希腊哲学家",
       "quote": "未经省察的人生不值得过",
       "guiding_question": "我们在讨论的概念到底指什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What do we think we know here, and what collapses once the definition is examined carefully?",
       "formula": "苏格拉底式决策 = 反诘乘德性乘认识自己",
       "tags": [
         "反诘",
@@ -10859,6 +11653,7 @@
       "category_signal_en": "Compress complex reality into reusable principles and repeatable questions.",
       "accent": "#b45309",
       "featured": false,
+      "priority_curated": true,
       "index_url": "/courses/socrates/",
       "source_tracks": [
         {
@@ -10883,6 +11678,56 @@
           "body_en": "Then test the principle against politics, business, education, and self-cultivation to see what actually transfers."
         }
       ],
+      "reference_shelf": {
+        "intro_zh": "苏格拉底没有留下自己写的书，所以必须通过柏拉图和色诺芬进入。重点不是“金句”，而是他如何一步步拆掉伪知识。",
+        "intro_en": "Socrates left no writings of his own, so the entry point is Plato and Xenophon. The point is not the famous lines but the step-by-step dismantling of false knowledge.",
+        "primary_sources": [
+          {
+            "title": "Apology",
+            "creator": "Plato",
+            "meta": "dialogue",
+            "note_zh": "苏格拉底最核心的自我辩护文本。",
+            "note_en": "The core text for Socrates' public defense and moral posture."
+          },
+          {
+            "title": "Crito",
+            "creator": "Plato",
+            "meta": "dialogue",
+            "note_zh": "适合理解苏格拉底对法、义务与灵魂的判断。",
+            "note_en": "Useful for law, obligation, and the care of the soul."
+          },
+          {
+            "title": "Memorabilia",
+            "creator": "Xenophon",
+            "meta": "recollection",
+            "note_zh": "用另一位弟子的视角补足苏格拉底形象。",
+            "note_en": "A second vantage point from another student and witness."
+          }
+        ],
+        "core_reading": [
+          {
+            "title": "Plato: Five Dialogues",
+            "creator": "Plato",
+            "meta": "collected dialogues",
+            "note_zh": "非常适合作为苏格拉底入门。",
+            "note_en": "A strong practical entrance to Socratic dialogue."
+          },
+          {
+            "title": "Socrates: Ironist and Moral Philosopher",
+            "creator": "Gregory Vlastos",
+            "meta": "interpretive book",
+            "note_zh": "学术上非常重要的现代阐释。",
+            "note_en": "A major modern interpretation."
+          },
+          {
+            "title": "The Trial and Death of Socrates",
+            "creator": "Plato translation volume",
+            "meta": "study edition",
+            "note_zh": "适合把《申辩》《克里托》放在一起读。",
+            "note_en": "A useful grouped edition for reading the key trial texts together."
+          }
+        ]
+      },
       "case_notes": [
         {
           "title": "苏格拉底 围绕 反诘 的代表性实践",
@@ -10917,7 +11762,7 @@
         {
           "number": 2,
           "title": "核心概念：反诘",
-          "title_en": "Core Concept I: 反诘",
+          "title_en": "Core Concept I: questioning",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "苏格拉底思想的核心概念：反诘。反诘是苏格拉底思想体系的基石。先抓住 反诘 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入苏格拉底世界的第一步。本课将深入剖析反诘的深层逻辑与实践含义。",
@@ -10930,7 +11775,7 @@
         {
           "number": 3,
           "title": "核心概念：德性",
-          "title_en": "Core Concept II: 德性",
+          "title_en": "Core Concept II: virtue",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "苏格拉底思想的第二个核心概念：德性。德性与反诘形成互补关系。如果说反诘解决看什么的问题，德性解决怎么做的问题。本课深入分析德性的深层含义。",
@@ -10943,7 +11788,7 @@
         {
           "number": 4,
           "title": "核心概念：认识自己",
-          "title_en": "Core Concept III: 认识自己",
+          "title_en": "Core Concept III: self-examination",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入苏格拉底思想的第三根支柱：认识自己。认识自己与反诘、德性构成三角支撑。苏格拉底说：知行合一：思考最终要回到实践和人格修炼。本课通过案例展示认识自己的实践力量。",
@@ -11056,6 +11901,7 @@
       "category_signal_en": "Compress complex reality into reusable principles and repeatable questions.",
       "accent": "#b45309",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/simone_de_beauvoir/",
       "source_tracks": [
         {
@@ -11080,6 +11926,7 @@
           "body_en": "Then test the principle against politics, business, education, and self-cultivation to see what actually transfers."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "西蒙娜·德·波伏娃 围绕 自由 的代表性实践",
@@ -11253,6 +12100,7 @@
       "category_signal_en": "Compress complex reality into reusable principles and repeatable questions.",
       "accent": "#b45309",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/martin_seligman/",
       "source_tracks": [
         {
@@ -11277,6 +12125,7 @@
           "body_en": "Then test the principle against politics, business, education, and self-cultivation to see what actually transfers."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "马丁·塞利格曼 围绕 幸福 的代表性实践",
@@ -11450,6 +12299,7 @@
       "category_signal_en": "Turn experience into works, then turn works into methods for understanding the world.",
       "accent": "#c2410c",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/leonardo_da_vinci/",
       "source_tracks": [
         {
@@ -11474,6 +12324,7 @@
           "body_en": "Then add criticism, exhibition texts, and reception history to widen interpretation."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "列奥纳多·达·芬奇 围绕 观察 的代表性实践",
@@ -11647,6 +12498,7 @@
       "category_signal_en": "Turn experience into works, then turn works into methods for understanding the world.",
       "accent": "#c2410c",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/hayao_miyazaki/",
       "source_tracks": [
         {
@@ -11671,6 +12523,7 @@
           "body_en": "Then add criticism, exhibition texts, and reception history to widen interpretation."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "宫崎骏 围绕 自然 的代表性实践",
@@ -11844,6 +12697,7 @@
       "category_signal_en": "Turn experience into works, then turn works into methods for understanding the world.",
       "accent": "#c2410c",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/rei_kawakubo/",
       "source_tracks": [
         {
@@ -11868,6 +12722,7 @@
           "body_en": "Then add criticism, exhibition texts, and reception history to widen interpretation."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "川久保玲 围绕 反叛 的代表性实践",
@@ -12041,6 +12896,7 @@
       "category_signal_en": "Turn experience into works, then turn works into methods for understanding the world.",
       "accent": "#c2410c",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/akira_kurosawa/",
       "source_tracks": [
         {
@@ -12065,6 +12921,7 @@
           "body_en": "Then add criticism, exhibition texts, and reception history to widen interpretation."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "黑泽明 围绕 叙事 的代表性实践",
@@ -12238,6 +13095,7 @@
       "category_signal_en": "Build understanding from problem definition, experiment design, and evidence quality.",
       "accent": "#0891b2",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/carl_sagan/",
       "source_tracks": [
         {
@@ -12262,6 +13120,7 @@
           "body_en": "Then add biographies, lab memoirs, and histories of science to recover time, context, and peer networks."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "卡尔·萨根 围绕 宇宙视角 的代表性实践",
@@ -12435,6 +13294,7 @@
       "category_signal_en": "Build understanding from problem definition, experiment design, and evidence quality.",
       "accent": "#0891b2",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/nikola_tesla/",
       "source_tracks": [
         {
@@ -12459,6 +13319,7 @@
           "body_en": "Then add biographies, lab memoirs, and histories of science to recover time, context, and peer networks."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "尼古拉·特斯拉 围绕 发明 的代表性实践",
@@ -12632,6 +13493,7 @@
       "category_signal_en": "Build understanding from problem definition, experiment design, and evidence quality.",
       "accent": "#0891b2",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/tu_youyou/",
       "source_tracks": [
         {
@@ -12656,6 +13518,7 @@
           "body_en": "Then add biographies, lab memoirs, and histories of science to recover time, context, and peer networks."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "屠呦呦 围绕 传统与现代 的代表性实践",
@@ -12829,6 +13692,7 @@
       "category_signal_en": "Build understanding from problem definition, experiment design, and evidence quality.",
       "accent": "#0891b2",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/zhang_feng/",
       "source_tracks": [
         {
@@ -12853,6 +13717,7 @@
           "body_en": "Then add biographies, lab memoirs, and histories of science to recover time, context, and peer networks."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "张锋 围绕 工具革命 的代表性实践",
@@ -13026,6 +13891,7 @@
       "category_signal_en": "Build understanding from problem definition, experiment design, and evidence quality.",
       "accent": "#0891b2",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/stephen_hawking/",
       "source_tracks": [
         {
@@ -13050,6 +13916,7 @@
           "body_en": "Then add biographies, lab memoirs, and histories of science to recover time, context, and peer networks."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "斯蒂芬·霍金 围绕 宇宙 的代表性实践",
@@ -13223,6 +14090,7 @@
       "category_signal_en": "Build understanding from problem definition, experiment design, and evidence quality.",
       "accent": "#0891b2",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/yang_zhenning/",
       "source_tracks": [
         {
@@ -13247,6 +14115,7 @@
           "body_en": "Then add biographies, lab memoirs, and histories of science to recover time, context, and peer networks."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "杨振宁 围绕 对称美 的代表性实践",
@@ -13420,6 +14289,7 @@
       "category_signal_en": "Build understanding from problem definition, experiment design, and evidence quality.",
       "accent": "#0891b2",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/edward_wilson/",
       "source_tracks": [
         {
@@ -13444,6 +14314,7 @@
           "body_en": "Then add biographies, lab memoirs, and histories of science to recover time, context, and peer networks."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "爱德华·威尔逊 围绕 生物多样性 的代表性实践",
@@ -13617,6 +14488,7 @@
       "category_signal_en": "Build understanding from problem definition, experiment design, and evidence quality.",
       "accent": "#0891b2",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/marie_curie/",
       "source_tracks": [
         {
@@ -13641,6 +14513,7 @@
           "body_en": "Then add biographies, lab memoirs, and histories of science to recover time, context, and peer networks."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "玛丽·居里 围绕 实验 的代表性实践",
@@ -13814,6 +14687,7 @@
       "category_signal_en": "Build understanding from problem definition, experiment design, and evidence quality.",
       "accent": "#0891b2",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/jane_goodall/",
       "source_tracks": [
         {
@@ -13838,6 +14712,7 @@
           "body_en": "Then add biographies, lab memoirs, and histories of science to recover time, context, and peer networks."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "珍·古道尔 围绕 观察 的代表性实践",
@@ -14011,6 +14886,7 @@
       "category_signal_en": "Build understanding from problem definition, experiment design, and evidence quality.",
       "accent": "#0891b2",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/richard_feynman/",
       "source_tracks": [
         {
@@ -14035,6 +14911,7 @@
           "body_en": "Then add biographies, lab memoirs, and histories of science to recover time, context, and peer networks."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "理查德·费曼 围绕 好奇心 的代表性实践",
@@ -14208,6 +15085,7 @@
       "category_signal_en": "Build understanding from problem definition, experiment design, and evidence quality.",
       "accent": "#0891b2",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/rosalind_franklin/",
       "source_tracks": [
         {
@@ -14232,6 +15110,7 @@
           "body_en": "Then add biographies, lab memoirs, and histories of science to recover time, context, and peer networks."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "罗莎琳德·富兰克林 围绕 图像证据 的代表性实践",
@@ -14389,7 +15268,7 @@
       "title": "计算理论奠基者",
       "quote": "我们只能从可计算性理解复杂世界的一部分",
       "guiding_question": "现在有哪些可靠事实？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What part of this problem can be made precise enough to compute, and what remains outside the model?",
       "formula": "艾伦·图灵式决策 = 计算乘形式化乘智能",
       "tags": [
         "计算",
@@ -14405,6 +15284,7 @@
       "category_signal_en": "Build understanding from problem definition, experiment design, and evidence quality.",
       "accent": "#0891b2",
       "featured": true,
+      "priority_curated": true,
       "index_url": "/courses/alan_turing/",
       "source_tracks": [
         {
@@ -14429,6 +15309,56 @@
           "body_en": "Then add biographies, lab memoirs, and histories of science to recover time, context, and peer networks."
         }
       ],
+      "reference_shelf": {
+        "intro_zh": "图灵必须先读论文原文，再读解说书。否则很容易只记住“图灵测试”，却没真正理解他的形式化思路。",
+        "intro_en": "Read Turing's papers before the explanatory books. Otherwise you end up with the label 'Turing test' without the deeper habit of formal reasoning.",
+        "primary_sources": [
+          {
+            "title": "On Computable Numbers, with an Application to the Entscheidungsproblem",
+            "creator": "Alan Turing",
+            "meta": "1936 paper",
+            "note_zh": "计算理论真正的起点。",
+            "note_en": "The foundational paper for computability theory."
+          },
+          {
+            "title": "Computing Machinery and Intelligence",
+            "creator": "Alan Turing",
+            "meta": "1950 paper",
+            "note_zh": "理解图灵如何把智能问题转成可讨论的形式。",
+            "note_en": "Shows how Turing reframed intelligence into a tractable public question."
+          },
+          {
+            "title": "Intelligent Machinery",
+            "creator": "Alan Turing",
+            "meta": "1948 report",
+            "note_zh": "适合看他更开放、更探索式的一面。",
+            "note_en": "Useful for the more exploratory side of Turing's machine thinking."
+          }
+        ],
+        "core_reading": [
+          {
+            "title": "The Essential Turing",
+            "creator": "edited by B. Jack Copeland",
+            "meta": "collected volume",
+            "note_zh": "最好的图灵原典与说明合集之一。",
+            "note_en": "One of the best curated volumes of Turing's core writings."
+          },
+          {
+            "title": "Alan Turing: The Enigma",
+            "creator": "Andrew Hodges",
+            "meta": "biography",
+            "note_zh": "图灵生平与科学工作的经典传记。",
+            "note_en": "The classic biography and historical account of Turing's work."
+          },
+          {
+            "title": "The Annotated Turing",
+            "creator": "Charles Petzold",
+            "meta": "guided reading",
+            "note_zh": "适合把 1936 论文真正读懂。",
+            "note_en": "Especially good if you want to truly understand the 1936 paper."
+          }
+        ]
+      },
       "case_notes": [
         {
           "title": "艾伦·图灵 围绕 计算 的代表性实践",
@@ -14463,7 +15393,7 @@
         {
           "number": 2,
           "title": "核心概念：计算",
-          "title_en": "Core Concept I: 计算",
+          "title_en": "Core Concept I: computation",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "艾伦·图灵思想的核心概念：计算。计算是艾伦·图灵思想体系的基石。先抓住 计算 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入艾伦·图灵世界的第一步。本课将深入剖析计算的深层逻辑与实践含义。",
@@ -14476,7 +15406,7 @@
         {
           "number": 3,
           "title": "核心概念：形式化",
-          "title_en": "Core Concept II: 形式化",
+          "title_en": "Core Concept II: formalization",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "艾伦·图灵思想的第二个核心概念：形式化。形式化与计算形成互补关系。如果说计算解决看什么的问题，形式化解决怎么做的问题。本课深入分析形式化的深层含义。",
@@ -14489,7 +15419,7 @@
         {
           "number": 4,
           "title": "核心概念：智能",
-          "title_en": "Core Concept III: 智能",
+          "title_en": "Core Concept III: machine intelligence",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入艾伦·图灵思想的第三根支柱：智能。智能与计算、形式化构成三角支撑。艾伦·图灵说：跨学科洞察：重要突破常来自不同领域方法的交叉。本课通过案例展示智能的实践力量。",
@@ -14602,6 +15532,7 @@
       "category_signal_en": "Build understanding from problem definition, experiment design, and evidence quality.",
       "accent": "#0891b2",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/isaac_newton/",
       "source_tracks": [
         {
@@ -14626,6 +15557,7 @@
           "body_en": "Then add biographies, lab memoirs, and histories of science to recover time, context, and peer networks."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "艾萨克·牛顿 围绕 定律 的代表性实践",
@@ -14799,6 +15731,7 @@
       "category_signal_en": "Build understanding from problem definition, experiment design, and evidence quality.",
       "accent": "#0891b2",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/ada_lovelace/",
       "source_tracks": [
         {
@@ -14823,6 +15756,7 @@
           "body_en": "Then add biographies, lab memoirs, and histories of science to recover time, context, and peer networks."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "艾达·洛芙莱斯 围绕 抽象 的代表性实践",
@@ -14980,7 +15914,7 @@
       "title": "万维网发明者",
       "quote": "开放标准让创新更快发生",
       "guiding_question": "现在有哪些可靠事实？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What should remain open, linkable, and interoperable if this system is meant to scale beyond its first owner?",
       "formula": "蒂姆·伯纳斯-李式决策 = 开放网络乘标准乘公共性",
       "tags": [
         "开放网络",
@@ -14996,6 +15930,7 @@
       "category_signal_en": "Build understanding from problem definition, experiment design, and evidence quality.",
       "accent": "#0891b2",
       "featured": false,
+      "priority_curated": true,
       "index_url": "/courses/tim_berners_lee/",
       "source_tracks": [
         {
@@ -15020,6 +15955,56 @@
           "body_en": "Then add biographies, lab memoirs, and histories of science to recover time, context, and peer networks."
         }
       ],
+      "reference_shelf": {
+        "intro_zh": "Tim 先读 1989 提案、Web 原始文档和 W3C 公开文本，再读《编织万维网》。这样能避免把他读成“发明者故事”，而忽略开放标准的制度选择。",
+        "intro_en": "Read the 1989 proposal, early web documents, and W3C texts before or alongside Weaving the Web. That prevents turning Berners-Lee into a simple inventor story while missing the institutional choice of openness.",
+        "primary_sources": [
+          {
+            "title": "Information Management: A Proposal",
+            "creator": "Tim Berners-Lee",
+            "meta": "CERN, 1989/1990",
+            "note_zh": "万维网最初的提案文本。",
+            "note_en": "The original proposal for the World Wide Web."
+          },
+          {
+            "title": "Weaving the Web",
+            "creator": "Tim Berners-Lee with Mark Fischetti",
+            "meta": "book",
+            "note_zh": "Tim 对 Web 起源和原则的自述。",
+            "note_en": "Berners-Lee's own narrative of the web's origin and principles."
+          },
+          {
+            "title": "Long Live the Web",
+            "creator": "Tim Berners-Lee",
+            "meta": "essay",
+            "note_zh": "开放网络价值观的公开申明。",
+            "note_en": "A direct public defense of an open web."
+          }
+        ],
+        "core_reading": [
+          {
+            "title": "W3C Design Issues and Architecture Notes",
+            "creator": "Tim Berners-Lee / W3C",
+            "meta": "public archive",
+            "note_zh": "帮助理解开放标准和互操作性的底层哲学。",
+            "note_en": "Useful for the philosophy of standards and interoperability."
+          },
+          {
+            "title": "WorldWideWeb and CERN Web Archives",
+            "creator": "CERN / W3C",
+            "meta": "historical archive",
+            "note_zh": "回到早期网页与说明文档最有帮助。",
+            "note_en": "Very useful for returning to the earliest web documents themselves."
+          },
+          {
+            "title": "Weaving the Web",
+            "creator": "Tim Berners-Lee with Mark Fischetti",
+            "meta": "book",
+            "note_zh": "若想从人和制度一起读起，这本最好。",
+            "note_en": "A strong single volume if you want both the person and the institutional vision."
+          }
+        ]
+      },
       "case_notes": [
         {
           "title": "蒂姆·伯纳斯-李 围绕 开放网络 的代表性实践",
@@ -15054,7 +16039,7 @@
         {
           "number": 2,
           "title": "核心概念：开放网络",
-          "title_en": "Core Concept I: 开放网络",
+          "title_en": "Core Concept I: open web",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "蒂姆·伯纳斯-李思想的核心概念：开放网络。开放网络是蒂姆·伯纳斯-李思想体系的基石。先抓住 开放网络 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入蒂姆·伯纳斯-李世界的第一步。本课将深入剖析开放网络的深层逻辑与实践含义。",
@@ -15067,7 +16052,7 @@
         {
           "number": 3,
           "title": "核心概念：标准",
-          "title_en": "Core Concept II: 标准",
+          "title_en": "Core Concept II: standards",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "蒂姆·伯纳斯-李思想的第二个核心概念：标准。标准与开放网络形成互补关系。如果说开放网络解决看什么的问题，标准解决怎么做的问题。本课深入分析标准的深层含义。",
@@ -15080,7 +16065,7 @@
         {
           "number": 4,
           "title": "核心概念：公共性",
-          "title_en": "Core Concept III: 公共性",
+          "title_en": "Core Concept III: public infrastructure",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入蒂姆·伯纳斯-李思想的第三根支柱：公共性。公共性与开放网络、标准构成三角支撑。蒂姆·伯纳斯-李说：跨学科洞察：重要突破常来自不同领域方法的交叉。本课通过案例展示公共性的实践力量。",
@@ -15177,7 +16162,7 @@
       "title": "物理学家",
       "quote": "想象力比知识更重要",
       "guiding_question": "现在有哪些可靠事实？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "Which assumption have we accepted as normal that should be re-examined from first principles?",
       "formula": "阿尔伯特·爱因斯坦式决策 = 想象力乘统一性乘第一原理",
       "tags": [
         "想象力",
@@ -15193,6 +16178,7 @@
       "category_signal_en": "Build understanding from problem definition, experiment design, and evidence quality.",
       "accent": "#0891b2",
       "featured": false,
+      "priority_curated": true,
       "index_url": "/courses/albert_einstein/",
       "source_tracks": [
         {
@@ -15217,6 +16203,56 @@
           "body_en": "Then add biographies, lab memoirs, and histories of science to recover time, context, and peer networks."
         }
       ],
+      "reference_shelf": {
+        "intro_zh": "爱因斯坦要先回到论文和自写通俗书，再用传记和文集补背景。重点不是名言，而是他如何清理一个问题的坐标系。",
+        "intro_en": "Start with the papers and Einstein's own explanatory writing, then add biography. The key is not the quotations; it is how he cleans up the frame of a problem.",
+        "primary_sources": [
+          {
+            "title": "On the Electrodynamics of Moving Bodies",
+            "creator": "Albert Einstein",
+            "meta": "1905 paper",
+            "note_zh": "狭义相对论的原始文本。",
+            "note_en": "The original paper on special relativity."
+          },
+          {
+            "title": "Does the Inertia of a Body Depend Upon Its Energy Content?",
+            "creator": "Albert Einstein",
+            "meta": "1905 paper",
+            "note_zh": "E=mc² 的原始来源之一。",
+            "note_en": "One of the primary sources behind E=mc²."
+          },
+          {
+            "title": "Relativity: The Special and the General Theory",
+            "creator": "Albert Einstein",
+            "meta": "1916 book",
+            "note_zh": "看爱因斯坦如何亲自把理论解释给非专业读者。",
+            "note_en": "Shows Einstein explaining the theory in his own public voice."
+          }
+        ],
+        "core_reading": [
+          {
+            "title": "Ideas and Opinions",
+            "creator": "Albert Einstein",
+            "meta": "essays and reflections",
+            "note_zh": "适合补足他的科学观、政治观与知识观。",
+            "note_en": "Useful for Einstein's reflections on science, politics, and intellectual life."
+          },
+          {
+            "title": "The World As I See It",
+            "creator": "Albert Einstein",
+            "meta": "essays",
+            "note_zh": "更短，更适合看他的价值排序。",
+            "note_en": "Shorter and especially useful for his moral and civic outlook."
+          },
+          {
+            "title": "Einstein: His Life and Universe",
+            "creator": "Walter Isaacson",
+            "meta": "biography",
+            "note_zh": "传记层面的完整补充。",
+            "note_en": "A strong full-scale biography for life and context."
+          }
+        ]
+      },
       "case_notes": [
         {
           "title": "阿尔伯特·爱因斯坦 围绕 想象力 的代表性实践",
@@ -15251,7 +16287,7 @@
         {
           "number": 2,
           "title": "核心概念：想象力",
-          "title_en": "Core Concept I: 想象力",
+          "title_en": "Core Concept I: first principles",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "阿尔伯特·爱因斯坦思想的核心概念：想象力。想象力是阿尔伯特·爱因斯坦思想体系的基石。先抓住 想象力 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入阿尔伯特·爱因斯坦世界的第一步。本课将深入剖析想象力的深层逻辑与实践含义。",
@@ -15264,7 +16300,7 @@
         {
           "number": 3,
           "title": "核心概念：统一性",
-          "title_en": "Core Concept II: 统一性",
+          "title_en": "Core Concept II: imagination",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "阿尔伯特·爱因斯坦思想的第二个核心概念：统一性。统一性与想象力形成互补关系。如果说想象力解决看什么的问题，统一性解决怎么做的问题。本课深入分析统一性的深层含义。",
@@ -15277,7 +16313,7 @@
         {
           "number": 4,
           "title": "核心概念：第一原理",
-          "title_en": "Core Concept III: 第一原理",
+          "title_en": "Core Concept III: unification",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入阿尔伯特·爱因斯坦思想的第三根支柱：第一原理。第一原理与想象力、统一性构成三角支撑。阿尔伯特·爱因斯坦说：跨学科洞察：重要突破常来自不同领域方法的交叉。本课通过案例展示第一原理的实践力量。",
@@ -15390,6 +16426,7 @@
       "category_signal_en": "Build understanding from problem definition, experiment design, and evidence quality.",
       "accent": "#0891b2",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/yan_ning/",
       "source_tracks": [
         {
@@ -15414,6 +16451,7 @@
           "body_en": "Then add biographies, lab memoirs, and histories of science to recover time, context, and peer networks."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "颜宁 围绕 极致 的代表性实践",
@@ -15587,6 +16625,7 @@
       "category_signal_en": "Evaluate product opportunities through technical evolution, distribution, and scaling constraints.",
       "accent": "#0f766e",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/ilya_sutskever/",
       "source_tracks": [
         {
@@ -15611,6 +16650,7 @@
           "body_en": "Then add reporting, oral histories, and industry analysis to understand outcomes, contradictions, and contested interpretations."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "伊利亚·苏茨克维尔 围绕 深度学习 的代表性实践",
@@ -15768,7 +16808,7 @@
       "title": "AI 教育推动者",
       "quote": "如果一个人能在一周内完成，就不要等一年",
       "guiding_question": "问题的底层约束是什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "Where is the narrow, high-value application of AI that can be deployed now instead of admired from a distance?",
       "formula": "吴恩达式决策 = AI 民主化乘应用落地乘学习曲线",
       "tags": [
         "AI 民主化",
@@ -15784,6 +16824,7 @@
       "category_signal_en": "Evaluate product opportunities through technical evolution, distribution, and scaling constraints.",
       "accent": "#0f766e",
       "featured": false,
+      "priority_curated": true,
       "index_url": "/courses/andrew_ng/",
       "source_tracks": [
         {
@@ -15808,6 +16849,56 @@
           "body_en": "Then add reporting, oral histories, and industry analysis to understand outcomes, contradictions, and contested interpretations."
         }
       ],
+      "reference_shelf": {
+        "intro_zh": "吴恩达最适合通过课程讲义、短文和应用型演讲来读。不要先追热点概念，要先看他如何把 AI 收敛成可落地的问题。",
+        "intro_en": "Andrew Ng is best read through courses, short essays, and application talks. Do not start with hype categories before seeing how he narrows AI into deployable problems.",
+        "primary_sources": [
+          {
+            "title": "Machine Learning Yearning",
+            "creator": "Andrew Ng",
+            "meta": "book draft",
+            "note_zh": "吴恩达最像“产品化 AI 方法论”的文本。",
+            "note_en": "His closest thing to an applied operating manual for machine learning."
+          },
+          {
+            "title": "AI Is the New Electricity",
+            "creator": "Andrew Ng",
+            "meta": "talk / public framing",
+            "note_zh": "理解其普及 AI 的核心比喻。",
+            "note_en": "A concentrated statement of his practical AI worldview."
+          },
+          {
+            "title": "DeepLearning.AI and Stanford Course Materials",
+            "creator": "Andrew Ng",
+            "meta": "course archive",
+            "note_zh": "适合看他如何把复杂主题讲成可学习结构。",
+            "note_en": "Useful for how he turns complex topics into learnable operating structure."
+          }
+        ],
+        "core_reading": [
+          {
+            "title": "Data-Centric AI Talks and Notes",
+            "creator": "Andrew Ng",
+            "meta": "public talks",
+            "note_zh": "补足他近年把“模型崇拜”拉回数据工作的部分。",
+            "note_en": "Useful for his newer emphasis on data-centric work over model worship."
+          },
+          {
+            "title": "Applied AI Interviews",
+            "creator": "Andrew Ng",
+            "meta": "long-form interviews",
+            "note_zh": "适合看他如何判断真实落地场景。",
+            "note_en": "Good for how he sizes real deployment opportunities."
+          },
+          {
+            "title": "Machine Learning Yearning",
+            "creator": "Andrew Ng",
+            "meta": "book draft",
+            "note_zh": "想上手应用 AI，这本仍然非常值。",
+            "note_en": "Still one of the most useful texts for applying AI in practice."
+          }
+        ]
+      },
       "case_notes": [
         {
           "title": "吴恩达 围绕 AI 民主化 的代表性实践",
@@ -15842,7 +16933,7 @@
         {
           "number": 2,
           "title": "核心概念：AI 民主化",
-          "title_en": "Core Concept I: AI 民主化",
+          "title_en": "Core Concept I: AI democratization",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "吴恩达思想的核心概念：AI 民主化。AI 民主化是吴恩达思想体系的基石。先抓住 AI 民主化 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入吴恩达世界的第一步。本课将深入剖析AI 民主化的深层逻辑与实践含义。",
@@ -15855,7 +16946,7 @@
         {
           "number": 3,
           "title": "核心概念：应用落地",
-          "title_en": "Core Concept II: 应用落地",
+          "title_en": "Core Concept II: applied AI",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "吴恩达思想的第二个核心概念：应用落地。应用落地与AI 民主化形成互补关系。如果说AI 民主化解决看什么的问题，应用落地解决怎么做的问题。本课深入分析应用落地的深层含义。",
@@ -15868,7 +16959,7 @@
         {
           "number": 4,
           "title": "核心概念：学习曲线",
-          "title_en": "Core Concept III: 学习曲线",
+          "title_en": "Core Concept III: learning loops",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入吴恩达思想的第三根支柱：学习曲线。学习曲线与AI 民主化、应用落地构成三角支撑。吴恩达说：高速迭代：尽快验证，尽快纠错，尽快放大有效路径。本课通过案例展示学习曲线的实践力量。",
@@ -15965,7 +17056,7 @@
       "title": "第一性原理创业者",
       "quote": "如果事情足够重要，就算胜算不大也要做",
       "guiding_question": "问题的底层约束是什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "If we re-derived the problem from physics and economics, what would the impossible-looking version actually require?",
       "formula": "埃隆·马斯克式决策 = 第一性原理乘制造乘火星",
       "tags": [
         "第一性原理",
@@ -15981,6 +17072,7 @@
       "category_signal_en": "Evaluate product opportunities through technical evolution, distribution, and scaling constraints.",
       "accent": "#0f766e",
       "featured": false,
+      "priority_curated": true,
       "index_url": "/courses/musk/",
       "source_tracks": [
         {
@@ -16005,6 +17097,56 @@
           "body_en": "Then add reporting, oral histories, and industry analysis to understand outcomes, contradictions, and contested interpretations."
         }
       ],
+      "reference_shelf": {
+        "intro_zh": "马斯克要同时读 master plan、硬科技发布和权威传记。只看新闻会失真，必须回到技术目标、成本曲线和迭代节奏。",
+        "intro_en": "Read the master plans, the hard-tech presentations, and the strongest biographies together. News coverage alone distorts him; the real story sits in technical goals, cost curves, and iteration speed.",
+        "primary_sources": [
+          {
+            "title": "The Secret Tesla Motors Master Plan (just between you and me)",
+            "creator": "Elon Musk",
+            "meta": "2006 post",
+            "note_zh": "早期路线图文本。",
+            "note_en": "The early roadmap statement."
+          },
+          {
+            "title": "Master Plan, Part Deux",
+            "creator": "Elon Musk",
+            "meta": "2016 post",
+            "note_zh": "从电动车到更大系统布局的延伸。",
+            "note_en": "The extension from electric cars into a broader systems vision."
+          },
+          {
+            "title": "Tesla, SpaceX, and xAI Product and Strategy Presentations",
+            "creator": "Elon Musk",
+            "meta": "public talks",
+            "note_zh": "适合看野心如何落到工程与产线。",
+            "note_en": "Useful for seeing how ambition gets translated into engineering and production."
+          }
+        ],
+        "core_reading": [
+          {
+            "title": "Elon Musk",
+            "creator": "Walter Isaacson",
+            "meta": "biography",
+            "note_zh": "最新的大部头传记。",
+            "note_en": "The major recent biography."
+          },
+          {
+            "title": "Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future",
+            "creator": "Ashlee Vance",
+            "meta": "biography",
+            "note_zh": "早期到中期阶段非常重要。",
+            "note_en": "Important for the earlier and middle periods."
+          },
+          {
+            "title": "Liftoff",
+            "creator": "Eric Berger",
+            "meta": "company history",
+            "note_zh": "如果想理解 SpaceX 的工程文化，很值得读。",
+            "note_en": "Especially useful for SpaceX's engineering culture."
+          }
+        ]
+      },
       "case_notes": [
         {
           "title": "埃隆·马斯克 围绕 第一性原理 的代表性实践",
@@ -16039,7 +17181,7 @@
         {
           "number": 2,
           "title": "核心概念：第一性原理",
-          "title_en": "Core Concept I: 第一性原理",
+          "title_en": "Core Concept I: first principles",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "埃隆·马斯克思想的核心概念：第一性原理。第一性原理是埃隆·马斯克思想体系的基石。先抓住 第一性原理 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入埃隆·马斯克世界的第一步。本课将深入剖析第一性原理的深层逻辑与实践含义。",
@@ -16052,7 +17194,7 @@
         {
           "number": 3,
           "title": "核心概念：制造",
-          "title_en": "Core Concept II: 制造",
+          "title_en": "Core Concept II: manufacturing",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "埃隆·马斯克思想的第二个核心概念：制造。制造与第一性原理形成互补关系。如果说第一性原理解决看什么的问题，制造解决怎么做的问题。本课深入分析制造的深层含义。",
@@ -16065,7 +17207,7 @@
         {
           "number": 4,
           "title": "核心概念：火星",
-          "title_en": "Core Concept III: 火星",
+          "title_en": "Core Concept III: frontier ambition",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入埃隆·马斯克思想的第三根支柱：火星。火星与第一性原理、制造构成三角支撑。埃隆·马斯克说：高速迭代：尽快验证，尽快纠错，尽快放大有效路径。本课通过案例展示火星的实践力量。",
@@ -16178,6 +17320,7 @@
       "category_signal_en": "Evaluate product opportunities through technical evolution, distribution, and scaling constraints.",
       "accent": "#0f766e",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/andrej_karpathy/",
       "source_tracks": [
         {
@@ -16202,6 +17345,7 @@
           "body_en": "Then add reporting, oral histories, and industry analysis to understand outcomes, contradictions, and contested interpretations."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "安德烈·卡帕西 围绕 工程直觉 的代表性实践",
@@ -16359,7 +17503,7 @@
       "title": "OpenAI CEO",
       "quote": "复利和规模会奖励少数长期正确的人",
       "guiding_question": "问题的底层约束是什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "Which constraint is truly limiting scale right now, and what gets dramatically better if the system compounds from here?",
       "formula": "山姆·奥特曼式决策 = AGI乘创业乘分发",
       "tags": [
         "AGI",
@@ -16375,6 +17519,7 @@
       "category_signal_en": "Evaluate product opportunities through technical evolution, distribution, and scaling constraints.",
       "accent": "#0f766e",
       "featured": true,
+      "priority_curated": true,
       "index_url": "/courses/sam_altman/",
       "source_tracks": [
         {
@@ -16399,6 +17544,56 @@
           "body_en": "Then add reporting, oral histories, and industry analysis to understand outcomes, contradictions, and contested interpretations."
         }
       ],
+      "reference_shelf": {
+        "intro_zh": "Altman 不是传统写书型人物，要先读他的公开文章、YC/OpenAI 讲话和长访谈。真正有价值的是他如何讨论规模、人才、分发和未来曲线。",
+        "intro_en": "Altman is not primarily a book-writer. Start with essays, YC/OpenAI talks, and long-form interviews. The value is in how he links scale, talent, distribution, and future curves.",
+        "primary_sources": [
+          {
+            "title": "How to Be Successful",
+            "creator": "Sam Altman",
+            "meta": "essay",
+            "note_zh": "最像 Altman 方法论底稿的一篇短文。",
+            "note_en": "A compact essay that reads like Altman's operating doctrine."
+          },
+          {
+            "title": "Moore's Law for Everything",
+            "creator": "Sam Altman",
+            "meta": "essay",
+            "note_zh": "理解他如何把技术复利和社会分配放到同一张图里。",
+            "note_en": "A strong entry into how he thinks about technological abundance and distribution."
+          },
+          {
+            "title": "The Intelligence Age",
+            "creator": "Sam Altman",
+            "meta": "essay",
+            "note_zh": "看他如何把 AI 进步、产品普及和制度问题绑在一起。",
+            "note_en": "Useful for seeing how he binds AI progress, adoption, and policy questions together."
+          }
+        ],
+        "core_reading": [
+          {
+            "title": "Startup Playbook",
+            "creator": "Sam Altman",
+            "meta": "essay collection",
+            "note_zh": "早期创业判断、速度和产品直觉的高密度入口。",
+            "note_en": "Dense on early-stage company judgment, speed, and product intuition."
+          },
+          {
+            "title": "How to Start a Startup",
+            "creator": "Y Combinator / Stanford lecture series",
+            "meta": "lecture archive",
+            "note_zh": "虽不是 Altman 一人著作，但极能补足他的创业语境。",
+            "note_en": "Not authored by Altman alone, but excellent for the startup context around his thinking."
+          },
+          {
+            "title": "OpenAI and Y Combinator Interviews",
+            "creator": "Sam Altman",
+            "meta": "long-form interviews",
+            "note_zh": "适合补足文章里没有展开的现实取舍。",
+            "note_en": "Useful for the real trade-offs that essays often compress."
+          }
+        ]
+      },
       "case_notes": [
         {
           "title": "山姆·奥特曼 围绕 AGI 的代表性实践",
@@ -16446,7 +17641,7 @@
         {
           "number": 3,
           "title": "核心概念：创业",
-          "title_en": "Core Concept II: 创业",
+          "title_en": "Core Concept II: startups",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "山姆·奥特曼思想的第二个核心概念：创业。创业与AGI形成互补关系。如果说AGI解决看什么的问题，创业解决怎么做的问题。本课深入分析创业的深层含义。",
@@ -16459,7 +17654,7 @@
         {
           "number": 4,
           "title": "核心概念：分发",
-          "title_en": "Core Concept III: 分发",
+          "title_en": "Core Concept III: distribution",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入山姆·奥特曼思想的第三根支柱：分发。分发与AGI、创业构成三角支撑。山姆·奥特曼说：高速迭代：尽快验证，尽快纠错，尽快放大有效路径。本课通过案例展示分发的实践力量。",
@@ -16572,6 +17767,7 @@
       "category_signal_en": "Evaluate product opportunities through technical evolution, distribution, and scaling constraints.",
       "accent": "#0f766e",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/demis_hassabis/",
       "source_tracks": [
         {
@@ -16596,6 +17792,7 @@
           "body_en": "Then add reporting, oral histories, and industry analysis to understand outcomes, contradictions, and contested interpretations."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "德米斯·哈萨比斯 围绕 通用智能 的代表性实践",
@@ -16769,6 +17966,7 @@
       "category_signal_en": "Evaluate product opportunities through technical evolution, distribution, and scaling constraints.",
       "accent": "#0f766e",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/larry_page/",
       "source_tracks": [
         {
@@ -16793,6 +17991,7 @@
           "body_en": "Then add reporting, oral histories, and industry analysis to understand outcomes, contradictions, and contested interpretations."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "拉里·佩奇 围绕 信息组织 的代表性实践",
@@ -16950,7 +18149,7 @@
       "title": "AI 科学家",
       "quote": "AI 的终点不该离开人",
       "guiding_question": "问题的底层约束是什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "How do we expand technical capability without losing sight of the human being the system is supposed to serve?",
       "formula": "李飞飞式决策 = 人本 AI乘视觉智能乘教育",
       "tags": [
         "人本 AI",
@@ -16966,6 +18165,7 @@
       "category_signal_en": "Evaluate product opportunities through technical evolution, distribution, and scaling constraints.",
       "accent": "#0f766e",
       "featured": false,
+      "priority_curated": true,
       "index_url": "/courses/li_feifei/",
       "source_tracks": [
         {
@@ -16990,6 +18190,56 @@
           "body_en": "Then add reporting, oral histories, and industry analysis to understand outcomes, contradictions, and contested interpretations."
         }
       ],
+      "reference_shelf": {
+        "intro_zh": "李飞飞先读自传与 ImageNet 论文，再读她关于 human-centered AI 的公开表达。她不是只讲技术，也不是只讲伦理，而是把两者放在同一张桌子上。",
+        "intro_en": "Start with the memoir and the ImageNet paper, then move into her human-centered AI talks. Fei-Fei Li is not only about technical progress or only about ethics; she forces both onto the same table.",
+        "primary_sources": [
+          {
+            "title": "The Worlds I See",
+            "creator": "Fei-Fei Li",
+            "meta": "memoir",
+            "note_zh": "最适合进入李飞飞科学路径和价值框架的一本书。",
+            "note_en": "One of the best entry points into both her scientific path and moral frame."
+          },
+          {
+            "title": "ImageNet: A Large-Scale Hierarchical Image Database",
+            "creator": "Jia Deng et al. with Fei-Fei Li",
+            "meta": "CVPR 2009",
+            "note_zh": "理解现代计算机视觉数据基础设施的关键论文。",
+            "note_en": "The key paper behind the data infrastructure of modern computer vision."
+          },
+          {
+            "title": "Human-Centered AI Talks and HAI Lectures",
+            "creator": "Fei-Fei Li",
+            "meta": "public talks",
+            "note_zh": "看她如何把技术进步与社会后果一起讨论。",
+            "note_en": "Useful for how she puts technical progress and social consequence together."
+          }
+        ],
+        "core_reading": [
+          {
+            "title": "The Worlds I See",
+            "creator": "Fei-Fei Li",
+            "meta": "memoir",
+            "note_zh": "如果你只读一本到位，这本兼具科学史与人物感。",
+            "note_en": "If you read only one, this balances science history with personal voice."
+          },
+          {
+            "title": "Stanford HAI Public Essays",
+            "creator": "Fei-Fei Li",
+            "meta": "essay archive",
+            "note_zh": "适合补足其 human-centered AI 公共论述。",
+            "note_en": "Good for her public articulation of human-centered AI."
+          },
+          {
+            "title": "ImageNet Retrospectives and Interviews",
+            "creator": "Fei-Fei Li",
+            "meta": "interviews",
+            "note_zh": "帮助理解数据集、平台和学科转折。",
+            "note_en": "Useful for context around datasets, platforms, and discipline shifts."
+          }
+        ]
+      },
       "case_notes": [
         {
           "title": "李飞飞 围绕 人本 AI 的代表性实践",
@@ -17024,7 +18274,7 @@
         {
           "number": 2,
           "title": "核心概念：人本 AI",
-          "title_en": "Core Concept I: 人本 AI",
+          "title_en": "Core Concept I: human-centered AI",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "李飞飞思想的核心概念：人本 AI。人本 AI是李飞飞思想体系的基石。先抓住 人本 AI 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入李飞飞世界的第一步。本课将深入剖析人本 AI的深层逻辑与实践含义。",
@@ -17037,7 +18287,7 @@
         {
           "number": 3,
           "title": "核心概念：视觉智能",
-          "title_en": "Core Concept II: 视觉智能",
+          "title_en": "Core Concept II: vision intelligence",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "李飞飞思想的第二个核心概念：视觉智能。视觉智能与人本 AI形成互补关系。如果说人本 AI解决看什么的问题，视觉智能解决怎么做的问题。本课深入分析视觉智能的深层含义。",
@@ -17050,7 +18300,7 @@
         {
           "number": 4,
           "title": "核心概念：教育",
-          "title_en": "Core Concept III: 教育",
+          "title_en": "Core Concept III: education",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入李飞飞思想的第三根支柱：教育。教育与人本 AI、视觉智能构成三角支撑。李飞飞说：高速迭代：尽快验证，尽快纠错，尽快放大有效路径。本课通过案例展示教育的实践力量。",
@@ -17147,7 +18397,7 @@
       "title": "Linux 创始人",
       "quote": "Talk is cheap, show me the code",
       "guiding_question": "问题的底层约束是什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "Does the code work, does the architecture stay clean, and is the feedback loop honest enough to keep improving it?",
       "formula": "林纳斯·托瓦兹式决策 = 开源乘工程审美乘直接反馈",
       "tags": [
         "开源",
@@ -17163,6 +18413,7 @@
       "category_signal_en": "Evaluate product opportunities through technical evolution, distribution, and scaling constraints.",
       "accent": "#0f766e",
       "featured": false,
+      "priority_curated": true,
       "index_url": "/courses/linus_torvalds/",
       "source_tracks": [
         {
@@ -17187,6 +18438,56 @@
           "body_en": "Then add reporting, oral histories, and industry analysis to understand outcomes, contradictions, and contested interpretations."
         }
       ],
+      "reference_shelf": {
+        "intro_zh": "Linus 先读原始邮件、发布说明和自传，再看开源文化史。因为真正的 Linus 不在励志故事里，而在工程反馈循环里。",
+        "intro_en": "Read the original emails, release notes, and memoir before the open-source histories. The real Linus lives in the engineering feedback loop, not the inspiration story.",
+        "primary_sources": [
+          {
+            "title": "1991 Minix Announcement",
+            "creator": "Linus Torvalds",
+            "meta": "mailing list post",
+            "note_zh": "Linux 起点文本。",
+            "note_en": "The starting text of the Linux story."
+          },
+          {
+            "title": "Linux Kernel Mailing List Posts and Release Notes",
+            "creator": "Linus Torvalds",
+            "meta": "public archive",
+            "note_zh": "看他如何在真实工程讨论里做判断。",
+            "note_en": "The best place to see Linus making decisions in live engineering context."
+          },
+          {
+            "title": "Git Mailing List Design Discussions",
+            "creator": "Linus Torvalds",
+            "meta": "public archive",
+            "note_zh": "适合理解其工具观与系统观。",
+            "note_en": "Useful for his view of tools, architecture, and workflow."
+          }
+        ],
+        "core_reading": [
+          {
+            "title": "Just for Fun",
+            "creator": "Linus Torvalds with David Diamond",
+            "meta": "memoir",
+            "note_zh": "Linus 自己的生平与开源形成史。",
+            "note_en": "Linus's own memoir and the story of open-source formation."
+          },
+          {
+            "title": "Rebel Code",
+            "creator": "Glyn Moody",
+            "meta": "technology history",
+            "note_zh": "补足开源生态与历史背景。",
+            "note_en": "Adds ecosystem and historical context around open source."
+          },
+          {
+            "title": "Linux Kernel Documentation",
+            "creator": "Linux community",
+            "meta": "engineering archive",
+            "note_zh": "从文档层面理解其工程哲学。",
+            "note_en": "Useful for the engineering philosophy embodied in practice."
+          }
+        ]
+      },
       "case_notes": [
         {
           "title": "林纳斯·托瓦兹 围绕 开源 的代表性实践",
@@ -17221,7 +18522,7 @@
         {
           "number": 2,
           "title": "核心概念：开源",
-          "title_en": "Core Concept I: 开源",
+          "title_en": "Core Concept I: open source",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "林纳斯·托瓦兹思想的核心概念：开源。开源是林纳斯·托瓦兹思想体系的基石。先抓住 开源 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入林纳斯·托瓦兹世界的第一步。本课将深入剖析开源的深层逻辑与实践含义。",
@@ -17234,7 +18535,7 @@
         {
           "number": 3,
           "title": "核心概念：工程审美",
-          "title_en": "Core Concept II: 工程审美",
+          "title_en": "Core Concept II: engineering aesthetics",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "林纳斯·托瓦兹思想的第二个核心概念：工程审美。工程审美与开源形成互补关系。如果说开源解决看什么的问题，工程审美解决怎么做的问题。本课深入分析工程审美的深层含义。",
@@ -17247,7 +18548,7 @@
         {
           "number": 4,
           "title": "核心概念：直接反馈",
-          "title_en": "Core Concept III: 直接反馈",
+          "title_en": "Core Concept III: direct feedback",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入林纳斯·托瓦兹思想的第三根支柱：直接反馈。直接反馈与开源、工程审美构成三角支撑。林纳斯·托瓦兹说：高速迭代：尽快验证，尽快纠错，尽快放大有效路径。本课通过案例展示直接反馈的实践力量。",
@@ -17360,6 +18661,7 @@
       "category_signal_en": "Evaluate product opportunities through technical evolution, distribution, and scaling constraints.",
       "accent": "#0f766e",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/bill_gates/",
       "source_tracks": [
         {
@@ -17384,6 +18686,7 @@
           "body_en": "Then add reporting, oral histories, and industry analysis to understand outcomes, contradictions, and contested interpretations."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "比尔·盖茨 围绕 平台 的代表性实践",
@@ -17557,6 +18860,7 @@
       "category_signal_en": "Evaluate product opportunities through technical evolution, distribution, and scaling constraints.",
       "accent": "#0f766e",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/susan_wojcicki/",
       "source_tracks": [
         {
@@ -17581,6 +18885,7 @@
           "body_en": "Then add reporting, oral histories, and industry analysis to understand outcomes, contradictions, and contested interpretations."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "苏珊·沃西基 围绕 创作者经济 的代表性实践",
@@ -17738,7 +19043,7 @@
       "title": "微软 CEO",
       "quote": "不要做无所不知的人，要做持续学习的人",
       "guiding_question": "问题的底层约束是什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "How do we create a learning system here instead of defending an identity that no longer fits the environment?",
       "formula": "萨提亚·纳德拉式决策 = 同理心乘平台乘学习型组织",
       "tags": [
         "同理心",
@@ -17754,6 +19059,7 @@
       "category_signal_en": "Evaluate product opportunities through technical evolution, distribution, and scaling constraints.",
       "accent": "#0f766e",
       "featured": false,
+      "priority_curated": true,
       "index_url": "/courses/satya_nadella/",
       "source_tracks": [
         {
@@ -17778,6 +19084,56 @@
           "body_en": "Then add reporting, oral histories, and industry analysis to understand outcomes, contradictions, and contested interpretations."
         }
       ],
+      "reference_shelf": {
+        "intro_zh": "纳德拉要先读《刷新》和文化转型原文，再看微软后续公开信和大会演讲。核心不是“温和”，而是“学习型组织如何落地”。",
+        "intro_en": "Start with Hit Refresh and the culture-turnaround material, then move into later letters and keynotes. The point is not softness; it is how a learning organization gets built.",
+        "primary_sources": [
+          {
+            "title": "Hit Refresh",
+            "creator": "Satya Nadella",
+            "meta": "book",
+            "note_zh": "纳德拉自述的文化与战略转型主线。",
+            "note_en": "Nadella's own account of cultural and strategic renewal."
+          },
+          {
+            "title": "2014 Email to Microsoft Employees",
+            "creator": "Satya Nadella",
+            "meta": "internal message made public",
+            "note_zh": "理解其“新微软”文化转向的起点。",
+            "note_en": "The cleanest starting document for the early culture shift."
+          },
+          {
+            "title": "Microsoft Build and Annual Letters",
+            "creator": "Satya Nadella",
+            "meta": "public archive",
+            "note_zh": "看战略口径如何逐年变成平台与产品动作。",
+            "note_en": "Useful for seeing strategy translated into platform and product moves."
+          }
+        ],
+        "core_reading": [
+          {
+            "title": "Hit Refresh",
+            "creator": "Satya Nadella",
+            "meta": "book",
+            "note_zh": "如果只读一本，先读它。",
+            "note_en": "If you read only one, start here."
+          },
+          {
+            "title": "Microsoft Transformation Interviews",
+            "creator": "Satya Nadella",
+            "meta": "long-form interviews",
+            "note_zh": "适合补足书里较少展开的执行细节。",
+            "note_en": "Good for execution detail beyond the book."
+          },
+          {
+            "title": "Platform and Cloud Keynotes",
+            "creator": "Satya Nadella",
+            "meta": "public talks",
+            "note_zh": "适合理解文化与平台判断如何绑定。",
+            "note_en": "Useful for the link between culture and platform strategy."
+          }
+        ]
+      },
       "case_notes": [
         {
           "title": "萨提亚·纳德拉 围绕 同理心 的代表性实践",
@@ -17812,7 +19168,7 @@
         {
           "number": 2,
           "title": "核心概念：同理心",
-          "title_en": "Core Concept I: 同理心",
+          "title_en": "Core Concept I: empathy",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "萨提亚·纳德拉思想的核心概念：同理心。同理心是萨提亚·纳德拉思想体系的基石。先抓住 同理心 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入萨提亚·纳德拉世界的第一步。本课将深入剖析同理心的深层逻辑与实践含义。",
@@ -17825,7 +19181,7 @@
         {
           "number": 3,
           "title": "核心概念：平台",
-          "title_en": "Core Concept II: 平台",
+          "title_en": "Core Concept II: platform renewal",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "萨提亚·纳德拉思想的第二个核心概念：平台。平台与同理心形成互补关系。如果说同理心解决看什么的问题，平台解决怎么做的问题。本课深入分析平台的深层含义。",
@@ -17838,7 +19194,7 @@
         {
           "number": 4,
           "title": "核心概念：学习型组织",
-          "title_en": "Core Concept III: 学习型组织",
+          "title_en": "Core Concept III: learning culture",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入萨提亚·纳德拉思想的第三根支柱：学习型组织。学习型组织与同理心、平台构成三角支撑。萨提亚·纳德拉说：高速迭代：尽快验证，尽快纠错，尽快放大有效路径。本课通过案例展示学习型组织的实践力量。",
@@ -17951,6 +19307,7 @@
       "category_signal_en": "Evaluate product opportunities through technical evolution, distribution, and scaling constraints.",
       "accent": "#0f766e",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/sergey_brin/",
       "source_tracks": [
         {
@@ -17975,6 +19332,7 @@
           "body_en": "Then add reporting, oral histories, and industry analysis to understand outcomes, contradictions, and contested interpretations."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "谢尔盖·布林 围绕 搜索 的代表性实践",
@@ -18148,6 +19506,7 @@
       "category_signal_en": "Evaluate product opportunities through technical evolution, distribution, and scaling constraints.",
       "accent": "#0f766e",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/mark_zuckerberg/",
       "source_tracks": [
         {
@@ -18172,6 +19531,7 @@
           "body_en": "Then add reporting, oral histories, and industry analysis to understand outcomes, contradictions, and contested interpretations."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "马克·扎克伯格 围绕 产品迭代 的代表性实践",
@@ -18345,6 +19705,7 @@
       "category_signal_en": "Evaluate product opportunities through technical evolution, distribution, and scaling constraints.",
       "accent": "#0f766e",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/jensen_huang/",
       "source_tracks": [
         {
@@ -18369,6 +19730,7 @@
           "body_en": "Then add reporting, oral histories, and industry analysis to understand outcomes, contradictions, and contested interpretations."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "黄仁勋 围绕 算力 的代表性实践",
@@ -18542,6 +19904,7 @@
       "category_signal_en": "Compress abstract ideas into design language that can be sensed, touched, and reused.",
       "accent": "#7c3aed",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/issey_miyake/",
       "source_tracks": [
         {
@@ -18566,6 +19929,7 @@
           "body_en": "Then add criticism, design history, and peer retrospectives for context and debate."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "三宅一生 围绕 材料实验 的代表性实践",
@@ -18739,6 +20103,7 @@
       "category_signal_en": "Compress abstract ideas into design language that can be sensed, touched, and reused.",
       "accent": "#7c3aed",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/jony_ive/",
       "source_tracks": [
         {
@@ -18763,6 +20128,7 @@
           "body_en": "Then add criticism, design history, and peer retrospectives for context and debate."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "乔尼·艾夫 围绕 材料 的代表性实践",
@@ -18920,7 +20286,7 @@
       "title": "Apple 联合创始人",
       "quote": "求知若饥，虚心若愚",
       "guiding_question": "这件东西最核心的体验是什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What is the simplest end-to-end experience worth obsessing over, and what should be removed to protect it?",
       "formula": "史蒂夫·乔布斯式决策 = 产品乘审美乘端到端体验",
       "tags": [
         "产品",
@@ -18936,6 +20302,7 @@
       "category_signal_en": "Compress abstract ideas into design language that can be sensed, touched, and reused.",
       "accent": "#7c3aed",
       "featured": true,
+      "priority_curated": true,
       "index_url": "/courses/steve_jobs/",
       "source_tracks": [
         {
@@ -18960,6 +20327,56 @@
           "body_en": "Then add criticism, design history, and peer retrospectives for context and debate."
         }
       ],
+      "reference_shelf": {
+        "intro_zh": "乔布斯要同时读产品发布、公开演讲和权威传记。只看传记会神化他，只看发布会会误以为他只会讲故事。",
+        "intro_en": "With Jobs, pair launches and speeches with the best biographies. Biography alone mythologizes him; product theater alone makes him look like a storyteller instead of a system builder.",
+        "primary_sources": [
+          {
+            "title": "Stanford Commencement Address",
+            "creator": "Steve Jobs",
+            "meta": "2005 speech",
+            "note_zh": "理解乔布斯如何把人生叙事压成行动原则的最好入口。",
+            "note_en": "A compact entry into how Jobs turned biography into operating principles."
+          },
+          {
+            "title": "iPhone Introduction Keynote",
+            "creator": "Steve Jobs",
+            "meta": "2007 product launch",
+            "note_zh": "看他如何把产品、故事和取舍压成一个完整体验。",
+            "note_en": "Shows how product, narrative, and trade-offs were compressed into one experience."
+          },
+          {
+            "title": "Make Something Wonderful",
+            "creator": "Steve Jobs Archive",
+            "meta": "archive collection",
+            "note_zh": "最适合直接接触乔布斯原话、邮件、采访与时间线材料。",
+            "note_en": "One of the best ways to encounter Jobs through primary remarks, memos, and interviews."
+          }
+        ],
+        "core_reading": [
+          {
+            "title": "Steve Jobs",
+            "creator": "Walter Isaacson",
+            "meta": "biography",
+            "note_zh": "最完整的主流传记，但读时要和产品史互相校正。",
+            "note_en": "The standard biography, best read alongside the product record."
+          },
+          {
+            "title": "Becoming Steve Jobs",
+            "creator": "Brent Schlender and Rick Tetzeli",
+            "meta": "biography",
+            "note_zh": "更强调乔布斯后期的成熟与组织能力。",
+            "note_en": "Useful for a more mature portrait of Jobs as a leader and operator."
+          },
+          {
+            "title": "Creative Selection",
+            "creator": "Ken Kocienda",
+            "meta": "inside account",
+            "note_zh": "从产品团队内部看乔布斯如何做细节判断。",
+            "note_en": "An inside product account of how Jobs shaped details and decision quality."
+          }
+        ]
+      },
       "case_notes": [
         {
           "title": "史蒂夫·乔布斯 围绕 产品 的代表性实践",
@@ -18994,7 +20411,7 @@
         {
           "number": 2,
           "title": "核心概念：产品",
-          "title_en": "Core Concept I: 产品",
+          "title_en": "Core Concept I: product taste",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "史蒂夫·乔布斯思想的核心概念：产品。产品是史蒂夫·乔布斯思想体系的基石。先抓住 产品 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入史蒂夫·乔布斯世界的第一步。本课将深入剖析产品的深层逻辑与实践含义。",
@@ -19007,7 +20424,7 @@
         {
           "number": 3,
           "title": "核心概念：审美",
-          "title_en": "Core Concept II: 审美",
+          "title_en": "Core Concept II: aesthetic judgment",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "史蒂夫·乔布斯思想的第二个核心概念：审美。审美与产品形成互补关系。如果说产品解决看什么的问题，审美解决怎么做的问题。本课深入分析审美的深层含义。",
@@ -19020,7 +20437,7 @@
         {
           "number": 4,
           "title": "核心概念：端到端体验",
-          "title_en": "Core Concept III: 端到端体验",
+          "title_en": "Core Concept III: end-to-end experience",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入史蒂夫·乔布斯思想的第三根支柱：端到端体验。端到端体验与产品、审美构成三角支撑。史蒂夫·乔布斯说：细节即立场：边角、材料、字重和留白共同定义品质。本课通过案例展示端到端体验的实践力量。",
@@ -19133,6 +20550,7 @@
       "category_signal_en": "Compress abstract ideas into design language that can be sensed, touched, and reused.",
       "accent": "#7c3aed",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/tadao_ando/",
       "source_tracks": [
         {
@@ -19157,6 +20575,7 @@
           "body_en": "Then add criticism, design history, and peer retrospectives for context and debate."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "安藤忠雄 围绕 光 的代表性实践",
@@ -19314,7 +20733,7 @@
       "title": "建筑师",
       "quote": "如果你总做别人认可的事，就不会有新东西",
       "guiding_question": "这件东西最核心的体验是什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What spatial logic is trying to emerge here, and what must change in form, flow, and structure to let it appear?",
       "formula": "扎哈·哈迪德式决策 = 流动结构乘空间想象乘未来感",
       "tags": [
         "流动结构",
@@ -19330,6 +20749,7 @@
       "category_signal_en": "Compress abstract ideas into design language that can be sensed, touched, and reused.",
       "accent": "#7c3aed",
       "featured": false,
+      "priority_curated": true,
       "index_url": "/courses/zaha_hadid/",
       "source_tracks": [
         {
@@ -19354,6 +20774,56 @@
           "body_en": "Then add criticism, design history, and peer retrospectives for context and debate."
         }
       ],
+      "reference_shelf": {
+        "intro_zh": "扎哈要先读作品集、事务所项目说明和展览图录，再读二手设计史。她最重要的不是“酷”，而是空间逻辑如何被做成现实建筑。",
+        "intro_en": "Start with project books, office statements, and exhibition catalogues before design history commentary. The real question is not whether Zaha is 'cool' but how spatial logic becomes buildable architecture.",
+        "primary_sources": [
+          {
+            "title": "Zaha Hadid: Complete Works",
+            "creator": "Zaha Hadid",
+            "meta": "project compendium",
+            "note_zh": "最适合系统看作品、图纸和项目说明。",
+            "note_en": "A strong systematic view of projects, drawings, and design statements."
+          },
+          {
+            "title": "Project Statements from Zaha Hadid Architects",
+            "creator": "Zaha Hadid Architects",
+            "meta": "office archive",
+            "note_zh": "适合理解每个项目的空间逻辑与叙述。",
+            "note_en": "Useful for the stated spatial logic behind individual projects."
+          },
+          {
+            "title": "Major Exhibition Catalogues",
+            "creator": "Zaha Hadid",
+            "meta": "exhibition materials",
+            "note_zh": "看她如何把建筑语言先在图像和展览层面展开。",
+            "note_en": "Shows how the architectural language is articulated through exhibition material."
+          }
+        ],
+        "core_reading": [
+          {
+            "title": "Zaha Hadid",
+            "creator": "Philip Jodidio",
+            "meta": "monograph",
+            "note_zh": "经典入门图录之一。",
+            "note_en": "A classic introductory monograph."
+          },
+          {
+            "title": "Zaha Hadid and Suprematism",
+            "creator": "edited design studies",
+            "meta": "study volume",
+            "note_zh": "适合理解其形式语言的艺术谱系。",
+            "note_en": "Useful for the artistic genealogy of her formal language."
+          },
+          {
+            "title": "Complete Works",
+            "creator": "revised editions",
+            "meta": "study reference",
+            "note_zh": "想真正进入她的项目世界，这一类资料最值。",
+            "note_en": "If you want to really enter her project world, these are among the most valuable materials."
+          }
+        ]
+      },
       "case_notes": [
         {
           "title": "扎哈·哈迪德 围绕 流动结构 的代表性实践",
@@ -19388,7 +20858,7 @@
         {
           "number": 2,
           "title": "核心概念：流动结构",
-          "title_en": "Core Concept I: 流动结构",
+          "title_en": "Core Concept I: form",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "扎哈·哈迪德思想的核心概念：流动结构。流动结构是扎哈·哈迪德思想体系的基石。先抓住 流动结构 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入扎哈·哈迪德世界的第一步。本课将深入剖析流动结构的深层逻辑与实践含义。",
@@ -19401,7 +20871,7 @@
         {
           "number": 3,
           "title": "核心概念：空间想象",
-          "title_en": "Core Concept II: 空间想象",
+          "title_en": "Core Concept II: spatial flow",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "扎哈·哈迪德思想的第二个核心概念：空间想象。空间想象与流动结构形成互补关系。如果说流动结构解决看什么的问题，空间想象解决怎么做的问题。本课深入分析空间想象的深层含义。",
@@ -19414,7 +20884,7 @@
         {
           "number": 4,
           "title": "核心概念：未来感",
-          "title_en": "Core Concept III: 未来感",
+          "title_en": "Core Concept III: structural daring",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入扎哈·哈迪德思想的第三根支柱：未来感。未来感与流动结构、空间想象构成三角支撑。扎哈·哈迪德说：细节即立场：边角、材料、字重和留白共同定义品质。本课通过案例展示未来感的实践力量。",
@@ -19527,6 +20997,7 @@
       "category_signal_en": "Compress abstract ideas into design language that can be sensed, touched, and reused.",
       "accent": "#7c3aed",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/john_maeda/",
       "source_tracks": [
         {
@@ -19551,6 +21022,7 @@
           "body_en": "Then add criticism, design history, and peer retrospectives for context and debate."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "约翰·前田 围绕 设计管理 的代表性实践",
@@ -19724,6 +21196,7 @@
       "category_signal_en": "Compress abstract ideas into design language that can be sensed, touched, and reused.",
       "accent": "#7c3aed",
       "featured": false,
+      "priority_curated": false,
       "index_url": "/courses/dieter_rams/",
       "source_tracks": [
         {
@@ -19748,6 +21221,7 @@
           "body_en": "Then add criticism, design history, and peer retrospectives for context and debate."
         }
       ],
+      "reference_shelf": null,
       "case_notes": [
         {
           "title": "迪特·拉姆斯 围绕 简洁 的代表性实践",
