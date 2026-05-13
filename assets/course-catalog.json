@@ -1,5 +1,5 @@
 {
-  "version": 6,
+  "version": 7,
   "stats": {
     "thinkers": 100,
     "lessons": 1000,
@@ -205,7 +205,7 @@
       "title": "美国总统",
       "quote": "站稳原则，但给现实留余地",
       "guiding_question": "目标函数到底是什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What institutional choice matters most here, and how will incentives behave once the policy meets reality?",
       "formula": "亚伯拉罕·林肯式决策 = 团结乘道义乘耐心",
       "tags": [
         "团结",
@@ -247,6 +247,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "lee_kuan_yew",
+          "name": "李光耀",
+          "name_en": "Lee Kuan Yew",
+          "title": "新加坡建国者"
+        },
+        {
+          "id": "elinor_ostrom",
+          "name": "埃莉诺·奥斯特罗姆",
+          "name_en": "Elinor Ostrom",
+          "title": "制度经济学家"
+        },
+        {
+          "id": "peter_senge",
+          "name": "彼得·圣吉",
+          "name_en": "Peter Senge",
+          "title": "系统管理学者"
+        }
+      ],
       "case_notes": [
         {
           "title": "亚伯拉罕·林肯 围绕 团结 的代表性实践",
@@ -281,7 +301,7 @@
         {
           "number": 2,
           "title": "核心概念：团结",
-          "title_en": "Core Concept I: 团结",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "亚伯拉罕·林肯思想的核心概念：团结。团结是亚伯拉罕·林肯思想体系的基石。先抓住 团结 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入亚伯拉罕·林肯世界的第一步。本课将深入剖析团结的深层逻辑与实践含义。",
@@ -294,7 +314,7 @@
         {
           "number": 3,
           "title": "核心概念：道义",
-          "title_en": "Core Concept II: 道义",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "亚伯拉罕·林肯思想的第二个核心概念：道义。道义与团结形成互补关系。如果说团结解决看什么的问题，道义解决怎么做的问题。本课深入分析道义的深层含义。",
@@ -307,7 +327,7 @@
         {
           "number": 4,
           "title": "核心概念：耐心",
-          "title_en": "Core Concept III: 耐心",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入亚伯拉罕·林肯思想的第三根支柱：耐心。耐心与团结、道义构成三角支撑。亚伯拉罕·林肯说：代际视角：决策要考虑下一代而不是下一个标题。本课通过案例展示耐心的实践力量。",
@@ -404,7 +424,7 @@
       "title": "制度经济学家",
       "quote": "公共资源并不注定走向悲剧",
       "guiding_question": "目标函数到底是什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What institutional choice matters most here, and how will incentives behave once the policy meets reality?",
       "formula": "埃莉诺·奥斯特罗姆式决策 = 共同治理乘制度设计乘地方知识",
       "tags": [
         "共同治理",
@@ -446,6 +466,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "lee_kuan_yew",
+          "name": "李光耀",
+          "name_en": "Lee Kuan Yew",
+          "title": "新加坡建国者"
+        },
+        {
+          "id": "abraham_lincoln",
+          "name": "亚伯拉罕·林肯",
+          "name_en": "Abraham Lincoln",
+          "title": "美国总统"
+        },
+        {
+          "id": "peter_senge",
+          "name": "彼得·圣吉",
+          "name_en": "Peter Senge",
+          "title": "系统管理学者"
+        }
+      ],
       "case_notes": [
         {
           "title": "埃莉诺·奥斯特罗姆 围绕 共同治理 的代表性实践",
@@ -480,7 +520,7 @@
         {
           "number": 2,
           "title": "核心概念：共同治理",
-          "title_en": "Core Concept I: 共同治理",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "埃莉诺·奥斯特罗姆思想的核心概念：共同治理。共同治理是埃莉诺·奥斯特罗姆思想体系的基石。先抓住 共同治理 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入埃莉诺·奥斯特罗姆世界的第一步。本课将深入剖析共同治理的深层逻辑与实践含义。",
@@ -493,7 +533,7 @@
         {
           "number": 3,
           "title": "核心概念：制度设计",
-          "title_en": "Core Concept II: 制度设计",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "埃莉诺·奥斯特罗姆思想的第二个核心概念：制度设计。制度设计与共同治理形成互补关系。如果说共同治理解决看什么的问题，制度设计解决怎么做的问题。本课深入分析制度设计的深层含义。",
@@ -506,7 +546,7 @@
         {
           "number": 4,
           "title": "核心概念：地方知识",
-          "title_en": "Core Concept III: 地方知识",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入埃莉诺·奥斯特罗姆思想的第三根支柱：地方知识。地方知识与共同治理、制度设计构成三角支撑。埃莉诺·奥斯特罗姆说：代际视角：决策要考虑下一代而不是下一个标题。本课通过案例展示地方知识的实践力量。",
@@ -603,7 +643,7 @@
       "title": "系统管理学者",
       "quote": "今天的问题，往往来自昨天的解决方案",
       "guiding_question": "目标函数到底是什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What institutional choice matters most here, and how will incentives behave once the policy meets reality?",
       "formula": "彼得·圣吉式决策 = 学习型组织乘反馈回路乘协同",
       "tags": [
         "学习型组织",
@@ -645,6 +685,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "lee_kuan_yew",
+          "name": "李光耀",
+          "name_en": "Lee Kuan Yew",
+          "title": "新加坡建国者"
+        },
+        {
+          "id": "abraham_lincoln",
+          "name": "亚伯拉罕·林肯",
+          "name_en": "Abraham Lincoln",
+          "title": "美国总统"
+        },
+        {
+          "id": "elinor_ostrom",
+          "name": "埃莉诺·奥斯特罗姆",
+          "name_en": "Elinor Ostrom",
+          "title": "制度经济学家"
+        }
+      ],
       "case_notes": [
         {
           "title": "彼得·圣吉 围绕 学习型组织 的代表性实践",
@@ -679,7 +739,7 @@
         {
           "number": 2,
           "title": "核心概念：学习型组织",
-          "title_en": "Core Concept I: 学习型组织",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "彼得·圣吉思想的核心概念：学习型组织。学习型组织是彼得·圣吉思想体系的基石。先抓住 学习型组织 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入彼得·圣吉世界的第一步。本课将深入剖析学习型组织的深层逻辑与实践含义。",
@@ -692,7 +752,7 @@
         {
           "number": 3,
           "title": "核心概念：反馈回路",
-          "title_en": "Core Concept II: 反馈回路",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "彼得·圣吉思想的第二个核心概念：反馈回路。反馈回路与学习型组织形成互补关系。如果说学习型组织解决看什么的问题，反馈回路解决怎么做的问题。本课深入分析反馈回路的深层含义。",
@@ -705,7 +765,7 @@
         {
           "number": 4,
           "title": "核心概念：协同",
-          "title_en": "Core Concept III: 协同",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入彼得·圣吉思想的第三根支柱：协同。协同与学习型组织、反馈回路构成三角支撑。彼得·圣吉说：代际视角：决策要考虑下一代而不是下一个标题。本课通过案例展示协同的实践力量。",
@@ -802,7 +862,7 @@
       "title": "政治家与发明家",
       "quote": "投资知识的回报最高",
       "guiding_question": "目标函数到底是什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What institutional choice matters most here, and how will incentives behave once the policy meets reality?",
       "formula": "本杰明·富兰克林式决策 = 自律乘实用主义乘公共精神",
       "tags": [
         "自律",
@@ -844,6 +904,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "lee_kuan_yew",
+          "name": "李光耀",
+          "name_en": "Lee Kuan Yew",
+          "title": "新加坡建国者"
+        },
+        {
+          "id": "abraham_lincoln",
+          "name": "亚伯拉罕·林肯",
+          "name_en": "Abraham Lincoln",
+          "title": "美国总统"
+        },
+        {
+          "id": "elinor_ostrom",
+          "name": "埃莉诺·奥斯特罗姆",
+          "name_en": "Elinor Ostrom",
+          "title": "制度经济学家"
+        }
+      ],
       "case_notes": [
         {
           "title": "本杰明·富兰克林 围绕 自律 的代表性实践",
@@ -878,7 +958,7 @@
         {
           "number": 2,
           "title": "核心概念：自律",
-          "title_en": "Core Concept I: 自律",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "本杰明·富兰克林思想的核心概念：自律。自律是本杰明·富兰克林思想体系的基石。先抓住 自律 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入本杰明·富兰克林世界的第一步。本课将深入剖析自律的深层逻辑与实践含义。",
@@ -891,7 +971,7 @@
         {
           "number": 3,
           "title": "核心概念：实用主义",
-          "title_en": "Core Concept II: 实用主义",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "本杰明·富兰克林思想的第二个核心概念：实用主义。实用主义与自律形成互补关系。如果说自律解决看什么的问题，实用主义解决怎么做的问题。本课深入分析实用主义的深层含义。",
@@ -904,7 +984,7 @@
         {
           "number": 4,
           "title": "核心概念：公共精神",
-          "title_en": "Core Concept III: 公共精神",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入本杰明·富兰克林思想的第三根支柱：公共精神。公共精神与自律、实用主义构成三角支撑。本杰明·富兰克林说：代际视角：决策要考虑下一代而不是下一个标题。本课通过案例展示公共精神的实践力量。",
@@ -1092,6 +1172,26 @@
           }
         ]
       },
+      "peer_cluster": [
+        {
+          "id": "abraham_lincoln",
+          "name": "亚伯拉罕·林肯",
+          "name_en": "Abraham Lincoln",
+          "title": "美国总统"
+        },
+        {
+          "id": "elinor_ostrom",
+          "name": "埃莉诺·奥斯特罗姆",
+          "name_en": "Elinor Ostrom",
+          "title": "制度经济学家"
+        },
+        {
+          "id": "peter_senge",
+          "name": "彼得·圣吉",
+          "name_en": "Peter Senge",
+          "title": "系统管理学者"
+        }
+      ],
       "case_notes": [
         {
           "title": "李光耀 围绕 治理 的代表性实践",
@@ -1249,7 +1349,7 @@
       "title": "英国前首相",
       "quote": "如果你正在穿越地狱，就继续走",
       "guiding_question": "目标函数到底是什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What institutional choice matters most here, and how will incentives behave once the policy meets reality?",
       "formula": "温斯顿·丘吉尔式决策 = 韧性乘演讲乘危机领导",
       "tags": [
         "韧性",
@@ -1291,6 +1391,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "lee_kuan_yew",
+          "name": "李光耀",
+          "name_en": "Lee Kuan Yew",
+          "title": "新加坡建国者"
+        },
+        {
+          "id": "nelson_mandela",
+          "name": "纳尔逊·曼德拉",
+          "name_en": "Nelson Mandela",
+          "title": "南非前总统"
+        },
+        {
+          "id": "abraham_lincoln",
+          "name": "亚伯拉罕·林肯",
+          "name_en": "Abraham Lincoln",
+          "title": "美国总统"
+        }
+      ],
       "case_notes": [
         {
           "title": "温斯顿·丘吉尔 围绕 韧性 的代表性实践",
@@ -1325,7 +1445,7 @@
         {
           "number": 2,
           "title": "核心概念：韧性",
-          "title_en": "Core Concept I: 韧性",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "温斯顿·丘吉尔思想的核心概念：韧性。韧性是温斯顿·丘吉尔思想体系的基石。先抓住 韧性 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入温斯顿·丘吉尔世界的第一步。本课将深入剖析韧性的深层逻辑与实践含义。",
@@ -1338,7 +1458,7 @@
         {
           "number": 3,
           "title": "核心概念：演讲",
-          "title_en": "Core Concept II: 演讲",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "温斯顿·丘吉尔思想的第二个核心概念：演讲。演讲与韧性形成互补关系。如果说韧性解决看什么的问题，演讲解决怎么做的问题。本课深入分析演讲的深层含义。",
@@ -1351,7 +1471,7 @@
         {
           "number": 4,
           "title": "核心概念：危机领导",
-          "title_en": "Core Concept III: 危机领导",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入温斯顿·丘吉尔思想的第三根支柱：危机领导。危机领导与韧性、演讲构成三角支撑。温斯顿·丘吉尔说：代际视角：决策要考虑下一代而不是下一个标题。本课通过案例展示危机领导的实践力量。",
@@ -1448,7 +1568,7 @@
       "title": "社会企业家",
       "quote": "信任穷人，是改变贫困的起点",
       "guiding_question": "目标函数到底是什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What institutional choice matters most here, and how will incentives behave once the policy meets reality?",
       "formula": "穆罕默德·尤努斯式决策 = 普惠金融乘社会创新乘贫困治理",
       "tags": [
         "普惠金融",
@@ -1490,6 +1610,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "lee_kuan_yew",
+          "name": "李光耀",
+          "name_en": "Lee Kuan Yew",
+          "title": "新加坡建国者"
+        },
+        {
+          "id": "abraham_lincoln",
+          "name": "亚伯拉罕·林肯",
+          "name_en": "Abraham Lincoln",
+          "title": "美国总统"
+        },
+        {
+          "id": "elinor_ostrom",
+          "name": "埃莉诺·奥斯特罗姆",
+          "name_en": "Elinor Ostrom",
+          "title": "制度经济学家"
+        }
+      ],
       "case_notes": [
         {
           "title": "穆罕默德·尤努斯 围绕 普惠金融 的代表性实践",
@@ -1524,7 +1664,7 @@
         {
           "number": 2,
           "title": "核心概念：普惠金融",
-          "title_en": "Core Concept I: 普惠金融",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "穆罕默德·尤努斯思想的核心概念：普惠金融。普惠金融是穆罕默德·尤努斯思想体系的基石。先抓住 普惠金融 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入穆罕默德·尤努斯世界的第一步。本课将深入剖析普惠金融的深层逻辑与实践含义。",
@@ -1537,7 +1677,7 @@
         {
           "number": 3,
           "title": "核心概念：社会创新",
-          "title_en": "Core Concept II: 社会创新",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "穆罕默德·尤努斯思想的第二个核心概念：社会创新。社会创新与普惠金融形成互补关系。如果说普惠金融解决看什么的问题，社会创新解决怎么做的问题。本课深入分析社会创新的深层含义。",
@@ -1550,7 +1690,7 @@
         {
           "number": 4,
           "title": "核心概念：贫困治理",
-          "title_en": "Core Concept III: 贫困治理",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入穆罕默德·尤努斯思想的第三根支柱：贫困治理。贫困治理与普惠金融、社会创新构成三角支撑。穆罕默德·尤努斯说：代际视角：决策要考虑下一代而不是下一个标题。本课通过案例展示贫困治理的实践力量。",
@@ -1647,7 +1787,7 @@
       "title": "南非前总统",
       "quote": "勇气不是没有恐惧，而是战胜恐惧",
       "guiding_question": "目标函数到底是什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What institutional choice matters most here, and how will incentives behave once the policy meets reality?",
       "formula": "纳尔逊·曼德拉式决策 = 和解乘韧性乘制度转型",
       "tags": [
         "和解",
@@ -1689,6 +1829,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "lee_kuan_yew",
+          "name": "李光耀",
+          "name_en": "Lee Kuan Yew",
+          "title": "新加坡建国者"
+        },
+        {
+          "id": "winston_churchill",
+          "name": "温斯顿·丘吉尔",
+          "name_en": "Winston Churchill",
+          "title": "英国前首相"
+        },
+        {
+          "id": "abraham_lincoln",
+          "name": "亚伯拉罕·林肯",
+          "name_en": "Abraham Lincoln",
+          "title": "美国总统"
+        }
+      ],
       "case_notes": [
         {
           "title": "纳尔逊·曼德拉 围绕 和解 的代表性实践",
@@ -1723,7 +1883,7 @@
         {
           "number": 2,
           "title": "核心概念：和解",
-          "title_en": "Core Concept I: 和解",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "纳尔逊·曼德拉思想的核心概念：和解。和解是纳尔逊·曼德拉思想体系的基石。先抓住 和解 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入纳尔逊·曼德拉世界的第一步。本课将深入剖析和解的深层逻辑与实践含义。",
@@ -1736,7 +1896,7 @@
         {
           "number": 3,
           "title": "核心概念：韧性",
-          "title_en": "Core Concept II: 韧性",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "纳尔逊·曼德拉思想的第二个核心概念：韧性。韧性与和解形成互补关系。如果说和解解决看什么的问题，韧性解决怎么做的问题。本课深入分析韧性的深层含义。",
@@ -1749,7 +1909,7 @@
         {
           "number": 4,
           "title": "核心概念：制度转型",
-          "title_en": "Core Concept III: 制度转型",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入纳尔逊·曼德拉思想的第三根支柱：制度转型。制度转型与和解、韧性构成三角支撑。纳尔逊·曼德拉说：代际视角：决策要考虑下一代而不是下一个标题。本课通过案例展示制度转型的实践力量。",
@@ -1846,7 +2006,7 @@
       "title": "改革开放总设计师",
       "quote": "不管黑猫白猫，抓到老鼠就是好猫",
       "guiding_question": "目标函数到底是什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What institutional choice matters most here, and how will incentives behave once the policy meets reality?",
       "formula": "邓小平式决策 = 实事求是乘改革乘发展",
       "tags": [
         "实事求是",
@@ -1888,6 +2048,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "lee_kuan_yew",
+          "name": "李光耀",
+          "name_en": "Lee Kuan Yew",
+          "title": "新加坡建国者"
+        },
+        {
+          "id": "abraham_lincoln",
+          "name": "亚伯拉罕·林肯",
+          "name_en": "Abraham Lincoln",
+          "title": "美国总统"
+        },
+        {
+          "id": "elinor_ostrom",
+          "name": "埃莉诺·奥斯特罗姆",
+          "name_en": "Elinor Ostrom",
+          "title": "制度经济学家"
+        }
+      ],
       "case_notes": [
         {
           "title": "邓小平 围绕 实事求是 的代表性实践",
@@ -1922,7 +2102,7 @@
         {
           "number": 2,
           "title": "核心概念：实事求是",
-          "title_en": "Core Concept I: 实事求是",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "邓小平思想的核心概念：实事求是。实事求是是邓小平思想体系的基石。先抓住 实事求是 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入邓小平世界的第一步。本课将深入剖析实事求是的深层逻辑与实践含义。",
@@ -1935,7 +2115,7 @@
         {
           "number": 3,
           "title": "核心概念：改革",
-          "title_en": "Core Concept II: 改革",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "邓小平思想的第二个核心概念：改革。改革与实事求是形成互补关系。如果说实事求是解决看什么的问题，改革解决怎么做的问题。本课深入分析改革的深层含义。",
@@ -1948,7 +2128,7 @@
         {
           "number": 4,
           "title": "核心概念：发展",
-          "title_en": "Core Concept III: 发展",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入邓小平思想的第三根支柱：发展。发展与实事求是、改革构成三角支撑。邓小平说：代际视角：决策要考虑下一代而不是下一个标题。本课通过案例展示发展的实践力量。",
@@ -2045,7 +2225,7 @@
       "title": "分子生物学家",
       "quote": "理解机制，才能谈有效干预",
       "guiding_question": "最需要优先排除的危险是什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What does the best available evidence support right now, and where is the highest-risk clinical or public-health constraint?",
       "formula": "伊丽莎白·布莱克本式决策 = 端粒乘老化乘生物机制",
       "tags": [
         "端粒",
@@ -2087,6 +2267,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "zhongnanshan",
+          "name": "钟南山",
+          "name_en": "Zhong Nanshan",
+          "title": "呼吸病学专家"
+        },
+        {
+          "id": "paul_farmer",
+          "name": "保罗·法默",
+          "name_en": "Paul Farmer",
+          "title": "全球健康专家"
+        },
+        {
+          "id": "david_sinclair",
+          "name": "大卫·辛克莱",
+          "name_en": "David Sinclair",
+          "title": "衰老研究者"
+        }
+      ],
       "case_notes": [
         {
           "title": "伊丽莎白·布莱克本 围绕 端粒 的代表性实践",
@@ -2121,7 +2321,7 @@
         {
           "number": 2,
           "title": "核心概念：端粒",
-          "title_en": "Core Concept I: 端粒",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "伊丽莎白·布莱克本思想的核心概念：端粒。端粒是伊丽莎白·布莱克本思想体系的基石。先抓住 端粒 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入伊丽莎白·布莱克本世界的第一步。本课将深入剖析端粒的深层逻辑与实践含义。",
@@ -2134,7 +2334,7 @@
         {
           "number": 3,
           "title": "核心概念：老化",
-          "title_en": "Core Concept II: 老化",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "伊丽莎白·布莱克本思想的第二个核心概念：老化。老化与端粒形成互补关系。如果说端粒解决看什么的问题，老化解决怎么做的问题。本课深入分析老化的深层含义。",
@@ -2147,7 +2347,7 @@
         {
           "number": 4,
           "title": "核心概念：生物机制",
-          "title_en": "Core Concept III: 生物机制",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入伊丽莎白·布莱克本思想的第三根支柱：生物机制。生物机制与端粒、老化构成三角支撑。伊丽莎白·布莱克本说：以人为本：医学不仅是指标，更是病人的生活质量和选择。本课通过案例展示生物机制的实践力量。",
@@ -2244,7 +2444,7 @@
       "title": "全球健康专家",
       "quote": "最穷的人也值得最好的医学",
       "guiding_question": "最需要优先排除的危险是什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What does the best available evidence support right now, and where is the highest-risk clinical or public-health constraint?",
       "formula": "保罗·法默式决策 = 公平乘基层医疗乘行动",
       "tags": [
         "公平",
@@ -2286,6 +2486,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "zhongnanshan",
+          "name": "钟南山",
+          "name_en": "Zhong Nanshan",
+          "title": "呼吸病学专家"
+        },
+        {
+          "id": "elizabeth_blackburn",
+          "name": "伊丽莎白·布莱克本",
+          "name_en": "Elizabeth Blackburn",
+          "title": "分子生物学家"
+        },
+        {
+          "id": "david_sinclair",
+          "name": "大卫·辛克莱",
+          "name_en": "David Sinclair",
+          "title": "衰老研究者"
+        }
+      ],
       "case_notes": [
         {
           "title": "保罗·法默 围绕 公平 的代表性实践",
@@ -2320,7 +2540,7 @@
         {
           "number": 2,
           "title": "核心概念：公平",
-          "title_en": "Core Concept I: 公平",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "保罗·法默思想的核心概念：公平。公平是保罗·法默思想体系的基石。先抓住 公平 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入保罗·法默世界的第一步。本课将深入剖析公平的深层逻辑与实践含义。",
@@ -2333,7 +2553,7 @@
         {
           "number": 3,
           "title": "核心概念：基层医疗",
-          "title_en": "Core Concept II: 基层医疗",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "保罗·法默思想的第二个核心概念：基层医疗。基层医疗与公平形成互补关系。如果说公平解决看什么的问题，基层医疗解决怎么做的问题。本课深入分析基层医疗的深层含义。",
@@ -2346,7 +2566,7 @@
         {
           "number": 4,
           "title": "核心概念：行动",
-          "title_en": "Core Concept III: 行动",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入保罗·法默思想的第三根支柱：行动。行动与公平、基层医疗构成三角支撑。保罗·法默说：以人为本：医学不仅是指标，更是病人的生活质量和选择。本课通过案例展示行动的实践力量。",
@@ -2443,7 +2663,7 @@
       "title": "衰老研究者",
       "quote": "把衰老看成可干预的生物过程",
       "guiding_question": "最需要优先排除的危险是什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What does the best available evidence support right now, and where is the highest-risk clinical or public-health constraint?",
       "formula": "大卫·辛克莱式决策 = 长寿乘机制乘预防",
       "tags": [
         "长寿",
@@ -2485,6 +2705,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "zhongnanshan",
+          "name": "钟南山",
+          "name_en": "Zhong Nanshan",
+          "title": "呼吸病学专家"
+        },
+        {
+          "id": "elizabeth_blackburn",
+          "name": "伊丽莎白·布莱克本",
+          "name_en": "Elizabeth Blackburn",
+          "title": "分子生物学家"
+        },
+        {
+          "id": "paul_farmer",
+          "name": "保罗·法默",
+          "name_en": "Paul Farmer",
+          "title": "全球健康专家"
+        }
+      ],
       "case_notes": [
         {
           "title": "大卫·辛克莱 围绕 长寿 的代表性实践",
@@ -2519,7 +2759,7 @@
         {
           "number": 2,
           "title": "核心概念：长寿",
-          "title_en": "Core Concept I: 长寿",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "大卫·辛克莱思想的核心概念：长寿。长寿是大卫·辛克莱思想体系的基石。先抓住 长寿 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入大卫·辛克莱世界的第一步。本课将深入剖析长寿的深层逻辑与实践含义。",
@@ -2532,7 +2772,7 @@
         {
           "number": 3,
           "title": "核心概念：机制",
-          "title_en": "Core Concept II: 机制",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "大卫·辛克莱思想的第二个核心概念：机制。机制与长寿形成互补关系。如果说长寿解决看什么的问题，机制解决怎么做的问题。本课深入分析机制的深层含义。",
@@ -2545,7 +2785,7 @@
         {
           "number": 4,
           "title": "核心概念：预防",
-          "title_en": "Core Concept III: 预防",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入大卫·辛克莱思想的第三根支柱：预防。预防与长寿、机制构成三角支撑。大卫·辛克莱说：以人为本：医学不仅是指标，更是病人的生活质量和选择。本课通过案例展示预防的实践力量。",
@@ -2642,7 +2882,7 @@
       "title": "现代医学教育先驱",
       "quote": "倾听病人，他会告诉你诊断",
       "guiding_question": "最需要优先排除的危险是什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What does the best available evidence support right now, and where is the highest-risk clinical or public-health constraint?",
       "formula": "威廉·奥斯勒式决策 = 临床观察乘终身学习乘医德",
       "tags": [
         "临床观察",
@@ -2684,6 +2924,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "zhongnanshan",
+          "name": "钟南山",
+          "name_en": "Zhong Nanshan",
+          "title": "呼吸病学专家"
+        },
+        {
+          "id": "elizabeth_blackburn",
+          "name": "伊丽莎白·布莱克本",
+          "name_en": "Elizabeth Blackburn",
+          "title": "分子生物学家"
+        },
+        {
+          "id": "paul_farmer",
+          "name": "保罗·法默",
+          "name_en": "Paul Farmer",
+          "title": "全球健康专家"
+        }
+      ],
       "case_notes": [
         {
           "title": "威廉·奥斯勒 围绕 临床观察 的代表性实践",
@@ -2718,7 +2978,7 @@
         {
           "number": 2,
           "title": "核心概念：临床观察",
-          "title_en": "Core Concept I: 临床观察",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "威廉·奥斯勒思想的核心概念：临床观察。临床观察是威廉·奥斯勒思想体系的基石。先抓住 临床观察 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入威廉·奥斯勒世界的第一步。本课将深入剖析临床观察的深层逻辑与实践含义。",
@@ -2731,7 +2991,7 @@
         {
           "number": 3,
           "title": "核心概念：终身学习",
-          "title_en": "Core Concept II: 终身学习",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "威廉·奥斯勒思想的第二个核心概念：终身学习。终身学习与临床观察形成互补关系。如果说临床观察解决看什么的问题，终身学习解决怎么做的问题。本课深入分析终身学习的深层含义。",
@@ -2744,7 +3004,7 @@
         {
           "number": 4,
           "title": "核心概念：医德",
-          "title_en": "Core Concept III: 医德",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入威廉·奥斯勒思想的第三根支柱：医德。医德与临床观察、终身学习构成三角支撑。威廉·奥斯勒说：以人为本：医学不仅是指标，更是病人的生活质量和选择。本课通过案例展示医德的实践力量。",
@@ -2841,7 +3101,7 @@
       "title": "传染病学家",
       "quote": "科学会修正自己，这恰恰是它可靠的原因",
       "guiding_question": "最需要优先排除的危险是什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What does the best available evidence support right now, and where is the highest-risk clinical or public-health constraint?",
       "formula": "安东尼·福奇式决策 = 证据乘政策沟通乘风险管理",
       "tags": [
         "证据",
@@ -2883,6 +3143,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "zhongnanshan",
+          "name": "钟南山",
+          "name_en": "Zhong Nanshan",
+          "title": "呼吸病学专家"
+        },
+        {
+          "id": "barry_marshall",
+          "name": "巴里·马歇尔",
+          "name_en": "Barry Marshall",
+          "title": "胃病学家"
+        },
+        {
+          "id": "elizabeth_blackburn",
+          "name": "伊丽莎白·布莱克本",
+          "name_en": "Elizabeth Blackburn",
+          "title": "分子生物学家"
+        }
+      ],
       "case_notes": [
         {
           "title": "安东尼·福奇 围绕 证据 的代表性实践",
@@ -2917,7 +3197,7 @@
         {
           "number": 2,
           "title": "核心概念：证据",
-          "title_en": "Core Concept I: 证据",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "安东尼·福奇思想的核心概念：证据。证据是安东尼·福奇思想体系的基石。先抓住 证据 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入安东尼·福奇世界的第一步。本课将深入剖析证据的深层逻辑与实践含义。",
@@ -2930,7 +3210,7 @@
         {
           "number": 3,
           "title": "核心概念：政策沟通",
-          "title_en": "Core Concept II: 政策沟通",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "安东尼·福奇思想的第二个核心概念：政策沟通。政策沟通与证据形成互补关系。如果说证据解决看什么的问题，政策沟通解决怎么做的问题。本课深入分析政策沟通的深层含义。",
@@ -2943,7 +3223,7 @@
         {
           "number": 4,
           "title": "核心概念：风险管理",
-          "title_en": "Core Concept III: 风险管理",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入安东尼·福奇思想的第三根支柱：风险管理。风险管理与证据、政策沟通构成三角支撑。安东尼·福奇说：以人为本：医学不仅是指标，更是病人的生活质量和选择。本课通过案例展示风险管理的实践力量。",
@@ -3040,7 +3320,7 @@
       "title": "胃病学家",
       "quote": "如果数据足够强，常识也该让路",
       "guiding_question": "最需要优先排除的危险是什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What does the best available evidence support right now, and where is the highest-risk clinical or public-health constraint?",
       "formula": "巴里·马歇尔式决策 = 证据乘反常识乘实验勇气",
       "tags": [
         "证据",
@@ -3082,6 +3362,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "zhongnanshan",
+          "name": "钟南山",
+          "name_en": "Zhong Nanshan",
+          "title": "呼吸病学专家"
+        },
+        {
+          "id": "anthony_fauci",
+          "name": "安东尼·福奇",
+          "name_en": "Anthony Fauci",
+          "title": "传染病学家"
+        },
+        {
+          "id": "elizabeth_blackburn",
+          "name": "伊丽莎白·布莱克本",
+          "name_en": "Elizabeth Blackburn",
+          "title": "分子生物学家"
+        }
+      ],
       "case_notes": [
         {
           "title": "巴里·马歇尔 围绕 证据 的代表性实践",
@@ -3116,7 +3416,7 @@
         {
           "number": 2,
           "title": "核心概念：证据",
-          "title_en": "Core Concept I: 证据",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "巴里·马歇尔思想的核心概念：证据。证据是巴里·马歇尔思想体系的基石。先抓住 证据 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入巴里·马歇尔世界的第一步。本课将深入剖析证据的深层逻辑与实践含义。",
@@ -3129,7 +3429,7 @@
         {
           "number": 3,
           "title": "核心概念：反常识",
-          "title_en": "Core Concept II: 反常识",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "巴里·马歇尔思想的第二个核心概念：反常识。反常识与证据形成互补关系。如果说证据解决看什么的问题，反常识解决怎么做的问题。本课深入分析反常识的深层含义。",
@@ -3142,7 +3442,7 @@
         {
           "number": 4,
           "title": "核心概念：实验勇气",
-          "title_en": "Core Concept III: 实验勇气",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入巴里·马歇尔思想的第三根支柱：实验勇气。实验勇气与证据、反常识构成三角支撑。巴里·马歇尔说：以人为本：医学不仅是指标，更是病人的生活质量和选择。本课通过案例展示实验勇气的实践力量。",
@@ -3239,7 +3539,7 @@
       "title": "感染病专家",
       "quote": "用正常人的语言讲清楚复杂医学",
       "guiding_question": "最需要优先排除的危险是什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What does the best available evidence support right now, and where is the highest-risk clinical or public-health constraint?",
       "formula": "张文宏式决策 = 风险沟通乘临床乘常识",
       "tags": [
         "风险沟通",
@@ -3281,6 +3581,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "zhongnanshan",
+          "name": "钟南山",
+          "name_en": "Zhong Nanshan",
+          "title": "呼吸病学专家"
+        },
+        {
+          "id": "elizabeth_blackburn",
+          "name": "伊丽莎白·布莱克本",
+          "name_en": "Elizabeth Blackburn",
+          "title": "分子生物学家"
+        },
+        {
+          "id": "paul_farmer",
+          "name": "保罗·法默",
+          "name_en": "Paul Farmer",
+          "title": "全球健康专家"
+        }
+      ],
       "case_notes": [
         {
           "title": "张文宏 围绕 风险沟通 的代表性实践",
@@ -3315,7 +3635,7 @@
         {
           "number": 2,
           "title": "核心概念：风险沟通",
-          "title_en": "Core Concept I: 风险沟通",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "张文宏思想的核心概念：风险沟通。风险沟通是张文宏思想体系的基石。先抓住 风险沟通 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入张文宏世界的第一步。本课将深入剖析风险沟通的深层逻辑与实践含义。",
@@ -3328,7 +3648,7 @@
         {
           "number": 3,
           "title": "核心概念：临床",
-          "title_en": "Core Concept II: 临床",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "张文宏思想的第二个核心概念：临床。临床与风险沟通形成互补关系。如果说风险沟通解决看什么的问题，临床解决怎么做的问题。本课深入分析临床的深层含义。",
@@ -3341,7 +3661,7 @@
         {
           "number": 4,
           "title": "核心概念：常识",
-          "title_en": "Core Concept III: 常识",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入张文宏思想的第三根支柱：常识。常识与风险沟通、临床构成三角支撑。张文宏说：以人为本：医学不仅是指标，更是病人的生活质量和选择。本课通过案例展示常识的实践力量。",
@@ -3438,7 +3758,7 @@
       "title": "感染病学专家",
       "quote": "早发现、早处置，比事后补救更重要",
       "guiding_question": "最需要优先排除的危险是什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What does the best available evidence support right now, and where is the highest-risk clinical or public-health constraint?",
       "formula": "李兰娟式决策 = 系统防控乘救治乘科研转化",
       "tags": [
         "系统防控",
@@ -3480,6 +3800,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "zhongnanshan",
+          "name": "钟南山",
+          "name_en": "Zhong Nanshan",
+          "title": "呼吸病学专家"
+        },
+        {
+          "id": "elizabeth_blackburn",
+          "name": "伊丽莎白·布莱克本",
+          "name_en": "Elizabeth Blackburn",
+          "title": "分子生物学家"
+        },
+        {
+          "id": "paul_farmer",
+          "name": "保罗·法默",
+          "name_en": "Paul Farmer",
+          "title": "全球健康专家"
+        }
+      ],
       "case_notes": [
         {
           "title": "李兰娟 围绕 系统防控 的代表性实践",
@@ -3514,7 +3854,7 @@
         {
           "number": 2,
           "title": "核心概念：系统防控",
-          "title_en": "Core Concept I: 系统防控",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "李兰娟思想的核心概念：系统防控。系统防控是李兰娟思想体系的基石。先抓住 系统防控 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入李兰娟世界的第一步。本课将深入剖析系统防控的深层逻辑与实践含义。",
@@ -3527,7 +3867,7 @@
         {
           "number": 3,
           "title": "核心概念：救治",
-          "title_en": "Core Concept II: 救治",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "李兰娟思想的第二个核心概念：救治。救治与系统防控形成互补关系。如果说系统防控解决看什么的问题，救治解决怎么做的问题。本课深入分析救治的深层含义。",
@@ -3540,7 +3880,7 @@
         {
           "number": 4,
           "title": "核心概念：科研转化",
-          "title_en": "Core Concept III: 科研转化",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入李兰娟思想的第三根支柱：科研转化。科研转化与系统防控、救治构成三角支撑。李兰娟说：以人为本：医学不仅是指标，更是病人的生活质量和选择。本课通过案例展示科研转化的实践力量。",
@@ -3728,6 +4068,26 @@
           }
         ]
       },
+      "peer_cluster": [
+        {
+          "id": "elizabeth_blackburn",
+          "name": "伊丽莎白·布莱克本",
+          "name_en": "Elizabeth Blackburn",
+          "title": "分子生物学家"
+        },
+        {
+          "id": "paul_farmer",
+          "name": "保罗·法默",
+          "name_en": "Paul Farmer",
+          "title": "全球健康专家"
+        },
+        {
+          "id": "david_sinclair",
+          "name": "大卫·辛克莱",
+          "name_en": "David Sinclair",
+          "title": "衰老研究者"
+        }
+      ],
       "case_notes": [
         {
           "title": "钟南山 围绕 循证 的代表性实践",
@@ -3885,7 +4245,7 @@
       "title": "外科医生与作家",
       "quote": "复杂系统里，清单是谦逊的工具",
       "guiding_question": "最需要优先排除的危险是什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What does the best available evidence support right now, and where is the highest-risk clinical or public-health constraint?",
       "formula": "阿图·葛文德式决策 = 清单乘医学人文乘系统改进",
       "tags": [
         "清单",
@@ -3927,6 +4287,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "zhongnanshan",
+          "name": "钟南山",
+          "name_en": "Zhong Nanshan",
+          "title": "呼吸病学专家"
+        },
+        {
+          "id": "elizabeth_blackburn",
+          "name": "伊丽莎白·布莱克本",
+          "name_en": "Elizabeth Blackburn",
+          "title": "分子生物学家"
+        },
+        {
+          "id": "paul_farmer",
+          "name": "保罗·法默",
+          "name_en": "Paul Farmer",
+          "title": "全球健康专家"
+        }
+      ],
       "case_notes": [
         {
           "title": "阿图·葛文德 围绕 清单 的代表性实践",
@@ -3961,7 +4341,7 @@
         {
           "number": 2,
           "title": "核心概念：清单",
-          "title_en": "Core Concept I: 清单",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "阿图·葛文德思想的核心概念：清单。清单是阿图·葛文德思想体系的基石。先抓住 清单 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入阿图·葛文德世界的第一步。本课将深入剖析清单的深层逻辑与实践含义。",
@@ -3974,7 +4354,7 @@
         {
           "number": 3,
           "title": "核心概念：医学人文",
-          "title_en": "Core Concept II: 医学人文",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "阿图·葛文德思想的第二个核心概念：医学人文。医学人文与清单形成互补关系。如果说清单解决看什么的问题，医学人文解决怎么做的问题。本课深入分析医学人文的深层含义。",
@@ -3987,7 +4367,7 @@
         {
           "number": 4,
           "title": "核心概念：系统改进",
-          "title_en": "Core Concept III: 系统改进",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入阿图·葛文德思想的第三根支柱：系统改进。系统改进与清单、医学人文构成三角支撑。阿图·葛文德说：以人为本：医学不仅是指标，更是病人的生活质量和选择。本课通过案例展示系统改进的实践力量。",
@@ -4084,7 +4464,7 @@
       "title": "华为创始人",
       "quote": "让听得见炮火的人做决策",
       "guiding_question": "这件事真正创造价值的环节是什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "Where is the real source of durable value here, and what has to compound for this decision to work?",
       "formula": "任正非式决策 = 灰度乘组织乘战略耐心",
       "tags": [
         "灰度",
@@ -4126,6 +4506,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "buffett",
+          "name": "沃伦·巴菲特",
+          "name_en": "Warren Buffett",
+          "title": "价值投资之父"
+        },
+        {
+          "id": "peter_thiel",
+          "name": "彼得·蒂尔",
+          "name_en": "Peter Thiel",
+          "title": "投资人与创业者"
+        },
+        {
+          "id": "caodewang",
+          "name": "曹德旺",
+          "name_en": "Cao Dewang",
+          "title": "福耀玻璃创始人"
+        }
+      ],
       "case_notes": [
         {
           "title": "任正非 围绕 灰度 的代表性实践",
@@ -4160,7 +4560,7 @@
         {
           "number": 2,
           "title": "核心概念：灰度",
-          "title_en": "Core Concept I: 灰度",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "任正非思想的核心概念：灰度。灰度是任正非思想体系的基石。先抓住 灰度 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入任正非世界的第一步。本课将深入剖析灰度的深层逻辑与实践含义。",
@@ -4173,7 +4573,7 @@
         {
           "number": 3,
           "title": "核心概念：组织",
-          "title_en": "Core Concept II: 组织",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "任正非思想的第二个核心概念：组织。组织与灰度形成互补关系。如果说灰度解决看什么的问题，组织解决怎么做的问题。本课深入分析组织的深层含义。",
@@ -4186,7 +4586,7 @@
         {
           "number": 4,
           "title": "核心概念：战略耐心",
-          "title_en": "Core Concept III: 战略耐心",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入任正非思想的第三根支柱：战略耐心。战略耐心与灰度、组织构成三角支撑。任正非说：执行纪律：把复杂战略压缩成可重复的关键动作。本课通过案例展示战略耐心的实践力量。",
@@ -4283,7 +4683,7 @@
       "title": "创新理论学者",
       "quote": "用户雇佣产品去完成任务",
       "guiding_question": "这件事真正创造价值的环节是什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "Where is the real source of durable value here, and what has to compound for this decision to work?",
       "formula": "克莱顿·克里斯坦森式决策 = 颠覆式创新乘用户任务乘长期赛道",
       "tags": [
         "颠覆式创新",
@@ -4325,6 +4725,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "buffett",
+          "name": "沃伦·巴菲特",
+          "name_en": "Warren Buffett",
+          "title": "价值投资之父"
+        },
+        {
+          "id": "peter_thiel",
+          "name": "彼得·蒂尔",
+          "name_en": "Peter Thiel",
+          "title": "投资人与创业者"
+        },
+        {
+          "id": "caodewang",
+          "name": "曹德旺",
+          "name_en": "Cao Dewang",
+          "title": "福耀玻璃创始人"
+        }
+      ],
       "case_notes": [
         {
           "title": "克莱顿·克里斯坦森 围绕 颠覆式创新 的代表性实践",
@@ -4359,7 +4779,7 @@
         {
           "number": 2,
           "title": "核心概念：颠覆式创新",
-          "title_en": "Core Concept I: 颠覆式创新",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "克莱顿·克里斯坦森思想的核心概念：颠覆式创新。颠覆式创新是克莱顿·克里斯坦森思想体系的基石。先抓住 颠覆式创新 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入克莱顿·克里斯坦森世界的第一步。本课将深入剖析颠覆式创新的深层逻辑与实践含义。",
@@ -4372,7 +4792,7 @@
         {
           "number": 3,
           "title": "核心概念：用户任务",
-          "title_en": "Core Concept II: 用户任务",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "克莱顿·克里斯坦森思想的第二个核心概念：用户任务。用户任务与颠覆式创新形成互补关系。如果说颠覆式创新解决看什么的问题，用户任务解决怎么做的问题。本课深入分析用户任务的深层含义。",
@@ -4385,7 +4805,7 @@
         {
           "number": 4,
           "title": "核心概念：长期赛道",
-          "title_en": "Core Concept III: 长期赛道",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入克莱顿·克里斯坦森思想的第三根支柱：长期赛道。长期赛道与颠覆式创新、用户任务构成三角支撑。克莱顿·克里斯坦森说：执行纪律：把复杂战略压缩成可重复的关键动作。本课通过案例展示长期赛道的实践力量。",
@@ -4482,7 +4902,7 @@
       "title": "软银创始人",
       "quote": "要用三百年的视角看科技",
       "guiding_question": "这件事真正创造价值的环节是什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "Where is the real source of durable value here, and what has to compound for this decision to work?",
       "formula": "孙正义式决策 = 愿景投资乘杠杆乘生态布局",
       "tags": [
         "愿景投资",
@@ -4524,6 +4944,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "buffett",
+          "name": "沃伦·巴菲特",
+          "name_en": "Warren Buffett",
+          "title": "价值投资之父"
+        },
+        {
+          "id": "peter_thiel",
+          "name": "彼得·蒂尔",
+          "name_en": "Peter Thiel",
+          "title": "投资人与创业者"
+        },
+        {
+          "id": "caodewang",
+          "name": "曹德旺",
+          "name_en": "Cao Dewang",
+          "title": "福耀玻璃创始人"
+        }
+      ],
       "case_notes": [
         {
           "title": "孙正义 围绕 愿景投资 的代表性实践",
@@ -4558,7 +4998,7 @@
         {
           "number": 2,
           "title": "核心概念：愿景投资",
-          "title_en": "Core Concept I: 愿景投资",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "孙正义思想的核心概念：愿景投资。愿景投资是孙正义思想体系的基石。先抓住 愿景投资 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入孙正义世界的第一步。本课将深入剖析愿景投资的深层逻辑与实践含义。",
@@ -4571,7 +5011,7 @@
         {
           "number": 3,
           "title": "核心概念：杠杆",
-          "title_en": "Core Concept II: 杠杆",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "孙正义思想的第二个核心概念：杠杆。杠杆与愿景投资形成互补关系。如果说愿景投资解决看什么的问题，杠杆解决怎么做的问题。本课深入分析杠杆的深层含义。",
@@ -4584,7 +5024,7 @@
         {
           "number": 4,
           "title": "核心概念：生态布局",
-          "title_en": "Core Concept III: 生态布局",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入孙正义思想的第三根支柱：生态布局。生态布局与愿景投资、杠杆构成三角支撑。孙正义说：执行纪律：把复杂战略压缩成可重复的关键动作。本课通过案例展示生态布局的实践力量。",
@@ -4681,7 +5121,7 @@
       "title": "字节跳动创始人",
       "quote": "不要用战术上的勤奋掩盖战略上的懒惰",
       "guiding_question": "这件事真正创造价值的环节是什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "Where is the real source of durable value here, and what has to compound for this decision to work?",
       "formula": "张一鸣式决策 = 延迟满足乘算法乘全球化",
       "tags": [
         "延迟满足",
@@ -4723,6 +5163,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "buffett",
+          "name": "沃伦·巴菲特",
+          "name_en": "Warren Buffett",
+          "title": "价值投资之父"
+        },
+        {
+          "id": "peter_thiel",
+          "name": "彼得·蒂尔",
+          "name_en": "Peter Thiel",
+          "title": "投资人与创业者"
+        },
+        {
+          "id": "caodewang",
+          "name": "曹德旺",
+          "name_en": "Cao Dewang",
+          "title": "福耀玻璃创始人"
+        }
+      ],
       "case_notes": [
         {
           "title": "张一鸣 围绕 延迟满足 的代表性实践",
@@ -4757,7 +5217,7 @@
         {
           "number": 2,
           "title": "核心概念：延迟满足",
-          "title_en": "Core Concept I: 延迟满足",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "张一鸣思想的核心概念：延迟满足。延迟满足是张一鸣思想体系的基石。先抓住 延迟满足 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入张一鸣世界的第一步。本课将深入剖析延迟满足的深层逻辑与实践含义。",
@@ -4770,7 +5230,7 @@
         {
           "number": 3,
           "title": "核心概念：算法",
-          "title_en": "Core Concept II: 算法",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "张一鸣思想的第二个核心概念：算法。算法与延迟满足形成互补关系。如果说延迟满足解决看什么的问题，算法解决怎么做的问题。本课深入分析算法的深层含义。",
@@ -4783,7 +5243,7 @@
         {
           "number": 4,
           "title": "核心概念：全球化",
-          "title_en": "Core Concept III: 全球化",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入张一鸣思想的第三根支柱：全球化。全球化与延迟满足、算法构成三角支撑。张一鸣说：执行纪律：把复杂战略压缩成可重复的关键动作。本课通过案例展示全球化的实践力量。",
@@ -4971,6 +5431,26 @@
           }
         ]
       },
+      "peer_cluster": [
+        {
+          "id": "buffett",
+          "name": "沃伦·巴菲特",
+          "name_en": "Warren Buffett",
+          "title": "价值投资之父"
+        },
+        {
+          "id": "caodewang",
+          "name": "曹德旺",
+          "name_en": "Cao Dewang",
+          "title": "福耀玻璃创始人"
+        },
+        {
+          "id": "bezos",
+          "name": "杰夫·贝索斯",
+          "name_en": "Jeff Bezos",
+          "title": "亚马逊创始人"
+        }
+      ],
       "case_notes": [
         {
           "title": "彼得·蒂尔 围绕 垄断 的代表性实践",
@@ -5219,6 +5699,26 @@
           }
         ]
       },
+      "peer_cluster": [
+        {
+          "id": "buffett",
+          "name": "沃伦·巴菲特",
+          "name_en": "Warren Buffett",
+          "title": "价值投资之父"
+        },
+        {
+          "id": "peter_thiel",
+          "name": "彼得·蒂尔",
+          "name_en": "Peter Thiel",
+          "title": "投资人与创业者"
+        },
+        {
+          "id": "bezos",
+          "name": "杰夫·贝索斯",
+          "name_en": "Jeff Bezos",
+          "title": "亚马逊创始人"
+        }
+      ],
       "case_notes": [
         {
           "title": "曹德旺 围绕 制造 的代表性实践",
@@ -5467,6 +5967,26 @@
           }
         ]
       },
+      "peer_cluster": [
+        {
+          "id": "buffett",
+          "name": "沃伦·巴菲特",
+          "name_en": "Warren Buffett",
+          "title": "价值投资之父"
+        },
+        {
+          "id": "peter_thiel",
+          "name": "彼得·蒂尔",
+          "name_en": "Peter Thiel",
+          "title": "投资人与创业者"
+        },
+        {
+          "id": "caodewang",
+          "name": "曹德旺",
+          "name_en": "Cao Dewang",
+          "title": "福耀玻璃创始人"
+        }
+      ],
       "case_notes": [
         {
           "title": "杰夫·贝索斯 围绕 客户至上 的代表性实践",
@@ -5624,7 +6144,7 @@
       "title": "投资人与企业家",
       "quote": "做对的事，把事做对",
       "guiding_question": "这件事真正创造价值的环节是什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "Where is the real source of durable value here, and what has to compound for this decision to work?",
       "formula": "段永平式决策 = 本分乘长期乘企业文化",
       "tags": [
         "本分",
@@ -5666,6 +6186,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "buffett",
+          "name": "沃伦·巴菲特",
+          "name_en": "Warren Buffett",
+          "title": "价值投资之父"
+        },
+        {
+          "id": "peter_thiel",
+          "name": "彼得·蒂尔",
+          "name_en": "Peter Thiel",
+          "title": "投资人与创业者"
+        },
+        {
+          "id": "caodewang",
+          "name": "曹德旺",
+          "name_en": "Cao Dewang",
+          "title": "福耀玻璃创始人"
+        }
+      ],
       "case_notes": [
         {
           "title": "段永平 围绕 本分 的代表性实践",
@@ -5700,7 +6240,7 @@
         {
           "number": 2,
           "title": "核心概念：本分",
-          "title_en": "Core Concept I: 本分",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "段永平思想的核心概念：本分。本分是段永平思想体系的基石。先抓住 本分 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入段永平世界的第一步。本课将深入剖析本分的深层逻辑与实践含义。",
@@ -5713,7 +6253,7 @@
         {
           "number": 3,
           "title": "核心概念：长期",
-          "title_en": "Core Concept II: 长期",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "段永平思想的第二个核心概念：长期。长期与本分形成互补关系。如果说本分解决看什么的问题，长期解决怎么做的问题。本课深入分析长期的深层含义。",
@@ -5726,7 +6266,7 @@
         {
           "number": 4,
           "title": "核心概念：企业文化",
-          "title_en": "Core Concept III: 企业文化",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入段永平思想的第三根支柱：企业文化。企业文化与本分、长期构成三角支撑。段永平说：执行纪律：把复杂战略压缩成可重复的关键动作。本课通过案例展示企业文化的实践力量。",
@@ -5914,6 +6454,26 @@
           }
         ]
       },
+      "peer_cluster": [
+        {
+          "id": "peter_thiel",
+          "name": "彼得·蒂尔",
+          "name_en": "Peter Thiel",
+          "title": "投资人与创业者"
+        },
+        {
+          "id": "caodewang",
+          "name": "曹德旺",
+          "name_en": "Cao Dewang",
+          "title": "福耀玻璃创始人"
+        },
+        {
+          "id": "bezos",
+          "name": "杰夫·贝索斯",
+          "name_en": "Jeff Bezos",
+          "title": "亚马逊创始人"
+        }
+      ],
       "case_notes": [
         {
           "title": "沃伦·巴菲特 围绕 价值投资 的代表性实践",
@@ -6071,7 +6631,7 @@
       "title": "美团创始人",
       "quote": "既往不恋，纵情向前",
       "guiding_question": "这件事真正创造价值的环节是什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "Where is the real source of durable value here, and what has to compound for this decision to work?",
       "formula": "王兴式决策 = 供给乘效率乘长期战争",
       "tags": [
         "供给",
@@ -6113,6 +6673,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "buffett",
+          "name": "沃伦·巴菲特",
+          "name_en": "Warren Buffett",
+          "title": "价值投资之父"
+        },
+        {
+          "id": "peter_thiel",
+          "name": "彼得·蒂尔",
+          "name_en": "Peter Thiel",
+          "title": "投资人与创业者"
+        },
+        {
+          "id": "caodewang",
+          "name": "曹德旺",
+          "name_en": "Cao Dewang",
+          "title": "福耀玻璃创始人"
+        }
+      ],
       "case_notes": [
         {
           "title": "王兴 围绕 供给 的代表性实践",
@@ -6147,7 +6727,7 @@
         {
           "number": 2,
           "title": "核心概念：供给",
-          "title_en": "Core Concept I: 供给",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "王兴思想的核心概念：供给。供给是王兴思想体系的基石。先抓住 供给 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入王兴世界的第一步。本课将深入剖析供给的深层逻辑与实践含义。",
@@ -6160,7 +6740,7 @@
         {
           "number": 3,
           "title": "核心概念：效率",
-          "title_en": "Core Concept II: 效率",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "王兴思想的第二个核心概念：效率。效率与供给形成互补关系。如果说供给解决看什么的问题，效率解决怎么做的问题。本课深入分析效率的深层含义。",
@@ -6173,7 +6753,7 @@
         {
           "number": 4,
           "title": "核心概念：长期战争",
-          "title_en": "Core Concept III: 长期战争",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入王兴思想的第三根支柱：长期战争。长期战争与供给、效率构成三角支撑。王兴说：执行纪律：把复杂战略压缩成可重复的关键动作。本课通过案例展示长期战争的实践力量。",
@@ -6361,6 +6941,26 @@
           }
         ]
       },
+      "peer_cluster": [
+        {
+          "id": "buffett",
+          "name": "沃伦·巴菲特",
+          "name_en": "Warren Buffett",
+          "title": "价值投资之父"
+        },
+        {
+          "id": "peter_thiel",
+          "name": "彼得·蒂尔",
+          "name_en": "Peter Thiel",
+          "title": "投资人与创业者"
+        },
+        {
+          "id": "caodewang",
+          "name": "曹德旺",
+          "name_en": "Cao Dewang",
+          "title": "福耀玻璃创始人"
+        }
+      ],
       "case_notes": [
         {
           "title": "瑞·达利欧 围绕 原则 的代表性实践",
@@ -6518,7 +7118,7 @@
       "title": "百事前 CEO",
       "quote": "把短期绩效和长期重塑同时抓住",
       "guiding_question": "这件事真正创造价值的环节是什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "Where is the real source of durable value here, and what has to compound for this decision to work?",
       "formula": "英德拉·努伊式决策 = 战略乘领导力乘长期转型",
       "tags": [
         "战略",
@@ -6560,6 +7160,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "buffett",
+          "name": "沃伦·巴菲特",
+          "name_en": "Warren Buffett",
+          "title": "价值投资之父"
+        },
+        {
+          "id": "peter_thiel",
+          "name": "彼得·蒂尔",
+          "name_en": "Peter Thiel",
+          "title": "投资人与创业者"
+        },
+        {
+          "id": "caodewang",
+          "name": "曹德旺",
+          "name_en": "Cao Dewang",
+          "title": "福耀玻璃创始人"
+        }
+      ],
       "case_notes": [
         {
           "title": "英德拉·努伊 围绕 战略 的代表性实践",
@@ -6594,7 +7214,7 @@
         {
           "number": 2,
           "title": "核心概念：战略",
-          "title_en": "Core Concept I: 战略",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "英德拉·努伊思想的核心概念：战略。战略是英德拉·努伊思想体系的基石。先抓住 战略 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入英德拉·努伊世界的第一步。本课将深入剖析战略的深层逻辑与实践含义。",
@@ -6607,7 +7227,7 @@
         {
           "number": 3,
           "title": "核心概念：领导力",
-          "title_en": "Core Concept II: 领导力",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "英德拉·努伊思想的第二个核心概念：领导力。领导力与战略形成互补关系。如果说战略解决看什么的问题，领导力解决怎么做的问题。本课深入分析领导力的深层含义。",
@@ -6620,7 +7240,7 @@
         {
           "number": 4,
           "title": "核心概念：长期转型",
-          "title_en": "Core Concept III: 长期转型",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入英德拉·努伊思想的第三根支柱：长期转型。长期转型与战略、领导力构成三角支撑。英德拉·努伊说：执行纪律：把复杂战略压缩成可重复的关键动作。本课通过案例展示长期转型的实践力量。",
@@ -6717,7 +7337,7 @@
       "title": "Apple CEO",
       "quote": "把复杂事情稳定做到极致",
       "guiding_question": "这件事真正创造价值的环节是什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "Where is the real source of durable value here, and what has to compound for this decision to work?",
       "formula": "蒂姆·库克式决策 = 供应链乘运营乘隐私",
       "tags": [
         "供应链",
@@ -6759,6 +7379,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "buffett",
+          "name": "沃伦·巴菲特",
+          "name_en": "Warren Buffett",
+          "title": "价值投资之父"
+        },
+        {
+          "id": "peter_thiel",
+          "name": "彼得·蒂尔",
+          "name_en": "Peter Thiel",
+          "title": "投资人与创业者"
+        },
+        {
+          "id": "caodewang",
+          "name": "曹德旺",
+          "name_en": "Cao Dewang",
+          "title": "福耀玻璃创始人"
+        }
+      ],
       "case_notes": [
         {
           "title": "蒂姆·库克 围绕 供应链 的代表性实践",
@@ -6793,7 +7433,7 @@
         {
           "number": 2,
           "title": "核心概念：供应链",
-          "title_en": "Core Concept I: 供应链",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "蒂姆·库克思想的核心概念：供应链。供应链是蒂姆·库克思想体系的基石。先抓住 供应链 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入蒂姆·库克世界的第一步。本课将深入剖析供应链的深层逻辑与实践含义。",
@@ -6806,7 +7446,7 @@
         {
           "number": 3,
           "title": "核心概念：运营",
-          "title_en": "Core Concept II: 运营",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "蒂姆·库克思想的第二个核心概念：运营。运营与供应链形成互补关系。如果说供应链解决看什么的问题，运营解决怎么做的问题。本课深入分析运营的深层含义。",
@@ -6819,7 +7459,7 @@
         {
           "number": 4,
           "title": "核心概念：隐私",
-          "title_en": "Core Concept III: 隐私",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入蒂姆·库克思想的第三根支柱：隐私。隐私与供应链、运营构成三角支撑。蒂姆·库克说：执行纪律：把复杂战略压缩成可重复的关键动作。本课通过案例展示隐私的实践力量。",
@@ -6916,7 +7556,7 @@
       "title": "运营与组织领导者",
       "quote": "完成比完美更重要",
       "guiding_question": "这件事真正创造价值的环节是什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "Where is the real source of durable value here, and what has to compound for this decision to work?",
       "formula": "谢丽尔·桑德伯格式决策 = 领导力乘组织乘女性成长",
       "tags": [
         "领导力",
@@ -6958,6 +7598,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "buffett",
+          "name": "沃伦·巴菲特",
+          "name_en": "Warren Buffett",
+          "title": "价值投资之父"
+        },
+        {
+          "id": "peter_thiel",
+          "name": "彼得·蒂尔",
+          "name_en": "Peter Thiel",
+          "title": "投资人与创业者"
+        },
+        {
+          "id": "caodewang",
+          "name": "曹德旺",
+          "name_en": "Cao Dewang",
+          "title": "福耀玻璃创始人"
+        }
+      ],
       "case_notes": [
         {
           "title": "谢丽尔·桑德伯格 围绕 领导力 的代表性实践",
@@ -6992,7 +7652,7 @@
         {
           "number": 2,
           "title": "核心概念：领导力",
-          "title_en": "Core Concept I: 领导力",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "谢丽尔·桑德伯格思想的核心概念：领导力。领导力是谢丽尔·桑德伯格思想体系的基石。先抓住 领导力 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入谢丽尔·桑德伯格世界的第一步。本课将深入剖析领导力的深层逻辑与实践含义。",
@@ -7005,7 +7665,7 @@
         {
           "number": 3,
           "title": "核心概念：组织",
-          "title_en": "Core Concept II: 组织",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "谢丽尔·桑德伯格思想的第二个核心概念：组织。组织与领导力形成互补关系。如果说领导力解决看什么的问题，组织解决怎么做的问题。本课深入分析组织的深层含义。",
@@ -7018,7 +7678,7 @@
         {
           "number": 4,
           "title": "核心概念：女性成长",
-          "title_en": "Core Concept III: 女性成长",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入谢丽尔·桑德伯格思想的第三根支柱：女性成长。女性成长与领导力、组织构成三角支撑。谢丽尔·桑德伯格说：执行纪律：把复杂战略压缩成可重复的关键动作。本课通过案例展示女性成长的实践力量。",
@@ -7115,7 +7775,7 @@
       "title": "Netflix 联合创始人",
       "quote": "高人才密度会改变一切",
       "guiding_question": "这件事真正创造价值的环节是什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "Where is the real source of durable value here, and what has to compound for this decision to work?",
       "formula": "里德·哈斯廷斯式决策 = 自由与责任乘文化乘订阅",
       "tags": [
         "自由与责任",
@@ -7157,6 +7817,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "buffett",
+          "name": "沃伦·巴菲特",
+          "name_en": "Warren Buffett",
+          "title": "价值投资之父"
+        },
+        {
+          "id": "peter_thiel",
+          "name": "彼得·蒂尔",
+          "name_en": "Peter Thiel",
+          "title": "投资人与创业者"
+        },
+        {
+          "id": "caodewang",
+          "name": "曹德旺",
+          "name_en": "Cao Dewang",
+          "title": "福耀玻璃创始人"
+        }
+      ],
       "case_notes": [
         {
           "title": "里德·哈斯廷斯 围绕 自由与责任 的代表性实践",
@@ -7191,7 +7871,7 @@
         {
           "number": 2,
           "title": "核心概念：自由与责任",
-          "title_en": "Core Concept I: 自由与责任",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "里德·哈斯廷斯思想的核心概念：自由与责任。自由与责任是里德·哈斯廷斯思想体系的基石。先抓住 自由与责任 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入里德·哈斯廷斯世界的第一步。本课将深入剖析自由与责任的深层逻辑与实践含义。",
@@ -7204,7 +7884,7 @@
         {
           "number": 3,
           "title": "核心概念：文化",
-          "title_en": "Core Concept II: 文化",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "里德·哈斯廷斯思想的第二个核心概念：文化。文化与自由与责任形成互补关系。如果说自由与责任解决看什么的问题，文化解决怎么做的问题。本课深入分析文化的深层含义。",
@@ -7217,7 +7897,7 @@
         {
           "number": 4,
           "title": "核心概念：订阅",
-          "title_en": "Core Concept III: 订阅",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入里德·哈斯廷斯思想的第三根支柱：订阅。订阅与自由与责任、文化构成三角支撑。里德·哈斯廷斯说：执行纪律：把复杂战略压缩成可重复的关键动作。本课通过案例展示订阅的实践力量。",
@@ -7314,7 +7994,7 @@
       "title": "小米创始人",
       "quote": "站在风口上，猪也能飞起来",
       "guiding_question": "这件事真正创造价值的环节是什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "Where is the real source of durable value here, and what has to compound for this decision to work?",
       "formula": "雷军式决策 = 效率乘用户参与乘性价比",
       "tags": [
         "效率",
@@ -7356,6 +8036,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "buffett",
+          "name": "沃伦·巴菲特",
+          "name_en": "Warren Buffett",
+          "title": "价值投资之父"
+        },
+        {
+          "id": "peter_thiel",
+          "name": "彼得·蒂尔",
+          "name_en": "Peter Thiel",
+          "title": "投资人与创业者"
+        },
+        {
+          "id": "caodewang",
+          "name": "曹德旺",
+          "name_en": "Cao Dewang",
+          "title": "福耀玻璃创始人"
+        }
+      ],
       "case_notes": [
         {
           "title": "雷军 围绕 效率 的代表性实践",
@@ -7390,7 +8090,7 @@
         {
           "number": 2,
           "title": "核心概念：效率",
-          "title_en": "Core Concept I: 效率",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "雷军思想的核心概念：效率。效率是雷军思想体系的基石。先抓住 效率 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入雷军世界的第一步。本课将深入剖析效率的深层逻辑与实践含义。",
@@ -7403,7 +8103,7 @@
         {
           "number": 3,
           "title": "核心概念：用户参与",
-          "title_en": "Core Concept II: 用户参与",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "雷军思想的第二个核心概念：用户参与。用户参与与效率形成互补关系。如果说效率解决看什么的问题，用户参与解决怎么做的问题。本课深入分析用户参与的深层含义。",
@@ -7416,7 +8116,7 @@
         {
           "number": 4,
           "title": "核心概念：性价比",
-          "title_en": "Core Concept III: 性价比",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入雷军思想的第三根支柱：性价比。性价比与效率、用户参与构成三角支撑。雷军说：执行纪律：把复杂战略压缩成可重复的关键动作。本课通过案例展示性价比的实践力量。",
@@ -7513,7 +8213,7 @@
       "title": "星巴克前 CEO",
       "quote": "别卖咖啡，要卖第三空间",
       "guiding_question": "这件事真正创造价值的环节是什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "Where is the real source of durable value here, and what has to compound for this decision to work?",
       "formula": "霍华德·舒尔茨式决策 = 品牌体验乘员工乘社区",
       "tags": [
         "品牌体验",
@@ -7555,6 +8255,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "buffett",
+          "name": "沃伦·巴菲特",
+          "name_en": "Warren Buffett",
+          "title": "价值投资之父"
+        },
+        {
+          "id": "peter_thiel",
+          "name": "彼得·蒂尔",
+          "name_en": "Peter Thiel",
+          "title": "投资人与创业者"
+        },
+        {
+          "id": "caodewang",
+          "name": "曹德旺",
+          "name_en": "Cao Dewang",
+          "title": "福耀玻璃创始人"
+        }
+      ],
       "case_notes": [
         {
           "title": "霍华德·舒尔茨 围绕 品牌体验 的代表性实践",
@@ -7589,7 +8309,7 @@
         {
           "number": 2,
           "title": "核心概念：品牌体验",
-          "title_en": "Core Concept I: 品牌体验",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "霍华德·舒尔茨思想的核心概念：品牌体验。品牌体验是霍华德·舒尔茨思想体系的基石。先抓住 品牌体验 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入霍华德·舒尔茨世界的第一步。本课将深入剖析品牌体验的深层逻辑与实践含义。",
@@ -7602,7 +8322,7 @@
         {
           "number": 3,
           "title": "核心概念：员工",
-          "title_en": "Core Concept II: 员工",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "霍华德·舒尔茨思想的第二个核心概念：员工。员工与品牌体验形成互补关系。如果说品牌体验解决看什么的问题，员工解决怎么做的问题。本课深入分析员工的深层含义。",
@@ -7615,7 +8335,7 @@
         {
           "number": 4,
           "title": "核心概念：社区",
-          "title_en": "Core Concept III: 社区",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入霍华德·舒尔茨思想的第三根支柱：社区。社区与品牌体验、员工构成三角支撑。霍华德·舒尔茨说：执行纪律：把复杂战略压缩成可重复的关键动作。本课通过案例展示社区的实践力量。",
@@ -7712,7 +8432,7 @@
       "title": "阿里巴巴创始人",
       "quote": "今天很残酷，明天更残酷，后天很美好",
       "guiding_question": "这件事真正创造价值的环节是什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "Where is the real source of durable value here, and what has to compound for this decision to work?",
       "formula": "马云式决策 = 愿景乘创业乘服务小企业",
       "tags": [
         "愿景",
@@ -7754,6 +8474,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "buffett",
+          "name": "沃伦·巴菲特",
+          "name_en": "Warren Buffett",
+          "title": "价值投资之父"
+        },
+        {
+          "id": "peter_thiel",
+          "name": "彼得·蒂尔",
+          "name_en": "Peter Thiel",
+          "title": "投资人与创业者"
+        },
+        {
+          "id": "caodewang",
+          "name": "曹德旺",
+          "name_en": "Cao Dewang",
+          "title": "福耀玻璃创始人"
+        }
+      ],
       "case_notes": [
         {
           "title": "马云 围绕 愿景 的代表性实践",
@@ -7788,7 +8528,7 @@
         {
           "number": 2,
           "title": "核心概念：愿景",
-          "title_en": "Core Concept I: 愿景",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "马云思想的核心概念：愿景。愿景是马云思想体系的基石。先抓住 愿景 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入马云世界的第一步。本课将深入剖析愿景的深层逻辑与实践含义。",
@@ -7801,7 +8541,7 @@
         {
           "number": 3,
           "title": "核心概念：创业",
-          "title_en": "Core Concept II: 创业",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "马云思想的第二个核心概念：创业。创业与愿景形成互补关系。如果说愿景解决看什么的问题，创业解决怎么做的问题。本课深入分析创业的深层含义。",
@@ -7814,7 +8554,7 @@
         {
           "number": 4,
           "title": "核心概念：服务小企业",
-          "title_en": "Core Concept III: 服务小企业",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入马云思想的第三根支柱：服务小企业。服务小企业与愿景、创业构成三角支撑。马云说：执行纪律：把复杂战略压缩成可重复的关键动作。本课通过案例展示服务小企业的实践力量。",
@@ -8002,6 +8742,26 @@
           }
         ]
       },
+      "peer_cluster": [
+        {
+          "id": "confucius",
+          "name": "孔子",
+          "name_en": "Confucius",
+          "title": "儒家思想家"
+        },
+        {
+          "id": "laozi",
+          "name": "老子",
+          "name_en": "Laozi",
+          "title": "道家思想家"
+        },
+        {
+          "id": "aristotle",
+          "name": "亚里士多德",
+          "name_en": "Aristotle",
+          "title": "古希腊哲学家"
+        }
+      ],
       "case_notes": [
         {
           "title": "丹尼尔·卡尼曼 围绕 系统一系统二 的代表性实践",
@@ -8159,7 +8919,7 @@
       "title": "商业作家",
       "quote": "自治、精进、目标感才会驱动长期投入",
       "guiding_question": "我们在讨论的概念到底指什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What distinction is being blurred here, and what kind of action or character does the principle actually demand?",
       "formula": "丹尼尔·平克式决策 = 动机乘节奏乘说服",
       "tags": [
         "动机",
@@ -8201,6 +8961,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "confucius",
+          "name": "孔子",
+          "name_en": "Confucius",
+          "title": "儒家思想家"
+        },
+        {
+          "id": "laozi",
+          "name": "老子",
+          "name_en": "Laozi",
+          "title": "道家思想家"
+        },
+        {
+          "id": "daniel_kahneman",
+          "name": "丹尼尔·卡尼曼",
+          "name_en": "Daniel Kahneman",
+          "title": "行为经济学家"
+        }
+      ],
       "case_notes": [
         {
           "title": "丹尼尔·平克 围绕 动机 的代表性实践",
@@ -8235,7 +9015,7 @@
         {
           "number": 2,
           "title": "核心概念：动机",
-          "title_en": "Core Concept I: 动机",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "丹尼尔·平克思想的核心概念：动机。动机是丹尼尔·平克思想体系的基石。先抓住 动机 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入丹尼尔·平克世界的第一步。本课将深入剖析动机的深层逻辑与实践含义。",
@@ -8248,7 +9028,7 @@
         {
           "number": 3,
           "title": "核心概念：节奏",
-          "title_en": "Core Concept II: 节奏",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "丹尼尔·平克思想的第二个核心概念：节奏。节奏与动机形成互补关系。如果说动机解决看什么的问题，节奏解决怎么做的问题。本课深入分析节奏的深层含义。",
@@ -8261,7 +9041,7 @@
         {
           "number": 4,
           "title": "核心概念：说服",
-          "title_en": "Core Concept III: 说服",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入丹尼尔·平克思想的第三根支柱：说服。说服与动机、节奏构成三角支撑。丹尼尔·平克说：知行合一：思考最终要回到实践和人格修炼。本课通过案例展示说服的实践力量。",
@@ -8358,7 +9138,7 @@
       "title": "心理学家",
       "quote": "先把自己的房间整理好",
       "guiding_question": "我们在讨论的概念到底指什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What distinction is being blurred here, and what kind of action or character does the principle actually demand?",
       "formula": "乔丹·彼得森式决策 = 责任乘秩序乘意义",
       "tags": [
         "责任",
@@ -8400,6 +9180,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "confucius",
+          "name": "孔子",
+          "name_en": "Confucius",
+          "title": "儒家思想家"
+        },
+        {
+          "id": "laozi",
+          "name": "老子",
+          "name_en": "Laozi",
+          "title": "道家思想家"
+        },
+        {
+          "id": "daniel_kahneman",
+          "name": "丹尼尔·卡尼曼",
+          "name_en": "Daniel Kahneman",
+          "title": "行为经济学家"
+        }
+      ],
       "case_notes": [
         {
           "title": "乔丹·彼得森 围绕 责任 的代表性实践",
@@ -8434,7 +9234,7 @@
         {
           "number": 2,
           "title": "核心概念：责任",
-          "title_en": "Core Concept I: 责任",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "乔丹·彼得森思想的核心概念：责任。责任是乔丹·彼得森思想体系的基石。先抓住 责任 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入乔丹·彼得森世界的第一步。本课将深入剖析责任的深层逻辑与实践含义。",
@@ -8447,7 +9247,7 @@
         {
           "number": 3,
           "title": "核心概念：秩序",
-          "title_en": "Core Concept II: 秩序",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "乔丹·彼得森思想的第二个核心概念：秩序。秩序与责任形成互补关系。如果说责任解决看什么的问题，秩序解决怎么做的问题。本课深入分析秩序的深层含义。",
@@ -8460,7 +9260,7 @@
         {
           "number": 4,
           "title": "核心概念：意义",
-          "title_en": "Core Concept III: 意义",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入乔丹·彼得森思想的第三根支柱：意义。意义与责任、秩序构成三角支撑。乔丹·彼得森说：知行合一：思考最终要回到实践和人格修炼。本课通过案例展示意义的实践力量。",
@@ -8557,7 +9357,7 @@
       "title": "社会心理学家",
       "quote": "先理解对方的道德地形，再开始争论",
       "guiding_question": "我们在讨论的概念到底指什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What distinction is being blurred here, and what kind of action or character does the principle actually demand?",
       "formula": "乔纳森·海特式决策 = 道德直觉乘群体乘社交媒体",
       "tags": [
         "道德直觉",
@@ -8599,6 +9399,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "confucius",
+          "name": "孔子",
+          "name_en": "Confucius",
+          "title": "儒家思想家"
+        },
+        {
+          "id": "laozi",
+          "name": "老子",
+          "name_en": "Laozi",
+          "title": "道家思想家"
+        },
+        {
+          "id": "daniel_kahneman",
+          "name": "丹尼尔·卡尼曼",
+          "name_en": "Daniel Kahneman",
+          "title": "行为经济学家"
+        }
+      ],
       "case_notes": [
         {
           "title": "乔纳森·海特 围绕 道德直觉 的代表性实践",
@@ -8633,7 +9453,7 @@
         {
           "number": 2,
           "title": "核心概念：道德直觉",
-          "title_en": "Core Concept I: 道德直觉",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "乔纳森·海特思想的核心概念：道德直觉。道德直觉是乔纳森·海特思想体系的基石。先抓住 道德直觉 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入乔纳森·海特世界的第一步。本课将深入剖析道德直觉的深层逻辑与实践含义。",
@@ -8646,7 +9466,7 @@
         {
           "number": 3,
           "title": "核心概念：群体",
-          "title_en": "Core Concept II: 群体",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "乔纳森·海特思想的第二个核心概念：群体。群体与道德直觉形成互补关系。如果说道德直觉解决看什么的问题，群体解决怎么做的问题。本课深入分析群体的深层含义。",
@@ -8659,7 +9479,7 @@
         {
           "number": 4,
           "title": "核心概念：社交媒体",
-          "title_en": "Core Concept III: 社交媒体",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入乔纳森·海特思想的第三根支柱：社交媒体。社交媒体与道德直觉、群体构成三角支撑。乔纳森·海特说：知行合一：思考最终要回到实践和人格修炼。本课通过案例展示社交媒体的实践力量。",
@@ -8756,7 +9576,7 @@
       "title": "组织心理学家",
       "quote": "真正聪明的人会愿意重新思考",
       "guiding_question": "我们在讨论的概念到底指什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What distinction is being blurred here, and what kind of action or character does the principle actually demand?",
       "formula": "亚当·格兰特式决策 = 给予者乘复盘乘重构观点",
       "tags": [
         "给予者",
@@ -8798,6 +9618,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "confucius",
+          "name": "孔子",
+          "name_en": "Confucius",
+          "title": "儒家思想家"
+        },
+        {
+          "id": "laozi",
+          "name": "老子",
+          "name_en": "Laozi",
+          "title": "道家思想家"
+        },
+        {
+          "id": "daniel_kahneman",
+          "name": "丹尼尔·卡尼曼",
+          "name_en": "Daniel Kahneman",
+          "title": "行为经济学家"
+        }
+      ],
       "case_notes": [
         {
           "title": "亚当·格兰特 围绕 给予者 的代表性实践",
@@ -8832,7 +9672,7 @@
         {
           "number": 2,
           "title": "核心概念：给予者",
-          "title_en": "Core Concept I: 给予者",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "亚当·格兰特思想的核心概念：给予者。给予者是亚当·格兰特思想体系的基石。先抓住 给予者 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入亚当·格兰特世界的第一步。本课将深入剖析给予者的深层逻辑与实践含义。",
@@ -8845,7 +9685,7 @@
         {
           "number": 3,
           "title": "核心概念：复盘",
-          "title_en": "Core Concept II: 复盘",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "亚当·格兰特思想的第二个核心概念：复盘。复盘与给予者形成互补关系。如果说给予者解决看什么的问题，复盘解决怎么做的问题。本课深入分析复盘的深层含义。",
@@ -8858,7 +9698,7 @@
         {
           "number": 4,
           "title": "核心概念：重构观点",
-          "title_en": "Core Concept III: 重构观点",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入亚当·格兰特思想的第三根支柱：重构观点。重构观点与给予者、复盘构成三角支撑。亚当·格兰特说：知行合一：思考最终要回到实践和人格修炼。本课通过案例展示重构观点的实践力量。",
@@ -9046,6 +9886,26 @@
           }
         ]
       },
+      "peer_cluster": [
+        {
+          "id": "confucius",
+          "name": "孔子",
+          "name_en": "Confucius",
+          "title": "儒家思想家"
+        },
+        {
+          "id": "laozi",
+          "name": "老子",
+          "name_en": "Laozi",
+          "title": "道家思想家"
+        },
+        {
+          "id": "daniel_kahneman",
+          "name": "丹尼尔·卡尼曼",
+          "name_en": "Daniel Kahneman",
+          "title": "行为经济学家"
+        }
+      ],
       "case_notes": [
         {
           "title": "亚里士多德 围绕 中道 的代表性实践",
@@ -9203,7 +10063,7 @@
       "title": "心理学家",
       "quote": "还不会，不代表永远不会",
       "guiding_question": "我们在讨论的概念到底指什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What distinction is being blurred here, and what kind of action or character does the principle actually demand?",
       "formula": "卡罗尔·德韦克式决策 = 成长型思维乘学习乘反馈",
       "tags": [
         "成长型思维",
@@ -9245,6 +10105,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "confucius",
+          "name": "孔子",
+          "name_en": "Confucius",
+          "title": "儒家思想家"
+        },
+        {
+          "id": "laozi",
+          "name": "老子",
+          "name_en": "Laozi",
+          "title": "道家思想家"
+        },
+        {
+          "id": "daniel_kahneman",
+          "name": "丹尼尔·卡尼曼",
+          "name_en": "Daniel Kahneman",
+          "title": "行为经济学家"
+        }
+      ],
       "case_notes": [
         {
           "title": "卡罗尔·德韦克 围绕 成长型思维 的代表性实践",
@@ -9279,7 +10159,7 @@
         {
           "number": 2,
           "title": "核心概念：成长型思维",
-          "title_en": "Core Concept I: 成长型思维",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "卡罗尔·德韦克思想的核心概念：成长型思维。成长型思维是卡罗尔·德韦克思想体系的基石。先抓住 成长型思维 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入卡罗尔·德韦克世界的第一步。本课将深入剖析成长型思维的深层逻辑与实践含义。",
@@ -9292,7 +10172,7 @@
         {
           "number": 3,
           "title": "核心概念：学习",
-          "title_en": "Core Concept II: 学习",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "卡罗尔·德韦克思想的第二个核心概念：学习。学习与成长型思维形成互补关系。如果说成长型思维解决看什么的问题，学习解决怎么做的问题。本课深入分析学习的深层含义。",
@@ -9305,7 +10185,7 @@
         {
           "number": 4,
           "title": "核心概念：反馈",
-          "title_en": "Core Concept III: 反馈",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入卡罗尔·德韦克思想的第三根支柱：反馈。反馈与成长型思维、学习构成三角支撑。卡罗尔·德韦克说：知行合一：思考最终要回到实践和人格修炼。本课通过案例展示反馈的实践力量。",
@@ -9493,6 +10373,26 @@
           }
         ]
       },
+      "peer_cluster": [
+        {
+          "id": "laozi",
+          "name": "老子",
+          "name_en": "Laozi",
+          "title": "道家思想家"
+        },
+        {
+          "id": "daniel_kahneman",
+          "name": "丹尼尔·卡尼曼",
+          "name_en": "Daniel Kahneman",
+          "title": "行为经济学家"
+        },
+        {
+          "id": "aristotle",
+          "name": "亚里士多德",
+          "name_en": "Aristotle",
+          "title": "古希腊哲学家"
+        }
+      ],
       "case_notes": [
         {
           "title": "孔子 围绕 仁 的代表性实践",
@@ -9650,7 +10550,7 @@
       "title": "决策作家",
       "quote": "好结果不等于好决策",
       "guiding_question": "我们在讨论的概念到底指什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What distinction is being blurred here, and what kind of action or character does the principle actually demand?",
       "formula": "安妮·杜克式决策 = 概率思维乘下注乘复盘",
       "tags": [
         "概率思维",
@@ -9692,6 +10592,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "confucius",
+          "name": "孔子",
+          "name_en": "Confucius",
+          "title": "儒家思想家"
+        },
+        {
+          "id": "laozi",
+          "name": "老子",
+          "name_en": "Laozi",
+          "title": "道家思想家"
+        },
+        {
+          "id": "daniel_kahneman",
+          "name": "丹尼尔·卡尼曼",
+          "name_en": "Daniel Kahneman",
+          "title": "行为经济学家"
+        }
+      ],
       "case_notes": [
         {
           "title": "安妮·杜克 围绕 概率思维 的代表性实践",
@@ -9726,7 +10646,7 @@
         {
           "number": 2,
           "title": "核心概念：概率思维",
-          "title_en": "Core Concept I: 概率思维",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "安妮·杜克思想的核心概念：概率思维。概率思维是安妮·杜克思想体系的基石。先抓住 概率思维 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入安妮·杜克世界的第一步。本课将深入剖析概率思维的深层逻辑与实践含义。",
@@ -9739,7 +10659,7 @@
         {
           "number": 3,
           "title": "核心概念：下注",
-          "title_en": "Core Concept II: 下注",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "安妮·杜克思想的第二个核心概念：下注。下注与概率思维形成互补关系。如果说概率思维解决看什么的问题，下注解决怎么做的问题。本课深入分析下注的深层含义。",
@@ -9752,7 +10672,7 @@
         {
           "number": 4,
           "title": "核心概念：复盘",
-          "title_en": "Core Concept III: 复盘",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入安妮·杜克思想的第三根支柱：复盘。复盘与概率思维、下注构成三角支撑。安妮·杜克说：知行合一：思考最终要回到实践和人格修炼。本课通过案例展示复盘的实践力量。",
@@ -9849,7 +10769,7 @@
       "title": "心理学家",
       "quote": "天赋会开门，毅力决定你能走多远",
       "guiding_question": "我们在讨论的概念到底指什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What distinction is being blurred here, and what kind of action or character does the principle actually demand?",
       "formula": "安杰拉·达克沃斯式决策 = 毅力乘长期练习乘目标",
       "tags": [
         "毅力",
@@ -9891,6 +10811,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "confucius",
+          "name": "孔子",
+          "name_en": "Confucius",
+          "title": "儒家思想家"
+        },
+        {
+          "id": "laozi",
+          "name": "老子",
+          "name_en": "Laozi",
+          "title": "道家思想家"
+        },
+        {
+          "id": "daniel_kahneman",
+          "name": "丹尼尔·卡尼曼",
+          "name_en": "Daniel Kahneman",
+          "title": "行为经济学家"
+        }
+      ],
       "case_notes": [
         {
           "title": "安杰拉·达克沃斯 围绕 毅力 的代表性实践",
@@ -9925,7 +10865,7 @@
         {
           "number": 2,
           "title": "核心概念：毅力",
-          "title_en": "Core Concept I: 毅力",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "安杰拉·达克沃斯思想的核心概念：毅力。毅力是安杰拉·达克沃斯思想体系的基石。先抓住 毅力 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入安杰拉·达克沃斯世界的第一步。本课将深入剖析毅力的深层逻辑与实践含义。",
@@ -9938,7 +10878,7 @@
         {
           "number": 3,
           "title": "核心概念：长期练习",
-          "title_en": "Core Concept II: 长期练习",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "安杰拉·达克沃斯思想的第二个核心概念：长期练习。长期练习与毅力形成互补关系。如果说毅力解决看什么的问题，长期练习解决怎么做的问题。本课深入分析长期练习的深层含义。",
@@ -9951,7 +10891,7 @@
         {
           "number": 4,
           "title": "核心概念：目标",
-          "title_en": "Core Concept III: 目标",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入安杰拉·达克沃斯思想的第三根支柱：目标。目标与毅力、长期练习构成三角支撑。安杰拉·达克沃斯说：知行合一：思考最终要回到实践和人格修炼。本课通过案例展示目标的实践力量。",
@@ -10048,7 +10988,7 @@
       "title": "历史学家",
       "quote": "人类靠共同故事大规模协作",
       "guiding_question": "我们在讨论的概念到底指什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What distinction is being blurred here, and what kind of action or character does the principle actually demand?",
       "formula": "尤瓦尔·赫拉利式决策 = 叙事乘文明乘长期史观",
       "tags": [
         "叙事",
@@ -10090,6 +11030,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "confucius",
+          "name": "孔子",
+          "name_en": "Confucius",
+          "title": "儒家思想家"
+        },
+        {
+          "id": "laozi",
+          "name": "老子",
+          "name_en": "Laozi",
+          "title": "道家思想家"
+        },
+        {
+          "id": "daniel_kahneman",
+          "name": "丹尼尔·卡尼曼",
+          "name_en": "Daniel Kahneman",
+          "title": "行为经济学家"
+        }
+      ],
       "case_notes": [
         {
           "title": "尤瓦尔·赫拉利 围绕 叙事 的代表性实践",
@@ -10124,7 +11084,7 @@
         {
           "number": 2,
           "title": "核心概念：叙事",
-          "title_en": "Core Concept I: 叙事",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "尤瓦尔·赫拉利思想的核心概念：叙事。叙事是尤瓦尔·赫拉利思想体系的基石。先抓住 叙事 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入尤瓦尔·赫拉利世界的第一步。本课将深入剖析叙事的深层逻辑与实践含义。",
@@ -10137,7 +11097,7 @@
         {
           "number": 3,
           "title": "核心概念：文明",
-          "title_en": "Core Concept II: 文明",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "尤瓦尔·赫拉利思想的第二个核心概念：文明。文明与叙事形成互补关系。如果说叙事解决看什么的问题，文明解决怎么做的问题。本课深入分析文明的深层含义。",
@@ -10150,7 +11110,7 @@
         {
           "number": 4,
           "title": "核心概念：长期史观",
-          "title_en": "Core Concept III: 长期史观",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入尤瓦尔·赫拉利思想的第三根支柱：长期史观。长期史观与叙事、文明构成三角支撑。尤瓦尔·赫拉利说：知行合一：思考最终要回到实践和人格修炼。本课通过案例展示长期史观的实践力量。",
@@ -10338,6 +11298,26 @@
           }
         ]
       },
+      "peer_cluster": [
+        {
+          "id": "confucius",
+          "name": "孔子",
+          "name_en": "Confucius",
+          "title": "儒家思想家"
+        },
+        {
+          "id": "laozi",
+          "name": "老子",
+          "name_en": "Laozi",
+          "title": "道家思想家"
+        },
+        {
+          "id": "daniel_kahneman",
+          "name": "丹尼尔·卡尼曼",
+          "name_en": "Daniel Kahneman",
+          "title": "行为经济学家"
+        }
+      ],
       "case_notes": [
         {
           "title": "彼得·德鲁克 围绕 管理 的代表性实践",
@@ -10586,6 +11566,26 @@
           }
         ]
       },
+      "peer_cluster": [
+        {
+          "id": "confucius",
+          "name": "孔子",
+          "name_en": "Confucius",
+          "title": "儒家思想家"
+        },
+        {
+          "id": "laozi",
+          "name": "老子",
+          "name_en": "Laozi",
+          "title": "道家思想家"
+        },
+        {
+          "id": "daniel_kahneman",
+          "name": "丹尼尔·卡尼曼",
+          "name_en": "Daniel Kahneman",
+          "title": "行为经济学家"
+        }
+      ],
       "case_notes": [
         {
           "title": "查理·芒格 围绕 逆向思维 的代表性实践",
@@ -10834,6 +11834,26 @@
           }
         ]
       },
+      "peer_cluster": [
+        {
+          "id": "confucius",
+          "name": "孔子",
+          "name_en": "Confucius",
+          "title": "儒家思想家"
+        },
+        {
+          "id": "laozi",
+          "name": "老子",
+          "name_en": "Laozi",
+          "title": "道家思想家"
+        },
+        {
+          "id": "daniel_kahneman",
+          "name": "丹尼尔·卡尼曼",
+          "name_en": "Daniel Kahneman",
+          "title": "行为经济学家"
+        }
+      ],
       "case_notes": [
         {
           "title": "王阳明 围绕 知行合一 的代表性实践",
@@ -10991,7 +12011,7 @@
       "title": "创业投资人与思想者",
       "quote": "把时间花在无人能替代的事情上",
       "guiding_question": "我们在讨论的概念到底指什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What distinction is being blurred here, and what kind of action or character does the principle actually demand?",
       "formula": "纳瓦尔式决策 = 幸福乘杠杆乘特定知识",
       "tags": [
         "幸福",
@@ -11033,6 +12053,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "confucius",
+          "name": "孔子",
+          "name_en": "Confucius",
+          "title": "儒家思想家"
+        },
+        {
+          "id": "laozi",
+          "name": "老子",
+          "name_en": "Laozi",
+          "title": "道家思想家"
+        },
+        {
+          "id": "daniel_kahneman",
+          "name": "丹尼尔·卡尼曼",
+          "name_en": "Daniel Kahneman",
+          "title": "行为经济学家"
+        }
+      ],
       "case_notes": [
         {
           "title": "纳瓦尔 围绕 幸福 的代表性实践",
@@ -11067,7 +12107,7 @@
         {
           "number": 2,
           "title": "核心概念：幸福",
-          "title_en": "Core Concept I: 幸福",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "纳瓦尔思想的核心概念：幸福。幸福是纳瓦尔思想体系的基石。先抓住 幸福 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入纳瓦尔世界的第一步。本课将深入剖析幸福的深层逻辑与实践含义。",
@@ -11080,7 +12120,7 @@
         {
           "number": 3,
           "title": "核心概念：杠杆",
-          "title_en": "Core Concept II: 杠杆",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "纳瓦尔思想的第二个核心概念：杠杆。杠杆与幸福形成互补关系。如果说幸福解决看什么的问题，杠杆解决怎么做的问题。本课深入分析杠杆的深层含义。",
@@ -11093,7 +12133,7 @@
         {
           "number": 4,
           "title": "核心概念：特定知识",
-          "title_en": "Core Concept III: 特定知识",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入纳瓦尔思想的第三根支柱：特定知识。特定知识与幸福、杠杆构成三角支撑。纳瓦尔说：知行合一：思考最终要回到实践和人格修炼。本课通过案例展示特定知识的实践力量。",
@@ -11190,7 +12230,7 @@
       "title": "风险思想家",
       "quote": "不要预测，去构造能从波动中受益的系统",
       "guiding_question": "我们在讨论的概念到底指什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What distinction is being blurred here, and what kind of action or character does the principle actually demand?",
       "formula": "纳西姆·塔勒布式决策 = 反脆弱乘尾部风险乘杠铃策略",
       "tags": [
         "反脆弱",
@@ -11232,6 +12272,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "confucius",
+          "name": "孔子",
+          "name_en": "Confucius",
+          "title": "儒家思想家"
+        },
+        {
+          "id": "laozi",
+          "name": "老子",
+          "name_en": "Laozi",
+          "title": "道家思想家"
+        },
+        {
+          "id": "daniel_kahneman",
+          "name": "丹尼尔·卡尼曼",
+          "name_en": "Daniel Kahneman",
+          "title": "行为经济学家"
+        }
+      ],
       "case_notes": [
         {
           "title": "纳西姆·塔勒布 围绕 反脆弱 的代表性实践",
@@ -11266,7 +12326,7 @@
         {
           "number": 2,
           "title": "核心概念：反脆弱",
-          "title_en": "Core Concept I: 反脆弱",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "纳西姆·塔勒布思想的核心概念：反脆弱。反脆弱是纳西姆·塔勒布思想体系的基石。先抓住 反脆弱 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入纳西姆·塔勒布世界的第一步。本课将深入剖析反脆弱的深层逻辑与实践含义。",
@@ -11279,7 +12339,7 @@
         {
           "number": 3,
           "title": "核心概念：尾部风险",
-          "title_en": "Core Concept II: 尾部风险",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "纳西姆·塔勒布思想的第二个核心概念：尾部风险。尾部风险与反脆弱形成互补关系。如果说反脆弱解决看什么的问题，尾部风险解决怎么做的问题。本课深入分析尾部风险的深层含义。",
@@ -11292,7 +12352,7 @@
         {
           "number": 4,
           "title": "核心概念：杠铃策略",
-          "title_en": "Core Concept III: 杠铃策略",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入纳西姆·塔勒布思想的第三根支柱：杠铃策略。杠铃策略与反脆弱、尾部风险构成三角支撑。纳西姆·塔勒布说：知行合一：思考最终要回到实践和人格修炼。本课通过案例展示杠铃策略的实践力量。",
@@ -11480,6 +12540,26 @@
           }
         ]
       },
+      "peer_cluster": [
+        {
+          "id": "confucius",
+          "name": "孔子",
+          "name_en": "Confucius",
+          "title": "儒家思想家"
+        },
+        {
+          "id": "daniel_kahneman",
+          "name": "丹尼尔·卡尼曼",
+          "name_en": "Daniel Kahneman",
+          "title": "行为经济学家"
+        },
+        {
+          "id": "aristotle",
+          "name": "亚里士多德",
+          "name_en": "Aristotle",
+          "title": "古希腊哲学家"
+        }
+      ],
       "case_notes": [
         {
           "title": "老子 围绕 无为 的代表性实践",
@@ -11728,6 +12808,26 @@
           }
         ]
       },
+      "peer_cluster": [
+        {
+          "id": "confucius",
+          "name": "孔子",
+          "name_en": "Confucius",
+          "title": "儒家思想家"
+        },
+        {
+          "id": "laozi",
+          "name": "老子",
+          "name_en": "Laozi",
+          "title": "道家思想家"
+        },
+        {
+          "id": "daniel_kahneman",
+          "name": "丹尼尔·卡尼曼",
+          "name_en": "Daniel Kahneman",
+          "title": "行为经济学家"
+        }
+      ],
       "case_notes": [
         {
           "title": "苏格拉底 围绕 反诘 的代表性实践",
@@ -11885,7 +12985,7 @@
       "title": "哲学家与作家",
       "quote": "人不是生而如此，而是成为如此",
       "guiding_question": "我们在讨论的概念到底指什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What distinction is being blurred here, and what kind of action or character does the principle actually demand?",
       "formula": "西蒙娜·德·波伏娃式决策 = 自由乘主体性乘责任",
       "tags": [
         "自由",
@@ -11927,6 +13027,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "confucius",
+          "name": "孔子",
+          "name_en": "Confucius",
+          "title": "儒家思想家"
+        },
+        {
+          "id": "laozi",
+          "name": "老子",
+          "name_en": "Laozi",
+          "title": "道家思想家"
+        },
+        {
+          "id": "daniel_kahneman",
+          "name": "丹尼尔·卡尼曼",
+          "name_en": "Daniel Kahneman",
+          "title": "行为经济学家"
+        }
+      ],
       "case_notes": [
         {
           "title": "西蒙娜·德·波伏娃 围绕 自由 的代表性实践",
@@ -11961,7 +13081,7 @@
         {
           "number": 2,
           "title": "核心概念：自由",
-          "title_en": "Core Concept I: 自由",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "西蒙娜·德·波伏娃思想的核心概念：自由。自由是西蒙娜·德·波伏娃思想体系的基石。先抓住 自由 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入西蒙娜·德·波伏娃世界的第一步。本课将深入剖析自由的深层逻辑与实践含义。",
@@ -11974,7 +13094,7 @@
         {
           "number": 3,
           "title": "核心概念：主体性",
-          "title_en": "Core Concept II: 主体性",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "西蒙娜·德·波伏娃思想的第二个核心概念：主体性。主体性与自由形成互补关系。如果说自由解决看什么的问题，主体性解决怎么做的问题。本课深入分析主体性的深层含义。",
@@ -11987,7 +13107,7 @@
         {
           "number": 4,
           "title": "核心概念：责任",
-          "title_en": "Core Concept III: 责任",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入西蒙娜·德·波伏娃思想的第三根支柱：责任。责任与自由、主体性构成三角支撑。西蒙娜·德·波伏娃说：知行合一：思考最终要回到实践和人格修炼。本课通过案例展示责任的实践力量。",
@@ -12084,7 +13204,7 @@
       "title": "积极心理学家",
       "quote": "可持续的幸福来自投入、关系和意义",
       "guiding_question": "我们在讨论的概念到底指什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What distinction is being blurred here, and what kind of action or character does the principle actually demand?",
       "formula": "马丁·塞利格曼式决策 = 幸福乘韧性乘优势",
       "tags": [
         "幸福",
@@ -12126,6 +13246,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "confucius",
+          "name": "孔子",
+          "name_en": "Confucius",
+          "title": "儒家思想家"
+        },
+        {
+          "id": "laozi",
+          "name": "老子",
+          "name_en": "Laozi",
+          "title": "道家思想家"
+        },
+        {
+          "id": "daniel_kahneman",
+          "name": "丹尼尔·卡尼曼",
+          "name_en": "Daniel Kahneman",
+          "title": "行为经济学家"
+        }
+      ],
       "case_notes": [
         {
           "title": "马丁·塞利格曼 围绕 幸福 的代表性实践",
@@ -12160,7 +13300,7 @@
         {
           "number": 2,
           "title": "核心概念：幸福",
-          "title_en": "Core Concept I: 幸福",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "马丁·塞利格曼思想的核心概念：幸福。幸福是马丁·塞利格曼思想体系的基石。先抓住 幸福 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入马丁·塞利格曼世界的第一步。本课将深入剖析幸福的深层逻辑与实践含义。",
@@ -12173,7 +13313,7 @@
         {
           "number": 3,
           "title": "核心概念：韧性",
-          "title_en": "Core Concept II: 韧性",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "马丁·塞利格曼思想的第二个核心概念：韧性。韧性与幸福形成互补关系。如果说幸福解决看什么的问题，韧性解决怎么做的问题。本课深入分析韧性的深层含义。",
@@ -12186,7 +13326,7 @@
         {
           "number": 4,
           "title": "核心概念：优势",
-          "title_en": "Core Concept III: 优势",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入马丁·塞利格曼思想的第三根支柱：优势。优势与幸福、韧性构成三角支撑。马丁·塞利格曼说：知行合一：思考最终要回到实践和人格修炼。本课通过案例展示优势的实践力量。",
@@ -12283,7 +13423,7 @@
       "title": "文艺复兴通才",
       "quote": "艺术和科学本来就是同一种好奇心",
       "guiding_question": "这个表达最核心的情感是什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What human or narrative truth is being carried here, and which formal choice gives it the strongest life?",
       "formula": "列奥纳多·达·芬奇式决策 = 观察乘跨学科乘手工与科学",
       "tags": [
         "观察",
@@ -12325,6 +13465,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "hayao_miyazaki",
+          "name": "宫崎骏",
+          "name_en": "Hayao Miyazaki",
+          "title": "动画导演"
+        },
+        {
+          "id": "rei_kawakubo",
+          "name": "川久保玲",
+          "name_en": "Rei Kawakubo",
+          "title": "时装设计师"
+        },
+        {
+          "id": "akira_kurosawa",
+          "name": "黑泽明",
+          "name_en": "Akira Kurosawa",
+          "title": "电影导演"
+        }
+      ],
       "case_notes": [
         {
           "title": "列奥纳多·达·芬奇 围绕 观察 的代表性实践",
@@ -12359,7 +13519,7 @@
         {
           "number": 2,
           "title": "核心概念：观察",
-          "title_en": "Core Concept I: 观察",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "列奥纳多·达·芬奇思想的核心概念：观察。观察是列奥纳多·达·芬奇思想体系的基石。先抓住 观察 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入列奥纳多·达·芬奇世界的第一步。本课将深入剖析观察的深层逻辑与实践含义。",
@@ -12372,7 +13532,7 @@
         {
           "number": 3,
           "title": "核心概念：跨学科",
-          "title_en": "Core Concept II: 跨学科",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "列奥纳多·达·芬奇思想的第二个核心概念：跨学科。跨学科与观察形成互补关系。如果说观察解决看什么的问题，跨学科解决怎么做的问题。本课深入分析跨学科的深层含义。",
@@ -12385,7 +13545,7 @@
         {
           "number": 4,
           "title": "核心概念：手工与科学",
-          "title_en": "Core Concept III: 手工与科学",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入列奥纳多·达·芬奇思想的第三根支柱：手工与科学。手工与科学与观察、跨学科构成三角支撑。列奥纳多·达·芬奇说：叙事能力：人们记住的不是信息，而是有情感结构的表达。本课通过案例展示手工与科学的实践力量。",
@@ -12482,7 +13642,7 @@
       "title": "动画导演",
       "quote": "真正的奇迹来自认真生活的人",
       "guiding_question": "这个表达最核心的情感是什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What human or narrative truth is being carried here, and which formal choice gives it the strongest life?",
       "formula": "宫崎骏式决策 = 自然乘人性乘手作",
       "tags": [
         "自然",
@@ -12524,6 +13684,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "akira_kurosawa",
+          "name": "黑泽明",
+          "name_en": "Akira Kurosawa",
+          "title": "电影导演"
+        },
+        {
+          "id": "leonardo_da_vinci",
+          "name": "列奥纳多·达·芬奇",
+          "name_en": "Leonardo da Vinci",
+          "title": "文艺复兴通才"
+        },
+        {
+          "id": "rei_kawakubo",
+          "name": "川久保玲",
+          "name_en": "Rei Kawakubo",
+          "title": "时装设计师"
+        }
+      ],
       "case_notes": [
         {
           "title": "宫崎骏 围绕 自然 的代表性实践",
@@ -12558,7 +13738,7 @@
         {
           "number": 2,
           "title": "核心概念：自然",
-          "title_en": "Core Concept I: 自然",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "宫崎骏思想的核心概念：自然。自然是宫崎骏思想体系的基石。先抓住 自然 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入宫崎骏世界的第一步。本课将深入剖析自然的深层逻辑与实践含义。",
@@ -12571,7 +13751,7 @@
         {
           "number": 3,
           "title": "核心概念：人性",
-          "title_en": "Core Concept II: 人性",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "宫崎骏思想的第二个核心概念：人性。人性与自然形成互补关系。如果说自然解决看什么的问题，人性解决怎么做的问题。本课深入分析人性的深层含义。",
@@ -12584,7 +13764,7 @@
         {
           "number": 4,
           "title": "核心概念：手作",
-          "title_en": "Core Concept III: 手作",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入宫崎骏思想的第三根支柱：手作。手作与自然、人性构成三角支撑。宫崎骏说：叙事能力：人们记住的不是信息，而是有情感结构的表达。本课通过案例展示手作的实践力量。",
@@ -12681,7 +13861,7 @@
       "title": "时装设计师",
       "quote": "真正的风格常常先让人不适",
       "guiding_question": "这个表达最核心的情感是什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What human or narrative truth is being carried here, and which formal choice gives it the strongest life?",
       "formula": "川久保玲式决策 = 反叛乘轮廓乘实验",
       "tags": [
         "反叛",
@@ -12723,6 +13903,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "leonardo_da_vinci",
+          "name": "列奥纳多·达·芬奇",
+          "name_en": "Leonardo da Vinci",
+          "title": "文艺复兴通才"
+        },
+        {
+          "id": "hayao_miyazaki",
+          "name": "宫崎骏",
+          "name_en": "Hayao Miyazaki",
+          "title": "动画导演"
+        },
+        {
+          "id": "akira_kurosawa",
+          "name": "黑泽明",
+          "name_en": "Akira Kurosawa",
+          "title": "电影导演"
+        }
+      ],
       "case_notes": [
         {
           "title": "川久保玲 围绕 反叛 的代表性实践",
@@ -12757,7 +13957,7 @@
         {
           "number": 2,
           "title": "核心概念：反叛",
-          "title_en": "Core Concept I: 反叛",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "川久保玲思想的核心概念：反叛。反叛是川久保玲思想体系的基石。先抓住 反叛 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入川久保玲世界的第一步。本课将深入剖析反叛的深层逻辑与实践含义。",
@@ -12770,7 +13970,7 @@
         {
           "number": 3,
           "title": "核心概念：轮廓",
-          "title_en": "Core Concept II: 轮廓",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "川久保玲思想的第二个核心概念：轮廓。轮廓与反叛形成互补关系。如果说反叛解决看什么的问题，轮廓解决怎么做的问题。本课深入分析轮廓的深层含义。",
@@ -12783,7 +13983,7 @@
         {
           "number": 4,
           "title": "核心概念：实验",
-          "title_en": "Core Concept III: 实验",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入川久保玲思想的第三根支柱：实验。实验与反叛、轮廓构成三角支撑。川久保玲说：叙事能力：人们记住的不是信息，而是有情感结构的表达。本课通过案例展示实验的实践力量。",
@@ -12880,7 +14080,7 @@
       "title": "电影导演",
       "quote": "伟大的戏剧来自人物处境而不是噱头",
       "guiding_question": "这个表达最核心的情感是什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What human or narrative truth is being carried here, and which formal choice gives it the strongest life?",
       "formula": "黑泽明式决策 = 叙事乘节奏乘人性",
       "tags": [
         "叙事",
@@ -12922,6 +14122,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "hayao_miyazaki",
+          "name": "宫崎骏",
+          "name_en": "Hayao Miyazaki",
+          "title": "动画导演"
+        },
+        {
+          "id": "leonardo_da_vinci",
+          "name": "列奥纳多·达·芬奇",
+          "name_en": "Leonardo da Vinci",
+          "title": "文艺复兴通才"
+        },
+        {
+          "id": "rei_kawakubo",
+          "name": "川久保玲",
+          "name_en": "Rei Kawakubo",
+          "title": "时装设计师"
+        }
+      ],
       "case_notes": [
         {
           "title": "黑泽明 围绕 叙事 的代表性实践",
@@ -12956,7 +14176,7 @@
         {
           "number": 2,
           "title": "核心概念：叙事",
-          "title_en": "Core Concept I: 叙事",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "黑泽明思想的核心概念：叙事。叙事是黑泽明思想体系的基石。先抓住 叙事 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入黑泽明世界的第一步。本课将深入剖析叙事的深层逻辑与实践含义。",
@@ -12969,7 +14189,7 @@
         {
           "number": 3,
           "title": "核心概念：节奏",
-          "title_en": "Core Concept II: 节奏",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "黑泽明思想的第二个核心概念：节奏。节奏与叙事形成互补关系。如果说叙事解决看什么的问题，节奏解决怎么做的问题。本课深入分析节奏的深层含义。",
@@ -12982,7 +14202,7 @@
         {
           "number": 4,
           "title": "核心概念：人性",
-          "title_en": "Core Concept III: 人性",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入黑泽明思想的第三根支柱：人性。人性与叙事、节奏构成三角支撑。黑泽明说：叙事能力：人们记住的不是信息，而是有情感结构的表达。本课通过案例展示人性的实践力量。",
@@ -13079,7 +14299,7 @@
       "title": "天文学家",
       "quote": "科学是一种防止自我欺骗的方式",
       "guiding_question": "现在有哪些可靠事实？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What is the real hypothesis here, and which observation would most strongly confirm or challenge it?",
       "formula": "卡尔·萨根式决策 = 宇宙视角乘怀疑精神乘公众沟通",
       "tags": [
         "宇宙视角",
@@ -13121,6 +14341,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "alan_turing",
+          "name": "艾伦·图灵",
+          "name_en": "Alan Turing",
+          "title": "计算理论奠基者"
+        },
+        {
+          "id": "tim_berners_lee",
+          "name": "蒂姆·伯纳斯-李",
+          "name_en": "Tim Berners-Lee",
+          "title": "万维网发明者"
+        },
+        {
+          "id": "albert_einstein",
+          "name": "阿尔伯特·爱因斯坦",
+          "name_en": "Albert Einstein",
+          "title": "物理学家"
+        }
+      ],
       "case_notes": [
         {
           "title": "卡尔·萨根 围绕 宇宙视角 的代表性实践",
@@ -13155,7 +14395,7 @@
         {
           "number": 2,
           "title": "核心概念：宇宙视角",
-          "title_en": "Core Concept I: 宇宙视角",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "卡尔·萨根思想的核心概念：宇宙视角。宇宙视角是卡尔·萨根思想体系的基石。先抓住 宇宙视角 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入卡尔·萨根世界的第一步。本课将深入剖析宇宙视角的深层逻辑与实践含义。",
@@ -13168,7 +14408,7 @@
         {
           "number": 3,
           "title": "核心概念：怀疑精神",
-          "title_en": "Core Concept II: 怀疑精神",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "卡尔·萨根思想的第二个核心概念：怀疑精神。怀疑精神与宇宙视角形成互补关系。如果说宇宙视角解决看什么的问题，怀疑精神解决怎么做的问题。本课深入分析怀疑精神的深层含义。",
@@ -13181,7 +14421,7 @@
         {
           "number": 4,
           "title": "核心概念：公众沟通",
-          "title_en": "Core Concept III: 公众沟通",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入卡尔·萨根思想的第三根支柱：公众沟通。公众沟通与宇宙视角、怀疑精神构成三角支撑。卡尔·萨根说：跨学科洞察：重要突破常来自不同领域方法的交叉。本课通过案例展示公众沟通的实践力量。",
@@ -13278,7 +14518,7 @@
       "title": "发明家",
       "quote": "先在脑海里造出来，再把它带到现实",
       "guiding_question": "现在有哪些可靠事实？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What is the real hypothesis here, and which observation would most strongly confirm or challenge it?",
       "formula": "尼古拉·特斯拉式决策 = 发明乘能量乘远见",
       "tags": [
         "发明",
@@ -13320,6 +14560,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "alan_turing",
+          "name": "艾伦·图灵",
+          "name_en": "Alan Turing",
+          "title": "计算理论奠基者"
+        },
+        {
+          "id": "tim_berners_lee",
+          "name": "蒂姆·伯纳斯-李",
+          "name_en": "Tim Berners-Lee",
+          "title": "万维网发明者"
+        },
+        {
+          "id": "albert_einstein",
+          "name": "阿尔伯特·爱因斯坦",
+          "name_en": "Albert Einstein",
+          "title": "物理学家"
+        }
+      ],
       "case_notes": [
         {
           "title": "尼古拉·特斯拉 围绕 发明 的代表性实践",
@@ -13354,7 +14614,7 @@
         {
           "number": 2,
           "title": "核心概念：发明",
-          "title_en": "Core Concept I: 发明",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "尼古拉·特斯拉思想的核心概念：发明。发明是尼古拉·特斯拉思想体系的基石。先抓住 发明 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入尼古拉·特斯拉世界的第一步。本课将深入剖析发明的深层逻辑与实践含义。",
@@ -13367,7 +14627,7 @@
         {
           "number": 3,
           "title": "核心概念：能量",
-          "title_en": "Core Concept II: 能量",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "尼古拉·特斯拉思想的第二个核心概念：能量。能量与发明形成互补关系。如果说发明解决看什么的问题，能量解决怎么做的问题。本课深入分析能量的深层含义。",
@@ -13380,7 +14640,7 @@
         {
           "number": 4,
           "title": "核心概念：远见",
-          "title_en": "Core Concept III: 远见",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入尼古拉·特斯拉思想的第三根支柱：远见。远见与发明、能量构成三角支撑。尼古拉·特斯拉说：跨学科洞察：重要突破常来自不同领域方法的交叉。本课通过案例展示远见的实践力量。",
@@ -13477,7 +14737,7 @@
       "title": "药学家",
       "quote": "真正有效的方法，经得起重复验证",
       "guiding_question": "现在有哪些可靠事实？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What is the real hypothesis here, and which observation would most strongly confirm or challenge it?",
       "formula": "屠呦呦式决策 = 传统与现代乘证据乘救人",
       "tags": [
         "传统与现代",
@@ -13519,6 +14779,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "alan_turing",
+          "name": "艾伦·图灵",
+          "name_en": "Alan Turing",
+          "title": "计算理论奠基者"
+        },
+        {
+          "id": "tim_berners_lee",
+          "name": "蒂姆·伯纳斯-李",
+          "name_en": "Tim Berners-Lee",
+          "title": "万维网发明者"
+        },
+        {
+          "id": "albert_einstein",
+          "name": "阿尔伯特·爱因斯坦",
+          "name_en": "Albert Einstein",
+          "title": "物理学家"
+        }
+      ],
       "case_notes": [
         {
           "title": "屠呦呦 围绕 传统与现代 的代表性实践",
@@ -13553,7 +14833,7 @@
         {
           "number": 2,
           "title": "核心概念：传统与现代",
-          "title_en": "Core Concept I: 传统与现代",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "屠呦呦思想的核心概念：传统与现代。传统与现代是屠呦呦思想体系的基石。先抓住 传统与现代 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入屠呦呦世界的第一步。本课将深入剖析传统与现代的深层逻辑与实践含义。",
@@ -13566,7 +14846,7 @@
         {
           "number": 3,
           "title": "核心概念：证据",
-          "title_en": "Core Concept II: 证据",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "屠呦呦思想的第二个核心概念：证据。证据与传统与现代形成互补关系。如果说传统与现代解决看什么的问题，证据解决怎么做的问题。本课深入分析证据的深层含义。",
@@ -13579,7 +14859,7 @@
         {
           "number": 4,
           "title": "核心概念：救人",
-          "title_en": "Core Concept III: 救人",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入屠呦呦思想的第三根支柱：救人。救人与传统与现代、证据构成三角支撑。屠呦呦说：跨学科洞察：重要突破常来自不同领域方法的交叉。本课通过案例展示救人的实践力量。",
@@ -13676,7 +14956,7 @@
       "title": "基因编辑科学家",
       "quote": "技术进步必须和边界意识一起成长",
       "guiding_question": "现在有哪些可靠事实？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What is the real hypothesis here, and which observation would most strongly confirm or challenge it?",
       "formula": "张锋式决策 = 工具革命乘转化医学乘伦理",
       "tags": [
         "工具革命",
@@ -13718,6 +14998,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "alan_turing",
+          "name": "艾伦·图灵",
+          "name_en": "Alan Turing",
+          "title": "计算理论奠基者"
+        },
+        {
+          "id": "tim_berners_lee",
+          "name": "蒂姆·伯纳斯-李",
+          "name_en": "Tim Berners-Lee",
+          "title": "万维网发明者"
+        },
+        {
+          "id": "albert_einstein",
+          "name": "阿尔伯特·爱因斯坦",
+          "name_en": "Albert Einstein",
+          "title": "物理学家"
+        }
+      ],
       "case_notes": [
         {
           "title": "张锋 围绕 工具革命 的代表性实践",
@@ -13752,7 +15052,7 @@
         {
           "number": 2,
           "title": "核心概念：工具革命",
-          "title_en": "Core Concept I: 工具革命",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "张锋思想的核心概念：工具革命。工具革命是张锋思想体系的基石。先抓住 工具革命 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入张锋世界的第一步。本课将深入剖析工具革命的深层逻辑与实践含义。",
@@ -13765,7 +15065,7 @@
         {
           "number": 3,
           "title": "核心概念：转化医学",
-          "title_en": "Core Concept II: 转化医学",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "张锋思想的第二个核心概念：转化医学。转化医学与工具革命形成互补关系。如果说工具革命解决看什么的问题，转化医学解决怎么做的问题。本课深入分析转化医学的深层含义。",
@@ -13778,7 +15078,7 @@
         {
           "number": 4,
           "title": "核心概念：伦理",
-          "title_en": "Core Concept III: 伦理",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入张锋思想的第三根支柱：伦理。伦理与工具革命、转化医学构成三角支撑。张锋说：跨学科洞察：重要突破常来自不同领域方法的交叉。本课通过案例展示伦理的实践力量。",
@@ -13875,7 +15175,7 @@
       "title": "宇宙学家",
       "quote": "仰望星空，而不是盯着脚下",
       "guiding_question": "现在有哪些可靠事实？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What is the real hypothesis here, and which observation would most strongly confirm or challenge it?",
       "formula": "斯蒂芬·霍金式决策 = 宇宙乘边界乘韧性",
       "tags": [
         "宇宙",
@@ -13917,6 +15217,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "alan_turing",
+          "name": "艾伦·图灵",
+          "name_en": "Alan Turing",
+          "title": "计算理论奠基者"
+        },
+        {
+          "id": "tim_berners_lee",
+          "name": "蒂姆·伯纳斯-李",
+          "name_en": "Tim Berners-Lee",
+          "title": "万维网发明者"
+        },
+        {
+          "id": "albert_einstein",
+          "name": "阿尔伯特·爱因斯坦",
+          "name_en": "Albert Einstein",
+          "title": "物理学家"
+        }
+      ],
       "case_notes": [
         {
           "title": "斯蒂芬·霍金 围绕 宇宙 的代表性实践",
@@ -13951,7 +15271,7 @@
         {
           "number": 2,
           "title": "核心概念：宇宙",
-          "title_en": "Core Concept I: 宇宙",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "斯蒂芬·霍金思想的核心概念：宇宙。宇宙是斯蒂芬·霍金思想体系的基石。先抓住 宇宙 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入斯蒂芬·霍金世界的第一步。本课将深入剖析宇宙的深层逻辑与实践含义。",
@@ -13964,7 +15284,7 @@
         {
           "number": 3,
           "title": "核心概念：边界",
-          "title_en": "Core Concept II: 边界",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "斯蒂芬·霍金思想的第二个核心概念：边界。边界与宇宙形成互补关系。如果说宇宙解决看什么的问题，边界解决怎么做的问题。本课深入分析边界的深层含义。",
@@ -13977,7 +15297,7 @@
         {
           "number": 4,
           "title": "核心概念：韧性",
-          "title_en": "Core Concept III: 韧性",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入斯蒂芬·霍金思想的第三根支柱：韧性。韧性与宇宙、边界构成三角支撑。斯蒂芬·霍金说：跨学科洞察：重要突破常来自不同领域方法的交叉。本课通过案例展示韧性的实践力量。",
@@ -14074,7 +15394,7 @@
       "title": "理论物理学家",
       "quote": "物理之美来自简单与深刻的统一",
       "guiding_question": "现在有哪些可靠事实？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What is the real hypothesis here, and which observation would most strongly confirm or challenge it?",
       "formula": "杨振宁式决策 = 对称美乘基础科学乘耐心",
       "tags": [
         "对称美",
@@ -14116,6 +15436,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "alan_turing",
+          "name": "艾伦·图灵",
+          "name_en": "Alan Turing",
+          "title": "计算理论奠基者"
+        },
+        {
+          "id": "tim_berners_lee",
+          "name": "蒂姆·伯纳斯-李",
+          "name_en": "Tim Berners-Lee",
+          "title": "万维网发明者"
+        },
+        {
+          "id": "albert_einstein",
+          "name": "阿尔伯特·爱因斯坦",
+          "name_en": "Albert Einstein",
+          "title": "物理学家"
+        }
+      ],
       "case_notes": [
         {
           "title": "杨振宁 围绕 对称美 的代表性实践",
@@ -14150,7 +15490,7 @@
         {
           "number": 2,
           "title": "核心概念：对称美",
-          "title_en": "Core Concept I: 对称美",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "杨振宁思想的核心概念：对称美。对称美是杨振宁思想体系的基石。先抓住 对称美 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入杨振宁世界的第一步。本课将深入剖析对称美的深层逻辑与实践含义。",
@@ -14163,7 +15503,7 @@
         {
           "number": 3,
           "title": "核心概念：基础科学",
-          "title_en": "Core Concept II: 基础科学",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "杨振宁思想的第二个核心概念：基础科学。基础科学与对称美形成互补关系。如果说对称美解决看什么的问题，基础科学解决怎么做的问题。本课深入分析基础科学的深层含义。",
@@ -14176,7 +15516,7 @@
         {
           "number": 4,
           "title": "核心概念：耐心",
-          "title_en": "Core Concept III: 耐心",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入杨振宁思想的第三根支柱：耐心。耐心与对称美、基础科学构成三角支撑。杨振宁说：跨学科洞察：重要突破常来自不同领域方法的交叉。本课通过案例展示耐心的实践力量。",
@@ -14273,7 +15613,7 @@
       "title": "生物学家",
       "quote": "知识要像地图，而不是孤岛",
       "guiding_question": "现在有哪些可靠事实？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What is the real hypothesis here, and which observation would most strongly confirm or challenge it?",
       "formula": "爱德华·威尔逊式决策 = 生物多样性乘演化乘整合",
       "tags": [
         "生物多样性",
@@ -14315,6 +15655,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "alan_turing",
+          "name": "艾伦·图灵",
+          "name_en": "Alan Turing",
+          "title": "计算理论奠基者"
+        },
+        {
+          "id": "tim_berners_lee",
+          "name": "蒂姆·伯纳斯-李",
+          "name_en": "Tim Berners-Lee",
+          "title": "万维网发明者"
+        },
+        {
+          "id": "albert_einstein",
+          "name": "阿尔伯特·爱因斯坦",
+          "name_en": "Albert Einstein",
+          "title": "物理学家"
+        }
+      ],
       "case_notes": [
         {
           "title": "爱德华·威尔逊 围绕 生物多样性 的代表性实践",
@@ -14349,7 +15709,7 @@
         {
           "number": 2,
           "title": "核心概念：生物多样性",
-          "title_en": "Core Concept I: 生物多样性",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "爱德华·威尔逊思想的核心概念：生物多样性。生物多样性是爱德华·威尔逊思想体系的基石。先抓住 生物多样性 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入爱德华·威尔逊世界的第一步。本课将深入剖析生物多样性的深层逻辑与实践含义。",
@@ -14362,7 +15722,7 @@
         {
           "number": 3,
           "title": "核心概念：演化",
-          "title_en": "Core Concept II: 演化",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "爱德华·威尔逊思想的第二个核心概念：演化。演化与生物多样性形成互补关系。如果说生物多样性解决看什么的问题，演化解决怎么做的问题。本课深入分析演化的深层含义。",
@@ -14375,7 +15735,7 @@
         {
           "number": 4,
           "title": "核心概念：整合",
-          "title_en": "Core Concept III: 整合",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入爱德华·威尔逊思想的第三根支柱：整合。整合与生物多样性、演化构成三角支撑。爱德华·威尔逊说：跨学科洞察：重要突破常来自不同领域方法的交叉。本课通过案例展示整合的实践力量。",
@@ -14472,7 +15832,7 @@
       "title": "放射性研究先驱",
       "quote": "人生没什么可怕的，只有需要理解的东西",
       "guiding_question": "现在有哪些可靠事实？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What is the real hypothesis here, and which observation would most strongly confirm or challenge it?",
       "formula": "玛丽·居里式决策 = 实验乘毅力乘奉献",
       "tags": [
         "实验",
@@ -14514,6 +15874,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "alan_turing",
+          "name": "艾伦·图灵",
+          "name_en": "Alan Turing",
+          "title": "计算理论奠基者"
+        },
+        {
+          "id": "tim_berners_lee",
+          "name": "蒂姆·伯纳斯-李",
+          "name_en": "Tim Berners-Lee",
+          "title": "万维网发明者"
+        },
+        {
+          "id": "albert_einstein",
+          "name": "阿尔伯特·爱因斯坦",
+          "name_en": "Albert Einstein",
+          "title": "物理学家"
+        }
+      ],
       "case_notes": [
         {
           "title": "玛丽·居里 围绕 实验 的代表性实践",
@@ -14548,7 +15928,7 @@
         {
           "number": 2,
           "title": "核心概念：实验",
-          "title_en": "Core Concept I: 实验",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "玛丽·居里思想的核心概念：实验。实验是玛丽·居里思想体系的基石。先抓住 实验 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入玛丽·居里世界的第一步。本课将深入剖析实验的深层逻辑与实践含义。",
@@ -14561,7 +15941,7 @@
         {
           "number": 3,
           "title": "核心概念：毅力",
-          "title_en": "Core Concept II: 毅力",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "玛丽·居里思想的第二个核心概念：毅力。毅力与实验形成互补关系。如果说实验解决看什么的问题，毅力解决怎么做的问题。本课深入分析毅力的深层含义。",
@@ -14574,7 +15954,7 @@
         {
           "number": 4,
           "title": "核心概念：奉献",
-          "title_en": "Core Concept III: 奉献",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入玛丽·居里思想的第三根支柱：奉献。奉献与实验、毅力构成三角支撑。玛丽·居里说：跨学科洞察：重要突破常来自不同领域方法的交叉。本课通过案例展示奉献的实践力量。",
@@ -14671,7 +16051,7 @@
       "title": "灵长类学家",
       "quote": "只有理解，才会关心；只有关心，才会行动",
       "guiding_question": "现在有哪些可靠事实？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What is the real hypothesis here, and which observation would most strongly confirm or challenge it?",
       "formula": "珍·古道尔式决策 = 观察乘共情乘生态",
       "tags": [
         "观察",
@@ -14713,6 +16093,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "alan_turing",
+          "name": "艾伦·图灵",
+          "name_en": "Alan Turing",
+          "title": "计算理论奠基者"
+        },
+        {
+          "id": "tim_berners_lee",
+          "name": "蒂姆·伯纳斯-李",
+          "name_en": "Tim Berners-Lee",
+          "title": "万维网发明者"
+        },
+        {
+          "id": "albert_einstein",
+          "name": "阿尔伯特·爱因斯坦",
+          "name_en": "Albert Einstein",
+          "title": "物理学家"
+        }
+      ],
       "case_notes": [
         {
           "title": "珍·古道尔 围绕 观察 的代表性实践",
@@ -14747,7 +16147,7 @@
         {
           "number": 2,
           "title": "核心概念：观察",
-          "title_en": "Core Concept I: 观察",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "珍·古道尔思想的核心概念：观察。观察是珍·古道尔思想体系的基石。先抓住 观察 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入珍·古道尔世界的第一步。本课将深入剖析观察的深层逻辑与实践含义。",
@@ -14760,7 +16160,7 @@
         {
           "number": 3,
           "title": "核心概念：共情",
-          "title_en": "Core Concept II: 共情",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "珍·古道尔思想的第二个核心概念：共情。共情与观察形成互补关系。如果说观察解决看什么的问题，共情解决怎么做的问题。本课深入分析共情的深层含义。",
@@ -14773,7 +16173,7 @@
         {
           "number": 4,
           "title": "核心概念：生态",
-          "title_en": "Core Concept III: 生态",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入珍·古道尔思想的第三根支柱：生态。生态与观察、共情构成三角支撑。珍·古道尔说：跨学科洞察：重要突破常来自不同领域方法的交叉。本课通过案例展示生态的实践力量。",
@@ -14870,7 +16270,7 @@
       "title": "理论物理学家",
       "quote": "如果你不能把它讲清楚，你还没有真正理解",
       "guiding_question": "现在有哪些可靠事实？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What is the real hypothesis here, and which observation would most strongly confirm or challenge it?",
       "formula": "理查德·费曼式决策 = 好奇心乘直觉乘解释能力",
       "tags": [
         "好奇心",
@@ -14912,6 +16312,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "alan_turing",
+          "name": "艾伦·图灵",
+          "name_en": "Alan Turing",
+          "title": "计算理论奠基者"
+        },
+        {
+          "id": "tim_berners_lee",
+          "name": "蒂姆·伯纳斯-李",
+          "name_en": "Tim Berners-Lee",
+          "title": "万维网发明者"
+        },
+        {
+          "id": "albert_einstein",
+          "name": "阿尔伯特·爱因斯坦",
+          "name_en": "Albert Einstein",
+          "title": "物理学家"
+        }
+      ],
       "case_notes": [
         {
           "title": "理查德·费曼 围绕 好奇心 的代表性实践",
@@ -14946,7 +16366,7 @@
         {
           "number": 2,
           "title": "核心概念：好奇心",
-          "title_en": "Core Concept I: 好奇心",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "理查德·费曼思想的核心概念：好奇心。好奇心是理查德·费曼思想体系的基石。先抓住 好奇心 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入理查德·费曼世界的第一步。本课将深入剖析好奇心的深层逻辑与实践含义。",
@@ -14959,7 +16379,7 @@
         {
           "number": 3,
           "title": "核心概念：直觉",
-          "title_en": "Core Concept II: 直觉",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "理查德·费曼思想的第二个核心概念：直觉。直觉与好奇心形成互补关系。如果说好奇心解决看什么的问题，直觉解决怎么做的问题。本课深入分析直觉的深层含义。",
@@ -14972,7 +16392,7 @@
         {
           "number": 4,
           "title": "核心概念：解释能力",
-          "title_en": "Core Concept III: 解释能力",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入理查德·费曼思想的第三根支柱：解释能力。解释能力与好奇心、直觉构成三角支撑。理查德·费曼说：跨学科洞察：重要突破常来自不同领域方法的交叉。本课通过案例展示解释能力的实践力量。",
@@ -15069,7 +16489,7 @@
       "title": "结构生物学家",
       "quote": "严谨的数据会替你说话",
       "guiding_question": "现在有哪些可靠事实？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What is the real hypothesis here, and which observation would most strongly confirm or challenge it?",
       "formula": "罗莎琳德·富兰克林式决策 = 图像证据乘精确乘专业主义",
       "tags": [
         "图像证据",
@@ -15111,6 +16531,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "alan_turing",
+          "name": "艾伦·图灵",
+          "name_en": "Alan Turing",
+          "title": "计算理论奠基者"
+        },
+        {
+          "id": "tim_berners_lee",
+          "name": "蒂姆·伯纳斯-李",
+          "name_en": "Tim Berners-Lee",
+          "title": "万维网发明者"
+        },
+        {
+          "id": "albert_einstein",
+          "name": "阿尔伯特·爱因斯坦",
+          "name_en": "Albert Einstein",
+          "title": "物理学家"
+        }
+      ],
       "case_notes": [
         {
           "title": "罗莎琳德·富兰克林 围绕 图像证据 的代表性实践",
@@ -15145,7 +16585,7 @@
         {
           "number": 2,
           "title": "核心概念：图像证据",
-          "title_en": "Core Concept I: 图像证据",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "罗莎琳德·富兰克林思想的核心概念：图像证据。图像证据是罗莎琳德·富兰克林思想体系的基石。先抓住 图像证据 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入罗莎琳德·富兰克林世界的第一步。本课将深入剖析图像证据的深层逻辑与实践含义。",
@@ -15158,7 +16598,7 @@
         {
           "number": 3,
           "title": "核心概念：精确",
-          "title_en": "Core Concept II: 精确",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "罗莎琳德·富兰克林思想的第二个核心概念：精确。精确与图像证据形成互补关系。如果说图像证据解决看什么的问题，精确解决怎么做的问题。本课深入分析精确的深层含义。",
@@ -15171,7 +16611,7 @@
         {
           "number": 4,
           "title": "核心概念：专业主义",
-          "title_en": "Core Concept III: 专业主义",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入罗莎琳德·富兰克林思想的第三根支柱：专业主义。专业主义与图像证据、精确构成三角支撑。罗莎琳德·富兰克林说：跨学科洞察：重要突破常来自不同领域方法的交叉。本课通过案例展示专业主义的实践力量。",
@@ -15359,6 +16799,26 @@
           }
         ]
       },
+      "peer_cluster": [
+        {
+          "id": "tim_berners_lee",
+          "name": "蒂姆·伯纳斯-李",
+          "name_en": "Tim Berners-Lee",
+          "title": "万维网发明者"
+        },
+        {
+          "id": "albert_einstein",
+          "name": "阿尔伯特·爱因斯坦",
+          "name_en": "Albert Einstein",
+          "title": "物理学家"
+        },
+        {
+          "id": "carl_sagan",
+          "name": "卡尔·萨根",
+          "name_en": "Carl Sagan",
+          "title": "天文学家"
+        }
+      ],
       "case_notes": [
         {
           "title": "艾伦·图灵 围绕 计算 的代表性实践",
@@ -15516,7 +16976,7 @@
       "title": "经典力学奠基者",
       "quote": "如果我看得更远，是因为站在巨人的肩膀上",
       "guiding_question": "现在有哪些可靠事实？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What is the real hypothesis here, and which observation would most strongly confirm or challenge it?",
       "formula": "艾萨克·牛顿式决策 = 定律乘演绎乘专注",
       "tags": [
         "定律",
@@ -15558,6 +17018,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "alan_turing",
+          "name": "艾伦·图灵",
+          "name_en": "Alan Turing",
+          "title": "计算理论奠基者"
+        },
+        {
+          "id": "tim_berners_lee",
+          "name": "蒂姆·伯纳斯-李",
+          "name_en": "Tim Berners-Lee",
+          "title": "万维网发明者"
+        },
+        {
+          "id": "albert_einstein",
+          "name": "阿尔伯特·爱因斯坦",
+          "name_en": "Albert Einstein",
+          "title": "物理学家"
+        }
+      ],
       "case_notes": [
         {
           "title": "艾萨克·牛顿 围绕 定律 的代表性实践",
@@ -15592,7 +17072,7 @@
         {
           "number": 2,
           "title": "核心概念：定律",
-          "title_en": "Core Concept I: 定律",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "艾萨克·牛顿思想的核心概念：定律。定律是艾萨克·牛顿思想体系的基石。先抓住 定律 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入艾萨克·牛顿世界的第一步。本课将深入剖析定律的深层逻辑与实践含义。",
@@ -15605,7 +17085,7 @@
         {
           "number": 3,
           "title": "核心概念：演绎",
-          "title_en": "Core Concept II: 演绎",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "艾萨克·牛顿思想的第二个核心概念：演绎。演绎与定律形成互补关系。如果说定律解决看什么的问题，演绎解决怎么做的问题。本课深入分析演绎的深层含义。",
@@ -15618,7 +17098,7 @@
         {
           "number": 4,
           "title": "核心概念：专注",
-          "title_en": "Core Concept III: 专注",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入艾萨克·牛顿思想的第三根支柱：专注。专注与定律、演绎构成三角支撑。艾萨克·牛顿说：跨学科洞察：重要突破常来自不同领域方法的交叉。本课通过案例展示专注的实践力量。",
@@ -15715,7 +17195,7 @@
       "title": "计算先驱",
       "quote": "机器能处理符号，但想象力决定边界",
       "guiding_question": "现在有哪些可靠事实？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What is the real hypothesis here, and which observation would most strongly confirm or challenge it?",
       "formula": "艾达·洛芙莱斯式决策 = 抽象乘算法乘跨学科",
       "tags": [
         "抽象",
@@ -15757,6 +17237,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "alan_turing",
+          "name": "艾伦·图灵",
+          "name_en": "Alan Turing",
+          "title": "计算理论奠基者"
+        },
+        {
+          "id": "tim_berners_lee",
+          "name": "蒂姆·伯纳斯-李",
+          "name_en": "Tim Berners-Lee",
+          "title": "万维网发明者"
+        },
+        {
+          "id": "albert_einstein",
+          "name": "阿尔伯特·爱因斯坦",
+          "name_en": "Albert Einstein",
+          "title": "物理学家"
+        }
+      ],
       "case_notes": [
         {
           "title": "艾达·洛芙莱斯 围绕 抽象 的代表性实践",
@@ -15791,7 +17291,7 @@
         {
           "number": 2,
           "title": "核心概念：抽象",
-          "title_en": "Core Concept I: 抽象",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "艾达·洛芙莱斯思想的核心概念：抽象。抽象是艾达·洛芙莱斯思想体系的基石。先抓住 抽象 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入艾达·洛芙莱斯世界的第一步。本课将深入剖析抽象的深层逻辑与实践含义。",
@@ -15804,7 +17304,7 @@
         {
           "number": 3,
           "title": "核心概念：算法",
-          "title_en": "Core Concept II: 算法",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "艾达·洛芙莱斯思想的第二个核心概念：算法。算法与抽象形成互补关系。如果说抽象解决看什么的问题，算法解决怎么做的问题。本课深入分析算法的深层含义。",
@@ -15817,7 +17317,7 @@
         {
           "number": 4,
           "title": "核心概念：跨学科",
-          "title_en": "Core Concept III: 跨学科",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入艾达·洛芙莱斯思想的第三根支柱：跨学科。跨学科与抽象、算法构成三角支撑。艾达·洛芙莱斯说：跨学科洞察：重要突破常来自不同领域方法的交叉。本课通过案例展示跨学科的实践力量。",
@@ -16005,6 +17505,26 @@
           }
         ]
       },
+      "peer_cluster": [
+        {
+          "id": "alan_turing",
+          "name": "艾伦·图灵",
+          "name_en": "Alan Turing",
+          "title": "计算理论奠基者"
+        },
+        {
+          "id": "albert_einstein",
+          "name": "阿尔伯特·爱因斯坦",
+          "name_en": "Albert Einstein",
+          "title": "物理学家"
+        },
+        {
+          "id": "carl_sagan",
+          "name": "卡尔·萨根",
+          "name_en": "Carl Sagan",
+          "title": "天文学家"
+        }
+      ],
       "case_notes": [
         {
           "title": "蒂姆·伯纳斯-李 围绕 开放网络 的代表性实践",
@@ -16253,6 +17773,26 @@
           }
         ]
       },
+      "peer_cluster": [
+        {
+          "id": "alan_turing",
+          "name": "艾伦·图灵",
+          "name_en": "Alan Turing",
+          "title": "计算理论奠基者"
+        },
+        {
+          "id": "tim_berners_lee",
+          "name": "蒂姆·伯纳斯-李",
+          "name_en": "Tim Berners-Lee",
+          "title": "万维网发明者"
+        },
+        {
+          "id": "carl_sagan",
+          "name": "卡尔·萨根",
+          "name_en": "Carl Sagan",
+          "title": "天文学家"
+        }
+      ],
       "case_notes": [
         {
           "title": "阿尔伯特·爱因斯坦 围绕 想象力 的代表性实践",
@@ -16410,7 +17950,7 @@
       "title": "结构生物学家",
       "quote": "做难而正确的研究，比做快而热的更重要",
       "guiding_question": "现在有哪些可靠事实？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What is the real hypothesis here, and which observation would most strongly confirm or challenge it?",
       "formula": "颜宁式决策 = 极致乘独立乘科学共同体",
       "tags": [
         "极致",
@@ -16452,6 +17992,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "alan_turing",
+          "name": "艾伦·图灵",
+          "name_en": "Alan Turing",
+          "title": "计算理论奠基者"
+        },
+        {
+          "id": "tim_berners_lee",
+          "name": "蒂姆·伯纳斯-李",
+          "name_en": "Tim Berners-Lee",
+          "title": "万维网发明者"
+        },
+        {
+          "id": "albert_einstein",
+          "name": "阿尔伯特·爱因斯坦",
+          "name_en": "Albert Einstein",
+          "title": "物理学家"
+        }
+      ],
       "case_notes": [
         {
           "title": "颜宁 围绕 极致 的代表性实践",
@@ -16486,7 +18046,7 @@
         {
           "number": 2,
           "title": "核心概念：极致",
-          "title_en": "Core Concept I: 极致",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "颜宁思想的核心概念：极致。极致是颜宁思想体系的基石。先抓住 极致 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入颜宁世界的第一步。本课将深入剖析极致的深层逻辑与实践含义。",
@@ -16499,7 +18059,7 @@
         {
           "number": 3,
           "title": "核心概念：独立",
-          "title_en": "Core Concept II: 独立",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "颜宁思想的第二个核心概念：独立。独立与极致形成互补关系。如果说极致解决看什么的问题，独立解决怎么做的问题。本课深入分析独立的深层含义。",
@@ -16512,7 +18072,7 @@
         {
           "number": 4,
           "title": "核心概念：科学共同体",
-          "title_en": "Core Concept III: 科学共同体",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入颜宁思想的第三根支柱：科学共同体。科学共同体与极致、独立构成三角支撑。颜宁说：跨学科洞察：重要突破常来自不同领域方法的交叉。本课通过案例展示科学共同体的实践力量。",
@@ -16609,7 +18169,7 @@
       "title": "深度学习研究者",
       "quote": "大模型会逼着我们重新理解智能",
       "guiding_question": "问题的底层约束是什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "Which technical or distribution constraint matters most here, and where would leverage compound if it works?",
       "formula": "伊利亚·苏茨克维尔式决策 = 深度学习乘尺度定律乘对齐",
       "tags": [
         "深度学习",
@@ -16651,6 +18211,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "sam_altman",
+          "name": "山姆·奥特曼",
+          "name_en": "Sam Altman",
+          "title": "OpenAI CEO"
+        },
+        {
+          "id": "andrew_ng",
+          "name": "吴恩达",
+          "name_en": "Andrew Ng",
+          "title": "AI 教育推动者"
+        },
+        {
+          "id": "musk",
+          "name": "埃隆·马斯克",
+          "name_en": "Elon Musk",
+          "title": "第一性原理创业者"
+        }
+      ],
       "case_notes": [
         {
           "title": "伊利亚·苏茨克维尔 围绕 深度学习 的代表性实践",
@@ -16685,7 +18265,7 @@
         {
           "number": 2,
           "title": "核心概念：深度学习",
-          "title_en": "Core Concept I: 深度学习",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "伊利亚·苏茨克维尔思想的核心概念：深度学习。深度学习是伊利亚·苏茨克维尔思想体系的基石。先抓住 深度学习 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入伊利亚·苏茨克维尔世界的第一步。本课将深入剖析深度学习的深层逻辑与实践含义。",
@@ -16698,7 +18278,7 @@
         {
           "number": 3,
           "title": "核心概念：尺度定律",
-          "title_en": "Core Concept II: 尺度定律",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "伊利亚·苏茨克维尔思想的第二个核心概念：尺度定律。尺度定律与深度学习形成互补关系。如果说深度学习解决看什么的问题，尺度定律解决怎么做的问题。本课深入分析尺度定律的深层含义。",
@@ -16711,7 +18291,7 @@
         {
           "number": 4,
           "title": "核心概念：对齐",
-          "title_en": "Core Concept III: 对齐",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入伊利亚·苏茨克维尔思想的第三根支柱：对齐。对齐与深度学习、尺度定律构成三角支撑。伊利亚·苏茨克维尔说：高速迭代：尽快验证，尽快纠错，尽快放大有效路径。本课通过案例展示对齐的实践力量。",
@@ -16899,6 +18479,26 @@
           }
         ]
       },
+      "peer_cluster": [
+        {
+          "id": "sam_altman",
+          "name": "山姆·奥特曼",
+          "name_en": "Sam Altman",
+          "title": "OpenAI CEO"
+        },
+        {
+          "id": "musk",
+          "name": "埃隆·马斯克",
+          "name_en": "Elon Musk",
+          "title": "第一性原理创业者"
+        },
+        {
+          "id": "li_feifei",
+          "name": "李飞飞",
+          "name_en": "Fei-Fei Li",
+          "title": "AI 科学家"
+        }
+      ],
       "case_notes": [
         {
           "title": "吴恩达 围绕 AI 民主化 的代表性实践",
@@ -17147,6 +18747,26 @@
           }
         ]
       },
+      "peer_cluster": [
+        {
+          "id": "sam_altman",
+          "name": "山姆·奥特曼",
+          "name_en": "Sam Altman",
+          "title": "OpenAI CEO"
+        },
+        {
+          "id": "andrew_ng",
+          "name": "吴恩达",
+          "name_en": "Andrew Ng",
+          "title": "AI 教育推动者"
+        },
+        {
+          "id": "li_feifei",
+          "name": "李飞飞",
+          "name_en": "Fei-Fei Li",
+          "title": "AI 科学家"
+        }
+      ],
       "case_notes": [
         {
           "title": "埃隆·马斯克 围绕 第一性原理 的代表性实践",
@@ -17304,7 +18924,7 @@
       "title": "AI 工程研究者",
       "quote": "神经网络像软件，也像不断被教育的系统",
       "guiding_question": "问题的底层约束是什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "Which technical or distribution constraint matters most here, and where would leverage compound if it works?",
       "formula": "安德烈·卡帕西式决策 = 工程直觉乘数据乘模型调试",
       "tags": [
         "工程直觉",
@@ -17346,6 +18966,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "sam_altman",
+          "name": "山姆·奥特曼",
+          "name_en": "Sam Altman",
+          "title": "OpenAI CEO"
+        },
+        {
+          "id": "andrew_ng",
+          "name": "吴恩达",
+          "name_en": "Andrew Ng",
+          "title": "AI 教育推动者"
+        },
+        {
+          "id": "musk",
+          "name": "埃隆·马斯克",
+          "name_en": "Elon Musk",
+          "title": "第一性原理创业者"
+        }
+      ],
       "case_notes": [
         {
           "title": "安德烈·卡帕西 围绕 工程直觉 的代表性实践",
@@ -17380,7 +19020,7 @@
         {
           "number": 2,
           "title": "核心概念：工程直觉",
-          "title_en": "Core Concept I: 工程直觉",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "安德烈·卡帕西思想的核心概念：工程直觉。工程直觉是安德烈·卡帕西思想体系的基石。先抓住 工程直觉 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入安德烈·卡帕西世界的第一步。本课将深入剖析工程直觉的深层逻辑与实践含义。",
@@ -17393,7 +19033,7 @@
         {
           "number": 3,
           "title": "核心概念：数据",
-          "title_en": "Core Concept II: 数据",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "安德烈·卡帕西思想的第二个核心概念：数据。数据与工程直觉形成互补关系。如果说工程直觉解决看什么的问题，数据解决怎么做的问题。本课深入分析数据的深层含义。",
@@ -17406,7 +19046,7 @@
         {
           "number": 4,
           "title": "核心概念：模型调试",
-          "title_en": "Core Concept III: 模型调试",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入安德烈·卡帕西思想的第三根支柱：模型调试。模型调试与工程直觉、数据构成三角支撑。安德烈·卡帕西说：高速迭代：尽快验证，尽快纠错，尽快放大有效路径。本课通过案例展示模型调试的实践力量。",
@@ -17594,6 +19234,26 @@
           }
         ]
       },
+      "peer_cluster": [
+        {
+          "id": "andrew_ng",
+          "name": "吴恩达",
+          "name_en": "Andrew Ng",
+          "title": "AI 教育推动者"
+        },
+        {
+          "id": "musk",
+          "name": "埃隆·马斯克",
+          "name_en": "Elon Musk",
+          "title": "第一性原理创业者"
+        },
+        {
+          "id": "li_feifei",
+          "name": "李飞飞",
+          "name_en": "Fei-Fei Li",
+          "title": "AI 科学家"
+        }
+      ],
       "case_notes": [
         {
           "title": "山姆·奥特曼 围绕 AGI 的代表性实践",
@@ -17751,7 +19411,7 @@
       "title": "DeepMind CEO",
       "quote": "把 AI 用来推进科学是更大的机会",
       "guiding_question": "问题的底层约束是什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "Which technical or distribution constraint matters most here, and where would leverage compound if it works?",
       "formula": "德米斯·哈萨比斯式决策 = 通用智能乘科学发现乘强化学习",
       "tags": [
         "通用智能",
@@ -17793,6 +19453,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "sam_altman",
+          "name": "山姆·奥特曼",
+          "name_en": "Sam Altman",
+          "title": "OpenAI CEO"
+        },
+        {
+          "id": "andrew_ng",
+          "name": "吴恩达",
+          "name_en": "Andrew Ng",
+          "title": "AI 教育推动者"
+        },
+        {
+          "id": "musk",
+          "name": "埃隆·马斯克",
+          "name_en": "Elon Musk",
+          "title": "第一性原理创业者"
+        }
+      ],
       "case_notes": [
         {
           "title": "德米斯·哈萨比斯 围绕 通用智能 的代表性实践",
@@ -17827,7 +19507,7 @@
         {
           "number": 2,
           "title": "核心概念：通用智能",
-          "title_en": "Core Concept I: 通用智能",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "德米斯·哈萨比斯思想的核心概念：通用智能。通用智能是德米斯·哈萨比斯思想体系的基石。先抓住 通用智能 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入德米斯·哈萨比斯世界的第一步。本课将深入剖析通用智能的深层逻辑与实践含义。",
@@ -17840,7 +19520,7 @@
         {
           "number": 3,
           "title": "核心概念：科学发现",
-          "title_en": "Core Concept II: 科学发现",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "德米斯·哈萨比斯思想的第二个核心概念：科学发现。科学发现与通用智能形成互补关系。如果说通用智能解决看什么的问题，科学发现解决怎么做的问题。本课深入分析科学发现的深层含义。",
@@ -17853,7 +19533,7 @@
         {
           "number": 4,
           "title": "核心概念：强化学习",
-          "title_en": "Core Concept III: 强化学习",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入德米斯·哈萨比斯思想的第三根支柱：强化学习。强化学习与通用智能、科学发现构成三角支撑。德米斯·哈萨比斯说：高速迭代：尽快验证，尽快纠错，尽快放大有效路径。本课通过案例展示强化学习的实践力量。",
@@ -17950,7 +19630,7 @@
       "title": "Google 联合创始人",
       "quote": "对未来不够疯狂，本身就是风险",
       "guiding_question": "问题的底层约束是什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "Which technical or distribution constraint matters most here, and where would leverage compound if it works?",
       "formula": "拉里·佩奇式决策 = 信息组织乘登月项目乘自动化",
       "tags": [
         "信息组织",
@@ -17992,6 +19672,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "sam_altman",
+          "name": "山姆·奥特曼",
+          "name_en": "Sam Altman",
+          "title": "OpenAI CEO"
+        },
+        {
+          "id": "andrew_ng",
+          "name": "吴恩达",
+          "name_en": "Andrew Ng",
+          "title": "AI 教育推动者"
+        },
+        {
+          "id": "musk",
+          "name": "埃隆·马斯克",
+          "name_en": "Elon Musk",
+          "title": "第一性原理创业者"
+        }
+      ],
       "case_notes": [
         {
           "title": "拉里·佩奇 围绕 信息组织 的代表性实践",
@@ -18026,7 +19726,7 @@
         {
           "number": 2,
           "title": "核心概念：信息组织",
-          "title_en": "Core Concept I: 信息组织",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "拉里·佩奇思想的核心概念：信息组织。信息组织是拉里·佩奇思想体系的基石。先抓住 信息组织 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入拉里·佩奇世界的第一步。本课将深入剖析信息组织的深层逻辑与实践含义。",
@@ -18039,7 +19739,7 @@
         {
           "number": 3,
           "title": "核心概念：登月项目",
-          "title_en": "Core Concept II: 登月项目",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "拉里·佩奇思想的第二个核心概念：登月项目。登月项目与信息组织形成互补关系。如果说信息组织解决看什么的问题，登月项目解决怎么做的问题。本课深入分析登月项目的深层含义。",
@@ -18052,7 +19752,7 @@
         {
           "number": 4,
           "title": "核心概念：自动化",
-          "title_en": "Core Concept III: 自动化",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入拉里·佩奇思想的第三根支柱：自动化。自动化与信息组织、登月项目构成三角支撑。拉里·佩奇说：高速迭代：尽快验证，尽快纠错，尽快放大有效路径。本课通过案例展示自动化的实践力量。",
@@ -18240,6 +19940,26 @@
           }
         ]
       },
+      "peer_cluster": [
+        {
+          "id": "sam_altman",
+          "name": "山姆·奥特曼",
+          "name_en": "Sam Altman",
+          "title": "OpenAI CEO"
+        },
+        {
+          "id": "andrew_ng",
+          "name": "吴恩达",
+          "name_en": "Andrew Ng",
+          "title": "AI 教育推动者"
+        },
+        {
+          "id": "musk",
+          "name": "埃隆·马斯克",
+          "name_en": "Elon Musk",
+          "title": "第一性原理创业者"
+        }
+      ],
       "case_notes": [
         {
           "title": "李飞飞 围绕 人本 AI 的代表性实践",
@@ -18488,6 +20208,26 @@
           }
         ]
       },
+      "peer_cluster": [
+        {
+          "id": "sam_altman",
+          "name": "山姆·奥特曼",
+          "name_en": "Sam Altman",
+          "title": "OpenAI CEO"
+        },
+        {
+          "id": "andrew_ng",
+          "name": "吴恩达",
+          "name_en": "Andrew Ng",
+          "title": "AI 教育推动者"
+        },
+        {
+          "id": "musk",
+          "name": "埃隆·马斯克",
+          "name_en": "Elon Musk",
+          "title": "第一性原理创业者"
+        }
+      ],
       "case_notes": [
         {
           "title": "林纳斯·托瓦兹 围绕 开源 的代表性实践",
@@ -18645,7 +20385,7 @@
       "title": "微软联合创始人",
       "quote": "大多数人高估两年的变化，低估十年的变化",
       "guiding_question": "问题的底层约束是什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "Which technical or distribution constraint matters most here, and where would leverage compound if it works?",
       "formula": "比尔·盖茨式决策 = 平台乘软件乘全球健康",
       "tags": [
         "平台",
@@ -18687,6 +20427,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "sam_altman",
+          "name": "山姆·奥特曼",
+          "name_en": "Sam Altman",
+          "title": "OpenAI CEO"
+        },
+        {
+          "id": "satya_nadella",
+          "name": "萨提亚·纳德拉",
+          "name_en": "Satya Nadella",
+          "title": "微软 CEO"
+        },
+        {
+          "id": "andrew_ng",
+          "name": "吴恩达",
+          "name_en": "Andrew Ng",
+          "title": "AI 教育推动者"
+        }
+      ],
       "case_notes": [
         {
           "title": "比尔·盖茨 围绕 平台 的代表性实践",
@@ -18721,7 +20481,7 @@
         {
           "number": 2,
           "title": "核心概念：平台",
-          "title_en": "Core Concept I: 平台",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "比尔·盖茨思想的核心概念：平台。平台是比尔·盖茨思想体系的基石。先抓住 平台 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入比尔·盖茨世界的第一步。本课将深入剖析平台的深层逻辑与实践含义。",
@@ -18734,7 +20494,7 @@
         {
           "number": 3,
           "title": "核心概念：软件",
-          "title_en": "Core Concept II: 软件",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "比尔·盖茨思想的第二个核心概念：软件。软件与平台形成互补关系。如果说平台解决看什么的问题，软件解决怎么做的问题。本课深入分析软件的深层含义。",
@@ -18747,7 +20507,7 @@
         {
           "number": 4,
           "title": "核心概念：全球健康",
-          "title_en": "Core Concept III: 全球健康",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入比尔·盖茨思想的第三根支柱：全球健康。全球健康与平台、软件构成三角支撑。比尔·盖茨说：高速迭代：尽快验证，尽快纠错，尽快放大有效路径。本课通过案例展示全球健康的实践力量。",
@@ -18844,7 +20604,7 @@
       "title": "平台产品领导者",
       "quote": "把平台做大，也要把责任做重",
       "guiding_question": "问题的底层约束是什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "Which technical or distribution constraint matters most here, and where would leverage compound if it works?",
       "formula": "苏珊·沃西基式决策 = 创作者经济乘分发乘平台治理",
       "tags": [
         "创作者经济",
@@ -18886,6 +20646,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "sam_altman",
+          "name": "山姆·奥特曼",
+          "name_en": "Sam Altman",
+          "title": "OpenAI CEO"
+        },
+        {
+          "id": "andrew_ng",
+          "name": "吴恩达",
+          "name_en": "Andrew Ng",
+          "title": "AI 教育推动者"
+        },
+        {
+          "id": "musk",
+          "name": "埃隆·马斯克",
+          "name_en": "Elon Musk",
+          "title": "第一性原理创业者"
+        }
+      ],
       "case_notes": [
         {
           "title": "苏珊·沃西基 围绕 创作者经济 的代表性实践",
@@ -18920,7 +20700,7 @@
         {
           "number": 2,
           "title": "核心概念：创作者经济",
-          "title_en": "Core Concept I: 创作者经济",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "苏珊·沃西基思想的核心概念：创作者经济。创作者经济是苏珊·沃西基思想体系的基石。先抓住 创作者经济 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入苏珊·沃西基世界的第一步。本课将深入剖析创作者经济的深层逻辑与实践含义。",
@@ -18933,7 +20713,7 @@
         {
           "number": 3,
           "title": "核心概念：分发",
-          "title_en": "Core Concept II: 分发",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "苏珊·沃西基思想的第二个核心概念：分发。分发与创作者经济形成互补关系。如果说创作者经济解决看什么的问题，分发解决怎么做的问题。本课深入分析分发的深层含义。",
@@ -18946,7 +20726,7 @@
         {
           "number": 4,
           "title": "核心概念：平台治理",
-          "title_en": "Core Concept III: 平台治理",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入苏珊·沃西基思想的第三根支柱：平台治理。平台治理与创作者经济、分发构成三角支撑。苏珊·沃西基说：高速迭代：尽快验证，尽快纠错，尽快放大有效路径。本课通过案例展示平台治理的实践力量。",
@@ -19134,6 +20914,26 @@
           }
         ]
       },
+      "peer_cluster": [
+        {
+          "id": "sam_altman",
+          "name": "山姆·奥特曼",
+          "name_en": "Sam Altman",
+          "title": "OpenAI CEO"
+        },
+        {
+          "id": "andrew_ng",
+          "name": "吴恩达",
+          "name_en": "Andrew Ng",
+          "title": "AI 教育推动者"
+        },
+        {
+          "id": "musk",
+          "name": "埃隆·马斯克",
+          "name_en": "Elon Musk",
+          "title": "第一性原理创业者"
+        }
+      ],
       "case_notes": [
         {
           "title": "萨提亚·纳德拉 围绕 同理心 的代表性实践",
@@ -19291,7 +21091,7 @@
       "title": "Google 联合创始人",
       "quote": "如果项目看起来不疯狂，可能目标太小",
       "guiding_question": "问题的底层约束是什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "Which technical or distribution constraint matters most here, and where would leverage compound if it works?",
       "formula": "谢尔盖·布林式决策 = 搜索乘实验乘工程文化",
       "tags": [
         "搜索",
@@ -19333,6 +21133,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "sam_altman",
+          "name": "山姆·奥特曼",
+          "name_en": "Sam Altman",
+          "title": "OpenAI CEO"
+        },
+        {
+          "id": "andrew_ng",
+          "name": "吴恩达",
+          "name_en": "Andrew Ng",
+          "title": "AI 教育推动者"
+        },
+        {
+          "id": "musk",
+          "name": "埃隆·马斯克",
+          "name_en": "Elon Musk",
+          "title": "第一性原理创业者"
+        }
+      ],
       "case_notes": [
         {
           "title": "谢尔盖·布林 围绕 搜索 的代表性实践",
@@ -19367,7 +21187,7 @@
         {
           "number": 2,
           "title": "核心概念：搜索",
-          "title_en": "Core Concept I: 搜索",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "谢尔盖·布林思想的核心概念：搜索。搜索是谢尔盖·布林思想体系的基石。先抓住 搜索 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入谢尔盖·布林世界的第一步。本课将深入剖析搜索的深层逻辑与实践含义。",
@@ -19380,7 +21200,7 @@
         {
           "number": 3,
           "title": "核心概念：实验",
-          "title_en": "Core Concept II: 实验",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "谢尔盖·布林思想的第二个核心概念：实验。实验与搜索形成互补关系。如果说搜索解决看什么的问题，实验解决怎么做的问题。本课深入分析实验的深层含义。",
@@ -19393,7 +21213,7 @@
         {
           "number": 4,
           "title": "核心概念：工程文化",
-          "title_en": "Core Concept III: 工程文化",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入谢尔盖·布林思想的第三根支柱：工程文化。工程文化与搜索、实验构成三角支撑。谢尔盖·布林说：高速迭代：尽快验证，尽快纠错，尽快放大有效路径。本课通过案例展示工程文化的实践力量。",
@@ -19490,7 +21310,7 @@
       "title": "Meta CEO",
       "quote": "快速行动，持续修正",
       "guiding_question": "问题的底层约束是什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "Which technical or distribution constraint matters most here, and where would leverage compound if it works?",
       "formula": "马克·扎克伯格式决策 = 产品迭代乘网络效应乘平台",
       "tags": [
         "产品迭代",
@@ -19532,6 +21352,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "sam_altman",
+          "name": "山姆·奥特曼",
+          "name_en": "Sam Altman",
+          "title": "OpenAI CEO"
+        },
+        {
+          "id": "satya_nadella",
+          "name": "萨提亚·纳德拉",
+          "name_en": "Satya Nadella",
+          "title": "微软 CEO"
+        },
+        {
+          "id": "andrew_ng",
+          "name": "吴恩达",
+          "name_en": "Andrew Ng",
+          "title": "AI 教育推动者"
+        }
+      ],
       "case_notes": [
         {
           "title": "马克·扎克伯格 围绕 产品迭代 的代表性实践",
@@ -19566,7 +21406,7 @@
         {
           "number": 2,
           "title": "核心概念：产品迭代",
-          "title_en": "Core Concept I: 产品迭代",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "马克·扎克伯格思想的核心概念：产品迭代。产品迭代是马克·扎克伯格思想体系的基石。先抓住 产品迭代 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入马克·扎克伯格世界的第一步。本课将深入剖析产品迭代的深层逻辑与实践含义。",
@@ -19579,7 +21419,7 @@
         {
           "number": 3,
           "title": "核心概念：网络效应",
-          "title_en": "Core Concept II: 网络效应",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "马克·扎克伯格思想的第二个核心概念：网络效应。网络效应与产品迭代形成互补关系。如果说产品迭代解决看什么的问题，网络效应解决怎么做的问题。本课深入分析网络效应的深层含义。",
@@ -19592,7 +21432,7 @@
         {
           "number": 4,
           "title": "核心概念：平台",
-          "title_en": "Core Concept III: 平台",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入马克·扎克伯格思想的第三根支柱：平台。平台与产品迭代、网络效应构成三角支撑。马克·扎克伯格说：高速迭代：尽快验证，尽快纠错，尽快放大有效路径。本课通过案例展示平台的实践力量。",
@@ -19689,7 +21529,7 @@
       "title": "NVIDIA 创始人",
       "quote": "伟大的公司在艰难问题上建立护城河",
       "guiding_question": "问题的底层约束是什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "Which technical or distribution constraint matters most here, and where would leverage compound if it works?",
       "formula": "黄仁勋式决策 = 算力乘平台乘生态",
       "tags": [
         "算力",
@@ -19731,6 +21571,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "sam_altman",
+          "name": "山姆·奥特曼",
+          "name_en": "Sam Altman",
+          "title": "OpenAI CEO"
+        },
+        {
+          "id": "satya_nadella",
+          "name": "萨提亚·纳德拉",
+          "name_en": "Satya Nadella",
+          "title": "微软 CEO"
+        },
+        {
+          "id": "andrew_ng",
+          "name": "吴恩达",
+          "name_en": "Andrew Ng",
+          "title": "AI 教育推动者"
+        }
+      ],
       "case_notes": [
         {
           "title": "黄仁勋 围绕 算力 的代表性实践",
@@ -19765,7 +21625,7 @@
         {
           "number": 2,
           "title": "核心概念：算力",
-          "title_en": "Core Concept I: 算力",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "黄仁勋思想的核心概念：算力。算力是黄仁勋思想体系的基石。先抓住 算力 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入黄仁勋世界的第一步。本课将深入剖析算力的深层逻辑与实践含义。",
@@ -19778,7 +21638,7 @@
         {
           "number": 3,
           "title": "核心概念：平台",
-          "title_en": "Core Concept II: 平台",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "黄仁勋思想的第二个核心概念：平台。平台与算力形成互补关系。如果说算力解决看什么的问题，平台解决怎么做的问题。本课深入分析平台的深层含义。",
@@ -19791,7 +21651,7 @@
         {
           "number": 4,
           "title": "核心概念：生态",
-          "title_en": "Core Concept III: 生态",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入黄仁勋思想的第三根支柱：生态。生态与算力、平台构成三角支撑。黄仁勋说：高速迭代：尽快验证，尽快纠错，尽快放大有效路径。本课通过案例展示生态的实践力量。",
@@ -19888,7 +21748,7 @@
       "title": "设计师",
       "quote": "设计要服务人的移动与呼吸",
       "guiding_question": "这件东西最核心的体验是什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What experience is being shaped here, and what should be removed, clarified, or re-ordered to protect it?",
       "formula": "三宅一生式决策 = 材料实验乘身体感乘东方美学",
       "tags": [
         "材料实验",
@@ -19930,6 +21790,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "steve_jobs",
+          "name": "史蒂夫·乔布斯",
+          "name_en": "Steve Jobs",
+          "title": "Apple 联合创始人"
+        },
+        {
+          "id": "zaha_hadid",
+          "name": "扎哈·哈迪德",
+          "name_en": "Zaha Hadid",
+          "title": "建筑师"
+        },
+        {
+          "id": "jony_ive",
+          "name": "乔尼·艾夫",
+          "name_en": "Jony Ive",
+          "title": "工业设计师"
+        }
+      ],
       "case_notes": [
         {
           "title": "三宅一生 围绕 材料实验 的代表性实践",
@@ -19964,7 +21844,7 @@
         {
           "number": 2,
           "title": "核心概念：材料实验",
-          "title_en": "Core Concept I: 材料实验",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "三宅一生思想的核心概念：材料实验。材料实验是三宅一生思想体系的基石。先抓住 材料实验 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入三宅一生世界的第一步。本课将深入剖析材料实验的深层逻辑与实践含义。",
@@ -19977,7 +21857,7 @@
         {
           "number": 3,
           "title": "核心概念：身体感",
-          "title_en": "Core Concept II: 身体感",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "三宅一生思想的第二个核心概念：身体感。身体感与材料实验形成互补关系。如果说材料实验解决看什么的问题，身体感解决怎么做的问题。本课深入分析身体感的深层含义。",
@@ -19990,7 +21870,7 @@
         {
           "number": 4,
           "title": "核心概念：东方美学",
-          "title_en": "Core Concept III: 东方美学",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入三宅一生思想的第三根支柱：东方美学。东方美学与材料实验、身体感构成三角支撑。三宅一生说：细节即立场：边角、材料、字重和留白共同定义品质。本课通过案例展示东方美学的实践力量。",
@@ -20087,7 +21967,7 @@
       "title": "工业设计师",
       "quote": "真正困难的是把不必要的东西删掉",
       "guiding_question": "这件东西最核心的体验是什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What experience is being shaped here, and what should be removed, clarified, or re-ordered to protect it?",
       "formula": "乔尼·艾夫式决策 = 材料乘细节乘克制",
       "tags": [
         "材料",
@@ -20129,6 +22009,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "steve_jobs",
+          "name": "史蒂夫·乔布斯",
+          "name_en": "Steve Jobs",
+          "title": "Apple 联合创始人"
+        },
+        {
+          "id": "zaha_hadid",
+          "name": "扎哈·哈迪德",
+          "name_en": "Zaha Hadid",
+          "title": "建筑师"
+        },
+        {
+          "id": "issey_miyake",
+          "name": "三宅一生",
+          "name_en": "Issey Miyake",
+          "title": "设计师"
+        }
+      ],
       "case_notes": [
         {
           "title": "乔尼·艾夫 围绕 材料 的代表性实践",
@@ -20163,7 +22063,7 @@
         {
           "number": 2,
           "title": "核心概念：材料",
-          "title_en": "Core Concept I: 材料",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "乔尼·艾夫思想的核心概念：材料。材料是乔尼·艾夫思想体系的基石。先抓住 材料 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入乔尼·艾夫世界的第一步。本课将深入剖析材料的深层逻辑与实践含义。",
@@ -20176,7 +22076,7 @@
         {
           "number": 3,
           "title": "核心概念：细节",
-          "title_en": "Core Concept II: 细节",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "乔尼·艾夫思想的第二个核心概念：细节。细节与材料形成互补关系。如果说材料解决看什么的问题，细节解决怎么做的问题。本课深入分析细节的深层含义。",
@@ -20189,7 +22089,7 @@
         {
           "number": 4,
           "title": "核心概念：克制",
-          "title_en": "Core Concept III: 克制",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入乔尼·艾夫思想的第三根支柱：克制。克制与材料、细节构成三角支撑。乔尼·艾夫说：细节即立场：边角、材料、字重和留白共同定义品质。本课通过案例展示克制的实践力量。",
@@ -20377,6 +22277,26 @@
           }
         ]
       },
+      "peer_cluster": [
+        {
+          "id": "zaha_hadid",
+          "name": "扎哈·哈迪德",
+          "name_en": "Zaha Hadid",
+          "title": "建筑师"
+        },
+        {
+          "id": "issey_miyake",
+          "name": "三宅一生",
+          "name_en": "Issey Miyake",
+          "title": "设计师"
+        },
+        {
+          "id": "jony_ive",
+          "name": "乔尼·艾夫",
+          "name_en": "Jony Ive",
+          "title": "工业设计师"
+        }
+      ],
       "case_notes": [
         {
           "title": "史蒂夫·乔布斯 围绕 产品 的代表性实践",
@@ -20534,7 +22454,7 @@
       "title": "建筑师",
       "quote": "空间要能让人安静下来",
       "guiding_question": "这件东西最核心的体验是什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What experience is being shaped here, and what should be removed, clarified, or re-ordered to protect it?",
       "formula": "安藤忠雄式决策 = 光乘水泥乘空间秩序",
       "tags": [
         "光",
@@ -20576,6 +22496,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "steve_jobs",
+          "name": "史蒂夫·乔布斯",
+          "name_en": "Steve Jobs",
+          "title": "Apple 联合创始人"
+        },
+        {
+          "id": "zaha_hadid",
+          "name": "扎哈·哈迪德",
+          "name_en": "Zaha Hadid",
+          "title": "建筑师"
+        },
+        {
+          "id": "issey_miyake",
+          "name": "三宅一生",
+          "name_en": "Issey Miyake",
+          "title": "设计师"
+        }
+      ],
       "case_notes": [
         {
           "title": "安藤忠雄 围绕 光 的代表性实践",
@@ -20610,7 +22550,7 @@
         {
           "number": 2,
           "title": "核心概念：光",
-          "title_en": "Core Concept I: 光",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "安藤忠雄思想的核心概念：光。光是安藤忠雄思想体系的基石。先抓住 光 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入安藤忠雄世界的第一步。本课将深入剖析光的深层逻辑与实践含义。",
@@ -20623,7 +22563,7 @@
         {
           "number": 3,
           "title": "核心概念：水泥",
-          "title_en": "Core Concept II: 水泥",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "安藤忠雄思想的第二个核心概念：水泥。水泥与光形成互补关系。如果说光解决看什么的问题，水泥解决怎么做的问题。本课深入分析水泥的深层含义。",
@@ -20636,7 +22576,7 @@
         {
           "number": 4,
           "title": "核心概念：空间秩序",
-          "title_en": "Core Concept III: 空间秩序",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入安藤忠雄思想的第三根支柱：空间秩序。空间秩序与光、水泥构成三角支撑。安藤忠雄说：细节即立场：边角、材料、字重和留白共同定义品质。本课通过案例展示空间秩序的实践力量。",
@@ -20824,6 +22764,26 @@
           }
         ]
       },
+      "peer_cluster": [
+        {
+          "id": "steve_jobs",
+          "name": "史蒂夫·乔布斯",
+          "name_en": "Steve Jobs",
+          "title": "Apple 联合创始人"
+        },
+        {
+          "id": "issey_miyake",
+          "name": "三宅一生",
+          "name_en": "Issey Miyake",
+          "title": "设计师"
+        },
+        {
+          "id": "jony_ive",
+          "name": "乔尼·艾夫",
+          "name_en": "Jony Ive",
+          "title": "工业设计师"
+        }
+      ],
       "case_notes": [
         {
           "title": "扎哈·哈迪德 围绕 流动结构 的代表性实践",
@@ -20981,7 +22941,7 @@
       "title": "设计与技术思想家",
       "quote": "简单不是少，而是去掉不必要",
       "guiding_question": "这件东西最核心的体验是什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What experience is being shaped here, and what should be removed, clarified, or re-ordered to protect it?",
       "formula": "约翰·前田式决策 = 设计管理乘简约乘跨界",
       "tags": [
         "设计管理",
@@ -21023,6 +22983,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "steve_jobs",
+          "name": "史蒂夫·乔布斯",
+          "name_en": "Steve Jobs",
+          "title": "Apple 联合创始人"
+        },
+        {
+          "id": "zaha_hadid",
+          "name": "扎哈·哈迪德",
+          "name_en": "Zaha Hadid",
+          "title": "建筑师"
+        },
+        {
+          "id": "issey_miyake",
+          "name": "三宅一生",
+          "name_en": "Issey Miyake",
+          "title": "设计师"
+        }
+      ],
       "case_notes": [
         {
           "title": "约翰·前田 围绕 设计管理 的代表性实践",
@@ -21057,7 +23037,7 @@
         {
           "number": 2,
           "title": "核心概念：设计管理",
-          "title_en": "Core Concept I: 设计管理",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "约翰·前田思想的核心概念：设计管理。设计管理是约翰·前田思想体系的基石。先抓住 设计管理 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入约翰·前田世界的第一步。本课将深入剖析设计管理的深层逻辑与实践含义。",
@@ -21070,7 +23050,7 @@
         {
           "number": 3,
           "title": "核心概念：简约",
-          "title_en": "Core Concept II: 简约",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "约翰·前田思想的第二个核心概念：简约。简约与设计管理形成互补关系。如果说设计管理解决看什么的问题，简约解决怎么做的问题。本课深入分析简约的深层含义。",
@@ -21083,7 +23063,7 @@
         {
           "number": 4,
           "title": "核心概念：跨界",
-          "title_en": "Core Concept III: 跨界",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入约翰·前田思想的第三根支柱：跨界。跨界与设计管理、简约构成三角支撑。约翰·前田说：细节即立场：边角、材料、字重和留白共同定义品质。本课通过案例展示跨界的实践力量。",
@@ -21180,7 +23160,7 @@
       "title": "工业设计师",
       "quote": "好设计尽可能少设计",
       "guiding_question": "这件东西最核心的体验是什么？",
-      "guiding_question_en": "What should be examined first when this problem becomes complex?",
+      "guiding_question_en": "What experience is being shaped here, and what should be removed, clarified, or re-ordered to protect it?",
       "formula": "迪特·拉姆斯式决策 = 简洁乘系统乘诚实设计",
       "tags": [
         "简洁",
@@ -21222,6 +23202,26 @@
         }
       ],
       "reference_shelf": null,
+      "peer_cluster": [
+        {
+          "id": "steve_jobs",
+          "name": "史蒂夫·乔布斯",
+          "name_en": "Steve Jobs",
+          "title": "Apple 联合创始人"
+        },
+        {
+          "id": "zaha_hadid",
+          "name": "扎哈·哈迪德",
+          "name_en": "Zaha Hadid",
+          "title": "建筑师"
+        },
+        {
+          "id": "issey_miyake",
+          "name": "三宅一生",
+          "name_en": "Issey Miyake",
+          "title": "设计师"
+        }
+      ],
       "case_notes": [
         {
           "title": "迪特·拉姆斯 围绕 简洁 的代表性实践",
@@ -21256,7 +23256,7 @@
         {
           "number": 2,
           "title": "核心概念：简洁",
-          "title_en": "Core Concept I: 简洁",
+          "title_en": "Core Concept I",
           "subtitle": "抓第一根支柱",
           "subtitle_en": "Study the first pillar",
           "summary": "迪特·拉姆斯思想的核心概念：简洁。简洁是迪特·拉姆斯思想体系的基石。先抓住 简洁 的第一关键变量，再讨论表达方式和执行顺序。理解这个概念，是进入迪特·拉姆斯世界的第一步。本课将深入剖析简洁的深层逻辑与实践含义。",
@@ -21269,7 +23269,7 @@
         {
           "number": 3,
           "title": "核心概念：系统",
-          "title_en": "Core Concept II: 系统",
+          "title_en": "Core Concept II",
           "subtitle": "抓第二根支柱",
           "subtitle_en": "Study the second pillar",
           "summary": "迪特·拉姆斯思想的第二个核心概念：系统。系统与简洁形成互补关系。如果说简洁解决看什么的问题，系统解决怎么做的问题。本课深入分析系统的深层含义。",
@@ -21282,7 +23282,7 @@
         {
           "number": 4,
           "title": "核心概念：诚实设计",
-          "title_en": "Core Concept III: 诚实设计",
+          "title_en": "Core Concept III",
           "subtitle": "抓第三根支柱",
           "subtitle_en": "Study the third pillar",
           "summary": "深入迪特·拉姆斯思想的第三根支柱：诚实设计。诚实设计与简洁、系统构成三角支撑。迪特·拉姆斯说：细节即立场：边角、材料、字重和留白共同定义品质。本课通过案例展示诚实设计的实践力量。",
