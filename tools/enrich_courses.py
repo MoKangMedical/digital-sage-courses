@@ -69,6 +69,30 @@ LANGUAGE_SWITCH_SCRIPT = """
 </script>
 """
 
+COURSE_SEARCH_SCRIPT = """
+<script>
+(() => {
+  const input = document.querySelector("[data-course-search]");
+  if (!input) return;
+  const cards = Array.from(document.querySelectorAll(".tc"));
+  const sections = Array.from(document.querySelectorAll(".phase-section"));
+  const normalize = (value) => String(value || "").toLowerCase().replace(/\\s+/g, "");
+  const applySearch = () => {
+    const query = normalize(input.value);
+    cards.forEach((card) => {
+      const text = normalize(card.dataset.search || card.textContent);
+      card.hidden = Boolean(query && !text.includes(query));
+    });
+    sections.forEach((section) => {
+      const hasVisible = Array.from(section.querySelectorAll(".tc")).some((card) => !card.hidden);
+      section.hidden = !hasVisible;
+    });
+  };
+  input.addEventListener("input", applySearch);
+})();
+</script>
+"""
+
 
 CATEGORY_LABEL_EN = {
     "商业领袖": "Business Leaders",
@@ -1870,9 +1894,19 @@ def render_root_index(catalog: dict) -> str:
         cards = []
         for thinker in thinkers:
             tags = render_tags(thinker["tags"], "tt")
+            search_blob = " ".join(
+                [
+                    thinker["name"],
+                    thinker["name_en"],
+                    thinker["title"],
+                    thinker["category_label"],
+                    thinker["category_label_en"],
+                    *thinker["tags"],
+                ]
+            )
             cards.append(
                 f"""
-                <a href="./{thinker['id']}/" class="tc">
+                <a href="./{thinker['id']}/" class="tc" data-search="{escape(search_blob)}">
                   <div>
                     <b>{escape(thinker['name'])}</b><br>
                     <small class="copy-zh">{escape(thinker['title'])}</small>
@@ -1884,9 +1918,27 @@ def render_root_index(catalog: dict) -> str:
                 </a>
                 """
             )
+        category_meta = next(
+            (item for item in catalog["categories"] if item["label"] == category_label),
+            None,
+        )
+        count_label = f"{len(thinkers)} minds"
+        signal_zh = category_meta["signal"] if category_meta else "同一领域内横向比较十课系统。"
+        signal_en = category_meta["signal_en"] if category_meta else "Compare the same ten-lesson system inside one domain."
         category_sections.append(
-            f"<h2><span class=\"copy-zh\">{escape(category_label)}</span><span class=\"copy-en\">"
-            f"{escape(CATEGORY_LABEL_EN[category_label])}</span></h2><div class=\"thinker-grid\">{''.join(cards)}</div>"
+            f"""
+            <section class="phase-section" data-phase="{escape(category_label)}">
+              <div class="phase-header">
+                <div>
+                  <h2><span class="copy-zh">{escape(category_label)}</span><span class="copy-en">{escape(CATEGORY_LABEL_EN[category_label])}</span></h2>
+                  <p class="copy-zh">{escape(signal_zh)}</p>
+                  <p class="copy-en">{escape(signal_en)}</p>
+                </div>
+                <div class="eyebrow">{escape(count_label)}</div>
+              </div>
+              <div class="thinker-grid">{''.join(cards)}</div>
+            </section>
+            """
         )
 
     return f"""<!DOCTYPE html>
@@ -1906,13 +1958,26 @@ def render_root_index(catalog: dict) -> str:
 </nav>
 <div class="c">
   <section class="hero">
-    <h1><span class="copy-zh">🏛️ 智者思想课程</span><span class="copy-en">🏛️ Digital Sage Curriculum</span></h1>
-    <p class="copy-zh">100 位智者 × 10 门系统课程。不是碎片摘录，而是从总览、概念、框架、案例到行动的完整学习路径。</p>
+    <div class="eyebrow">Digital Sage Academy</div>
+    <h1><span class="copy-zh">智者思想课程</span><span class="copy-en">Digital Sage Curriculum</span></h1>
+    <p class="copy-zh">100 位智者 × 10 门系统课程。按学院式路径学习：先看总地图，再进入单人课程、音频讲解、案例和行动训练。</p>
     <p class="copy-en">100 minds × 10 structured lessons each. This is not a pile of quotes. It is a full learning arc from overview to concepts, frameworks, cases, and action.</p>
     <div class="stats">
       <div class="stat"><div class="sn">{catalog['stats']['thinkers']}</div><div class="sl"><span class="copy-zh">位思想家</span><span class="copy-en">minds</span></div></div>
       <div class="stat"><div class="sn">{catalog['stats']['lessons']}</div><div class="sl"><span class="copy-zh">门课程</span><span class="copy-en">lessons</span></div></div>
       <div class="stat"><div class="sn">{catalog['stats']['categories']}</div><div class="sl"><span class="copy-zh">大领域</span><span class="copy-en">domains</span></div></div>
+    </div>
+  </section>
+
+  <section class="academy-toolbar">
+    <div class="course-search">
+      <label for="courseSearch"><span class="copy-zh">搜索课程</span><span class="copy-en">Search curriculum</span></label>
+      <input id="courseSearch" data-course-search type="search" placeholder="输入姓名、英文名、领域或关键词">
+    </div>
+    <div class="voice-mode">
+      <strong><span class="copy-zh">课程语音模式</span><span class="copy-en">Audio lesson mode</span></strong>
+      <p class="copy-zh">每一门课顶部都有统一音频播放器，采用“课程音频 · 温暖男声讲解”的呈现方式，适合先听一遍再阅读文本。</p>
+      <p class="copy-en">Each lesson opens with a unified audio player, designed as a warm guided narration before the written study notes.</p>
     </div>
   </section>
 
@@ -1932,6 +1997,7 @@ def render_root_index(catalog: dict) -> str:
   {''.join(category_sections)}
 </div>
 {LANGUAGE_SWITCH_SCRIPT}
+{COURSE_SEARCH_SCRIPT}
 </body>
 </html>
 """
@@ -2033,6 +2099,7 @@ def render_thinker_index(thinker: dict) -> str:
             <div class="ci-sub copy-en">{escape(lesson_subtitle_en(thinker, lesson['number']))}</div>
             <div class="mini-note copy-zh">{escape(COURSE_BLUEPRINT[lesson['number'] - 1]['deliverable'])}</div>
             <div class="mini-note copy-en">{escape(COURSE_BLUEPRINT[lesson['number'] - 1]['deliverable_en'])}</div>
+            <span class="ci-audio"><span class="copy-zh">课程音频 · 温暖男声讲解</span><span class="copy-en">Audio lesson · warm narration</span></span>
           </div>
         </a>
         """
@@ -2210,6 +2277,7 @@ def render_lesson_page(thinker: dict, lesson_number: int) -> str:
 <link rel="stylesheet" href="../assets/course-theme.css">
 </head>
 <body class="lesson-page" data-lang="dual">
+<div class="lesson-progress" aria-hidden="true"><span style="width:{lesson_number * 10}%"></span></div>
 <div class="container">
   <a href="./index.html" class="back-link">← 返回{escape(thinker['name'])}课程目录</a>
   {render_lang_switch()}
@@ -2219,12 +2287,27 @@ def render_lesson_page(thinker: dict, lesson_number: int) -> str:
     <h1><span class="copy-zh">{escape(lesson['title'])}</span><span class="copy-en">{escape(lesson_title_en(thinker, lesson_number))}</span></h1>
     <p class="subtitle copy-zh">{escape(lesson['subtitle'])}</p>
     <p class="subtitle copy-en">{escape(lesson_subtitle_en(thinker, lesson_number))}</p>
+    <div class="lesson-meta">
+      <span><span class="copy-zh">难度：系统课</span><span class="copy-en">Level: structured</span></span>
+      <span><span class="copy-zh">时长：约 12 分钟</span><span class="copy-en">Time: about 12 min</span></span>
+      <span><span class="copy-zh">课程：{lesson_number} / 10</span><span class="copy-en">Lesson: {lesson_number} / 10</span></span>
+      <span><span class="copy-zh">练习：7 天训练</span><span class="copy-en">Practice: 7-day drill</span></span>
+    </div>
     <div class="header-tags">{render_tags([thinker['category_label'], *thinker['tags'][:2]])}</div>
   </section>
 
   <div class="audio-player">
-    <span class="audio-label">🎙️ 语音讲解</span>
-    <audio controls preload="none" src="audio/{lesson_number}.mp3"></audio>
+    <div class="audio-head">
+      <div class="audio-icon">听</div>
+      <div>
+        <span class="audio-label"><span class="copy-zh">课程音频 · 温暖男声讲解</span><span class="copy-en">Audio lesson · warm guided narration</span></span>
+        <small class="copy-zh">建议先听一遍，建立本课节奏，再进入下方结构化讲义和训练题。</small>
+        <small class="copy-en">Listen once first, then move into the structured notes and drills below.</small>
+      </div>
+    </div>
+    <audio controls preload="none">
+      <source src="audio/{lesson_number}.mp3" type="audio/mpeg">
+    </audio>
   </div>
 
   <section class="lesson-kpis">{progress_cards}</section>

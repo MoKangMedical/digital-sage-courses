@@ -21,13 +21,26 @@
 </nav>
 <div class="c">
   <section class="hero">
-    <h1><span class="copy-zh">🏛️ 智者思想课程</span><span class="copy-en">🏛️ Digital Sage Curriculum</span></h1>
-    <p class="copy-zh">100 位智者 × 10 门系统课程。不是碎片摘录，而是从总览、概念、框架、案例到行动的完整学习路径。</p>
+    <div class="eyebrow">Digital Sage Academy</div>
+    <h1><span class="copy-zh">智者思想课程</span><span class="copy-en">Digital Sage Curriculum</span></h1>
+    <p class="copy-zh">100 位智者 × 10 门系统课程。按学院式路径学习：先看总地图，再进入单人课程、音频讲解、案例和行动训练。</p>
     <p class="copy-en">100 minds × 10 structured lessons each. This is not a pile of quotes. It is a full learning arc from overview to concepts, frameworks, cases, and action.</p>
     <div class="stats">
       <div class="stat"><div class="sn">100</div><div class="sl"><span class="copy-zh">位思想家</span><span class="copy-en">minds</span></div></div>
       <div class="stat"><div class="sn">1000</div><div class="sl"><span class="copy-zh">门课程</span><span class="copy-en">lessons</span></div></div>
       <div class="stat"><div class="sn">8</div><div class="sl"><span class="copy-zh">大领域</span><span class="copy-en">domains</span></div></div>
+    </div>
+  </section>
+
+  <section class="academy-toolbar">
+    <div class="course-search">
+      <label for="courseSearch"><span class="copy-zh">搜索课程</span><span class="copy-en">Search curriculum</span></label>
+      <input id="courseSearch" data-course-search type="search" placeholder="输入姓名、英文名、领域或关键词">
+    </div>
+    <div class="voice-mode">
+      <strong><span class="copy-zh">课程语音模式</span><span class="copy-en">Audio lesson mode</span></strong>
+      <p class="copy-zh">每一门课顶部都有统一音频播放器，采用“课程音频 · 温暖男声讲解”的呈现方式，适合先听一遍再阅读文本。</p>
+      <p class="copy-en">Each lesson opens with a unified audio player, designed as a warm guided narration before the written study notes.</p>
     </div>
   </section>
 
@@ -256,8 +269,18 @@
             </div>
   </section>
 
-  <h2><span class="copy-zh">公共治理</span><span class="copy-en">Public Governance</span></h2><div class="thinker-grid">
-                <a href="./abraham_lincoln/" class="tc">
+  
+            <section class="phase-section" data-phase="公共治理">
+              <div class="phase-header">
+                <div>
+                  <h2><span class="copy-zh">公共治理</span><span class="copy-en">Public Governance</span></h2>
+                  <p class="copy-zh">看清利益结构、执行路径和长期秩序的代价。</p>
+                  <p class="copy-en">See the interest structure, execution path, and long-run cost of order.</p>
+                </div>
+                <div class="eyebrow">9 minds</div>
+              </div>
+              <div class="thinker-grid">
+                <a href="./abraham_lincoln/" class="tc" data-search="亚伯拉罕·林肯 Abraham Lincoln 美国总统 公共治理 Public Governance 团结 道义 耐心">
                   <div>
                     <b>亚伯拉罕·林肯</b><br>
                     <small class="copy-zh">美国总统</small>
@@ -268,7 +291,7 @@
                   </div>
                 </a>
                 
-                <a href="./elinor_ostrom/" class="tc">
+                <a href="./elinor_ostrom/" class="tc" data-search="埃莉诺·奥斯特罗姆 Elinor Ostrom 制度经济学家 公共治理 Public Governance 共同治理 制度设计 地方知识">
                   <div>
                     <b>埃莉诺·奥斯特罗姆</b><br>
                     <small class="copy-zh">制度经济学家</small>
@@ -279,7 +302,7 @@
                   </div>
                 </a>
                 
-                <a href="./peter_senge/" class="tc">
+                <a href="./peter_senge/" class="tc" data-search="彼得·圣吉 Peter Senge 系统管理学者 公共治理 Public Governance 学习型组织 反馈回路 协同">
                   <div>
                     <b>彼得·圣吉</b><br>
                     <small class="copy-zh">系统管理学者</small>
@@ -290,7 +313,7 @@
                   </div>
                 </a>
                 
-                <a href="./benjamin_franklin/" class="tc">
+                <a href="./benjamin_franklin/" class="tc" data-search="本杰明·富兰克林 Benjamin Franklin 政治家与发明家 公共治理 Public Governance 自律 实用主义 公共精神">
                   <div>
                     <b>本杰明·富兰克林</b><br>
                     <small class="copy-zh">政治家与发明家</small>
@@ -301,7 +324,7 @@
                   </div>
                 </a>
                 
-                <a href="./lee_kuan_yew/" class="tc">
+                <a href="./lee_kuan_yew/" class="tc" data-search="李光耀 Lee Kuan Yew 新加坡建国者 公共治理 Public Governance 治理 人才 长期主义">
                   <div>
                     <b>李光耀</b><br>
                     <small class="copy-zh">新加坡建国者</small>
@@ -312,7 +335,7 @@
                   </div>
                 </a>
                 
-                <a href="./winston_churchill/" class="tc">
+                <a href="./winston_churchill/" class="tc" data-search="温斯顿·丘吉尔 Winston Churchill 英国前首相 公共治理 Public Governance 韧性 演讲 危机领导">
                   <div>
                     <b>温斯顿·丘吉尔</b><br>
                     <small class="copy-zh">英国前首相</small>
@@ -323,7 +346,7 @@
                   </div>
                 </a>
                 
-                <a href="./muhammad_yunus/" class="tc">
+                <a href="./muhammad_yunus/" class="tc" data-search="穆罕默德·尤努斯 Muhammad Yunus 社会企业家 公共治理 Public Governance 普惠金融 社会创新 贫困治理">
                   <div>
                     <b>穆罕默德·尤努斯</b><br>
                     <small class="copy-zh">社会企业家</small>
@@ -334,7 +357,7 @@
                   </div>
                 </a>
                 
-                <a href="./nelson_mandela/" class="tc">
+                <a href="./nelson_mandela/" class="tc" data-search="纳尔逊·曼德拉 Nelson Mandela 南非前总统 公共治理 Public Governance 和解 韧性 制度转型">
                   <div>
                     <b>纳尔逊·曼德拉</b><br>
                     <small class="copy-zh">南非前总统</small>
@@ -345,7 +368,7 @@
                   </div>
                 </a>
                 
-                <a href="./deng_xiaoping/" class="tc">
+                <a href="./deng_xiaoping/" class="tc" data-search="邓小平 Deng Xiaoping 改革开放总设计师 公共治理 Public Governance 实事求是 改革 发展">
                   <div>
                     <b>邓小平</b><br>
                     <small class="copy-zh">改革开放总设计师</small>
@@ -355,8 +378,20 @@
                     <small class="course-note copy-en">10 lessons · one reusable judgment system</small>
                   </div>
                 </a>
-                </div><h2><span class="copy-zh">医学专家</span><span class="copy-en">Medical Experts</span></h2><div class="thinker-grid">
-                <a href="./elizabeth_blackburn/" class="tc">
+                </div>
+            </section>
+            
+            <section class="phase-section" data-phase="医学专家">
+              <div class="phase-header">
+                <div>
+                  <h2><span class="copy-zh">医学专家</span><span class="copy-en">Medical Experts</span></h2>
+                  <p class="copy-zh">先排危险，再看证据，再决定行动优先级。</p>
+                  <p class="copy-en">Rule out danger first, weigh evidence second, and decide action priority last.</p>
+                </div>
+                <div class="eyebrow">10 minds</div>
+              </div>
+              <div class="thinker-grid">
+                <a href="./elizabeth_blackburn/" class="tc" data-search="伊丽莎白·布莱克本 Elizabeth Blackburn 分子生物学家 医学专家 Medical Experts 端粒 老化 生物机制">
                   <div>
                     <b>伊丽莎白·布莱克本</b><br>
                     <small class="copy-zh">分子生物学家</small>
@@ -367,7 +402,7 @@
                   </div>
                 </a>
                 
-                <a href="./paul_farmer/" class="tc">
+                <a href="./paul_farmer/" class="tc" data-search="保罗·法默 Paul Farmer 全球健康专家 医学专家 Medical Experts 公平 基层医疗 行动">
                   <div>
                     <b>保罗·法默</b><br>
                     <small class="copy-zh">全球健康专家</small>
@@ -378,7 +413,7 @@
                   </div>
                 </a>
                 
-                <a href="./david_sinclair/" class="tc">
+                <a href="./david_sinclair/" class="tc" data-search="大卫·辛克莱 David Sinclair 衰老研究者 医学专家 Medical Experts 长寿 机制 预防">
                   <div>
                     <b>大卫·辛克莱</b><br>
                     <small class="copy-zh">衰老研究者</small>
@@ -389,7 +424,7 @@
                   </div>
                 </a>
                 
-                <a href="./william_osler/" class="tc">
+                <a href="./william_osler/" class="tc" data-search="威廉·奥斯勒 William Osler 现代医学教育先驱 医学专家 Medical Experts 临床观察 终身学习 医德">
                   <div>
                     <b>威廉·奥斯勒</b><br>
                     <small class="copy-zh">现代医学教育先驱</small>
@@ -400,7 +435,7 @@
                   </div>
                 </a>
                 
-                <a href="./anthony_fauci/" class="tc">
+                <a href="./anthony_fauci/" class="tc" data-search="安东尼·福奇 Anthony Fauci 传染病学家 医学专家 Medical Experts 证据 政策沟通 风险管理">
                   <div>
                     <b>安东尼·福奇</b><br>
                     <small class="copy-zh">传染病学家</small>
@@ -411,7 +446,7 @@
                   </div>
                 </a>
                 
-                <a href="./barry_marshall/" class="tc">
+                <a href="./barry_marshall/" class="tc" data-search="巴里·马歇尔 Barry Marshall 胃病学家 医学专家 Medical Experts 证据 反常识 实验勇气">
                   <div>
                     <b>巴里·马歇尔</b><br>
                     <small class="copy-zh">胃病学家</small>
@@ -422,7 +457,7 @@
                   </div>
                 </a>
                 
-                <a href="./zhang_wenhong/" class="tc">
+                <a href="./zhang_wenhong/" class="tc" data-search="张文宏 Zhang Wenhong 感染病专家 医学专家 Medical Experts 风险沟通 临床 常识">
                   <div>
                     <b>张文宏</b><br>
                     <small class="copy-zh">感染病专家</small>
@@ -433,7 +468,7 @@
                   </div>
                 </a>
                 
-                <a href="./li_lanjuan/" class="tc">
+                <a href="./li_lanjuan/" class="tc" data-search="李兰娟 Li Lanjuan 感染病学专家 医学专家 Medical Experts 系统防控 救治 科研转化">
                   <div>
                     <b>李兰娟</b><br>
                     <small class="copy-zh">感染病学专家</small>
@@ -444,7 +479,7 @@
                   </div>
                 </a>
                 
-                <a href="./zhongnanshan/" class="tc">
+                <a href="./zhongnanshan/" class="tc" data-search="钟南山 Zhong Nanshan 呼吸病学专家 医学专家 Medical Experts 循证 公共卫生 实话实说">
                   <div>
                     <b>钟南山</b><br>
                     <small class="copy-zh">呼吸病学专家</small>
@@ -455,7 +490,7 @@
                   </div>
                 </a>
                 
-                <a href="./atu_gawande/" class="tc">
+                <a href="./atu_gawande/" class="tc" data-search="阿图·葛文德 Atul Gawande 外科医生与作家 医学专家 Medical Experts 清单 医学人文 系统改进">
                   <div>
                     <b>阿图·葛文德</b><br>
                     <small class="copy-zh">外科医生与作家</small>
@@ -465,8 +500,20 @@
                     <small class="course-note copy-en">10 lessons · one reusable judgment system</small>
                   </div>
                 </a>
-                </div><h2><span class="copy-zh">商业领袖</span><span class="copy-en">Business Leaders</span></h2><div class="thinker-grid">
-                <a href="./ren_zhengfei/" class="tc">
+                </div>
+            </section>
+            
+            <section class="phase-section" data-phase="商业领袖">
+              <div class="phase-header">
+                <div>
+                  <h2><span class="copy-zh">商业领袖</span><span class="copy-en">Business Leaders</span></h2>
+                  <p class="copy-zh">用现金流、护城河和长期配置去看真正的企业质量。</p>
+                  <p class="copy-en">Read real business quality through cash flow, moats, and long-horizon allocation.</p>
+                </div>
+                <div class="eyebrow">18 minds</div>
+              </div>
+              <div class="thinker-grid">
+                <a href="./ren_zhengfei/" class="tc" data-search="任正非 Ren Zhengfei 华为创始人 商业领袖 Business Leaders 灰度 组织 战略耐心">
                   <div>
                     <b>任正非</b><br>
                     <small class="copy-zh">华为创始人</small>
@@ -477,7 +524,7 @@
                   </div>
                 </a>
                 
-                <a href="./clay_christensen/" class="tc">
+                <a href="./clay_christensen/" class="tc" data-search="克莱顿·克里斯坦森 Clay Christensen 创新理论学者 商业领袖 Business Leaders 颠覆式创新 用户任务 长期赛道">
                   <div>
                     <b>克莱顿·克里斯坦森</b><br>
                     <small class="copy-zh">创新理论学者</small>
@@ -488,7 +535,7 @@
                   </div>
                 </a>
                 
-                <a href="./masayoshi_son/" class="tc">
+                <a href="./masayoshi_son/" class="tc" data-search="孙正义 Masayoshi Son 软银创始人 商业领袖 Business Leaders 愿景投资 杠杆 生态布局">
                   <div>
                     <b>孙正义</b><br>
                     <small class="copy-zh">软银创始人</small>
@@ -499,7 +546,7 @@
                   </div>
                 </a>
                 
-                <a href="./zhangyiming/" class="tc">
+                <a href="./zhangyiming/" class="tc" data-search="张一鸣 Zhang Yiming 字节跳动创始人 商业领袖 Business Leaders 延迟满足 算法 全球化">
                   <div>
                     <b>张一鸣</b><br>
                     <small class="copy-zh">字节跳动创始人</small>
@@ -510,7 +557,7 @@
                   </div>
                 </a>
                 
-                <a href="./peter_thiel/" class="tc">
+                <a href="./peter_thiel/" class="tc" data-search="彼得·蒂尔 Peter Thiel 投资人与创业者 商业领袖 Business Leaders 垄断 反共识 零到一">
                   <div>
                     <b>彼得·蒂尔</b><br>
                     <small class="copy-zh">投资人与创业者</small>
@@ -521,7 +568,7 @@
                   </div>
                 </a>
                 
-                <a href="./caodewang/" class="tc">
+                <a href="./caodewang/" class="tc" data-search="曹德旺 Cao Dewang 福耀玻璃创始人 商业领袖 Business Leaders 制造 务实 工匠精神">
                   <div>
                     <b>曹德旺</b><br>
                     <small class="copy-zh">福耀玻璃创始人</small>
@@ -532,7 +579,7 @@
                   </div>
                 </a>
                 
-                <a href="./bezos/" class="tc">
+                <a href="./bezos/" class="tc" data-search="杰夫·贝索斯 Jeff Bezos 亚马逊创始人 商业领袖 Business Leaders 客户至上 Day 1 飞轮">
                   <div>
                     <b>杰夫·贝索斯</b><br>
                     <small class="copy-zh">亚马逊创始人</small>
@@ -543,7 +590,7 @@
                   </div>
                 </a>
                 
-                <a href="./duan_yongping/" class="tc">
+                <a href="./duan_yongping/" class="tc" data-search="段永平 Duan Yongping 投资人与企业家 商业领袖 Business Leaders 本分 长期 企业文化">
                   <div>
                     <b>段永平</b><br>
                     <small class="copy-zh">投资人与企业家</small>
@@ -554,7 +601,7 @@
                   </div>
                 </a>
                 
-                <a href="./buffett/" class="tc">
+                <a href="./buffett/" class="tc" data-search="沃伦·巴菲特 Warren Buffett 价值投资之父 商业领袖 Business Leaders 价值投资 复利 护城河">
                   <div>
                     <b>沃伦·巴菲特</b><br>
                     <small class="copy-zh">价值投资之父</small>
@@ -565,7 +612,7 @@
                   </div>
                 </a>
                 
-                <a href="./wang_xing/" class="tc">
+                <a href="./wang_xing/" class="tc" data-search="王兴 Wang Xing 美团创始人 商业领袖 Business Leaders 供给 效率 长期战争">
                   <div>
                     <b>王兴</b><br>
                     <small class="copy-zh">美团创始人</small>
@@ -576,7 +623,7 @@
                   </div>
                 </a>
                 
-                <a href="./ray_dalio/" class="tc">
+                <a href="./ray_dalio/" class="tc" data-search="瑞·达利欧 Ray Dalio 桥水创始人 商业领袖 Business Leaders 原则 透明 系统化决策">
                   <div>
                     <b>瑞·达利欧</b><br>
                     <small class="copy-zh">桥水创始人</small>
@@ -587,7 +634,7 @@
                   </div>
                 </a>
                 
-                <a href="./indra_nooyi/" class="tc">
+                <a href="./indra_nooyi/" class="tc" data-search="英德拉·努伊 Indra Nooyi 百事前 CEO 商业领袖 Business Leaders 战略 领导力 长期转型">
                   <div>
                     <b>英德拉·努伊</b><br>
                     <small class="copy-zh">百事前 CEO</small>
@@ -598,7 +645,7 @@
                   </div>
                 </a>
                 
-                <a href="./tim_cook/" class="tc">
+                <a href="./tim_cook/" class="tc" data-search="蒂姆·库克 Tim Cook Apple CEO 商业领袖 Business Leaders 供应链 运营 隐私">
                   <div>
                     <b>蒂姆·库克</b><br>
                     <small class="copy-zh">Apple CEO</small>
@@ -609,7 +656,7 @@
                   </div>
                 </a>
                 
-                <a href="./sheryl_sandberg/" class="tc">
+                <a href="./sheryl_sandberg/" class="tc" data-search="谢丽尔·桑德伯格 Sheryl Sandberg 运营与组织领导者 商业领袖 Business Leaders 领导力 组织 女性成长">
                   <div>
                     <b>谢丽尔·桑德伯格</b><br>
                     <small class="copy-zh">运营与组织领导者</small>
@@ -620,7 +667,7 @@
                   </div>
                 </a>
                 
-                <a href="./reed_hastings/" class="tc">
+                <a href="./reed_hastings/" class="tc" data-search="里德·哈斯廷斯 Reed Hastings Netflix 联合创始人 商业领袖 Business Leaders 自由与责任 文化 订阅">
                   <div>
                     <b>里德·哈斯廷斯</b><br>
                     <small class="copy-zh">Netflix 联合创始人</small>
@@ -631,7 +678,7 @@
                   </div>
                 </a>
                 
-                <a href="./lei_jun/" class="tc">
+                <a href="./lei_jun/" class="tc" data-search="雷军 Lei Jun 小米创始人 商业领袖 Business Leaders 效率 用户参与 性价比">
                   <div>
                     <b>雷军</b><br>
                     <small class="copy-zh">小米创始人</small>
@@ -642,7 +689,7 @@
                   </div>
                 </a>
                 
-                <a href="./howard_schultz/" class="tc">
+                <a href="./howard_schultz/" class="tc" data-search="霍华德·舒尔茨 Howard Schultz 星巴克前 CEO 商业领袖 Business Leaders 品牌体验 员工 社区">
                   <div>
                     <b>霍华德·舒尔茨</b><br>
                     <small class="copy-zh">星巴克前 CEO</small>
@@ -653,7 +700,7 @@
                   </div>
                 </a>
                 
-                <a href="./jack_ma/" class="tc">
+                <a href="./jack_ma/" class="tc" data-search="马云 Jack Ma 阿里巴巴创始人 商业领袖 Business Leaders 愿景 创业 服务小企业">
                   <div>
                     <b>马云</b><br>
                     <small class="copy-zh">阿里巴巴创始人</small>
@@ -663,8 +710,20 @@
                     <small class="course-note copy-en">10 lessons · one reusable judgment system</small>
                   </div>
                 </a>
-                </div><h2><span class="copy-zh">思想家</span><span class="copy-en">Philosophers</span></h2><div class="thinker-grid">
-                <a href="./daniel_kahneman/" class="tc">
+                </div>
+            </section>
+            
+            <section class="phase-section" data-phase="思想家">
+              <div class="phase-header">
+                <div>
+                  <h2><span class="copy-zh">思想家</span><span class="copy-en">Philosophers</span></h2>
+                  <p class="copy-zh">把复杂现实压缩成能反复调用的原则与提问方式。</p>
+                  <p class="copy-en">Compress complex reality into reusable principles and repeatable questions.</p>
+                </div>
+                <div class="eyebrow">20 minds</div>
+              </div>
+              <div class="thinker-grid">
+                <a href="./daniel_kahneman/" class="tc" data-search="丹尼尔·卡尼曼 Daniel Kahneman 行为经济学家 思想家 Philosophers 系统一系统二 偏误 判断">
                   <div>
                     <b>丹尼尔·卡尼曼</b><br>
                     <small class="copy-zh">行为经济学家</small>
@@ -675,7 +734,7 @@
                   </div>
                 </a>
                 
-                <a href="./daniel_pink/" class="tc">
+                <a href="./daniel_pink/" class="tc" data-search="丹尼尔·平克 Daniel Pink 商业作家 思想家 Philosophers 动机 节奏 说服">
                   <div>
                     <b>丹尼尔·平克</b><br>
                     <small class="copy-zh">商业作家</small>
@@ -686,7 +745,7 @@
                   </div>
                 </a>
                 
-                <a href="./jordan_peterson/" class="tc">
+                <a href="./jordan_peterson/" class="tc" data-search="乔丹·彼得森 Jordan Peterson 心理学家 思想家 Philosophers 责任 秩序 意义">
                   <div>
                     <b>乔丹·彼得森</b><br>
                     <small class="copy-zh">心理学家</small>
@@ -697,7 +756,7 @@
                   </div>
                 </a>
                 
-                <a href="./jonathan_haidt/" class="tc">
+                <a href="./jonathan_haidt/" class="tc" data-search="乔纳森·海特 Jonathan Haidt 社会心理学家 思想家 Philosophers 道德直觉 群体 社交媒体">
                   <div>
                     <b>乔纳森·海特</b><br>
                     <small class="copy-zh">社会心理学家</small>
@@ -708,7 +767,7 @@
                   </div>
                 </a>
                 
-                <a href="./adam_grant/" class="tc">
+                <a href="./adam_grant/" class="tc" data-search="亚当·格兰特 Adam Grant 组织心理学家 思想家 Philosophers 给予者 复盘 重构观点">
                   <div>
                     <b>亚当·格兰特</b><br>
                     <small class="copy-zh">组织心理学家</small>
@@ -719,7 +778,7 @@
                   </div>
                 </a>
                 
-                <a href="./aristotle/" class="tc">
+                <a href="./aristotle/" class="tc" data-search="亚里士多德 Aristotle 古希腊哲学家 思想家 Philosophers 中道 分类 实践智慧">
                   <div>
                     <b>亚里士多德</b><br>
                     <small class="copy-zh">古希腊哲学家</small>
@@ -730,7 +789,7 @@
                   </div>
                 </a>
                 
-                <a href="./carol_dweck/" class="tc">
+                <a href="./carol_dweck/" class="tc" data-search="卡罗尔·德韦克 Carol Dweck 心理学家 思想家 Philosophers 成长型思维 学习 反馈">
                   <div>
                     <b>卡罗尔·德韦克</b><br>
                     <small class="copy-zh">心理学家</small>
@@ -741,7 +800,7 @@
                   </div>
                 </a>
                 
-                <a href="./confucius/" class="tc">
+                <a href="./confucius/" class="tc" data-search="孔子 Confucius 儒家思想家 思想家 Philosophers 仁 礼 修身">
                   <div>
                     <b>孔子</b><br>
                     <small class="copy-zh">儒家思想家</small>
@@ -752,7 +811,7 @@
                   </div>
                 </a>
                 
-                <a href="./annie_duke/" class="tc">
+                <a href="./annie_duke/" class="tc" data-search="安妮·杜克 Annie Duke 决策作家 思想家 Philosophers 概率思维 下注 复盘">
                   <div>
                     <b>安妮·杜克</b><br>
                     <small class="copy-zh">决策作家</small>
@@ -763,7 +822,7 @@
                   </div>
                 </a>
                 
-                <a href="./angela_duckworth/" class="tc">
+                <a href="./angela_duckworth/" class="tc" data-search="安杰拉·达克沃斯 Angela Duckworth 心理学家 思想家 Philosophers 毅力 长期练习 目标">
                   <div>
                     <b>安杰拉·达克沃斯</b><br>
                     <small class="copy-zh">心理学家</small>
@@ -774,7 +833,7 @@
                   </div>
                 </a>
                 
-                <a href="./yuval_harari/" class="tc">
+                <a href="./yuval_harari/" class="tc" data-search="尤瓦尔·赫拉利 Yuval Noah Harari 历史学家 思想家 Philosophers 叙事 文明 长期史观">
                   <div>
                     <b>尤瓦尔·赫拉利</b><br>
                     <small class="copy-zh">历史学家</small>
@@ -785,7 +844,7 @@
                   </div>
                 </a>
                 
-                <a href="./peter_drucker/" class="tc">
+                <a href="./peter_drucker/" class="tc" data-search="彼得·德鲁克 Peter Drucker 现代管理学之父 思想家 Philosophers 管理 知识工作者 使命">
                   <div>
                     <b>彼得·德鲁克</b><br>
                     <small class="copy-zh">现代管理学之父</small>
@@ -796,7 +855,7 @@
                   </div>
                 </a>
                 
-                <a href="./charlie_munger/" class="tc">
+                <a href="./charlie_munger/" class="tc" data-search="查理·芒格 Charlie Munger 多元思维模型大师 思想家 Philosophers 逆向思维 多元模型 认知偏误">
                   <div>
                     <b>查理·芒格</b><br>
                     <small class="copy-zh">多元思维模型大师</small>
@@ -807,7 +866,7 @@
                   </div>
                 </a>
                 
-                <a href="./wang_yangming/" class="tc">
+                <a href="./wang_yangming/" class="tc" data-search="王阳明 Wang Yangming 心学思想家 思想家 Philosophers 知行合一 致良知 内省">
                   <div>
                     <b>王阳明</b><br>
                     <small class="copy-zh">心学思想家</small>
@@ -818,7 +877,7 @@
                   </div>
                 </a>
                 
-                <a href="./naval_ravikant/" class="tc">
+                <a href="./naval_ravikant/" class="tc" data-search="纳瓦尔 Naval Ravikant 创业投资人与思想者 思想家 Philosophers 幸福 杠杆 特定知识">
                   <div>
                     <b>纳瓦尔</b><br>
                     <small class="copy-zh">创业投资人与思想者</small>
@@ -829,7 +888,7 @@
                   </div>
                 </a>
                 
-                <a href="./nassim_taleb/" class="tc">
+                <a href="./nassim_taleb/" class="tc" data-search="纳西姆·塔勒布 Nassim Taleb 风险思想家 思想家 Philosophers 反脆弱 尾部风险 杠铃策略">
                   <div>
                     <b>纳西姆·塔勒布</b><br>
                     <small class="copy-zh">风险思想家</small>
@@ -840,7 +899,7 @@
                   </div>
                 </a>
                 
-                <a href="./laozi/" class="tc">
+                <a href="./laozi/" class="tc" data-search="老子 Laozi 道家思想家 思想家 Philosophers 无为 柔弱胜刚强 顺势">
                   <div>
                     <b>老子</b><br>
                     <small class="copy-zh">道家思想家</small>
@@ -851,7 +910,7 @@
                   </div>
                 </a>
                 
-                <a href="./socrates/" class="tc">
+                <a href="./socrates/" class="tc" data-search="苏格拉底 Socrates 古希腊哲学家 思想家 Philosophers 反诘 德性 认识自己">
                   <div>
                     <b>苏格拉底</b><br>
                     <small class="copy-zh">古希腊哲学家</small>
@@ -862,7 +921,7 @@
                   </div>
                 </a>
                 
-                <a href="./simone_de_beauvoir/" class="tc">
+                <a href="./simone_de_beauvoir/" class="tc" data-search="西蒙娜·德·波伏娃 Simone de Beauvoir 哲学家与作家 思想家 Philosophers 自由 主体性 责任">
                   <div>
                     <b>西蒙娜·德·波伏娃</b><br>
                     <small class="copy-zh">哲学家与作家</small>
@@ -873,7 +932,7 @@
                   </div>
                 </a>
                 
-                <a href="./martin_seligman/" class="tc">
+                <a href="./martin_seligman/" class="tc" data-search="马丁·塞利格曼 Martin Seligman 积极心理学家 思想家 Philosophers 幸福 韧性 优势">
                   <div>
                     <b>马丁·塞利格曼</b><br>
                     <small class="copy-zh">积极心理学家</small>
@@ -883,8 +942,20 @@
                     <small class="course-note copy-en">10 lessons · one reusable judgment system</small>
                   </div>
                 </a>
-                </div><h2><span class="copy-zh">文化创作者</span><span class="copy-en">Cultural Creators</span></h2><div class="thinker-grid">
-                <a href="./leonardo_da_vinci/" class="tc">
+                </div>
+            </section>
+            
+            <section class="phase-section" data-phase="文化创作者">
+              <div class="phase-header">
+                <div>
+                  <h2><span class="copy-zh">文化创作者</span><span class="copy-en">Cultural Creators</span></h2>
+                  <p class="copy-zh">把经验转译成作品，把作品再转译成理解世界的方法。</p>
+                  <p class="copy-en">Turn experience into works, then turn works into methods for understanding the world.</p>
+                </div>
+                <div class="eyebrow">4 minds</div>
+              </div>
+              <div class="thinker-grid">
+                <a href="./leonardo_da_vinci/" class="tc" data-search="列奥纳多·达·芬奇 Leonardo da Vinci 文艺复兴通才 文化创作者 Cultural Creators 观察 跨学科 手工与科学">
                   <div>
                     <b>列奥纳多·达·芬奇</b><br>
                     <small class="copy-zh">文艺复兴通才</small>
@@ -895,7 +966,7 @@
                   </div>
                 </a>
                 
-                <a href="./hayao_miyazaki/" class="tc">
+                <a href="./hayao_miyazaki/" class="tc" data-search="宫崎骏 Hayao Miyazaki 动画导演 文化创作者 Cultural Creators 自然 人性 手作">
                   <div>
                     <b>宫崎骏</b><br>
                     <small class="copy-zh">动画导演</small>
@@ -906,7 +977,7 @@
                   </div>
                 </a>
                 
-                <a href="./rei_kawakubo/" class="tc">
+                <a href="./rei_kawakubo/" class="tc" data-search="川久保玲 Rei Kawakubo 时装设计师 文化创作者 Cultural Creators 反叛 轮廓 实验">
                   <div>
                     <b>川久保玲</b><br>
                     <small class="copy-zh">时装设计师</small>
@@ -917,7 +988,7 @@
                   </div>
                 </a>
                 
-                <a href="./akira_kurosawa/" class="tc">
+                <a href="./akira_kurosawa/" class="tc" data-search="黑泽明 Akira Kurosawa 电影导演 文化创作者 Cultural Creators 叙事 节奏 人性">
                   <div>
                     <b>黑泽明</b><br>
                     <small class="copy-zh">电影导演</small>
@@ -927,8 +998,20 @@
                     <small class="course-note copy-en">10 lessons · one reusable judgment system</small>
                   </div>
                 </a>
-                </div><h2><span class="copy-zh">科学家</span><span class="copy-en">Scientists</span></h2><div class="thinker-grid">
-                <a href="./carl_sagan/" class="tc">
+                </div>
+            </section>
+            
+            <section class="phase-section" data-phase="科学家">
+              <div class="phase-header">
+                <div>
+                  <h2><span class="copy-zh">科学家</span><span class="copy-en">Scientists</span></h2>
+                  <p class="copy-zh">从问题定义、实验设计和证据质量出发搭建认知。</p>
+                  <p class="copy-en">Build understanding from problem definition, experiment design, and evidence quality.</p>
+                </div>
+                <div class="eyebrow">17 minds</div>
+              </div>
+              <div class="thinker-grid">
+                <a href="./carl_sagan/" class="tc" data-search="卡尔·萨根 Carl Sagan 天文学家 科学家 Scientists 宇宙视角 怀疑精神 公众沟通">
                   <div>
                     <b>卡尔·萨根</b><br>
                     <small class="copy-zh">天文学家</small>
@@ -939,7 +1022,7 @@
                   </div>
                 </a>
                 
-                <a href="./nikola_tesla/" class="tc">
+                <a href="./nikola_tesla/" class="tc" data-search="尼古拉·特斯拉 Nikola Tesla 发明家 科学家 Scientists 发明 能量 远见">
                   <div>
                     <b>尼古拉·特斯拉</b><br>
                     <small class="copy-zh">发明家</small>
@@ -950,7 +1033,7 @@
                   </div>
                 </a>
                 
-                <a href="./tu_youyou/" class="tc">
+                <a href="./tu_youyou/" class="tc" data-search="屠呦呦 Tu Youyou 药学家 科学家 Scientists 传统与现代 证据 救人">
                   <div>
                     <b>屠呦呦</b><br>
                     <small class="copy-zh">药学家</small>
@@ -961,7 +1044,7 @@
                   </div>
                 </a>
                 
-                <a href="./zhang_feng/" class="tc">
+                <a href="./zhang_feng/" class="tc" data-search="张锋 Feng Zhang 基因编辑科学家 科学家 Scientists 工具革命 转化医学 伦理">
                   <div>
                     <b>张锋</b><br>
                     <small class="copy-zh">基因编辑科学家</small>
@@ -972,7 +1055,7 @@
                   </div>
                 </a>
                 
-                <a href="./stephen_hawking/" class="tc">
+                <a href="./stephen_hawking/" class="tc" data-search="斯蒂芬·霍金 Stephen Hawking 宇宙学家 科学家 Scientists 宇宙 边界 韧性">
                   <div>
                     <b>斯蒂芬·霍金</b><br>
                     <small class="copy-zh">宇宙学家</small>
@@ -983,7 +1066,7 @@
                   </div>
                 </a>
                 
-                <a href="./yang_zhenning/" class="tc">
+                <a href="./yang_zhenning/" class="tc" data-search="杨振宁 Yang Zhenning 理论物理学家 科学家 Scientists 对称美 基础科学 耐心">
                   <div>
                     <b>杨振宁</b><br>
                     <small class="copy-zh">理论物理学家</small>
@@ -994,7 +1077,7 @@
                   </div>
                 </a>
                 
-                <a href="./edward_wilson/" class="tc">
+                <a href="./edward_wilson/" class="tc" data-search="爱德华·威尔逊 Edward O. Wilson 生物学家 科学家 Scientists 生物多样性 演化 整合">
                   <div>
                     <b>爱德华·威尔逊</b><br>
                     <small class="copy-zh">生物学家</small>
@@ -1005,7 +1088,7 @@
                   </div>
                 </a>
                 
-                <a href="./marie_curie/" class="tc">
+                <a href="./marie_curie/" class="tc" data-search="玛丽·居里 Marie Curie 放射性研究先驱 科学家 Scientists 实验 毅力 奉献">
                   <div>
                     <b>玛丽·居里</b><br>
                     <small class="copy-zh">放射性研究先驱</small>
@@ -1016,7 +1099,7 @@
                   </div>
                 </a>
                 
-                <a href="./jane_goodall/" class="tc">
+                <a href="./jane_goodall/" class="tc" data-search="珍·古道尔 Jane Goodall 灵长类学家 科学家 Scientists 观察 共情 生态">
                   <div>
                     <b>珍·古道尔</b><br>
                     <small class="copy-zh">灵长类学家</small>
@@ -1027,7 +1110,7 @@
                   </div>
                 </a>
                 
-                <a href="./richard_feynman/" class="tc">
+                <a href="./richard_feynman/" class="tc" data-search="理查德·费曼 Richard Feynman 理论物理学家 科学家 Scientists 好奇心 直觉 解释能力">
                   <div>
                     <b>理查德·费曼</b><br>
                     <small class="copy-zh">理论物理学家</small>
@@ -1038,7 +1121,7 @@
                   </div>
                 </a>
                 
-                <a href="./rosalind_franklin/" class="tc">
+                <a href="./rosalind_franklin/" class="tc" data-search="罗莎琳德·富兰克林 Rosalind Franklin 结构生物学家 科学家 Scientists 图像证据 精确 专业主义">
                   <div>
                     <b>罗莎琳德·富兰克林</b><br>
                     <small class="copy-zh">结构生物学家</small>
@@ -1049,7 +1132,7 @@
                   </div>
                 </a>
                 
-                <a href="./alan_turing/" class="tc">
+                <a href="./alan_turing/" class="tc" data-search="艾伦·图灵 Alan Turing 计算理论奠基者 科学家 Scientists 计算 形式化 智能">
                   <div>
                     <b>艾伦·图灵</b><br>
                     <small class="copy-zh">计算理论奠基者</small>
@@ -1060,7 +1143,7 @@
                   </div>
                 </a>
                 
-                <a href="./isaac_newton/" class="tc">
+                <a href="./isaac_newton/" class="tc" data-search="艾萨克·牛顿 Isaac Newton 经典力学奠基者 科学家 Scientists 定律 演绎 专注">
                   <div>
                     <b>艾萨克·牛顿</b><br>
                     <small class="copy-zh">经典力学奠基者</small>
@@ -1071,7 +1154,7 @@
                   </div>
                 </a>
                 
-                <a href="./ada_lovelace/" class="tc">
+                <a href="./ada_lovelace/" class="tc" data-search="艾达·洛芙莱斯 Ada Lovelace 计算先驱 科学家 Scientists 抽象 算法 跨学科">
                   <div>
                     <b>艾达·洛芙莱斯</b><br>
                     <small class="copy-zh">计算先驱</small>
@@ -1082,7 +1165,7 @@
                   </div>
                 </a>
                 
-                <a href="./tim_berners_lee/" class="tc">
+                <a href="./tim_berners_lee/" class="tc" data-search="蒂姆·伯纳斯-李 Tim Berners-Lee 万维网发明者 科学家 Scientists 开放网络 标准 公共性">
                   <div>
                     <b>蒂姆·伯纳斯-李</b><br>
                     <small class="copy-zh">万维网发明者</small>
@@ -1093,7 +1176,7 @@
                   </div>
                 </a>
                 
-                <a href="./albert_einstein/" class="tc">
+                <a href="./albert_einstein/" class="tc" data-search="阿尔伯特·爱因斯坦 Albert Einstein 物理学家 科学家 Scientists 想象力 统一性 第一原理">
                   <div>
                     <b>阿尔伯特·爱因斯坦</b><br>
                     <small class="copy-zh">物理学家</small>
@@ -1104,7 +1187,7 @@
                   </div>
                 </a>
                 
-                <a href="./yan_ning/" class="tc">
+                <a href="./yan_ning/" class="tc" data-search="颜宁 Yan Ning 结构生物学家 科学家 Scientists 极致 独立 科学共同体">
                   <div>
                     <b>颜宁</b><br>
                     <small class="copy-zh">结构生物学家</small>
@@ -1114,8 +1197,20 @@
                     <small class="course-note copy-en">10 lessons · one reusable judgment system</small>
                   </div>
                 </a>
-                </div><h2><span class="copy-zh">科技思想家</span><span class="copy-en">Technology Thinkers</span></h2><div class="thinker-grid">
-                <a href="./ilya_sutskever/" class="tc">
+                </div>
+            </section>
+            
+            <section class="phase-section" data-phase="科技思想家">
+              <div class="phase-header">
+                <div>
+                  <h2><span class="copy-zh">科技思想家</span><span class="copy-en">Technology Thinkers</span></h2>
+                  <p class="copy-zh">从底层技术演进、分发与规模化约束去看产品机会。</p>
+                  <p class="copy-en">Evaluate product opportunities through technical evolution, distribution, and scaling constraints.</p>
+                </div>
+                <div class="eyebrow">15 minds</div>
+              </div>
+              <div class="thinker-grid">
+                <a href="./ilya_sutskever/" class="tc" data-search="伊利亚·苏茨克维尔 Ilya Sutskever 深度学习研究者 科技思想家 Technology Thinkers 深度学习 尺度定律 对齐">
                   <div>
                     <b>伊利亚·苏茨克维尔</b><br>
                     <small class="copy-zh">深度学习研究者</small>
@@ -1126,7 +1221,7 @@
                   </div>
                 </a>
                 
-                <a href="./andrew_ng/" class="tc">
+                <a href="./andrew_ng/" class="tc" data-search="吴恩达 Andrew Ng AI 教育推动者 科技思想家 Technology Thinkers AI 民主化 应用落地 学习曲线">
                   <div>
                     <b>吴恩达</b><br>
                     <small class="copy-zh">AI 教育推动者</small>
@@ -1137,7 +1232,7 @@
                   </div>
                 </a>
                 
-                <a href="./musk/" class="tc">
+                <a href="./musk/" class="tc" data-search="埃隆·马斯克 Elon Musk 第一性原理创业者 科技思想家 Technology Thinkers 第一性原理 制造 火星">
                   <div>
                     <b>埃隆·马斯克</b><br>
                     <small class="copy-zh">第一性原理创业者</small>
@@ -1148,7 +1243,7 @@
                   </div>
                 </a>
                 
-                <a href="./andrej_karpathy/" class="tc">
+                <a href="./andrej_karpathy/" class="tc" data-search="安德烈·卡帕西 Andrej Karpathy AI 工程研究者 科技思想家 Technology Thinkers 工程直觉 数据 模型调试">
                   <div>
                     <b>安德烈·卡帕西</b><br>
                     <small class="copy-zh">AI 工程研究者</small>
@@ -1159,7 +1254,7 @@
                   </div>
                 </a>
                 
-                <a href="./sam_altman/" class="tc">
+                <a href="./sam_altman/" class="tc" data-search="山姆·奥特曼 Sam Altman OpenAI CEO 科技思想家 Technology Thinkers AGI 创业 分发">
                   <div>
                     <b>山姆·奥特曼</b><br>
                     <small class="copy-zh">OpenAI CEO</small>
@@ -1170,7 +1265,7 @@
                   </div>
                 </a>
                 
-                <a href="./demis_hassabis/" class="tc">
+                <a href="./demis_hassabis/" class="tc" data-search="德米斯·哈萨比斯 Demis Hassabis DeepMind CEO 科技思想家 Technology Thinkers 通用智能 科学发现 强化学习">
                   <div>
                     <b>德米斯·哈萨比斯</b><br>
                     <small class="copy-zh">DeepMind CEO</small>
@@ -1181,7 +1276,7 @@
                   </div>
                 </a>
                 
-                <a href="./larry_page/" class="tc">
+                <a href="./larry_page/" class="tc" data-search="拉里·佩奇 Larry Page Google 联合创始人 科技思想家 Technology Thinkers 信息组织 登月项目 自动化">
                   <div>
                     <b>拉里·佩奇</b><br>
                     <small class="copy-zh">Google 联合创始人</small>
@@ -1192,7 +1287,7 @@
                   </div>
                 </a>
                 
-                <a href="./li_feifei/" class="tc">
+                <a href="./li_feifei/" class="tc" data-search="李飞飞 Fei-Fei Li AI 科学家 科技思想家 Technology Thinkers 人本 AI 视觉智能 教育">
                   <div>
                     <b>李飞飞</b><br>
                     <small class="copy-zh">AI 科学家</small>
@@ -1203,7 +1298,7 @@
                   </div>
                 </a>
                 
-                <a href="./linus_torvalds/" class="tc">
+                <a href="./linus_torvalds/" class="tc" data-search="林纳斯·托瓦兹 Linus Torvalds Linux 创始人 科技思想家 Technology Thinkers 开源 工程审美 直接反馈">
                   <div>
                     <b>林纳斯·托瓦兹</b><br>
                     <small class="copy-zh">Linux 创始人</small>
@@ -1214,7 +1309,7 @@
                   </div>
                 </a>
                 
-                <a href="./bill_gates/" class="tc">
+                <a href="./bill_gates/" class="tc" data-search="比尔·盖茨 Bill Gates 微软联合创始人 科技思想家 Technology Thinkers 平台 软件 全球健康">
                   <div>
                     <b>比尔·盖茨</b><br>
                     <small class="copy-zh">微软联合创始人</small>
@@ -1225,7 +1320,7 @@
                   </div>
                 </a>
                 
-                <a href="./susan_wojcicki/" class="tc">
+                <a href="./susan_wojcicki/" class="tc" data-search="苏珊·沃西基 Susan Wojcicki 平台产品领导者 科技思想家 Technology Thinkers 创作者经济 分发 平台治理">
                   <div>
                     <b>苏珊·沃西基</b><br>
                     <small class="copy-zh">平台产品领导者</small>
@@ -1236,7 +1331,7 @@
                   </div>
                 </a>
                 
-                <a href="./satya_nadella/" class="tc">
+                <a href="./satya_nadella/" class="tc" data-search="萨提亚·纳德拉 Satya Nadella 微软 CEO 科技思想家 Technology Thinkers 同理心 平台 学习型组织">
                   <div>
                     <b>萨提亚·纳德拉</b><br>
                     <small class="copy-zh">微软 CEO</small>
@@ -1247,7 +1342,7 @@
                   </div>
                 </a>
                 
-                <a href="./sergey_brin/" class="tc">
+                <a href="./sergey_brin/" class="tc" data-search="谢尔盖·布林 Sergey Brin Google 联合创始人 科技思想家 Technology Thinkers 搜索 实验 工程文化">
                   <div>
                     <b>谢尔盖·布林</b><br>
                     <small class="copy-zh">Google 联合创始人</small>
@@ -1258,7 +1353,7 @@
                   </div>
                 </a>
                 
-                <a href="./mark_zuckerberg/" class="tc">
+                <a href="./mark_zuckerberg/" class="tc" data-search="马克·扎克伯格 Mark Zuckerberg Meta CEO 科技思想家 Technology Thinkers 产品迭代 网络效应 平台">
                   <div>
                     <b>马克·扎克伯格</b><br>
                     <small class="copy-zh">Meta CEO</small>
@@ -1269,7 +1364,7 @@
                   </div>
                 </a>
                 
-                <a href="./jensen_huang/" class="tc">
+                <a href="./jensen_huang/" class="tc" data-search="黄仁勋 Jensen Huang NVIDIA 创始人 科技思想家 Technology Thinkers 算力 平台 生态">
                   <div>
                     <b>黄仁勋</b><br>
                     <small class="copy-zh">NVIDIA 创始人</small>
@@ -1279,8 +1374,20 @@
                     <small class="course-note copy-en">10 lessons · one reusable judgment system</small>
                   </div>
                 </a>
-                </div><h2><span class="copy-zh">设计大师</span><span class="copy-en">Design Masters</span></h2><div class="thinker-grid">
-                <a href="./issey_miyake/" class="tc">
+                </div>
+            </section>
+            
+            <section class="phase-section" data-phase="设计大师">
+              <div class="phase-header">
+                <div>
+                  <h2><span class="copy-zh">设计大师</span><span class="copy-en">Design Masters</span></h2>
+                  <p class="copy-zh">把抽象理念压缩成可触达、可感知、可复用的设计语言。</p>
+                  <p class="copy-en">Compress abstract ideas into design language that can be sensed, touched, and reused.</p>
+                </div>
+                <div class="eyebrow">7 minds</div>
+              </div>
+              <div class="thinker-grid">
+                <a href="./issey_miyake/" class="tc" data-search="三宅一生 Issey Miyake 设计师 设计大师 Design Masters 材料实验 身体感 东方美学">
                   <div>
                     <b>三宅一生</b><br>
                     <small class="copy-zh">设计师</small>
@@ -1291,7 +1398,7 @@
                   </div>
                 </a>
                 
-                <a href="./jony_ive/" class="tc">
+                <a href="./jony_ive/" class="tc" data-search="乔尼·艾夫 Jony Ive 工业设计师 设计大师 Design Masters 材料 细节 克制">
                   <div>
                     <b>乔尼·艾夫</b><br>
                     <small class="copy-zh">工业设计师</small>
@@ -1302,7 +1409,7 @@
                   </div>
                 </a>
                 
-                <a href="./steve_jobs/" class="tc">
+                <a href="./steve_jobs/" class="tc" data-search="史蒂夫·乔布斯 Steve Jobs Apple 联合创始人 设计大师 Design Masters 产品 审美 端到端体验">
                   <div>
                     <b>史蒂夫·乔布斯</b><br>
                     <small class="copy-zh">Apple 联合创始人</small>
@@ -1313,7 +1420,7 @@
                   </div>
                 </a>
                 
-                <a href="./tadao_ando/" class="tc">
+                <a href="./tadao_ando/" class="tc" data-search="安藤忠雄 Tadao Ando 建筑师 设计大师 Design Masters 光 水泥 空间秩序">
                   <div>
                     <b>安藤忠雄</b><br>
                     <small class="copy-zh">建筑师</small>
@@ -1324,7 +1431,7 @@
                   </div>
                 </a>
                 
-                <a href="./zaha_hadid/" class="tc">
+                <a href="./zaha_hadid/" class="tc" data-search="扎哈·哈迪德 Zaha Hadid 建筑师 设计大师 Design Masters 流动结构 空间想象 未来感">
                   <div>
                     <b>扎哈·哈迪德</b><br>
                     <small class="copy-zh">建筑师</small>
@@ -1335,7 +1442,7 @@
                   </div>
                 </a>
                 
-                <a href="./john_maeda/" class="tc">
+                <a href="./john_maeda/" class="tc" data-search="约翰·前田 John Maeda 设计与技术思想家 设计大师 Design Masters 设计管理 简约 跨界">
                   <div>
                     <b>约翰·前田</b><br>
                     <small class="copy-zh">设计与技术思想家</small>
@@ -1346,7 +1453,7 @@
                   </div>
                 </a>
                 
-                <a href="./dieter_rams/" class="tc">
+                <a href="./dieter_rams/" class="tc" data-search="迪特·拉姆斯 Dieter Rams 工业设计师 设计大师 Design Masters 简洁 系统 诚实设计">
                   <div>
                     <b>迪特·拉姆斯</b><br>
                     <small class="copy-zh">工业设计师</small>
@@ -1357,6 +1464,8 @@
                   </div>
                 </a>
                 </div>
+            </section>
+            
 </div>
 
 <script>
@@ -1378,6 +1487,29 @@
   buttons.forEach((button) => {
     button.addEventListener("click", () => applyLang(button.dataset.langTarget));
   });
+})();
+</script>
+
+
+<script>
+(() => {
+  const input = document.querySelector("[data-course-search]");
+  if (!input) return;
+  const cards = Array.from(document.querySelectorAll(".tc"));
+  const sections = Array.from(document.querySelectorAll(".phase-section"));
+  const normalize = (value) => String(value || "").toLowerCase().replace(/\s+/g, "");
+  const applySearch = () => {
+    const query = normalize(input.value);
+    cards.forEach((card) => {
+      const text = normalize(card.dataset.search || card.textContent);
+      card.hidden = Boolean(query && !text.includes(query));
+    });
+    sections.forEach((section) => {
+      const hasVisible = Array.from(section.querySelectorAll(".tc")).some((card) => !card.hidden);
+      section.hidden = !hasVisible;
+    });
+  };
+  input.addEventListener("input", applySearch);
 })();
 </script>
 
